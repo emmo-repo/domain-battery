@@ -19,7 +19,7 @@ fi
 # Checkout gh-pages
 if ! [ -d ${pagesdir} ]; then
     git clone --branch=gh-pages --single-branch \
-        git@github.com:emmo-repo/battery.git ${pagesdir}
+        git@github.com:emmo-repo/domain-battery.git ${pagesdir}
     git config pull.rebase false
 fi
 

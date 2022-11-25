@@ -9,7 +9,7 @@ The ontology is a part of the [Battery Interface Domain Ontology (BattINFO)](htt
 
 The ontology is based on [EMMO][1].
 
-A reference documentation of the individual classes is available in [html](https://emmo-repo.github.io/domain-battery/index.html) and [pdf](https://emmo-repo.github.io/domain-battery/battinfo.pdf) formats.
+A reference documentation of the individual classes is available in [html](https://emmo-repo.github.io/domain-battery/index.html) and [pdf](https://emmo-repo.github.io/domain-battery/battery.pdf) formats.
 
 ## Obtaining the ontology
 
@@ -23,7 +23,7 @@ git clone https://github.com/emmo-repo/domain-battery.git
 
 When opening battery.ttl in Protégé, the correct versions of EMMO and other ontology dependencies will be downloaded and imported.
 
-In EMMOntoPy, correct import is obtained with:
+In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), correct import is obtained with:
 
 ```python
 from ontopy import get_ontology
@@ -54,7 +54,7 @@ You can edit ontologes in two main ways.
 One is programmatically, using for instance [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy).
 The second and more common is using the interface provided by the Protégé software.
 In case of the latter, [install Protégé](https://protege.stanford.edu/) and use it to open the ontology file you wish to edit.
-Before adding elements, ensure Prot´égé is configured to create IRIs in the right format:  
+Before adding elements, ensure Prot´égé is configured to create IRIs in the right format:
 
 * Open Protégé
 * Go to File/Open and load the ontology file you wish to modify

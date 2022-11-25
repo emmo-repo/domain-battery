@@ -10,7 +10,7 @@ tmpdir=${ontodocdir}/tmp
 cd ${ontodocdir}
 
 mkdir -p ${tmpdir}/figs
-cp -u ${rootdir}/bigmap.png ${tmpdir}/figs/.
+cp -u ${rootdir}/doc/img/bigmap.png ${tmpdir}/figs/.
 
 ontograph -m ${rootdir}/battery.ttl ${tmpdir}/battery-structure.png
 ontoconvert -si ${rootdir}/battery.ttl ${tmpdir}/battery-inferred.ttl
