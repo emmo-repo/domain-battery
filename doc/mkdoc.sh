@@ -4,7 +4,7 @@ set -ex
 
 # Directories
 rootdir=$(git rev-parse --show-toplevel)
-ontodocdir=${rootdir}/doc/ontodoc
+ontodocdir=${rootdir}/doc
 tmpdir=${ontodocdir}/tmp
 
 cd ${ontodocdir}
