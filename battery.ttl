@@ -240,10 +240,7 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 <http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a> rdf:type owl:Class ;
                                                                         rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
                                                                                         emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
-                                                                                        ] ;
+                                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
                                                                         skos:prefLabel "BatteryCurrentVector"@en .
 
 
@@ -596,12 +593,9 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7
 <http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05> ,
+                                                                                        emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
                                                                         skos:prefLabel "BatteryTestTimeVector"@en .
 
 
@@ -1057,12 +1051,9 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395
 <http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee
-                                                                                        ] ;
+                                                                        rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
+                                                                                        emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
                                                                         skos:prefLabel "BatteryVoltageVector"@en .
 
 
