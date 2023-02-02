@@ -236,6 +236,17 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "LFPReferenceElectrode"@en .
 
 
+###  http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a
+<http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                        ] ;
+                                                                        skos:prefLabel "BatteryCurrentVector"@en .
+
+
 ###  http://emmo.info/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce
 <http://emmo.info/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17> ;
@@ -372,6 +383,13 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 <http://emmo.info/battery#battery_4c78a492_b14d_4005_b555_d3c92e8def0f> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_679f6984_e0dc_4285_9dbb_429c5779590c> ;
                                                                         skos:prefLabel "BatteryEquivalentCircuitModel"@en .
+
+
+###  http://emmo.info/battery#battery_4e15b1a2_53b7_4703_8af4_b21a59d653df
+<http://emmo.info/battery#battery_4e15b1a2_53b7_4703_8af4_b21a59d653df> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+                                                                        skos:prefLabel "BatteryTemperatureVector"@en .
 
 
 ###  http://emmo.info/battery#battery_5129704d_3e08_4bee_b2d3_7b9e193cb481
@@ -574,6 +592,17 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 <http://emmo.info/battery#battery_834c96d6_4986_4766_9d96_58fc643144e0> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
                                                                         skos:prefLabel "LithiumSiliconGraphiteElectrode"@en .
+
+
+###  http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7
+<http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05>
+                                                                                        ] ;
+                                                                        skos:prefLabel "BatteryTestTimeVector"@en .
 
 
 ###  http://emmo.info/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d
@@ -910,6 +939,25 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "ElectrolyteCreep"@en .
 
 
+###  http://emmo.info/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
+<http://emmo.info/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a>
+                                                                                        ] ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7>
+                                                                                        ] ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395>
+                                                                                        ] ;
+                                                                        skos:prefLabel "BatteryTimeSeriesData"@en .
+
+
 ###  http://emmo.info/battery#battery_d9ebf2cd_a020_46b4_b91a_9a6402736b9e
 <http://emmo.info/battery#battery_d9ebf2cd_a020_46b4_b91a_9a6402736b9e> rdf:type owl:Class ;
                                                                         rdfs:subClassOf emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 ;
@@ -1005,6 +1053,17 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_8c808507_976a_4225_8099_604dc7abc5ea> ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A full redox flow battery with aqueous electrolytes that contain metallic species as the active components." ;
                                                                         skos:prefLabel "AqueousMetallicFlowBattery"@en .
+
+
+###  http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395
+<http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+                                                                                          owl:someValuesFrom emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee
+                                                                                        ] ;
+                                                                        skos:prefLabel "BatteryVoltageVector"@en .
 
 
 ###  http://emmo.info/battery#battery_ef791f05_41d4_4bdb_a1fc_fd455ed0ecb2
