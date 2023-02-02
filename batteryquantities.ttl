@@ -43,16 +43,15 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_0c31eae9_725c_4ff3_bfda_ce0124ec0f26
 :battery_0c31eae9_725c_4ff3_bfda_ce0124ec0f26 rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                                owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0
-                                                              ] ;
+                                                              emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
+                                              skos:altLabel "CycleIndex"@en ;
                                               skos:prefLabel "CycleNumber"@en .
 
 
 ###  http://emmo.info/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a
 :battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge"@en ;
                                               skos:altLabel "SoC"@en ;
                                               skos:prefLabel "StateOfCharge"@en .
@@ -60,7 +59,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d
 :battery_22353114_9b0a_42d1_b96c_3a702c273e2d rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Depth_of_discharge"@en ;
                                               skos:altLabel "DoD"@en ;
                                               skos:prefLabel "DepthOfDischarge"@en .
@@ -76,23 +76,24 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_25e20915_c35d_4bee_ad31_736235a79780
 :battery_25e20915_c35d_4bee_ad31_736235a79780 rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                                owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0
-                                                              ] ;
+                                                              emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-25" ;
                                               rdfs:comment "The discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current."@en ;
                                               skos:altLabel "DischargeRate"@en ;
                                               skos:prefLabel "DRate"@en .
 
 
+###  http://emmo.info/battery#battery_64838217_d1fc_4ad5_b913_8fec8c32fa58
+:battery_64838217_d1fc_4ad5_b913_8fec8c32fa58 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
+                                              skos:prefLabel "ChargeEnergy"@en .
+
+
 ###  http://emmo.info/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001
 :battery_87bb15ff_4fc2_4929_9938_0b31d9166001 rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                                owl:someValuesFrom emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f
-                                                              ] ;
+                                                              emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric energy which a battery delivers under specified conditions."@en ;
                                               skos:prefLabel "BatteryEnergy"@en .
@@ -122,7 +123,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_8c3ef9da_ccb9_4097_bd62_b2a73eff34ca
 :battery_8c3ef9da_ccb9_4097_bd62_b2a73eff34ca rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-47" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "duration, under specific conditions, at the end of which a battery has retained the ability to perform a specified function."@en ;
                                               skos:altLabel "ShelfLife"@en ;
@@ -138,7 +140,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f
 :battery_b10c88d8_43d9_42dd_9f65_49ce2314513f rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405 ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total mass of a battery in its operational condition."@en ;
                                               skos:prefLabel "ServiceMass"@en .
@@ -151,9 +154,17 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/battery#battery_b2e050f6_ec61_442f_a607_ca24787cafe4
+:battery_b2e050f6_ec61_442f_a607_ca24787cafe4 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
+                                              skos:prefLabel "DischargeEnergy"@en .
+
+
 ###  http://emmo.info/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc
 :battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total period of useful life of a cell or a battery in operation."@en ;
                                               rdfs:comment "For primary batteries, service life relates to the total discharge time or capacity under specific conditions."@en ,
@@ -192,7 +203,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_e090f4d0_2143_4e96_8c5d_c1180ab36135
 :battery_e090f4d0_2143_4e96_8c5d_c1180ab36135 rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
+                                                              emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Mole ratio of intercalant to active material."@en ;
                                               emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The stoichiometry of the intercalant Li in the active material Li2FeSiO4 is 2."@en ;
                                               skos:prefLabel "IntercalantStoichiometry"@en .
@@ -201,10 +213,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
 :battery_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                                owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0
-                                                              ] ;
+                                                              emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                               skos:prefLabel "CRate"@en .
 
 
