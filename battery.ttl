@@ -36,30 +36,6 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
-###  http://emmo.info/emmo#EMMO_130997c3_501e_41c0_b4f7_fe4936ff88e3
-emmo:EMMO_130997c3_501e_41c0_b4f7_fe4936ff88e3 rdf:type owl:ObjectProperty .
-
-
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315
-electrochemistry:EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315 rdf:type owl:ObjectProperty .
-
-
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_5d299271_3f68_494f_ab96_3db9acdd3138
-electrochemistry:EMMO_5d299271_3f68_494f_ab96_3db9acdd3138 rdf:type owl:ObjectProperty .
-
-
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_860aa941_5ff9_4452_8a16_7856fad07bee
-electrochemistry:EMMO_860aa941_5ff9_4452_8a16_7856fad07bee rdf:type owl:ObjectProperty .
-
-
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616
-electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectProperty .
-
-
-#################################################################
 #    Classes
 #################################################################
 
@@ -100,7 +76,7 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_10f58ac2_ad4b_44c2_9d82_db154cdfeef8
 <http://emmo.info/battery#battery_10f58ac2_ad4b_44c2_9d82_db154cdfeef8> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_7c2a1d4d_e622_41f2_b978_49e4fbdca82f> ;
-                                                                        skos:prefLabel "Cylindrical4680CellContainer"@en .
+                                                                        skos:prefLabel "R4680"@en .
 
 
 ###  http://emmo.info/battery#battery_1191d114_5aec_4167_97b1_c0bca9414c49
@@ -135,12 +111,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "BifunctionalAirElectrode"@en .
 
 
-###  http://emmo.info/battery#battery_149bb81f_e724_42f0_9560_184ff916bdba
-<http://emmo.info/battery#battery_149bb81f_e724_42f0_9560_184ff916bdba> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae> ;
-                                                                        skos:prefLabel "ReactiveSubcomponentContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
 <http://emmo.info/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce> rdf:type owl:Class ;
                                                                         rdfs:subClassOf emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
@@ -151,12 +121,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 <http://emmo.info/battery#battery_1564363d_78ea_45be_a82f_2d12e40022ab> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77> ;
                                                                         skos:prefLabel "FullFlowCell"@en .
-
-
-###  http://emmo.info/battery#battery_17b3beaa_6f91_4f73_8a9a_d960eb542b7e
-<http://emmo.info/battery#battery_17b3beaa_6f91_4f73_8a9a_d960eb542b7e> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
-                                                                        skos:prefLabel "ElectronicComponentContinuumModel"@en .
 
 
 ###  http://emmo.info/battery#battery_17e530cf_739c_4171_8a1d_8fe58625fc60
@@ -217,31 +181,11 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "Activation"@en .
 
 
-###  http://emmo.info/battery#battery_21d661a7_73de_4ee6_8bd5_53a948eda8cc
-<http://emmo.info/battery#battery_21d661a7_73de_4ee6_8bd5_53a948eda8cc> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_7649a57c_d842_429f_97a1_b9612a8fdb2b> ;
-                                                                        skos:prefLabel "SeparatorContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
 <http://emmo.info/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac> rdf:type owl:Class ;
                                                                         rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device for performing cycling measurements of a battery."@en ;
                                                                         skos:prefLabel "BatteryCycler"@en .
-
-
-###  http://emmo.info/battery#battery_249848f9_308a_40aa_b560_e77cb167da50
-<http://emmo.info/battery#battery_249848f9_308a_40aa_b560_e77cb167da50> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29> ;
-                                                                        skos:prefLabel "LFPReferenceElectrode"@en .
-
-
-###  http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a
-<http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
-                                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
-                                                                        skos:prefLabel "BatteryCurrentVector"@en .
 
 
 ###  http://emmo.info/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce
@@ -265,12 +209,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "ZincElectrode"@en .
 
 
-###  http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae
-<http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
-                                                                        skos:prefLabel "ElectrochemicalSubcomponentContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f
 <http://emmo.info/battery#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17> ;
@@ -289,21 +227,21 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_355deb8d_4e68_48b6_9628_8bb7536aba7a
 <http://emmo.info/battery#battery_355deb8d_4e68_48b6_9628_8bb7536aba7a> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_ebaac955_1664_4de8_a9ae_a3868a7d8427> ;
-                                                                        skos:prefLabel "CoinCellContainer2032"@en .
+                                                                        skos:prefLabel "R2032"@en .
 
 
 ###  http://emmo.info/battery#battery_35622b13_7ebb_4b29_9d05_0f0f5cc063f2
 <http://emmo.info/battery#battery_35622b13_7ebb_4b29_9d05_0f0f5cc063f2> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_3df7ea3e_870b_40ca_bdbf_ddb6ef5c13d1> ;
-                                                                        skos:altLabel "NCM811Electrode" ;
-                                                                        skos:prefLabel "LithiumNickel8Manganese1Cobalt1OxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickel8Manganese1Cobalt1OxideElectrode"@en ;
+                                                                        skos:prefLabel "NCM811Electrode" .
 
 
 ###  http://emmo.info/battery#battery_3574fc7e_b831_4fda_a765_5ae109633926
 <http://emmo.info/battery#battery_3574fc7e_b831_4fda_a765_5ae109633926> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "NCAElectrode" ;
-                                                                        skos:prefLabel "LithiumNickelCobaltAluminumOxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickelCobaltAluminumOxideElectrode"@en ;
+                                                                        skos:prefLabel "NCAElectrode" .
 
 
 ###  http://emmo.info/battery#battery_392b3f47_d62a_4bd4_a819_b58b09b8843a
@@ -329,16 +267,16 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_3cfe22eb_f29c_4df9_b53a_f636ab371ff0
 <http://emmo.info/battery#battery_3cfe22eb_f29c_4df9_b53a_f636ab371ff0> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_3df7ea3e_870b_40ca_bdbf_ddb6ef5c13d1> ;
-                                                                        skos:altLabel "NCM622Electrode" ;
-                                                                        skos:prefLabel "LithiumNickel6Manganese2Cobalt2OxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickel6Manganese2Cobalt2OxideElectrode"@en ;
+                                                                        skos:prefLabel "NCM622Electrode" .
 
 
 ###  http://emmo.info/battery#battery_3df7ea3e_870b_40ca_bdbf_ddb6ef5c13d1
 <http://emmo.info/battery#battery_3df7ea3e_870b_40ca_bdbf_ddb6ef5c13d1> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "NCMElectrode"@en ,
-                                                                                      "NMCElectrode" ;
-                                                                        skos:prefLabel "LithiumNickelManganeseCobaltOxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickelManganeseCobaltOxideElectrode"@en ,
+                                                                                      "NCMElectrode"@en ;
+                                                                        skos:prefLabel "NMCElectrode" .
 
 
 ###  http://emmo.info/battery#battery_3fcdc2ab_f458_4940_b218_6a10d1764567
@@ -358,7 +296,7 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_470d4c68_21b3_4405_ac3f_9588c4152437
 <http://emmo.info/battery#battery_470d4c68_21b3_4405_ac3f_9588c4152437> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_a0070f31_7895_46cd_8d62_e53bf39a1e71> ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
                                                                         skos:prefLabel "CurrentCollectorContinuumModel"@en .
 
 
@@ -382,13 +320,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "BatteryEquivalentCircuitModel"@en .
 
 
-###  http://emmo.info/battery#battery_4e15b1a2_53b7_4703_8af4_b21a59d653df
-<http://emmo.info/battery#battery_4e15b1a2_53b7_4703_8af4_b21a59d653df> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
-                                                                        skos:prefLabel "BatteryTemperatureVector"@en .
-
-
 ###  http://emmo.info/battery#battery_5129704d_3e08_4bee_b2d3_7b9e193cb481
 <http://emmo.info/battery#battery_5129704d_3e08_4bee_b2d3_7b9e193cb481> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2> ;
@@ -398,7 +329,7 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae
 <http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f> ;
+                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c> ;
                                                                         skos:prefLabel "LCOGraphiteBattery"@en ,
                                                                                        "LithiumInsertionElectrode"@en .
 
@@ -449,12 +380,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
  ] .
 
 
-###  http://emmo.info/battery#battery_5f918eae_2666_47dc_8ca8_c79fbcce3b86
-<http://emmo.info/battery#battery_5f918eae_2666_47dc_8ca8_c79fbcce3b86> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae> ;
-                                                                        skos:prefLabel "IonicSubcomponentContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_6256b4c7_243f_4067_a081_dd1eb2160036
 <http://emmo.info/battery#battery_6256b4c7_243f_4067_a081_dd1eb2160036> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ;
@@ -494,8 +419,8 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_69aef12f_3af9_4fa7_9d0c_bf4bcaf2dc88
 <http://emmo.info/battery#battery_69aef12f_3af9_4fa7_9d0c_bf4bcaf2dc88> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "LTOElectrode"@en ;
-                                                                        skos:prefLabel "LithiumTitaniumOxideElectrode"@en .
+                                                                        skos:altLabel "LithiumTitaniumOxideElectrode"@en ;
+                                                                        skos:prefLabel "LTOElectrode"@en .
 
 
 ###  http://emmo.info/battery#battery_6c481323_498b_42c6_915a_53490f409430
@@ -543,12 +468,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "MetalAir"@en .
 
 
-###  http://emmo.info/battery#battery_7649a57c_d842_429f_97a1_b9612a8fdb2b
-<http://emmo.info/battery#battery_7649a57c_d842_429f_97a1_b9612a8fdb2b> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae> ;
-                                                                        skos:prefLabel "StructuralSubcomponentContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_78826076_05d5_4cc8_b46b_93418a67c91b
 <http://emmo.info/battery#battery_78826076_05d5_4cc8_b46b_93418a67c91b> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ;
@@ -581,22 +500,14 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_7c7aee42_86b2_413a_bdcb_971455cc0322
 <http://emmo.info/battery#battery_7c7aee42_86b2_413a_bdcb_971455cc0322> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "LNMOElectrode" ;
-                                                                        skos:prefLabel "LithiumNickelManganeseOxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickelManganeseOxideElectrode"@en ;
+                                                                        skos:prefLabel "LNMOElectrode" .
 
 
 ###  http://emmo.info/battery#battery_834c96d6_4986_4766_9d96_58fc643144e0
 <http://emmo.info/battery#battery_834c96d6_4986_4766_9d96_58fc643144e0> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:prefLabel "LithiumSiliconGraphiteElectrode"@en .
-
-
-###  http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7
-<http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05> ,
-                                                                                        emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
-                                                                        skos:prefLabel "BatteryTestTimeVector"@en .
+                                                                        skos:prefLabel "SiliconGraphiteElectrode"@en .
 
 
 ###  http://emmo.info/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d
@@ -655,9 +566,13 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_8ff88776_0730_4e00_a4c2_ae3be0b16550
 <http://emmo.info/battery#battery_8ff88776_0730_4e00_a4c2_ae3be0b16550> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "LFPElectrode"@en ;
-                                                                        skos:prefLabel "LithiumIronPhosphateElectrode"@en .
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
+                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_2b43aaba_5148_4311_84ab_db782c8fe5fd>
+                                                                                        ] ;
+                                                                        skos:altLabel "LithiumIronPhosphateElectrode"@en ;
+                                                                        skos:prefLabel "LFPElectrode"@en .
 
 
 ###  http://emmo.info/battery#battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0
@@ -719,10 +634,10 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "Cylindrical18650Cell"@en .
 
 
-###  http://emmo.info/battery#battery_a0070f31_7895_46cd_8d62_e53bf39a1e71
-<http://emmo.info/battery#battery_a0070f31_7895_46cd_8d62_e53bf39a1e71> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_2d7ba193_b4be_40fc_9131_d1a91068aeae> ;
-                                                                        skos:prefLabel "ElectronicSubcomponentContinuumModel"@en .
+###  http://emmo.info/battery#battery_a595f7c8_109b_4246_a915_c07f62e184b8
+<http://emmo.info/battery#battery_a595f7c8_109b_4246_a915_c07f62e184b8> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
+                                                                        skos:prefLabel "ActiveMaterialSolidDiffusionModel"@en .
 
 
 ###  http://emmo.info/battery#battery_a8d7e181_945d_4a26_a4b0_15688566df8c
@@ -757,7 +672,13 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba
 <http://emmo.info/battery#battery_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_7c2a1d4d_e622_41f2_b978_49e4fbdca82f> ;
-                                                                        skos:prefLabel "Cylindrical18650CellContainer"@en .
+                                                                        skos:prefLabel "R1865"@en .
+
+
+###  http://emmo.info/battery#battery_abe3042c_fc62_4d5e_847f_8cdc4eb1dd6d
+<http://emmo.info/battery#battery_abe3042c_fc62_4d5e_847f_8cdc4eb1dd6d> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_ebaac955_1664_4de8_a9ae_a3868a7d8427> ;
+                                                                        skos:prefLabel "R2023"@en .
 
 
 ###  http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40
@@ -773,8 +694,12 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_ac7039df_3505_4355_aa52_41b4b5c2263b
 <http://emmo.info/battery#battery_ac7039df_3505_4355_aa52_41b4b5c2263b> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:prefLabel "LithiumGraphiteElectrode"@en .
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
+                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165>
+                                                                                        ] ;
+                                                                        skos:prefLabel "GraphiteElectrode"@en .
 
 
 ###  http://emmo.info/battery#battery_ada13509_4eed_4e40_a7b1_4cc488144154
@@ -800,9 +725,13 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_b35895a0_7670_487b_9b39_db9360b7d907
 <http://emmo.info/battery#battery_b35895a0_7670_487b_9b39_db9360b7d907> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "LCOElectrode" ;
-                                                                        skos:prefLabel "LithiumCobaltOxideElectrode"@en .
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
+                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_ec506ea8_e8db_4041_9f25_76eea1bb52d0>
+                                                                                        ] ;
+                                                                        skos:altLabel "LithiumCobaltOxideElectrode"@en ;
+                                                                        skos:prefLabel "LCOElectrode" .
 
 
 ###  http://emmo.info/battery#battery_b572826a_b4e4_4986_b57d_f7b945061f8b
@@ -827,13 +756,7 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_b5b8ac18_170a_4c95_a9a3_9bf3bbce0693
 <http://emmo.info/battery#battery_b5b8ac18_170a_4c95_a9a3_9bf3bbce0693> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_7c2a1d4d_e622_41f2_b978_49e4fbdca82f> ;
-                                                                        skos:prefLabel "Cylindrical21700CellContainer"@en .
-
-
-###  http://emmo.info/battery#battery_b72eb3ad_8935_4420_a64e_6218de31c0d2
-<http://emmo.info/battery#battery_b72eb3ad_8935_4420_a64e_6218de31c0d2> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_17b3beaa_6f91_4f73_8a9a_d960eb542b7e> ;
-                                                                        skos:prefLabel "ElectrodeContinuumModel"@en .
+                                                                        skos:prefLabel "R2170"@en .
 
 
 ###  http://emmo.info/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124
@@ -874,12 +797,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "BatteryCyclerSystem"@en .
 
 
-###  http://emmo.info/battery#battery_bc9b6500_60bb_434f_bf29_ea3b189c7236
-<http://emmo.info/battery#battery_bc9b6500_60bb_434f_bf29_ea3b189c7236> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_17b3beaa_6f91_4f73_8a9a_d960eb542b7e> ;
-                                                                        skos:prefLabel "SaltBridgeContinuumModel"@en .
-
-
 ###  http://emmo.info/battery#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00
 <http://emmo.info/battery#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17> ,
@@ -893,14 +810,8 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_be91105d_952e_4f84_b91a_087b92448e6d
 <http://emmo.info/battery#battery_be91105d_952e_4f84_b91a_087b92448e6d> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_3df7ea3e_870b_40ca_bdbf_ddb6ef5c13d1> ;
-                                                                        skos:altLabel "NCM111Electrode" ;
-                                                                        skos:prefLabel "LithiumNickel1Manganese1Cobalt1OxideElectrode"@en .
-
-
-###  http://emmo.info/battery#battery_ccbaf3d8_6c17_4e3c_9c91_4deecf827aa9
-<http://emmo.info/battery#battery_ccbaf3d8_6c17_4e3c_9c91_4deecf827aa9> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_149bb81f_e724_42f0_9560_184ff916bdba> ;
-                                                                        skos:prefLabel "ActiveElectrochemicalMaterialContinuumModel"@en .
+                                                                        skos:altLabel "LithiumNickel1Manganese1Cobalt1OxideElectrode"@en ;
+                                                                        skos:prefLabel "NCM111Electrode" .
 
 
 ###  http://emmo.info/battery#battery_cf82025d_925d_46dd_abf5_4c3c8b0ab3b6
@@ -918,12 +829,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "DischargeOfABattery"@en .
 
 
-###  http://emmo.info/battery#battery_d38f2125_115e_4df5_a8a0_bdb4b88940c2
-<http://emmo.info/battery#battery_d38f2125_115e_4df5_a8a0_bdb4b88940c2> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_dceedbd8_abac_4fb2_932f_41369a69b9cb> ;
-                                                                        skos:prefLabel "LithiumMetalReferenceElectrode"@en .
-
-
 ###  http://emmo.info/battery#battery_d7a46826_ab60_47e7_99b2_a9d6c3b495c1
 <http://emmo.info/battery#battery_d7a46826_ab60_47e7_99b2_a9d6c3b495c1> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_f768ea27_09ba_4875_a5cc_2c644b0753a3> ;
@@ -936,20 +841,8 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
 <http://emmo.info/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69> rdf:type owl:Class ;
                                                                         rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_26df24e8_525f_4cda_b954_f3522c19d57a>
-                                                                                        ] ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_85973bc7_c1d4_4e5a_85d9_8e9b599da8c7>
-                                                                                        ] ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395>
-                                                                                        ] ;
-                                                                        skos:prefLabel "BatteryTimeSeriesData"@en .
+                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+                                                                        skos:prefLabel "BatteryTimeSeriesDataSet"@en .
 
 
 ###  http://emmo.info/battery#battery_d9ebf2cd_a020_46b4_b91a_9a6402736b9e
@@ -987,12 +880,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "BufferBattery"@en .
 
 
-###  http://emmo.info/battery#battery_dceedbd8_abac_4fb2_932f_41369a69b9cb
-<http://emmo.info/battery#battery_dceedbd8_abac_4fb2_932f_41369a69b9cb> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29> ;
-                                                                        skos:prefLabel "MetalReferenceElectrode"@en .
-
-
 ###  http://emmo.info/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11
 <http://emmo.info/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ;
@@ -1008,8 +895,8 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 ###  http://emmo.info/battery#battery_e390be61_f813_400b_8b12_22f55b63f1da
 <http://emmo.info/battery#battery_e390be61_f813_400b_8b12_22f55b63f1da> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
-                                                                        skos:altLabel "LNOElectrode" ;
-                                                                        skos:prefLabel "LithiumNickelOxideElectrode"@en .
+                                                                        skos:altLabel "LithiumNickelOxideElectrode"@en ;
+                                                                        skos:prefLabel "LNOElectrode" .
 
 
 ###  http://emmo.info/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f
@@ -1049,14 +936,6 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                         skos:prefLabel "AqueousMetallicFlowBattery"@en .
 
 
-###  http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395
-<http://emmo.info/battery#battery_eebd30f9_b5df_4147_8b53_97be493da395> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
-                                                                                        emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
-                                                                                        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
-                                                                        skos:prefLabel "BatteryVoltageVector"@en .
-
-
 ###  http://emmo.info/battery#battery_ef791f05_41d4_4bdb_a1fc_fd455ed0ecb2
 <http://emmo.info/battery#battery_ef791f05_41d4_4bdb_a1fc_fd455ed0ecb2> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_b1921f7b_afac_465a_a275_26f929f7f936> ;
@@ -1073,14 +952,14 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
 
 ###  http://emmo.info/battery#battery_f1b2437a_fdf5_43fe_a26d_d9cf296ff469
 <http://emmo.info/battery#battery_f1b2437a_fdf5_43fe_a26d_d9cf296ff469> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_5f918eae_2666_47dc_8ca8_c79fbcce3b86> ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
                                                                         skos:prefLabel "ElectrolyteContinuumModel"@en .
 
 
 ###  http://emmo.info/battery#battery_f59da904_9c18_4e7b_9ac4_3e2b6aa3836a
 <http://emmo.info/battery#battery_f59da904_9c18_4e7b_9ac4_3e2b6aa3836a> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_ebaac955_1664_4de8_a9ae_a3868a7d8427> ;
-                                                                        skos:prefLabel "CoinCellCotainer2016"@en .
+                                                                        skos:prefLabel "R2016"@en .
 
 
 ###  http://emmo.info/battery#battery_f5fea163_410c_4e35_9408_15d5732c9f32
@@ -1113,6 +992,12 @@ electrochemistry:EMMO_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectPr
                                                                                       "ShuttlecockBattery"@en ,
                                                                                       "SwingCell"@en ;
                                                                         skos:prefLabel "RockingChairBattery"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_eee48c4e_be95_4100_8bb9_325330c252b8
+<http://emmo.info/electrochemistry#electrochemistry_eee48c4e_be95_4100_8bb9_325330c252b8> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://emmo.info/battery#battery_e1fa5985_f5a7_4637_ae1c_d6e9db45d22f> ;
+                                                                                          skos:prefLabel "ElectrodeContinuumModel"@en .
 
 
 #################################################################
