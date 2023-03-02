@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/570454101.svg)](https://zenodo.org/badge/latestdoi/570454101)
+
 <!-- markdownlint-disable MD033 -->
 
 # Battery Domain Ontology
