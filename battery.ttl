@@ -158,8 +158,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab
 <http://emmo.info/battery#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ,
-                                                                                        <http://emmo.info/battery#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a> ,
-                                                                                        <http://emmo.info/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11> ;
+                                                                                        <http://emmo.info/battery#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a> ;
                                                                         emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-08" ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrochemical cell with a saline electrolyte based on ammonium chloride and zinc chloride, a positive electrode containing manganese dioxide and a negative electrode of zinc."@en ;
                                                                         emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell"@en ;
@@ -251,6 +250,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                                                                           owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                                                           owl:someValuesFrom <http://emmo.info/battery#battery_17e530cf_739c_4171_8a1d_8fe58625fc60>
                                                                                         ] ;
+                                                                        owl:disjointWith <http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40> ;
                                                                         skos:altLabel "PouchBatteryCell"@en ;
                                                                         skos:prefLabel "PouchCell"@en .
 
@@ -442,11 +442,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17
 <http://emmo.info/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_d9ebf2cd_a020_46b4_b91a_9a6402736b9e>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df> ;
                                                                         emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-04" ;
                                                                         emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Electric_battery"@en ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "One or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices."@en ;
@@ -517,6 +513,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                                                                           owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                                                           owl:someValuesFrom <http://emmo.info/battery#battery_da15df91_45aa_429c_a1e7_21f49a281f23>
                                                                                         ] ;
+                                                                        owl:disjointWith <http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40> ;
                                                                         skos:prefLabel "PrismaticCell"@en .
 
 
@@ -611,6 +608,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                                                                           owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
                                                                                           owl:someValuesFrom <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0>
                                                                                         ] ;
+                                                                        owl:disjointWith <http://emmo.info/battery#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00> ;
                                                                         skos:prefLabel "BatteryModule"@en .
 
 
@@ -622,16 +620,6 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                                                         rdfs:comment "Can be primary or secondary, depending on the design."@en ;
                                                                         skos:altLabel "AirMetalElectrochemicalCell"@en ;
                                                                         skos:prefLabel "MetalAirBattery"@en .
-
-
-###  http://emmo.info/battery#battery_9fb1ae03_6ae2_4bfb_b69e_fd6f88788ef2
-<http://emmo.info/battery#battery_9fb1ae03_6ae2_4bfb_b69e_fd6f88788ef2> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba>
-                                                                                        ] ;
-                                                                        skos:prefLabel "Cylindrical18650Cell"@en .
 
 
 ###  http://emmo.info/battery#battery_a595f7c8_109b_4246_a915_c07f62e184b8
@@ -683,11 +671,8 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40
 <http://emmo.info/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_7c2a1d4d_e622_41f2_b978_49e4fbdca82f>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ;
+                                                                        owl:disjointWith <http://emmo.info/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124> ;
                                                                         skos:altLabel "CylindricalBatteryCell"@en ;
                                                                         skos:prefLabel "CylindricalCell"@en .
 
@@ -747,7 +732,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_b5910d2f_3114_4663_8d46_e418ff859251
 <http://emmo.info/battery#battery_b5910d2f_3114_4663_8d46_e418ff859251> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ,
-                                                                                        <http://emmo.info/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11> ;
+                                                                                        <http://emmo.info/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f> ;
                                                                         emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-02" ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "metal air electrochemical cell with an alkaline electrolyte and a negative electrode of zinc."@en ;
                                                                         skos:prefLabel "AlkalineZincAirBattery"@en .
@@ -761,11 +746,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124
 <http://emmo.info/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty emmo:EMMO_3c7f239f_e833_4a2b_98a1_c88831770c1b ;
-                                                                                          owl:someValuesFrom <http://emmo.info/battery#battery_ebaac955_1664_4de8_a9ae_a3868a7d8427>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0> ;
                                                                         skos:altLabel "ButtonBatteryCell"@en ,
                                                                                       "ButtonCell"@en ,
                                                                                       "CoinBatteryCell"@en ;
