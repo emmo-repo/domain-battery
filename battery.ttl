@@ -13,7 +13,7 @@
 
 <http://emmo.info/battery/battery> rdf:type owl:Ontology ;
                                     owl:versionIRI <http://emmo.info/battery/0.5.0/battery> ;
-                                    owl:imports <http://emmo.info/battery/0.5.0/batteryquantities.ttl> ,
+                                    owl:imports <http://emmo.info/battery/0.5.0/batteryquantities> ,
                                                 <http://emmo.info/electrochemistry/0.5.0/electrochemistry> ;
                                     dcterms:abstract """A toplevel battery interface domain ontology based on EMMO.
 
