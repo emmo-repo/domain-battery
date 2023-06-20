@@ -56,9 +56,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
-
-      # - name: Build documentation
-      #   run: ./${ONTODOC_DIR}/prepare-pages.sh
+        
+      - name: Build documentation
+        run: ./${ONTODOC_DIR}/prepare-pages.sh
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
 
-    #steps:
-    #  - name: Deploy to GitHub Pages
-    #    id: deployment
-    #    uses: actions/deploy-pages@v1
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
