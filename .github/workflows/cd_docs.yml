@@ -56,7 +56,7 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
-
+        
       - name: Build documentation
         run: ./${ONTODOC_DIR}/prepare-pages.sh
 

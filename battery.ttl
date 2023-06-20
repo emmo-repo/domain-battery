@@ -341,8 +341,8 @@ dcterms:license rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae
 <http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c> ;
-                                                                        skos:prefLabel "LCOGraphiteBattery"@en ,
-                                                                                       "LithiumInsertionElectrode"@en .
+                                                                        skos:prefLabel "LCOGraphiteBattery"@en ;
+                                                                        skos:altLabel "LithiumInsertionElectrode"@en .
 
 
 ###  http://emmo.info/battery#battery_52ed5408_da62_483d_97d5_a45755022582
