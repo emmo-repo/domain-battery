@@ -341,8 +341,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae
 <http://emmo.info/battery#battery_520c9e35_2556_462f_97f1_64750cef37ae> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c> ;
-                                                                        skos:prefLabel "LCOGraphiteBattery"@en ;
-                                                                        skos:altLabel "LithiumInsertionElectrode"@en .
+                                                                        skos:prefLabel "LCOGraphiteBattery"@en .
 
 
 ###  http://emmo.info/battery#battery_52ed5408_da62_483d_97d5_a45755022582
@@ -574,11 +573,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_8ff88776_0730_4e00_a4c2_ae3be0b16550
 <http://emmo.info/battery#battery_8ff88776_0730_4e00_a4c2_ae3be0b16550> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
-                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_2b43aaba_5148_4311_84ab_db782c8fe5fd>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
                                                                         skos:altLabel "LithiumIronPhosphateElectrode"@en ;
                                                                         skos:prefLabel "LFPElectrode"@en .
 
@@ -690,11 +685,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_ac7039df_3505_4355_aa52_41b4b5c2263b
 <http://emmo.info/battery#battery_ac7039df_3505_4355_aa52_41b4b5c2263b> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
-                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
                                                                         skos:prefLabel "GraphiteElectrode"@en .
 
 
@@ -721,11 +712,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/battery#battery_b35895a0_7670_487b_9b39_db9360b7d907
 <http://emmo.info/battery#battery_b35895a0_7670_487b_9b39_db9360b7d907> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee> ;
-                                                                                          owl:someValuesFrom <http://emmo.info/electrochemistry#electrochemistry_ec506ea8_e8db_4041_9f25_76eea1bb52d0>
-                                                                                        ] ;
+                                                                        rdfs:subClassOf <http://emmo.info/battery#battery_347a15e7_1cc2_4508_b972_1ab7240d5549> ;
                                                                         skos:altLabel "LithiumCobaltOxideElectrode"@en ;
                                                                         skos:prefLabel "LCOElectrode" .
 
