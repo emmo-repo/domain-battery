@@ -1,5 +1,5 @@
 
-| [**About**](./about.html) | [**Contribute**](./contribute.html) | [![BattINFO Github](https://badgen.net/badge/icon/github?icon=github&label)](https://emmo-repo.github.io/domain-battery/)
+| [**About**](./about.html) | [**Contribute**](./contribute.html) | [![BattINFO Github](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/emmo-repo/domain-battery)
 
 A battery domain ontologydeveloped in the [BIG-MAP][2] project.
 The ontology is a part of the [Battery Interface Domain Ontology (BattINFO)](https://github.com/BIG-MAP/BattINFO).
