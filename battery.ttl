@@ -1683,9 +1683,9 @@ dcterms:license rdf:type owl:AnnotationProperty .
 <http://emmo.info/battery#battery_a71a4bf2_dee6_4aa4_8ad4_9f38c261fb84> rdf:type owl:Class ;
                                                                         rdfs:subClassOf <http://emmo.info/battery#battery_75cab90d_4bff_472a_be0f_48e61a272d01> ;
                                                                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a nickel metal-hydride cylindrical cell in an R6 (AA) case"@en ;
-                                                                        rdfs:label "HR6"@en ;
                                                                         skos:altLabel "NiMHAABattery"@en ,
-                                                                                      "NickelMetalHydrideAABattery"@en .
+                                                                                      "NickelMetalHydrideAABattery"@en ;
+                                                                        skos:prefLabel "HR6"@en .
 
 
 ###  http://emmo.info/battery#battery_a779f0df_51d3_44cd_97f2_863c28843af8
