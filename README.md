@@ -6,92 +6,99 @@
 
 <!-- [![CI tests](https://github.com/emmo-repo/domain-battery/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-battery/actions/) -->
 
-A battery domain ontology developed in the [BIG-MAP][2] project.
-The ontology is a part of the [Battery Interface Domain Ontology (BattINFO)](https://github.com/BIG-MAP/BattINFO).
+The Battery Domain Ontology is a specialized domain within the Elementary Multiperspective Materials Ontology [(EMMO)][1], that encompasses essential terms and relationships for battery systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of battery. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development.
 
-The ontology is based on [EMMO][1].
+A reference documentation is available in [html](https://emmo-repo.github.io/domain-battery/index.html) and [pdf](https://emmo-repo.github.io/domain-battery/battery.pdf) formats.
 
-A reference documentation of the individual classes is available in [html](https://emmo-repo.github.io/domain-battery/index.html) and [pdf](https://emmo-repo.github.io/domain-battery/battery.pdf) formats.
+### Persistent Identifiers
 
-## Obtaining the ontology
+This ontology assigns persistent machine-readable identifiers to concepts from the battery domain. These identifiers facilitate data exchange and interoperability among various tools and systems. It includes annotations to other sources of information including [DBPedia](https://www.dbpedia.org/) and [Wikidata](https://www.wikidata.org/). 
 
-The correct path to the inferred version `emmo-inferred` is specified in the catalog file, [`catalog-v001.xml`](catalog-v001.xml).
+### Standardized Nomenclature
 
-The domain ontology is obtained with:
+The ontology builds on standardized nomenclature for battery, relying on recognized authorities including [IUPAC](https://iupac.org/what-we-do/nomenclature/) and the [IEC](https://www.electropedia.org/). IUPAC is the universally-recognized authority on chemical nomenclature and terminology, and IEC is the the world's leading organization that prepares and publishes International Standards for all electrical, electronic and related technologies. This consistency in naming conventions enhances collaboration and data sharing.
 
-```console
-git clone https://github.com/emmo-repo/domain-battery.git
-```
+## Key Features
 
-When opening battery.ttl in Protégé, the correct versions of EMMO and other ontology dependencies will be downloaded and imported.
+- Seamless integration with the EMMO ontology.
+- Provides persistent machine-readable identifiers for battery systems, devices, methods, datasets, and quantities.
+- Standardized nomenclature for battery entities.
+- Facilitates data exchange and interoperability within the EMMO ecosystem.
 
-In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), correct import is obtained with:
+## Usage
+
+Researchers, domain experts, and developers within the battery communities can utilize the ontology for various purposes, including:
+
+- Incorporating consistent and standardized information into their modeling and simulation activities.
+- Enhancing data interoperability between modeling tools, databases, and platforms.
+- Supporting research projects that require precise and standardized battery knowledge representation.
+- Building applications, databases, or knowledge graphs that leverage EMMO and require battery information.
+- Generating linked data in the semantic web.
+- Complying with FAIR data mandates (FAIR Guidelines available [here](FAIR.md))
+
+## Structure and Integration with EMMO
+
+The Battery Domain Ontology is an official domain on the EMMO. The asserted source consists of two files:
+- `battery.ttl`: describes terms and object properties for the battery domain.
+- `batteryquantities.ttl`: describes the physical quantities related to the battery domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
+
+The battery domain also imports other EMMO domains:
+- [Chemical Substance Domain Ontology](https://github.com/emmo-repo/domain-chemical-substance): provides material annotations for battery (meta)data.
+
+The import structure is summarized in the following table:
+| Imported Ontologies | Version           |
+| ------------------- | ----------------- |
+| EMMO                | 1.0.0-beta5       |
+| chemical-substance  | 0.2.0-alpha       |
+| electrochemistry    | 0.7.0-alpha       |
+
+For simplicity, we complie the source files and other imports into a [pre-inferred ontology](inferred_version/battery-inferred.ttl). This is the result of running the asserted source files through a semantic reasoner and includes both asserted and inferred properties in a clear graph. 
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, we recommend that you install the following tools. They are not all required, but greatly simplify the process of working with ontologies:
+
+- [Protégé](https://protege.stanford.edu/) (a graphical ontology editor)
+  - Installation instructions are available [here](https://protege.stanford.edu/software.php#desktop-protege).
+
+- [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy) (python package for working with EMMO ontologies)
+  - Installation instructions are available [here](https://github.com/emmo-repo/EMMOntoPy#installation).
+
+- [RDFLib](https://rdflib.readthedocs.io/en/stable/) (optional, python package for working with RDF graphs)
+  - Installation instructions are available [here](https://rdflib.readthedocs.io/en/stable/gettingstarted.html).
+
+- [VS Studio Code](https://code.visualstudio.com/) (optional, a code editor with extensions for RDF formats like TTL and JSON-LD)
+  - Installation instructions are available [here](https://code.visualstudio.com/download).
+
+### Quick Start
+
+To quickly explore and make use of the ontology, first download the pre-inferred version [pre-inferred ontology](inferred_version/battery-inferred.ttl). You can then simply open the file in Protégé and explore its content or load the ontology into python using EMMOntoPy.
+
+In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), you can choose to import the ontology from your local downloaded copy or directly from the web. Commands for both options are given below:
 
 ```python
 from ontopy import get_ontology
 
 # Loading from local repository
-battery = get_ontology('/path/to/domain-battery/battery.ttl').load(url_from_catalog=True)
+battery = get_ontology('/path/to/domain-battery/battery-inferred.ttl').load(url_from_catalog=True)
 
 # Loading from web
-battery = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-battery/master/battery.ttl').load()
+battery = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-battery/master/inferred_version/battery-inferred.ttl').load()
 ```
 
-## Contributing to the ontology
+## Contributing
 
-There are two ways you can contribute to the ontology.
+We welcome contributions from the community to enhance and expand the ontology. If you have suggestions, improvements, or additional chemical substance information to contribute, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
 
-### Suggest minor changes on existing elements
+### Acknowledgements
 
-[Create a feature request](https://github.com/emmo-repo/domain-battery/issues/new) in a [Github Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) to suggest edits to names, defintions, references on existing classes and properties.
+<img src="docs/assets/images/flag_of_europe.png" alt="EU-Flag" width="100">
 
-### Propose additions/deletion of elements
+This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
-> **_NOTE:_** We recommend contacting some of the [BattINFO](https://github.com/BIG-MAP/BattINFO) contributors in advance to discuss which additions and/or deletions you wish to make.  
-
-We recommend using the [forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) to contribute additions/deletions.
-Fork this repository, clone the fork on your local PC, create your branch based on the existing `dev` branch (e.g. `dev_john_doe`) and work on the editions in you local copy.
-
-You can edit ontologes in two main ways.
-One is programmatically, using for instance [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy).
-The second and more common is using the interface provided by the Protégé software.
-In case of the latter, [install Protégé](https://protege.stanford.edu/) and use it to open the ontology file you wish to edit.
-Before adding elements, ensure Prot´égé is configured to create IRIs in the right format:
-
-* Open Protégé
-* Go to File/Open and load the ontology file you wish to modify
-* Go to File/Preferences and there go to the New Entities Tab
-* Ensure you have configured the preferences as shown below:
-
-  ![Protege config.](doc/img/protege_config_contribute.png)  
-  Here is the "Specified IRI" for you to copy: `https://emmo.info/battery#`
-
-* Once you have made your changes, commit them to your fork and [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
-* We will merge the request after assessing it.
-
-## Attributions and credits
-
-### Contributors
-
-* Simon Clark, SINTEF, Norway
-* Eibar Flores, SINTEF, Norway
-* Francesca Lønstad Bleken, SINTEF, Norway
-* Jesper Friis, SINTEF, Norway
-* Casper Welzel Andersen, SINTEF, Norway
-* Martin Uhrin, EPFL, Switzerland
-* Simon Stier, Fraunhofer, Germany
-* Marek Marcinek, Warsaw University of Technology, Poland
-* Anna Szczesna, Warsaw University of Technology, Poland
-* Miran Gaberscek, National Institute of Chemistry, Slovenia
-* Deyana Stoytcheva, ICMAB, Spain
-* Rosa Palacin, ICMAB, Spain
-* Ingeborg-Helene Svenum, SINTEF, Norway
-* Inga Gudem Ringdalen, SINTEF, Norway
-* Emanuele Farhi, SOLEIL synchrotron, France
-
-### Projects
-
-* [BIG-MAP][2]; Grant Agreement No: 957189 <img src="doc/img/bigmap.png" alt="BIG-MAP" width="30">
+* 957189 - [BIG-MAP](http://www.big-map.eu/) 
 
 ## License
 
