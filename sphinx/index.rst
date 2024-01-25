@@ -4,7 +4,7 @@
 
    About <about>
    self
-   references
+   References <battery>
    Contribute <contribute>
    
 
@@ -180,8 +180,7 @@ Contributing
 
 We welcome contributions from the community to enhance and expand the
 ontology. If you have suggestions, improvements, or additional chemical
-substance information to contribute, please refer to our `Contribution
-Guidelines <CONTRIBUTING.md>`__.
+substance information to contribute, please refer to our :ref:`contributing guidelins<contribute:Contributing to the ontology>`.
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
