@@ -2,8 +2,10 @@
    :includehidden:
    :hidden:
 
+   About <about>
    self
-   battery
+   references
+   Contribute <contribute>
    
 
 Battery Domain Ontology

@@ -104,6 +104,9 @@ def entities_to_rst(entities: list[dict]) -> str:
                 rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
                 if value.startswith("http"):
                     value = f"""<a href='{value}'>{value}</a>"""
+                value = value.encode('ascii', 'xmlcharrefreplace')
+                value = value.decode('utf-8')
+                value = value.replace('\n', '\n' + indent)
                 rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
                 rst += indent + "</tr>\n"
 
@@ -136,7 +139,7 @@ def rendering_workflow():
     ]
 
     # GENERATE PAGES
-    rst_filename = "battery.rst"
+    rst_filename = "references.rst"
 
     rst = render_rst_top()
 

@@ -1837,7 +1837,7 @@ LeclancheWetCell
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a wet battery invented and patented by the French scientist Georges Leclanché in 1866</td>
+  <td class="element-table-value">a wet battery invented and patented by the French scientist Georges Leclanch&#233; in 1866</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
@@ -3991,7 +3991,7 @@ ZincCarbonBattery
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery such as Leclanché or zinc chloride batteries</td>
+  <td class="element-table-value">primary battery such as Leclanch&#233; or zinc chloride batteries</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
