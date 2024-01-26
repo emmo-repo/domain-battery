@@ -1,5 +1,5 @@
-About Electrochemistry Domain Ontology
-======================================
+About Battery Domain Ontology
+=============================
 
 Contributors
 ------------
