@@ -4,7 +4,8 @@
 
    About <about>
    self
-   References <battery>
+   Class Index <battery>
+   Resources <resources>
    Contribute <contribute>
    
 
@@ -178,9 +179,9 @@ directly from the web. Commands for both options are given below:
 Contributing
 ------------
 
-We welcome contributions from the community to enhance and expand the
-ontology. If you have suggestions, improvements, or additional chemical
-substance information to contribute, please refer to our :ref:`contributing guidelins<contribute:Contributing to the ontology>`.
+We welcome contributions from the community to enhance and expand the ontology. If you have suggestions, improvements,
+or additional chemical substance information to contribute, please refer to our :ref:`contributing
+guidelins<contribute:Contributing to the ontology>`.
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
