@@ -5,7 +5,7 @@
 
    Get Started <getstarted>
    Examples <examples>
-   Class Index <electrochemistry>
+   Class Index <battery>
    About <about>
    FAQ <faq>
 
