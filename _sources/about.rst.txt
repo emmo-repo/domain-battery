@@ -1,92 +1,48 @@
-Battery Domain Ontology
-=======================
+About the Electrochemistry Ontology (ECHO)
+==========================================
+.. |DOI| image:: https://zenodo.org/badge/570454941.svg
+   :target: https://zenodo.org/badge/latestdoi/570454941
 
-.. raw:: html
+The EMMO Electrochemistry Domain Ontology (ECHO) is a semantic resource for the terms and relations needed to describe things, processes, and data in the electrochemistry domain. It can be used to **generate linked data** for the Semantic Web, **comply with the FAIR data guidelines**, support **interoperaility of data** among different systems, and more!
 
-   <!-- [![CI tests](https://github.com/emmo-repo/domain-battery/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-battery/actions/) -->
+ECHO is intended to support researchers, engineers, and developers within the electrochemical
+communitiy with activities like:
 
-The Battery Domain Ontology is a specialized domain within the
-Elementary Multiperspective Materials Ontology
-`(EMMO) <https://github.com/emmo-repo/EMMO>`__, that encompasses
-essential terms and relationships for battery systems, materials,
-methods, and data. Its primary objective is to enable the creation of
-linked and FAIR (Findable, Accessible, Interoperable, and Reusable)
-data, thereby fostering advancements in research and innovation within
-the realm of battery. This ontology serves as a foundational resource
-for harmonizing battery knowledge representation, enhancing data
-interoperability, and accelerating progress in battery research and
-development.
+-  Incorporating consistent and standardized information into their modeling and simulation activities.
+-  Enhancing data interoperability between modeling tools, databases, and platforms.
+-  Supporting research projects that require precise and standardized electrochemical knowledge representation.
+-  Building applications, databases, or knowledge graphs that leverage EMMO and require electrochemical information.
+-  Generating linked data in the semantic web.
+-  Complying with `FAIR data guidelines <FAIR.md>`__.
 
-A reference documentation is available in
-`html <https://emmo-repo.github.io/domain-battery/index.html>`__ and
-`pdf <https://emmo-repo.github.io/domain-battery/battery.pdf>`__
-formats.
+Key features of the ontology
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Persistent Identifiers
-~~~~~~~~~~~~~~~~~~~~~~
+Persistent machine-readable identifiers
+---------------------------------------
 
-This ontology assigns persistent machine-readable identifiers to
-concepts from the battery domain. These identifiers facilitate data
-exchange and interoperability among various tools and systems. It
-includes annotations to other sources of information including
-`DBPedia <https://www.dbpedia.org/>`__ and
-`Wikidata <https://www.wikidata.org/>`__.
+This ontology assigns persistent machine-readable identifiers (called URIs or IRIs) to concepts from the electrochemistry domain. These identifiers can be resolved to point to human-readable documentation for the term or machine-readable ontology files. Persistent and unique identifiers facilitate data exchange and interoperability among various tools and systems by ensuring consistent nomenclature and providing access to context about the term. 
 
 Standardized Nomenclature
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
-The ontology builds on standardized nomenclature for battery, relying on
-recognized authorities including
-`IUPAC <https://iupac.org/what-we-do/nomenclature/>`__ and the
-`IEC <https://www.electropedia.org/>`__. IUPAC is the
-universally-recognized authority on chemical nomenclature and
-terminology, and IEC is the the world’s leading organization that
-prepares and publishes International Standards for all electrical,
-electronic and related technologies. This consistency in naming
-conventions enhances collaboration and data sharing.
+The ontology builds on standardized nomenclature for electrochemistry, relying on recognized authorities. This consistency in nomenclature enhances collaboration and data sharing. In order of precedence, this includes: 
 
-Key Features
-------------
+#. `Public IEC/ISO standard vocabulary <https://www.electropedia.org/>`__ The IEC is the the world’s leading organization that prepares and publishes International Standards for all electrical, electronic and related technologies.
+#. `IUPAC Goldbook <https://iupac.org/what-we-do/nomenclature/>`__. IUPAC is the universally-recognized authority on chemical nomenclature and terminology.
+#. Pre-eminent domain textbooks (e.g. `Bard <https://www.wiley.com/en-kr/Electrochemical+Methods:+Fundamentals+and+Applications,+2nd+Edition-p-9780471043720>`__, `Newman <https://www.wiley.com/en-no/Electrochemical+Systems,+4th+Edition-p->`__, etc.)
+#. Discussions with leading figures in electrochemical research
 
--  Seamless integration with the EMMO ontology.
--  Provides persistent machine-readable identifiers for battery systems,
-   devices, methods, datasets, and quantities.
--  Standardized nomenclature for battery entities.
--  Facilitates data exchange and interoperability within the EMMO
-   ecosystem.
+Through a set of term annotations, the ontology also provides links to equivalent terms in other digital knowledge bases, including:
 
-Usage
------
-
-Researchers, domain experts, and developers within the battery
-communities can utilize the ontology for various purposes, including:
-
--  Incorporating consistent and standardized information into their
-   modeling and simulation activities.
--  Enhancing data interoperability between modeling tools, databases,
-   and platforms.
--  Supporting research projects that require precise and standardized
-   battery knowledge representation.
--  Building applications, databases, or knowledge graphs that leverage
-   EMMO and require battery information.
--  Generating linked data in the semantic web.
--  Complying with FAIR data mandates (FAIR Guidelines available
-   `here <FAIR.md>`__)
+#. `DBpedia <https://www.dbpedia.org/>`__
+#. `WikiData <https://www.wikidata.org/>`__
+#. `Wikipedia <https://www.wikipedia.org/>`__
 
 Structure and Integration with EMMO
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Battery Domain Ontology is an official domain on the EMMO. The
-asserted source consists of two files: - ``battery.ttl``: describes
-terms and object properties for the battery domain. -
-``batteryquantities.ttl``: describes the physical quantities related to
-the battery domain. It is encapsulated to allow it to be imported by
-other EMMO domains without needing to import the entire ontology.
-
-The battery domain also imports other EMMO domains: - `Chemical
-Substance Domain
-Ontology <https://github.com/emmo-repo/domain-chemical-substance>`__:
-provides material annotations for battery (meta)data.
+The Electrochemistry Ontology is an official domain of the EMMO. This allows users to benefit from a well-developed and logically consistent framework as well as interoperability with other EMMO domains. For example, the Electrochemistry Ontology also imports other EMMO domains: - `Chemical Substance Domain Ontology <https://github.com/emmo-repo/domain-chemical-substance>`__: provides material annotations for electrochemical (meta)data.
 
 The import structure is summarized in the following table:
 
@@ -99,94 +55,21 @@ The import structure is summarized in the following table:
      - 1.0.0-beta5
    * - chemical-substance
      - 0.2.0-alpha 
-   * - electrochmistry
-     - 0.7.0-alpha
-       
-For simplicity, we complie the source files and other imports into a
-`pre-inferred ontology <inferred_version/battery-inferred.ttl>`__. This
-is the result of running the asserted source files through a semantic
-reasoner and includes both asserted and inferred properties in a clear
-graph.
 
-Getting Started
----------------
+The onotlogy exists in two forms: (i) the asserted source files and (ii) the pre-inferred version. 
 
-Prerequisites
-~~~~~~~~~~~~~
+The asserted source consists of two files: - ``electrochemistry.ttl``: describes terms and object properties for the electrochemistry domain. - ``electrochemicalquantities.ttl``: describes the quantities related to the electrochemistry domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
 
-Before you begin, we recommend that you install the following tools.
-They are not all required, but greatly simplify the process of working
-with ontologies:
-
--  `Protégé <https://protege.stanford.edu/>`__ (a graphical ontology
-   editor)
-
-   -  Installation instructions are available
-      `here <https://protege.stanford.edu/software.php#desktop-protege>`__.
-
--  `EMMOntoPy <https://github.com/emmo-repo/EMMOntoPy>`__ (python
-   package for working with EMMO ontologies)
-
-   -  Installation instructions are available
-      `here <https://github.com/emmo-repo/EMMOntoPy#installation>`__.
-
--  `RDFLib <https://rdflib.readthedocs.io/en/stable/>`__ (optional,
-   python package for working with RDF graphs)
-
-   -  Installation instructions are available
-      `here <https://rdflib.readthedocs.io/en/stable/gettingstarted.html>`__.
-
--  `VS Studio Code <https://code.visualstudio.com/>`__ (optional, a code
-   editor with extensions for RDF formats like TTL and JSON-LD)
-
-   -  Installation instructions are available
-      `here <https://code.visualstudio.com/download>`__.
-
-Quick Start
-~~~~~~~~~~~
-
-To quickly explore and make use of the ontology, first download the
-pre-inferred version `pre-inferred
-ontology <inferred_version/battery-inferred.ttl>`__. You can then simply
-open the file in Protégé and explore its content or load the ontology
-into python using EMMOntoPy.
-
-In `EMMOntoPy <https://github.com/emmo-repo/EMMOntoPy>`__, you can
-choose to import the ontology from your local downloaded copy or
-directly from the web. Commands for both options are given below:
-
-.. code:: python
-
-   from ontopy import get_ontology
-
-   # Loading from local repository
-   battery = get_ontology('/path/to/domain-battery/battery-inferred.ttl').load(url_from_catalog=True)
-
-   # Loading from web
-   battery = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-battery/master/inferred_version/battery-inferred.ttl').load()
-
-Contributing
-------------
-
-We welcome contributions from the community to enhance and expand the ontology. If you have suggestions, improvements,
-or additional chemical substance information to contribute, please refer to our :ref:`contributing
-guidelins<contribute:Contributing to the ontology>`.
+The pre-inferred ontology runs the reasoner on the source files and their imports and complies them into a `pre-inferred ontology file <inferred_version/electrochemistry-inferred.ttl>`__. This provides a simpler reference for users of the ontology and removes the barrier of needed to run the reasoner themselves. 
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
 
-This project has received support from European Union research and
-innovation programs, under grant agreement numbers:
+This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
 -  957189 - `BIG-MAP <http://www.big-map.eu/>`__
 
 License
 -------
 
-The Battery Interface Domain Ontology is released under the `Creative
-Commons Attribution 4.0
-International <https://creativecommons.org/licenses/by/4.0/legalcode>`__
-license (CC BY 4.0).
-
-.. |DOI| image:: https://zenodo.org/badge/570454101.svg
-   :target: https://zenodo.org/badge/latestdoi/570454101
+The Battery Interface Domain Ontology is released under the `Creative Commons Attribution 4.0 International <https://creativecommons.org/licenses/by/4.0/legalcode>`__ license (CC BY 4.0).

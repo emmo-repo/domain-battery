@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Contributing to the ontology &#8212; BattInfo  documentation</title>
+    <title>FAQ Page &#8212; BattInfo  documentation</title>
   
   
   
@@ -44,11 +44,12 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/design-tabs.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'contribute';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'faq';</script>
     <link rel="shortcut icon" href="_static/battinfologo.ico"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="About the Electrochemistry Ontology (ECHO)" href="about.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,8 +158,8 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="faq.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         FAQ
                       </a>
                     </li>
@@ -261,8 +262,8 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="faq.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         FAQ
                       </a>
                     </li>
@@ -323,7 +324,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Contributing to the ontology</li>
+    <li class="breadcrumb-item active" aria-current="page">FAQ Page</li>
   </ul>
 </nav>
 </div>
@@ -340,56 +341,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="contributing-to-the-ontology">
-<h1>Contributing to the ontology<a class="headerlink" href="#contributing-to-the-ontology" title="Permalink to this heading">#</a></h1>
-<p>There are two ways you can contribute to the ontology.</p>
-<section id="suggest-minor-changes-on-existing-elements">
-<h2>Suggest minor changes on existing elements<a class="headerlink" href="#suggest-minor-changes-on-existing-elements" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://github.com/emmo-repo/domain-battery/issues/new">Create a feature
-request</a> in a
-<a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">Github
-Issue</a>
-to suggest edits to names, defintions, references on existing classes
-and properties.</p>
-</section>
-<section id="propose-additions-deletion-of-elements">
-<h2>Propose additions/deletion of elements<a class="headerlink" href="#propose-additions-deletion-of-elements" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><p><strong>NOTE:</strong> We recommend contacting some of the
-<a class="reference external" href="https://github.com/BIG-MAP/BattINFO">BattINFO</a> contributors in
-advance to discuss which additions and/or deletions you wish to make.</p>
-</div></blockquote>
-<p>We recommend using the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking
-workflow</a>
-to contribute additions/deletions. Fork this repository, clone the fork
-on your local PC, create your branch based on the existing <code class="docutils literal notranslate"><span class="pre">dev</span></code>
-branch (e.g. <code class="docutils literal notranslate"><span class="pre">dev_john_doe</span></code>) and work on the editions in you local
-copy.</p>
-<p>You can edit ontologes in two main ways. One is programmatically, using
-for instance <a class="reference external" href="https://github.com/emmo-repo/EMMOntoPy">EMMOntoPy</a>. The
-second and more common is using the interface provided by the Protégé
-software. In case of the latter, <a class="reference external" href="https://protege.stanford.edu/">install
-Protégé</a> and use it to open the
-ontology file you wish to edit. Before adding elements, ensure Prot´égé
-is configured to create IRIs in the right format:</p>
-<ul>
-<li><p>Open Protégé</p></li>
-<li><p>Go to File/Open and load the ontology file you wish to modify</p></li>
-<li><p>Go to File/Preferences and there go to the New Entities Tab</p></li>
-<li><p>Ensure you have configured the preferences as shown below:</p>
-<div class="line-block">
-<div class="line"><img alt="Protege config." src="doc/img/protege_config_contribute.png" /></div>
-<div class="line">Here is the “Specified IRI” for you to copy:
-<code class="docutils literal notranslate"><span class="pre">https://emmo.info/battery#</span></code></div>
-</div>
-</li>
-<li><p>Once you have made your changes, commit them to your fork and <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">create
-a pull
-request</a>.</p></li>
-<li><p>We will merge the request after assessing it.</p></li>
-</ul>
-</section>
-</section>
+  <section id="faq-page">
+<h1>FAQ Page<a class="headerlink" href="#faq-page" title="Permalink to this heading">#</a></h1>
+<div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <summary itemprop="name">What is the Electrochemistry Ontology?</summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">
+                A resource for creating semantic linked data related to electrochemical materials, components, cells, and testing data. It is part of the EMMO universe.
+            </p>
+        </div>
+    </details>
+    <!-- Repeat for each question -->
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <summary itemprop="name">What do I use the Electrochemistry Ontology for?</summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">
+                This ontology is used mostly for generating linked data in the Semantic Web and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe how things are related to each other. Terms and elucidations are derived from authoritative sources like the IEC and IUPAC, so you can be sure that your data & metadata are properly annotated.
+            </p>
+        </div>
+    </details>
+    <!-- Add more questions as needed -->
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <summary itemprop="name">How do I use the Electrochemistry Ontology?</summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">
+                Most people use the ontology is to annotate the terms in (meta)data schemas. A common and simple way to use the ontology is as a vocabulary in JSON-LD files. Check out our Examples to see how to do it. You can also visit the <a href="https://json-ld.org/playground/" target="_blank" rel="noopener noreferrer">JSON-LD Playground</a> for more detailed information.
+            </p>
+        </div>
+    </details>
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <summary itemprop="name">Why shoud I use the Electrochemistry Ontology?</summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">
+                Get more value from your data and comply with the FAIR guidelines.
+            </p>
+        </div>
+    </details>
+</div></section>
 
 
                 </article>
@@ -402,6 +391,15 @@ request</a>.</p></li>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="about.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">About the Electrochemistry Ontology (ECHO)</p>
+      </div>
+    </a>
 </div></div>
   
 </div>
@@ -415,19 +413,8 @@ request</a>.</p></li>
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggest-minor-changes-on-existing-elements">Suggest minor changes on existing elements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#propose-additions-deletion-of-elements">Propose additions/deletion of elements</a></li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="_sources/contribute.rst.txt">
+    <a href="_sources/faq.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
