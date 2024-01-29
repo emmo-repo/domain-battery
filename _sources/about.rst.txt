@@ -1,11 +1,9 @@
-About the Electrochemistry Ontology (ECHO)
+About the Battery Ontology
 ==========================================
-.. |DOI| image:: https://zenodo.org/badge/570454941.svg
-   :target: https://zenodo.org/badge/latestdoi/570454941
 
-The EMMO Electrochemistry Domain Ontology (ECHO) is a semantic resource for the terms and relations needed to describe things, processes, and data in the electrochemistry domain. It can be used to **generate linked data** for the Semantic Web, **comply with the FAIR data guidelines**, support **interoperaility of data** among different systems, and more!
+The EMMO Battery Domain Ontology is a semantic resource for the terms and relations needed to describe things, processes, and data in the battery domain. It can be used to **generate linked data** for the Semantic Web, **comply with the FAIR data guidelines**, support **interoperaility of data** among different systems, and more!
 
-ECHO is intended to support researchers, engineers, and developers within the electrochemical
+The Battery Ontology is intended to support researchers, engineers, and developers within the electrochemical
 communitiy with activities like:
 
 -  Incorporating consistent and standardized information into their modeling and simulation activities.
@@ -58,9 +56,9 @@ The import structure is summarized in the following table:
 
 The onotlogy exists in two forms: (i) the asserted source files and (ii) the pre-inferred version. 
 
-The asserted source consists of two files: - ``electrochemistry.ttl``: describes terms and object properties for the electrochemistry domain. - ``electrochemicalquantities.ttl``: describes the quantities related to the electrochemistry domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
+The asserted source consists of two files: - ``battery.ttl``: describes terms and object properties for the electrochemistry domain. - ``batteryquantities.ttl``: describes the quantities related to the electrochemistry domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
 
-The pre-inferred ontology runs the reasoner on the source files and their imports and complies them into a `pre-inferred ontology file <inferred_version/electrochemistry-inferred.ttl>`__. This provides a simpler reference for users of the ontology and removes the barrier of needed to run the reasoner themselves. 
+The pre-inferred ontology runs the reasoner on the source files and their imports and complies them into a `pre-inferred ontology file <inferred_version/battery-inferred.ttl>`__. This provides a simpler reference for users of the ontology and removes the barrier of needed to run the reasoner themselves. 
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
