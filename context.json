@@ -1,6 +1,6 @@
 {
     "@context": {
-        "": "http://emmo.info/battery/battery-inferred#",
+        "batt": "http://emmo.info/battery/battery-inferred#",
         "brick": "https://brickschema.org/schema/Brick#",
         "csvw": "http://www.w3.org/ns/csvw#",
         "dc": "http://purl.org/dc/elements/1.1/",
