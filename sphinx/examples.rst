@@ -1,3 +1,8 @@
+.. toctree::
+   :hidden:
+      
+   example_linked_data_battery_cell_metadata.ipynb
+
 Examples
 ========
 
@@ -6,7 +11,7 @@ Here are some examples to help you get started. You are free to re-use or modify
 .. grid::
 
     .. grid-item-card::
-        :link: example_zinc_powder.html
+        :link: example_linked_data_battery_cell_metadata.html
 
         :octicon:`ruby;1em;sd-text-info`  Zinc Powder
         ^^^^^^^^^^^
