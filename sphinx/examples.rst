@@ -13,9 +13,9 @@ Here are some examples to help you get started. You are free to re-use or modify
     .. grid-item-card::
         :link: example_linked_data_battery_cell_metadata.html
 
-        :octicon:`ruby;1em;sd-text-info`  Zinc Powder
+        :octicon:`diff;1em;sd-text-info`  Simple Battery Cell Metadata
         ^^^^^^^^^^^
-        A zinc powder material from a manufacturer with properties defined in a specification sheet.
+        Metadata for a simple CR2032 coin cell, combined with some exercises for working with Linked Data.
 
     .. grid-item-card::
         :link: example_zinc_electrode.html
