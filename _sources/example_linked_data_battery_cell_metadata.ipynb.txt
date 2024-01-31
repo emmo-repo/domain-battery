@@ -69,7 +69,7 @@
       "metadata": {
         "id": "gohQKEBrF2QP"
       },
-      "execution_count": 34,
+      "execution_count": 42,
       "outputs": []
     },
     {
@@ -100,7 +100,7 @@
       "metadata": {
         "id": "wk4sFl_eA2ML"
       },
-      "execution_count": 35,
+      "execution_count": 43,
       "outputs": []
     },
     {
@@ -141,24 +141,24 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "zWibLw6NIrrq",
-        "outputId": "09dfdeb2-3bc8-49c9-d2cb-0803401cf66f"
+        "outputId": "6be74891-73f3-43ff-a4d1-29b6697f8b11"
       },
-      "execution_count": 36,
+      "execution_count": 44,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "(rdflib.term.BNode('N0e334dbcbe344cd791c0c0b88375c497'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('230', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')))\n",
-            "(rdflib.term.BNode('N60da2e4d15f44eb58cb2133c48842d95'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
-            "(rdflib.term.BNode('Nd3a2a6d51f994876bf7791d4d9b3dda5'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('file:///content/NominalCapacity'))\n",
-            "(rdflib.term.BNode('Nd3a2a6d51f994876bf7791d4d9b3dda5'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('http://emmo.info/emmo#MilliAmpereHour'))\n",
-            "(rdflib.term.BNode('N60da2e4d15f44eb58cb2133c48842d95'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My CR2032 Coin Cell'))\n",
-            "(rdflib.term.BNode('Nd3a2a6d51f994876bf7791d4d9b3dda5'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
-            "(rdflib.term.BNode('Nd3a2a6d51f994876bf7791d4d9b3dda5'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('N0e334dbcbe344cd791c0c0b88375c497'))\n",
-            "(rdflib.term.BNode('N60da2e4d15f44eb58cb2133c48842d95'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('Nd3a2a6d51f994876bf7791d4d9b3dda5'))\n",
-            "(rdflib.term.BNode('N60da2e4d15f44eb58cb2133c48842d95'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b'))\n",
-            "(rdflib.term.BNode('N0e334dbcbe344cd791c0c0b88375c497'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n",
+            "(rdflib.term.BNode('N4c3bba051ecb4cb7a8336502c67cf29b'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('file:///content/NominalCapacity'))\n",
+            "(rdflib.term.BNode('N4c52ea3012a7451c8194bcd5f42b1679'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
+            "(rdflib.term.BNode('Nc3ad291a291c481481cd4df5c311af50'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n",
+            "(rdflib.term.BNode('N4c3bba051ecb4cb7a8336502c67cf29b'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('http://emmo.info/emmo#MilliAmpereHour'))\n",
+            "(rdflib.term.BNode('N4c3bba051ecb4cb7a8336502c67cf29b'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('Nc3ad291a291c481481cd4df5c311af50'))\n",
+            "(rdflib.term.BNode('N4c52ea3012a7451c8194bcd5f42b1679'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b'))\n",
+            "(rdflib.term.BNode('Nc3ad291a291c481481cd4df5c311af50'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('230', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')))\n",
+            "(rdflib.term.BNode('N4c52ea3012a7451c8194bcd5f42b1679'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My CR2032 Coin Cell'))\n",
+            "(rdflib.term.BNode('N4c3bba051ecb4cb7a8336502c67cf29b'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
+            "(rdflib.term.BNode('N4c52ea3012a7451c8194bcd5f42b1679'), rdflib.term.URIRef('http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('N4c3bba051ecb4cb7a8336502c67cf29b'))\n",
             "(rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('SINTEF'))\n"
           ]
         }
@@ -231,9 +231,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "6bXHGG4cI-kr",
-        "outputId": "ddb69b5a-8fd8-4216-f521-8dec92022bad"
+        "outputId": "5c79fa6e-50a4-4fc2-c513-149bd8cd9170"
       },
-      "execution_count": 37,
+      "execution_count": 45,
       "outputs": [
         {
           "output_type": "stream",
@@ -250,7 +250,7 @@
         "## Fetch additional information from other sources [Advanced]\n",
         "Ontologies contain a lot of information about the meaning of things, but they don't always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let's see how you can use the ontology to fetch additional information from other sources.\n",
         "\n",
-        "First, we parse the ontology into the knowledge graph and retrieve the IRIs for the terms that we are interested in. In this case, we want to retrieve more information about Zinc from Wikidata, so we query the ontology to find Zinc's Wikidata ID."
+        "First, we parse the ontology into the knowledge graph and retrieve the IRIs for the terms that we are interested in. In this case, we want to retrieve more information about CR2032 from Wikidata, so we query the ontology to find CR2032's Wikidata ID."
       ],
       "metadata": {
         "id": "b7LJC8BubFce"
@@ -291,9 +291,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "ntT1Rf_yM6sZ",
-        "outputId": "2dd24edb-94ed-41fa-e4e5-7e2376780dd3"
+        "outputId": "7eb1b90f-c97e-4d1e-b311-ca9355501c2e"
       },
-      "execution_count": 38,
+      "execution_count": 46,
       "outputs": [
         {
           "output_type": "stream",
@@ -346,9 +346,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "zTBOZAf-dWQQ",
-        "outputId": "e5ab5940-155a-4847-8c92-2f8154a306db"
+        "outputId": "9f9d1c00-d74f-4c76-ceb5-b58b21853c41"
       },
-      "execution_count": 39,
+      "execution_count": 47,
       "outputs": [
         {
           "output_type": "stream",
@@ -397,9 +397,9 @@
           "height": 339
         },
         "id": "T7bkBY0sNqNY",
-        "outputId": "6940b0d9-e644-4dca-c3a7-3bdc58650773"
+        "outputId": "c9c3bcf4-d278-4acd-a93b-5a7d553d66fd"
       },
-      "execution_count": 40,
+      "execution_count": 48,
       "outputs": [
         {
           "output_type": "stream",
@@ -434,7 +434,7 @@
     {
       "cell_type": "code",
       "source": [
-        "# SPARQL query to get the image of the CR2032 cell\n",
+        "# SPARQL query to get the Google Knowledge Graph ID of the CR2032 cell\n",
         "query = \"\"\"\n",
         "SELECT ?id WHERE {\n",
         "  wd:%s wdt:P2671 ?id .\n",
@@ -445,7 +445,7 @@
         "response = requests.get(wikidata_endpoint, params={'query': query, 'format': 'json'})\n",
         "data = response.json()\n",
         "\n",
-        "# Extract and display the image URL\n",
+        "# Extract and display the Google Knowledge Graph ID\n",
         "if data['results']['bindings']:\n",
         "    gkgid = data['results']['bindings'][0]['id']['value']\n",
         "    gkgns = 'https://www.google.com/search?kgmid='\n",
@@ -460,9 +460,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "nAAC5bo8FLD6",
-        "outputId": "a6ddbace-7aad-4384-a18c-e76b33c1bbc7"
+        "outputId": "d3543deb-ce22-4d90-f054-6b705c94fb49"
       },
-      "execution_count": 41,
+      "execution_count": 49,
       "outputs": [
         {
           "output_type": "stream",
@@ -479,7 +479,7 @@
       "metadata": {
         "id": "T1qUAeCDVNq3"
       },
-      "execution_count": 41,
+      "execution_count": 49,
       "outputs": []
     }
   ]
