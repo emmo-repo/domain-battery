@@ -3550,7 +3550,7 @@ PrismaticBattery
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">a battery cell in a rigid parallelpiped container with rectangular faces</td>
+  <td class="element-table-value">a battery cell in a rigid container with rectangular faces</td>
   </tr>
   </table>
 
@@ -3775,6 +3775,10 @@ SilverBattery
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">cell containing a positive electrode with an active material of silver or containing silver</td>
+  </tr>
   </table>
 
 
@@ -3790,6 +3794,10 @@ SilverOxideBattery
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">cell containing a positive electrode with an active material of silver oxide or containing silver oxide</td>
+  </tr>
   </table>
 
 
@@ -4252,6 +4260,10 @@ ZincAirBattery
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a type of metal-air battery with a zinc negative electrode</td>
+  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ZAB</td>
