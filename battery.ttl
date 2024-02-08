@@ -12,9 +12,9 @@
 @base <https://w3id.org/emmo/domain/battery/battery> .
 
 <https://w3id.org/emmo/domain/battery/battery> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.7.0-alpha/battery> ;
+                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.7.0-beta/battery> ;
                                                 owl:imports <https://w3id.org/emmo/domain/battery/0.7.0-alpha/batteryquantities> ,
-                                                            <https://w3id.org/emmo/domain/electrochemistry/0.8.0-alpha/electrochemistry> ;
+                                                            <https://w3id.org/emmo/domain/electrochemistry/0.9.0-beta/electrochemistry> ;
                                                 dcterms:abstract "The Battery Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for battery components, cells, interfaces, methods, models, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of batteries. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development." ;
                                                 dcterms:contributor "Casper Welzel Andersen" ,
                                                                     "Francesca Lonstad Bleken" ,
@@ -26,7 +26,7 @@
 Simon Clark
 SINTEF Industry
 email: simon.clark@sintef.no"""@en ;
-                                                owl:versionInfo "0.7.0-alpha" .
+                                                owl:versionInfo "0.7.0-beta" .
 
 #################################################################
 #    Classes
@@ -934,6 +934,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e
                                                               ] ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell containing a positive electrode with an active material of silver or containing silver"@en ;
                                               skos:prefLabel "SilverBattery"@en .
 
 
@@ -1298,7 +1299,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603
                                                               ] ;
                                               owl:disjointWith :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
-                                              rdfs:comment "a battery cell in a rigid parallelpiped container with rectangular faces"@en ;
+                                              rdfs:comment "a battery cell in a rigid container with rectangular faces"@en ;
                                               skos:prefLabel "PrismaticBattery"@en .
 
 
@@ -2233,6 +2234,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d
                                                               ] ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell containing a positive electrode with an active material of silver oxide or containing silver oxide"@en ;
                                               skos:prefLabel "SilverOxideBattery"@en .
 
 
@@ -2340,6 +2342,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5
                                                               ] ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q204582"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of metal-air battery with a zinc negative electrode"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery"@en ;
                                               skos:altLabel "ZAB"@en ;
                                               skos:prefLabel "ZincAirBattery"@en .
@@ -2600,40 +2603,6 @@ email: simon.clark@sintef.no"""@en ;
                                                             "ShuttlecockBattery"@en ,
                                                             "SwingCell"@en ;
                                               skos:prefLabel "RockingChairBattery"@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://w3id.org/emmo/domain/battery#battery_16363d1a_d685_43a0_b0dd_fff06cbe4147
-:battery_16363d1a_d685_43a0_b0dd_fff06cbe4147 rdf:type owl:NamedIndividual ,
-                                                       electrochemistry:electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4 ;
-                                              rdfs:label "my_mno2_electrode"@en .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_7c45ec58_a229_4ee7_883c_d71b43db73af
-:battery_7c45ec58_a229_4ee7_883c_d71b43db73af rdf:type owl:NamedIndividual ,
-                                                       :battery_68ed592a_7924_45d0_a108_94d6275d57f0 ;
-                                              rdfs:label "my_cell"@en .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_b4305828_e950_4070_977c_8a02a9e4d0af
-:battery_b4305828_e950_4070_977c_8a02a9e4d0af rdf:type owl:NamedIndividual ,
-                                                       electrochemistry:electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd ;
-                                              rdfs:label "my_lithium_electrode"@en .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_c41a6ad6_8c61_48f5_b183_ed480774a7c6
-:battery_c41a6ad6_8c61_48f5_b183_ed480774a7c6 rdf:type owl:NamedIndividual ,
-                                                       electrochemistry:electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3 ;
-                                              rdfs:label "my_R2032_case"@en .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_ebcbb178_bc2d_40bd_bbcd_c7303a71f329
-:battery_ebcbb178_bc2d_40bd_bbcd_c7303a71f329 rdf:type owl:NamedIndividual ,
-                                                       electrochemistry:electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
-                                              rdfs:label "my_organic_electrolyte"@en .
 
 
 #################################################################
