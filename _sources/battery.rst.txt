@@ -19,10 +19,6 @@ Alkaline4SR44
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical alkaline zinc manganese dioxide battery cell with 4 LR44 cells in series</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">4LR44</td>
   </tr>
@@ -45,10 +41,6 @@ AlkalineA23
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical alkaline zinc manganese dioxide battery cell with 8LR932 cells in series</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">8LR932</td>
@@ -73,10 +65,6 @@ AlkalineA27
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical alkaline zinc manganese dioxide battery cell with 8 LR732 cells in series</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">8LR732</td>
   </tr>
@@ -96,14 +84,6 @@ AlkalineCell
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing an alkaline electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-08'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-08</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the term Alkaline Battery is often used to describe alkaline zinc manganese dioxide batteries (IEC code: L)</td>
   </tr>
@@ -122,10 +102,6 @@ AlkalineLanternBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">an alkaline zinc manganese dioxide battery cell with 4 LR25 cells in series</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">4LR25</td>
@@ -150,10 +126,6 @@ AlkalinePP3
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a prismatic alkaline zinc manganese dioxide battery cell, usually with 6 LR61 cells in series and a nominal voltage of 9 V</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">6LP3146, E, NineVoltBattery</td>
   </tr>
@@ -172,14 +144,6 @@ AlkalineZincAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">metal air battery with an alkaline electrolyte and a negative electrode of zinc</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-02'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-02</a></td>
-  </tr>
   </table>
 
 
@@ -196,24 +160,8 @@ AlkalineZincManganeseDioxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with an alkaline electrolyte, a positive electrode containing manganese dioxide and a negative electrode of zinc</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-03</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Alkaline_battery'>https://en.wikipedia.org/wiki/Alkaline_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q861345'>https://www.wikidata.org/wiki/Q861345</a></td>
   </tr>
   </table>
 
@@ -230,14 +178,6 @@ AluminiumAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with an aluminium negative electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Aluminium%E2%80%93air_battery'>https://en.wikipedia.org/wiki/Aluminium%E2%80%93air_battery</a></td>
-  </tr>
   </table>
 
 
@@ -253,18 +193,6 @@ AluminiumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of aluminium or containing aluminium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Aluminium_battery'>https://en.wikipedia.org/wiki/Aluminium_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q85741073'>https://www.wikidata.org/wiki/Q85741073</a></td>
-  </tr>
   </table>
 
 
@@ -280,18 +208,6 @@ AluminiumShuttleBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a secondary battery that combines an aluminium negative electrode with an aluminium insertion positive electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Aluminium-ion_battery'>https://en.wikipedia.org/wiki/Aluminium-ion_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q15732670'>https://www.wikidata.org/wiki/Q15732670</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the name "aluminium-ion battery" is a misnomer because it uses an aluminium metal negative electrode rather than an insertion (intercalation) negative electrode</td>
@@ -311,10 +227,6 @@ AqueousMetallicFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a full redox flow battery with aqueous electrolytes that contain metallic species as the active components</td>
-  </tr>
   </table>
 
 
@@ -330,10 +242,6 @@ AqueousOrganicFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a full redox flow battery with aqueous electrolytes that contain organic species as the active components</td>
-  </tr>
   </table>
 
 
@@ -350,24 +258,8 @@ Battery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ElectricBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-04</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Electric_battery'>https://en.wikipedia.org/wiki/Electric_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q267298'>https://www.wikidata.org/wiki/Q267298</a></td>
   </tr>
   </table>
 
@@ -384,14 +276,6 @@ BatteryBase
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">support base, generally of insulating material for stationary secondary cells, batteries or monobloc batteries</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-09'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-09</a></td>
-  </tr>
   </table>
 
 
@@ -408,16 +292,8 @@ BatteryCell
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">basic functional unit, consisting of an assembly of electrodes, electrolyte, container, terminals and usually separators, that is a source of electric energy obtained by direct conversion of chemical energy.</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">Cell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-01'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-01</a></td>
   </tr>
   </table>
 
@@ -449,14 +325,6 @@ BatteryCrate
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">container with frame walls for holding several cells or batteries</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-10'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-10</a></td>
-  </tr>
   </table>
 
 
@@ -472,10 +340,6 @@ BatteryCycler
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">A device for performing cycling measurements of a battery.</td>
-  </tr>
   </table>
 
 
@@ -551,10 +415,6 @@ BatteryInterface
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">An electrochemical interface within a battery cell.</td>
-  </tr>
   </table>
 
 
@@ -600,10 +460,6 @@ BatteryModule
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a modular assembly of multiple battery cells in a case, designed to be integrated into a larger battery pack</td>
-  </tr>
   </table>
 
 
@@ -619,14 +475,6 @@ BatteryOnFloat
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery whose terminals are permanently connected to a source of constant voltage sufficient to maintain the battery approximately fully charged, and which is intended to supply power to an electric circuit, if the normal supply is temporarily interrupted</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-35'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-35</a></td>
-  </tr>
   </table>
 
 
@@ -642,18 +490,6 @@ BatteryPack
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery containing multiple cells and a casing</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Battery_pack'>https://en.wikipedia.org/wiki/Battery_pack</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q420116'>https://www.wikidata.org/wiki/Q420116</a></td>
-  </tr>
   </table>
 
 
@@ -684,14 +520,6 @@ BatteryRack
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">support, stand or grating with one or more levels or tiers for the installation of cells or mono-bloc containers in a stationary battery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-24'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-24</a></td>
-  </tr>
   </table>
 
 
@@ -722,14 +550,6 @@ BatteryTray
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">container with a base and walls for holding several cells or batteries</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-35'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-35</a></td>
-  </tr>
   </table>
 
 
@@ -746,16 +566,8 @@ BufferBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery connected across a direct current supply in order to reduce the effects of power variations of the source.</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">BackUpBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-16'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-16</a></td>
   </tr>
   </table>
 
@@ -772,18 +584,6 @@ BunsenCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary zinc carbon battery with a zinc anode and carbon cathode and a dual electrolyte system of aqueous sulfuric acid and nitric or chromic acid</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Bunsen_cell'>https://en.wikipedia.org/wiki/Bunsen_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q901286'>https://www.wikidata.org/wiki/Q901286</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
@@ -803,10 +603,6 @@ CR2016
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a Li | MnO2 coin cell with a R2016 case</td>
-  </tr>
   </table>
 
 
@@ -822,14 +618,6 @@ CR2025
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a Li | MnO2 coin cell with a R2025 case</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q28955604'>https://www.wikidata.org/wiki/Q28955604</a></td>
-  </tr>
   </table>
 
 
@@ -845,14 +633,6 @@ CR2032
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a Li | MnO2 coin cell with a R2032 case</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q5013811'>https://www.wikidata.org/wiki/Q5013811</a></td>
-  </tr>
   </table>
 
 
@@ -868,10 +648,6 @@ CadmiumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of cadmium or containing cadmium</td>
-  </tr>
   </table>
 
 
@@ -887,10 +663,6 @@ CalciumAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a calcium negative electrode</td>
-  </tr>
   </table>
 
 
@@ -906,18 +678,6 @@ CalciumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of calcium or containing calcium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Calcium_battery'>https://en.wikipedia.org/wiki/Calcium_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q106611348'>https://www.wikidata.org/wiki/Q106611348</a></td>
-  </tr>
   </table>
 
 
@@ -933,10 +693,6 @@ CalciumIonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery with two calcium insertion electrodes</td>
-  </tr>
   </table>
 
 
@@ -952,10 +708,6 @@ CalciumSulfurBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery with a calcium negative electrode and a sulfur positive electrode</td>
-  </tr>
   </table>
 
 
@@ -971,18 +723,6 @@ ClarkCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a wet cell with zinc and mercury electrodes in a zinc sulfate solution, invented by English engineer Josiah Latimer Clark</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Clark_cell'>https://en.wikipedia.org/wiki/Clark_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q898656'>https://www.wikidata.org/wiki/Q898656</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
@@ -1003,20 +743,8 @@ CoinBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell with a cylindrical shape in which the overall height is less than the diameter e.g. in the shape of a button or a coin</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ButtonBatteryCell, ButtonCell, CoinBatteryCell, CoinCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-40'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-40</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Button_cell'>https://en.wikipedia.org/wiki/Button_cell</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -1038,16 +766,8 @@ CylindricalBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell with a cylindrical shape in which the overall height is equal to or greater than the diameter</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">CylindricalBatteryCell, CylindricalBatteryCell, CylindricalCell, CylindricalCell, RoundCell, RoundCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-39'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-39</a></td>
+  <td class="element-table-value">CylindricalBatteryCell, CylindricalCell, RoundCell</td>
   </tr>
   </table>
 
@@ -1064,18 +784,6 @@ DaniellCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with zinc and copper electrodes and a mixed electrolyte system of copper (II) sulfate and sulfuric acid</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Daniell_cell'>https://en.wikipedia.org/wiki/Daniell_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q749635'>https://www.wikidata.org/wiki/Q749635</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
@@ -1096,16 +804,8 @@ DischargedEmptyBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">discharged secondary battery, where the cells contain no electrolyte or one in which the electrolyte has been drained from the cells which are then sealed to keep out oxygen</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">DischargedUnfilledBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-31'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-31</a></td>
   </tr>
   </table>
 
@@ -1122,14 +822,6 @@ DrainedChargedBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">charged secondary battery where the cells contain a small quantity of electrolyte absorbed in the cell plates and in the plate separators</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-29'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-29</a></td>
-  </tr>
   </table>
 
 
@@ -1145,18 +837,6 @@ DryCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery containing an immobilized electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-14'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-14</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Dry_cell'>https://en.wikipedia.org/wiki/Dry_cell</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">developed in 1886 by the German scientist Carl Gassner</td>
@@ -1176,14 +856,6 @@ DryChargedBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of delivery of some types of secondary battery where the cells contain no electrolyte and the plates are dry and in a charged state</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-30'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-30</a></td>
-  </tr>
   </table>
 
 
@@ -1199,14 +871,6 @@ EarthBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery cell consisting of two electrodes that are buried in soil or immersed in the sea</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Earth_battery'>https://en.wikipedia.org/wiki/Earth_battery</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">sometimes used to power sensors in remote or sub-sea locations</td>
@@ -1242,16 +906,8 @@ EmergencyBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery which supplies electric energy to an electric circuit when the normal power supply of this electric circuit is interrupted.</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">BackUpBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-15'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-15</a></td>
   </tr>
   </table>
 
@@ -1268,14 +924,6 @@ FaurePlate
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">pasted flat plate with a grid current collector used in a lead acid battery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-19'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-19</a></td>
-  </tr>
   </table>
 
 
@@ -1291,14 +939,6 @@ FilledChargedBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of delivery of some types of secondary battery where the cells contain electrolyte and whose plates are in a charged state</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-32'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-32</a></td>
-  </tr>
   </table>
 
 
@@ -1314,14 +954,6 @@ FilledDischargedBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of delivery of some types of secondary battery where the cells contain electrolyte and whose plates are in a discharged state</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-33'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-33</a></td>
-  </tr>
   </table>
 
 
@@ -1338,16 +970,8 @@ FirstCharge
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">first charge given to a new secondary battery at beginning of its service life</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">InitialCharge</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-43'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-43</a></td>
   </tr>
   </table>
 
@@ -1364,18 +988,6 @@ FrogBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery comprising two electrodes of dissimilar metals with frog legs acting as the electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Frog_battery'>https://en.wikipedia.org/wiki/Frog_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q5505233'>https://www.wikidata.org/wiki/Q5505233</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">Luigi Galvani's early investigations of "animal electricity" with frog legs were a source of inspiration for Alessandro Volta's invention of the voltaic pile</td>
@@ -1395,10 +1007,6 @@ FullFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of redox flow battery that store electroactive material only in external tanks</td>
-  </tr>
   </table>
 
 
@@ -1414,18 +1022,6 @@ GroveCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with a zinc anode and platinum cathode in a sulfuric acid electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Grove_cell'>https://en.wikipedia.org/wiki/Grove_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2004643'>https://www.wikidata.org/wiki/Q2004643</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">invented by Welsh scientist William Robert Grove</td>
@@ -1446,10 +1042,6 @@ HR6
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a nickel metal-hydride cylindrical cell in an R6 (AA) case</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NiMHAABattery, NickelMetalHydrideAABattery</td>
   </tr>
@@ -1468,10 +1060,6 @@ HybridFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of redox flow battery comprising at least one solid electroactive material that is deposited or stripped within the stack</td>
-  </tr>
   </table>
 
 
@@ -1487,18 +1075,6 @@ HydrogenBromineBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery in which hydrogen bromide (HBr) serves as the electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery'>https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q17045938'>https://www.wikidata.org/wiki/Q17045938</a></td>
-  </tr>
   </table>
 
 
@@ -1529,14 +1105,6 @@ IronAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a iron negative electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Metal%E2%80%93air_electrochemical_cell#Iron'>https://en.wikipedia.org/wiki/Metal%E2%80%93air_electrochemical_cell#Iron</a></td>
-  </tr>
   </table>
 
 
@@ -1552,10 +1120,6 @@ IronBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of iron or containing iron</td>
-  </tr>
   </table>
 
 
@@ -1572,21 +1136,9 @@ IronRedoxFlowBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of redox flow battery that uses aqueous solutions of iron salt</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">IRB, ISB, IronSaltBattery</td>
   </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Iron_redox_flow_battery'>https://en.wikipedia.org/wiki/Iron_redox_flow_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q112649313'>https://www.wikidata.org/wiki/Q112649313</a></td>
-  </tr>
   </table>
 
 
@@ -1602,29 +1154,6 @@ KR6
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">NickelCadmiumAABattery</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2"></div>
-
-KR6
----
-
-* https://w3id.org/emmo/domain/battery#battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case</td>
-  </tr>
   </table>
 
 
@@ -1640,10 +1169,6 @@ LR03
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R03 case</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AAA, AlkalineAAABattery</td>
@@ -1668,10 +1193,6 @@ LR1
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical alkaline zinc manganese dioxide battery cell</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineNBattery, N</td>
   </tr>
@@ -1690,10 +1211,6 @@ LR12
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R12 case</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineBBattery, B</td>
@@ -1714,10 +1231,6 @@ LR14
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R14 case</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineCBattery, C</td>
   </tr>
@@ -1736,10 +1249,6 @@ LR20
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R20 case</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineDBattery, D</td>
@@ -1764,33 +1273,6 @@ LR23
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R23 case</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">AlkalineABattery</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_21634c62_62eb_4a4f_9210_fb056c0bf98f"></div>
-
-LR23
-----
-
-* https://w3id.org/emmo/domain/battery#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">usually contains a stack of four LR932 button cells shrink wrapped together</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineABattery</td>
   </tr>
@@ -1809,10 +1291,6 @@ LR25
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R25 case</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AlkalineFBatter</td>
@@ -1833,10 +1311,6 @@ LR44
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide button cell in a R1154 case</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LR1154</td>
   </tr>
@@ -1855,10 +1329,6 @@ LR6
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R6 case</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AA, AA, AlkalineAABattery, AlkalineAABattery</td>
@@ -1883,24 +1353,8 @@ LeadAcidBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an aqueous electrolyte based on dilute sulphuric acid, a positive electrode of lead dioxide and a negative electrode of lead</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LeadDioxideLeadBattery, LeadDioxideLeadBattery, LeadDioxideLeadBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-01'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-01</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery'>https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q337724'>https://www.wikidata.org/wiki/Q337724</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -1921,10 +1375,6 @@ LeadBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of lead or containing lead</td>
-  </tr>
   </table>
 
 
@@ -1940,18 +1390,6 @@ LeclancheBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a saline electrolyte based on ammonium chloride and zinc chloride, a positive electrode containing manganese dioxide and a negative electrode of zinc</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-08'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-08</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell'>https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell</a></td>
-  </tr>
   </table>
 
 
@@ -1967,14 +1405,6 @@ LeclancheWetCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a wet battery invented and patented by the French scientist Georges Leclanch&#233; in 1866</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell'>https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
@@ -1995,18 +1425,6 @@ LemonBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery with electrodes of zinc and copper inserted into a lemon as the electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lemon_battery'>https://en.wikipedia.org/wiki/Lemon_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q3621156'>https://www.wikidata.org/wiki/Q3621156</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
   </tr>
@@ -2025,18 +1443,6 @@ LithiumAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a lithium negative electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery'>https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q6126452'>https://www.wikidata.org/wiki/Q6126452</a></td>
-  </tr>
   </table>
 
 
@@ -2053,20 +1459,8 @@ LithiumBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a non-aqueous electrolyte and a negative electrode of lithium or containing lithium</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LithiumCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-06'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-06</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium_battery'>https://en.wikipedia.org/wiki/Lithium_battery</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -2087,14 +1481,6 @@ LithiumCarbonMonofluorideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a non-aqueous electrolyte, a positive electrode containing carbon monofluoride and a negative electrode of lithium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-09'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-09</a></td>
-  </tr>
   </table>
 
 
@@ -2110,14 +1496,6 @@ LithiumCopperOxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a non-aqueous electrolyte, a positive electrode containing copper oxide and a negative electrode of lithium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-11'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-11</a></td>
-  </tr>
   </table>
 
 
@@ -2133,18 +1511,6 @@ LithiumFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery with a lithium metal negative electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium-ion_flow_battery'>https://en.wikipedia.org/wiki/Lithium-ion_flow_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q17142201'>https://www.wikidata.org/wiki/Q17142201</a></td>
-  </tr>
   </table>
 
 
@@ -2160,22 +1526,6 @@ LithiumIonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an organic solvent electrolyte and positive and negative electrodes which utilize an intercalation compound in which lithium is stored</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-07'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-07</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium-ion_battery'>https://en.wikipedia.org/wiki/Lithium-ion_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2822895'>https://www.wikidata.org/wiki/Q2822895</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">a lithium ion battery does not contain lithium metal</td>
@@ -2196,16 +1546,8 @@ LithiumIonCobaltOxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium ion battery with a lithium cobalt oxide positive electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LCOBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q1865299'>https://www.wikidata.org/wiki/Q1865299</a></td>
   </tr>
   </table>
 
@@ -2222,10 +1564,6 @@ LithiumIonGraphiteBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium ion battery with a graphite negative electrode</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">GrBattery</td>
@@ -2246,20 +1584,8 @@ LithiumIonIronPhosphateBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium ion battery with a lithium iron phosphate positive electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LFPBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery'>https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q901551'>https://www.wikidata.org/wiki/Q901551</a></td>
   </tr>
   </table>
 
@@ -2277,16 +1603,8 @@ LithiumIonManganeseIronPhosphateBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium ion battery with a manganese iron phosphate positive electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LMFPBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/LMFP_battery'>https://en.wikipedia.org/wiki/LMFP_battery</a></td>
   </tr>
   </table>
 
@@ -2304,20 +1622,8 @@ LithiumIonManganeseOxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium ion battery with a lithium manganese oxide positive electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LMOBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium_ion_manganese_oxide_battery'>https://en.wikipedia.org/wiki/Lithium_ion_manganese_oxide_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q16911101'>https://www.wikidata.org/wiki/Q16911101</a></td>
   </tr>
   </table>
 
@@ -2354,14 +1660,6 @@ LithiumIonNickelManganeseCobaltOxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium-ion battery with a lithium nickel manganese cobalt oxide positive electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q93837163'>https://www.wikidata.org/wiki/Q93837163</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">there are many stoichiometry variations for lithium nickel manganese cobalt oxides, typically expressed as LiNi_xMn_yCo_zO2 where x+y+z = 1</td>
   </tr>
@@ -2381,16 +1679,8 @@ LithiumIonPolymerBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a rechargeable lithium-ion battery with a polymer electrolyte</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LIP, LiPo, LiPoly</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium_polymer_battery'>https://en.wikipedia.org/wiki/Lithium_polymer_battery</a></td>
   </tr>
   </table>
 
@@ -2426,10 +1716,6 @@ LithiumIonSiliconGraphiteBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium-ion battery with a blended silicon graphite negaitve electrode</td>
-  </tr>
   </table>
 
 
@@ -2445,10 +1731,6 @@ LithiumIonSiliconOxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium-ion battery with a silicon oxide negative electrode</td>
-  </tr>
   </table>
 
 
@@ -2464,10 +1746,6 @@ LithiumIonSiliconOxideGraphiteBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a lithium-ion battery with a blended silicon oxide graphite negative electrode</td>
-  </tr>
   </table>
 
 
@@ -2488,14 +1766,6 @@ LithiumIonTitanateBattery
   <td class="element-table-value">LTOBattery</td>
   </tr>
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium-titanate_battery'>https://en.wikipedia.org/wiki/Lithium-titanate_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2564903'>https://www.wikidata.org/wiki/Q2564903</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">a lithium ion battery with a lithium titanate (LTO) negative electrode</td>
   </tr>
@@ -2514,14 +1784,6 @@ LithiumIronDisulphideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a non-aqueous electrolyte, a positive electrode containing iron disulphide and a negative electrode of lithium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-12'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-12</a></td>
-  </tr>
   </table>
 
 
@@ -2537,14 +1799,6 @@ LithiumManganeseDioxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a non-aqueous electrolyte, a positive electrode containing manganese dioxide and a negative electrode of lithium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-10'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-10</a></td>
-  </tr>
   </table>
 
 
@@ -2560,14 +1814,6 @@ LithiumMetalBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a non-aqueous electrolyte and a negative electrode of lithium metal</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium_metal_battery'>https://en.wikipedia.org/wiki/Lithium_metal_battery</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">lithium metal batteries are often (but not always) primary cells</td>
@@ -2587,18 +1833,6 @@ LithiumSulfurBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of rechargeable battery notable for its high specific energy</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Lithium-sulfur_battery'>https://en.wikipedia.org/wiki/Lithium-sulfur_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q899170'>https://www.wikidata.org/wiki/Q899170</a></td>
-  </tr>
   </table>
 
 
@@ -2614,18 +1848,6 @@ LithiumThionylChlorideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a non-aqueous inorganic electrolyte, a positive electrode containing thionyl chloride and a negative electrode of lithium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-13'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-13</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q1537879'>https://www.wikidata.org/wiki/Q1537879</a></td>
-  </tr>
   </table>
 
 
@@ -2641,10 +1863,6 @@ MagnesiumAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a magnesium negative electrode</td>
-  </tr>
   </table>
 
 
@@ -2660,14 +1878,6 @@ MagnesiumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of magnesium or containing magnesium</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Magnesium_battery'>https://en.wikipedia.org/wiki/Magnesium_battery</a></td>
-  </tr>
   </table>
 
 
@@ -2683,10 +1893,6 @@ MagnesiumIonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a shuttle battery for magnesium ions with two magnesium insertion electrodes</td>
-  </tr>
   </table>
 
 
@@ -2732,14 +1938,6 @@ MaintanenceFreeBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery which, during the service life, requires no maintenance provided specified operating conditions are fulfilled</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-25'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-25</a></td>
-  </tr>
   </table>
 
 
@@ -2755,10 +1953,6 @@ MembranelessFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a redox flow battery that separates electrolytes by leveraging laminar flow, rather than using a typical ion-perm-selective membrane</td>
-  </tr>
   </table>
 
 
@@ -2775,20 +1969,8 @@ MercuryBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with a zinc anode and a mercuric oxide cathode in an alkaline electrolyte</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">MercuricOxideBattery, MercuricOxideBattery, MercuricOxideBattery, MercuricOxideBattery, RubenMalloryBattery, RubenMalloryBattery, RubenMalloryBattery, RubenMalloryBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Mercury_battery'>https://en.wikipedia.org/wiki/Mercury_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q899725'>https://www.wikidata.org/wiki/Q899725</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -2810,24 +1992,8 @@ MetalAirBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery in which atmospheric oxygen serves as the active material at the positive electrode and a metal as the active material of the negative electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">AirMetalBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-01'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-01</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell'>https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2891821'>https://www.wikidata.org/wiki/Q2891821</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -2848,10 +2014,6 @@ MetalCarbonDioxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery in which gaseous carbon dioxide serves as the active material at the positive electrode and a metal as the active material of the negative electrode</td>
-  </tr>
   </table>
 
 
@@ -2867,22 +2029,6 @@ MoltenSaltCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell with an electrolyte consisting of one or more anhydrous molten salts.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-07'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-07</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Molten-salt_battery'>https://en.wikipedia.org/wiki/Molten-salt_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q949927'>https://www.wikidata.org/wiki/Q949927</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the molten salt may be in a solid (inactivated) state and is activated by heat</td>
@@ -2903,14 +2049,6 @@ MonoblocBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery with multiple separate but electrically connected cell compartments each of which is designed to house an assembly of electrodes, electrolyte, terminals or interconnections and possible separators</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-17'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-17</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the cells in a monobloc battery can be connected in series or in parallel</td>
   </tr>
@@ -2930,16 +2068,8 @@ NeutralElectrolyteZincAirBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">metal air battery with a saline electrolyte and a negative electrode of zinc</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NearNeutralZincAirBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-05'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-05</a></td>
   </tr>
   </table>
 
@@ -2957,24 +2087,8 @@ NickelCadmiumBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of cadmium</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NickelOxideCadmiumBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-02'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-02</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery'>https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q898377'>https://www.wikidata.org/wiki/Q898377</a></td>
   </tr>
   </table>
 
@@ -2992,24 +2106,8 @@ NickelIronBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of iron</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NiFeBattery, NickelOxideIronBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-03</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery'>https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q80722'>https://www.wikidata.org/wiki/Q80722</a></td>
   </tr>
   </table>
 
@@ -3026,22 +2124,6 @@ NickelMetalHydrideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an electrolyte of aqueous potassium hydroxide, a positive electrode containing nickel as nickel hydroxide and a negative electrode of hydrogen in the form of a metal hydride</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-08'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-08</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery'>https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q308567'>https://www.wikidata.org/wiki/Q308567</a></td>
-  </tr>
   </table>
 
 
@@ -3057,10 +2139,6 @@ NickelOxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery with a nickel oxide positive electrode</td>
-  </tr>
   </table>
 
 
@@ -3077,20 +2155,8 @@ NickelOxyhydroxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NickelOxideHydroxideBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery'>https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q127108'>https://www.wikidata.org/wiki/Q127108</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -3112,16 +2178,8 @@ NickelZincBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of zinc</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">NickelOxideZincBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04</a></td>
   </tr>
   </table>
 
@@ -3138,14 +2196,6 @@ NonAqueousCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell with a liquid electrolyte containing neither water nor other sources of reactive protons (H+)</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-10'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-10</a></td>
-  </tr>
   </table>
 
 
@@ -3161,10 +2211,6 @@ NonAqueousMetallicFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a full redox flow battery with non-aqueous electrolytes that contain metallic species as the active components</td>
-  </tr>
   </table>
 
 
@@ -3180,10 +2226,6 @@ NonAqueousOrganicFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a full redox flow battery with non-aqueous electrolytes that contain metallic species as the active components</td>
-  </tr>
   </table>
 
 
@@ -3199,14 +2241,6 @@ OEMBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery supplied to an original equipment manufacturer (OEM) for use only with or in new equipment.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-12'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-12</a></td>
-  </tr>
   </table>
 
 
@@ -3271,14 +2305,6 @@ PaperLinedCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary cell wherein the separator is paper impregnated with electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-15'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-15</a></td>
-  </tr>
   </table>
 
 
@@ -3294,14 +2320,6 @@ PasteLinedCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary cell wherein the separator is a starch gel wet with electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-16'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-16</a></td>
-  </tr>
   </table>
 
 
@@ -3318,16 +2336,8 @@ PilotBatteryCell
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">selected cell of a battery which is used to assess or represent the average state of parameters of the battery.</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">PilotCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-11'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-11</a></td>
   </tr>
   </table>
 
@@ -3344,14 +2354,6 @@ PlantePlate
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">plate, made of pure lead, of very large effective surface used in lead acid cells</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-20'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-20</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the active material is formed by electrochemical oxidation of the lead in thin layers</td>
@@ -3371,14 +2373,6 @@ PocketPlate
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">plate of a nickel-cadmium or nickel-iron cell consisting of an assembly of perforated steel pockets, which may be nickel plated, and which contain the active material</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-21'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-21</a></td>
-  </tr>
   </table>
 
 
@@ -3395,16 +2389,8 @@ PolysulfideBromideFlowBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of flow battery that stores energy in aqueous solutions of sodium bromide and sodium polysulfide</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">PSB</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Polysulfide-bromide_battery'>https://en.wikipedia.org/wiki/Polysulfide-bromide_battery</a></td>
   </tr>
   </table>
 
@@ -3421,10 +2407,6 @@ PotassiumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of potassium or containing potassium</td>
-  </tr>
   </table>
 
 
@@ -3440,18 +2422,6 @@ PotassiumIonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a potassium ion shuttle battery with two potassium insertion electrodes</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Potassium-ion_battery'>https://en.wikipedia.org/wiki/Potassium-ion_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q7234684'>https://www.wikidata.org/wiki/Q7234684</a></td>
-  </tr>
   </table>
 
 
@@ -3467,10 +2437,6 @@ PotatoBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a simple battery cell with electrodes of zinc and copper inserted into a potato as electrolyte</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">included for historical reference</td>
@@ -3491,10 +2457,6 @@ PouchCell
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery cell that is contained in a pouch case</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">CoffeeBagBattery, PouchBatteryCell</td>
   </tr>
@@ -3514,24 +2476,8 @@ PrimaryBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell which is not designed to be electrically recharged</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">PrimaryCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-02'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-02</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Primary_battery'>https://en.wikipedia.org/wiki/Primary_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q1378887'>https://www.wikidata.org/wiki/Q1378887</a></td>
   </tr>
   </table>
 
@@ -3567,14 +2513,6 @@ RandlesCircuitModel
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">An equivalent electrical circuit that consists of an active electrolyte resistance RS in series with the parallel combination of the double-layer capacitance Cdl and an impedance of a faradaic reaction.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Randles_circuit'>https://en.wikipedia.org/wiki/Randles_circuit</a></td>
-  </tr>
   </table>
 
 
@@ -3590,18 +2528,6 @@ RedoxFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery is a rechargeable battery in which electrolyte flows through one or more electrochemical cells from one or more tanks</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Flow_battery'>https://en.wikipedia.org/wiki/Flow_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q907511'>https://www.wikidata.org/wiki/Q907511</a></td>
-  </tr>
   </table>
 
 
@@ -3617,14 +2543,6 @@ ReplacementBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">battery for use in place of an existing battery, giving the same or similar operating and performance characteristics.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-13'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-13</a></td>
-  </tr>
   </table>
 
 
@@ -3640,22 +2558,6 @@ ReserveBatteryCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell stored in a dry state in which the necessary electrolyte is held separately and which may be transferred for activation to the cell, immediately prior to use, by priming or other means.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-14'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-14</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Reserve_battery'>https://en.wikipedia.org/wiki/Reserve_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q7315268'>https://www.wikidata.org/wiki/Q7315268</a></td>
-  </tr>
   </table>
 
 
@@ -3671,10 +2573,6 @@ RockingChairBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery containing two insertion electrodes in which the guest ion is transferred between the cathode and anode host compounds</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">InsertionBattery, ShuttlecockBattery, SwingCell</td>
@@ -3695,24 +2593,8 @@ SecondaryBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell which is designed to be electrically recharged</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">Accumulator, RechargeableBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-03</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Rechargeable_battery'>https://en.wikipedia.org/wiki/Rechargeable_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q187510'>https://www.wikidata.org/wiki/Q187510</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -3733,14 +2615,6 @@ SiliconAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a silicon negative electrode</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Silicon-air_battery'>https://en.wikipedia.org/wiki/Silicon-air_battery</a></td>
-  </tr>
   </table>
 
 
@@ -3756,10 +2630,6 @@ SiliconBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of silicon or containing silicon</td>
-  </tr>
   </table>
 
 
@@ -3775,10 +2645,6 @@ SilverBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a positive electrode with an active material of silver or containing silver</td>
-  </tr>
   </table>
 
 
@@ -3794,10 +2660,6 @@ SilverOxideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a positive electrode with an active material of silver oxide or containing silver oxide</td>
-  </tr>
   </table>
 
 
@@ -3814,24 +2676,8 @@ SilverOxideCadmiumBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing silver oxide and a negative electrode of cadmium</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">SilverCadmiumBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-05'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-05</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery'>https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q48798855'>https://www.wikidata.org/wiki/Q48798855</a></td>
   </tr>
   </table>
 
@@ -3848,22 +2694,6 @@ SilverZincBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing silver and a negative electrode of zinc</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-06'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-06</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Silver_zinc_battery'>https://en.wikipedia.org/wiki/Silver_zinc_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2285713'>https://www.wikidata.org/wiki/Q2285713</a></td>
-  </tr>
   </table>
 
 
@@ -3879,14 +2709,6 @@ SinteredPlate
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">plate of an alkaline secondary cell the support of which is made by sintering metal powder and into which the active material is introduced</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-22'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-22</a></td>
-  </tr>
   </table>
 
 
@@ -3902,10 +2724,6 @@ SodiumAirBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a metal-air battery with a sodium negative electrode</td>
-  </tr>
   </table>
 
 
@@ -3921,10 +2739,6 @@ SodiumBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of sodium or containing sodium</td>
-  </tr>
   </table>
 
 
@@ -3940,18 +2754,6 @@ SodiumIonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery with a non-aqueous electrolyte and positive and negative electrodes which utilize an intercalation compound in which sodium is stored</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Sodium-ion_battery'>https://en.wikipedia.org/wiki/Sodium-ion_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q391088'>https://www.wikidata.org/wiki/Q391088</a></td>
-  </tr>
   </table>
 
 
@@ -3967,10 +2769,6 @@ SodiumIonHardCarbonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a sodium-ion battery with a hard carbon negative electrode</td>
-  </tr>
   </table>
 
 
@@ -3987,24 +2785,8 @@ SolidStateBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell with an ionically conducting solid as electrolyte</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ASSB, AllSolidStateBattery, SSB, SolidElectrolyteCell</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-09'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-09</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Solid-state_battery'>https://en.wikipedia.org/wiki/Solid-state_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q7557794'>https://www.wikidata.org/wiki/Q7557794</a></td>
   </tr>
   </table>
 
@@ -4021,14 +2803,6 @@ StandardVoltageCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell having, at a specified temperature, an invariant and specific open-circuit voltage, used as a reference voltage.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-17'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-17</a></td>
-  </tr>
   </table>
 
 
@@ -4064,14 +2838,6 @@ TrickleCharge
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">method of charge applied to a battery wherein the state of charge is maintained by a continuous, long term, regulated small electric current</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-47'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-47</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the trickle charge compensates self-discharge effects and maintains the battery in an approximately fully charged state</td>
   </tr>
@@ -4090,14 +2856,6 @@ UnformedDryCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of some types of secondary cell not yet filled with electrolyte and where the active material has not yet been submitted to a so called "formation" process</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-34'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-34</a></td>
-  </tr>
   </table>
 
 
@@ -4114,24 +2872,8 @@ ValveRegulatedLeadAcidBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">secondary battery in which cells are closed but have a valve which allows the escape of gas if the internal pressure exceeds a predetermined value</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">VRLA</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-15'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-15</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/VRLA_battery'>https://en.wikipedia.org/wiki/VRLA_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q780582'>https://www.wikidata.org/wiki/Q780582</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -4153,20 +2895,8 @@ VanadiumRedoxFlowBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of flow battery that employs vanadium ions as charge carriers</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">VFB, VRB, VRFB</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Vanadium_redox_battery'>https://en.wikipedia.org/wiki/Vanadium_redox_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q905330'>https://www.wikidata.org/wiki/Q905330</a></td>
   </tr>
   </table>
 
@@ -4183,10 +2913,6 @@ VoltaicPile
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the first example of a modern battery, featuring a stack of alternating layers of zinc and silver metal separated by cardboard soaked in brine</td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">VoltaPile, VoltaPile, VoltaPile</td>
@@ -4210,14 +2936,6 @@ WestonStandardVoltageCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">standard voltage cell with a saline electrolyte saturated with cadmium sulphate, a positive electrode of mercury and solid mercurous sulphate, and a negative electrode of amalgamated cadmium and solid cadmium sulphate.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-18'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-18</a></td>
-  </tr>
   </table>
 
 
@@ -4233,18 +2951,6 @@ WetCell
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with an excess liquid electrolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Electric_battery#Wet_cell'>https://en.wikipedia.org/wiki/Electric_battery#Wet_cell</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q11563836'>https://www.wikidata.org/wiki/Q11563836</a></td>
-  </tr>
   </table>
 
 
@@ -4261,20 +2967,8 @@ ZincAirBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a type of metal-air battery with a zinc negative electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ZAB</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery'>https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q204582'>https://www.wikidata.org/wiki/Q204582</a></td>
   </tr>
   </table>
 
@@ -4291,10 +2985,6 @@ ZincBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">cell containing a negative electrode with an active material of zinc or containing zinc</td>
-  </tr>
   </table>
 
 
@@ -4311,20 +3001,8 @@ ZincBromineFlowBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery with an aqueous zinc bromide electrolyte and zinc metal electrode</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ZincBromineBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Zinc-bromine_battery'>https://en.wikipedia.org/wiki/Zinc-bromine_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q204563'>https://www.wikidata.org/wiki/Q204563</a></td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -4345,14 +3023,6 @@ ZincCarbonBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery such as Leclanch&#233; or zinc chloride batteries</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-07'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-07</a></td>
-  </tr>
   </table>
 
 
@@ -4368,18 +3038,6 @@ ZincCeriumFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery that uses solutions of zinc as anolyte and cerium as catholyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery'>https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q8072320'>https://www.wikidata.org/wiki/Q8072320</a></td>
-  </tr>
   </table>
 
 
@@ -4395,18 +3053,6 @@ ZincChlorideBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with a saline electrolyte based on zinc chloride, a positive electrode containing manganese dioxide and a negative electrode of zinc</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-06'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-06</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Zinc%E2%80%93carbon_battery#Zinc-chloride_%22heavy_duty%22_cell'>https://en.wikipedia.org/wiki/Zinc%E2%80%93carbon_battery#Zinc-chloride_%22heavy_duty%22_cell</a></td>
-  </tr>
   </table>
 
 
@@ -4422,10 +3068,6 @@ ZincChlorineFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery with an aqueous zinc chloride electrolyte and zinc metal electrode</td>
-  </tr>
   </table>
 
 
@@ -4441,10 +3083,6 @@ ZincFlowBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a flow battery with a zinc negative electrode</td>
-  </tr>
   </table>
 
 
@@ -4460,18 +3098,6 @@ ZincShuttleBattery
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery that shuttles zinc ions as charge carriers</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Zinc-ion_battery'>https://en.wikipedia.org/wiki/Zinc-ion_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q30590622'>https://www.wikidata.org/wiki/Q30590622</a></td>
-  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">the name "zinc-ion battery" is a misnomer as it uses a metallic zinc negative electrode instead of a zinc-insertion negative electrode</td>
@@ -4492,24 +3118,8 @@ ZincSilverOxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">primary battery with an alkaline electrolyte, a positive electrode containing silver oxide and a negative electrode of zinc</td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">SilverOxideBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-04</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Silver_oxide_battery'>https://en.wikipedia.org/wiki/Silver_oxide_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q900791'>https://www.wikidata.org/wiki/Q900791</a></td>
   </tr>
   </table>
 
@@ -4529,14 +3139,6 @@ BatteryEnergy
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">electric energy which a battery delivers under specified conditions.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21</a></td>
-  </tr>
   </table>
 
 
@@ -4552,10 +3154,6 @@ BatteryQuantity
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">Physical quantities defined within the domain of batteries.</td>
-  </tr>
   </table>
 
 
@@ -4575,10 +3173,6 @@ DepthOfDischarge
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">DoD</td>
   </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Depth_of_discharge'>https://en.wikipedia.org/wiki/Depth_of_discharge</a></td>
-  </tr>
   </table>
 
 
@@ -4594,14 +3188,6 @@ FullCharge
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42</a></td>
-  </tr>
   </table>
 
 
@@ -4633,14 +3219,6 @@ ServiceLife
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">total period of useful life of a cell or a battery in operation.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46</a></td>
-  </tr>
-  <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">For primary batteries, service life relates to the total discharge time or capacity under specific conditions.</td>
   </tr>
@@ -4659,14 +3237,6 @@ ServiceMass
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">total mass of a battery in its operational condition.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38</a></td>
-  </tr>
   </table>
 
 
@@ -4682,14 +3252,6 @@ StartingCapability
 .. raw:: html
 
   <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">ability of a battery to supply power to an engine starter motor under specified conditions</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26</a></td>
-  </tr>
   </table>
 
 
@@ -4708,10 +3270,6 @@ StateOfCharge
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">SoC</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/State_of_charge'>https://en.wikipedia.org/wiki/State_of_charge</a></td>
   </tr>
   </table>
 
