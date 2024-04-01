@@ -41,6 +41,21 @@ jobs:
         docs-folder: "sphinx/"
         pre-build-command: "apt-get update -y; apt-get install -y pandoc"
         
+    - name: Create context file from ttl
+      run: python sphinx/ttl_to_context.py
+
+    - name: Check if HTML context directory exists
+      run: |
+        if [ ! -d "sphinx/_build/html/context/" ]; then
+          echo "Creating HTML context directory"
+          sudo mkdir -p sphinx/_build/html/context/
+        else
+          echo "HTML context directory already exists"
+        fi
+    
+    - name: Copy context file to HTML directory
+      run: sudo cp context/context.json sphinx/_build/html/context/
+        
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:

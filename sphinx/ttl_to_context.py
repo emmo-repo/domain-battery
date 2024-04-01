@@ -81,8 +81,8 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
 # Example usage
 filename = 'battery-inferred.ttl'
-script_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(script_dir, filename)
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(parent_dir, '..', filename)
 
 # Convert the file path to a file URI
 file_uri = urljoin('file:', pathname2url(file_path))
@@ -90,7 +90,9 @@ file_uri = urljoin('file:', pathname2url(file_path))
 predicate_uri = 'http://www.w3.org/2004/02/skos/core#prefLabel'
 context = generate_jsonld_context(file_uri, predicate_uri)
 
-# Save to JSON file
-with open('context.json', 'w') as f:
-    json.dump(context, f, indent=4)
+# Determine the path for saving the context file in the same directory as the HTML docs
+context_file_path = os.path.join(os.path.dirname(parent_dir), 'context/context.json')
 
+# Save to JSON file
+with open(context_file_path, 'w') as f:
+    json.dump(context, f, indent=4)
