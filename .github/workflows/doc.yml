@@ -33,16 +33,16 @@ jobs:
         pip install Markdown==3.4.3 rdflib==6.3.2  # Add any other dependencies if needed
         
     - name: Render documentation from ttl
-      run: python sphinx/ttl_to_rst.py
+      run: python docs/ttl_to_rst.py
 
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "sphinx/"
+        docs-folder: "docs/"
         pre-build-command: "apt-get update -y; apt-get install -y pandoc"
         
     - name: Create context file from ttl
-      run: python sphinx/ttl_to_context.py
+      run: python docs/ttl_to_context.py
 
     - name: Check if HTML context directory exists
       run: |
@@ -61,7 +61,7 @@ jobs:
         fi
     
     - name: Copy context file to HTML directory
-      run: sudo cp context/context.json sphinx/_build/html/context/
+      run: sudo cp context/context.json docs/_build/html/context/
 
     - name: Commit changes
       run: |
@@ -104,13 +104,13 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: documentationHTML
-        path: sphinx/_build/html/
+        path: docs/_build/html/
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: sphinx/_build/html
+        publish_dir: docs/_build/html
 
       
