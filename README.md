@@ -104,7 +104,8 @@ This project has received support from European Union research and innovation pr
 
 ## License
 
-The Battery Interface Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
+The Battery Interface Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0)
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
+
