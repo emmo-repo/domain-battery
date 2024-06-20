@@ -994,8 +994,8 @@ ClarkCell
 
    <div id="battery_b7fdab58_6e91_4c84_b097_b06eff86a124"></div>
 
-CoinBattery
------------
+CoinCell
+--------
 
 * https://w3id.org/emmo/domain/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124
 
@@ -1008,7 +1008,7 @@ CoinBattery
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">ButtonBatteryCell, ButtonCell, CoinBatteryCell, CoinCell</td>
+  <td class="element-table-value">ButtonBatteryCell, ButtonCell, CoinBattery, CoinBatteryCell</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
@@ -2921,8 +2921,8 @@ MonoblocBattery
 
    <div id="battery_1251f69a_6aab_41df_8e68_eabfcca43bde"></div>
 
-NeutralElectrolyteZincAirBattery
---------------------------------
+NeutralZincAirBattery
+---------------------
 
 * https://w3id.org/emmo/domain/battery#battery_1251f69a_6aab_41df_8e68_eabfcca43bde
 
@@ -3066,41 +3066,6 @@ NickelOxideBattery
 
 .. raw:: html
 
-   <div id="battery_46b8433d_fd57_4819_b34f_1636b72ad12e"></div>
-
-NickelOxyhydroxideBattery
--------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a primary battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">NickelOxideHydroxideBattery</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery'>https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q127108'>https://www.wikidata.org/wiki/Q127108</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">IEC Code: Z</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
    <div id="battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e"></div>
 
 NickelZincBattery
@@ -3122,6 +3087,41 @@ NickelZincBattery
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_46b8433d_fd57_4819_b34f_1636b72ad12e"></div>
+
+NickelZincBattery
+-----------------
+
+* https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">NickelOxideHydroxideBattery</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
+  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery'>https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery</a></td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q127108'>https://www.wikidata.org/wiki/Q127108</a></td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">IEC Code: Z</td>
   </tr>
   </table>
 

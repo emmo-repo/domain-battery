@@ -12,9 +12,9 @@
 @base <https://w3id.org/emmo/domain/battery/battery> .
 
 <https://w3id.org/emmo/domain/battery/battery> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.9.0-beta/battery> ;
-                                                owl:imports <https://w3id.org/emmo/domain/battery/0.9.0-beta/batteryquantities> ,
-                                                            <https://w3id.org/emmo/domain/electrochemistry/0.12.1-beta/electrochemistry> ;
+                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.10.0-beta/battery> ;
+                                                owl:imports <https://w3id.org/emmo/domain/battery/0.10.0-beta/batteryquantities> ,
+                                                            <https://w3id.org/emmo/domain/electrochemistry/0.15.0-beta/electrochemistry> ;
                                                 dcterms:abstract "The Battery Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for battery components, cells, interfaces, methods, models, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of batteries. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development." ;
                                                 dcterms:contributor "Casper Welzel Andersen" ,
                                                                     "Francesca Lonstad Bleken" ,
@@ -26,7 +26,7 @@
 Simon Clark
 SINTEF Industry
 email: simon.clark@sintef.no"""@en ;
-                                                owl:versionInfo "0.9.0-beta" .
+                                                owl:versionInfo "0.10.0-beta" .
 
 #################################################################
 #    Classes
@@ -56,6 +56,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LFPBattery"@en ;
                                               skos:prefLabel "LithiumIonIronPhosphateBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q901551" ;
@@ -193,7 +194,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c
                                                               ] ;
                                               skos:altLabel "NearNeutralZincAirBattery"@en ;
-                                              skos:prefLabel "NeutralElectrolyteZincAirBattery"@en ;
+                                              skos:prefLabel "NeutralZincAirBattery"@en ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-05" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "metal air battery with a saline electrolyte and a negative electrode of zinc"@en .
 
@@ -359,6 +360,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_c831d963_629a_41ab_850f_97fb6841b739
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "GrBattery"@en ;
                                               skos:prefLabel "LithiumIonGraphiteBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium ion battery with a graphite negative electrode"@en .
@@ -396,6 +398,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4
                                                               ] ;
                                               rdfs:comment "a lithium-ion battery with a lithium nickel cobalt aluminium oxide positive electrode"@en ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonNickelCobaltAluminiumOxideBattery"@en .
 
 
@@ -678,6 +681,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LMOBattery"@en ;
                                               skos:prefLabel "LithiumIonManganeseOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q16911101" ;
@@ -695,8 +699,7 @@ email: simon.clark@sintef.no"""@en ;
 
 ###  https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e
 :battery_46b8433d_fd57_4819_b34f_1636b72ad12e rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 ,
-                                                              :battery_50b911f7_c903_4700_9764_c308d8a95470 ,
+                                              rdfs:subClassOf :battery_50b911f7_c903_4700_9764_c308d8a95470 ,
                                                               :battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11 ,
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
@@ -704,9 +707,9 @@ email: simon.clark@sintef.no"""@en ;
                                                               ] ;
                                               rdfs:comment "IEC Code: Z" ;
                                               skos:altLabel "NickelOxideHydroxideBattery"@en ;
-                                              skos:prefLabel "NickelOxyhydroxideBattery"@en ;
+                                              skos:prefLabel "NickelZincBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q127108" ;
-                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a primary battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery"@en .
 
 
@@ -766,6 +769,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonSiliconGraphiteBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a blended silicon graphite negaitve electrode"@en .
 
@@ -793,6 +797,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LCOBattery"@en ;
                                               skos:prefLabel "LithiumIonCobaltOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q1865299" ;
@@ -1223,8 +1228,8 @@ email: simon.clark@sintef.no"""@en ;
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf :battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0 ,
-                                                              :battery_f13ac384_e21a_40b3_9ee8_023c2586049a ;
+                                              rdfs:subClassOf :battery_53dec2af_0a2a_4205_a9b2_ae96ed717027 ,
+                                                              :battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0 ;
                                               skos:prefLabel "MagnesiumAirBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a metal-air battery with a magnesium negative electrode"@en .
 
@@ -1277,6 +1282,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962
                                                               ] ;
                                               rdfs:comment "there are many stoichiometry variations for lithium nickel manganese cobalt oxides, typically expressed as LiNi_xMn_yCo_zO2 where x+y+z = 1"@en ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonNickelManganeseCobaltOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q93837163" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a lithium nickel manganese cobalt oxide positive electrode"@en .
@@ -1367,7 +1373,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf :battery_f13ac384_e21a_40b3_9ee8_023c2586049a ,
+                                              rdfs:subClassOf :battery_53dec2af_0a2a_4205_a9b2_ae96ed717027 ,
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22
@@ -1840,6 +1846,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonSiliconOxideGraphiteBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a blended silicon oxide graphite negative electrode"@en .
 
@@ -1940,9 +1947,9 @@ email: simon.clark@sintef.no"""@en ;
                                               rdfs:comment "in practice, the term coin is used exclusively for non-aqueous lithium cells"@en ;
                                               skos:altLabel "ButtonBatteryCell"@en ,
                                                             "ButtonCell"@en ,
-                                                            "CoinBatteryCell"@en ,
-                                                            "CoinCell"@en ;
-                                              skos:prefLabel "CoinBattery"@en ;
+                                                            "CoinBattery"@en ,
+                                                            "CoinBatteryCell"@en ;
+                                              skos:prefLabel "CoinCell"@en ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-40" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell with a cylindrical shape in which the overall height is less than the diameter e.g. in the shape of a button or a coin"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Button_cell"@en .
@@ -2042,6 +2049,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LMFPBattery"@en ;
                                               skos:prefLabel "LithiumIonManganeseIronPhosphateBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium ion battery with a manganese iron phosphate positive electrode"@en ;
@@ -2063,6 +2071,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "a lithium-ion battery with a silicon metal negative electrode"@en ;
                                               skos:prefLabel "LithiumIonSiliconBattery"@en .
 
@@ -2181,6 +2190,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonSiliconOxideBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a silicon oxide negative electrode"@en .
 
@@ -2455,6 +2465,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:onProperty electrochemistry:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69
                                                               ] ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "MagnesiumMetalBattery"@en .
 
 
@@ -2585,6 +2596,7 @@ email: simon.clark@sintef.no"""@en ;
                                                                 owl:someValuesFrom electrochemistry:electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b
                                                               ] ;
                                               rdfs:comment "a lithium ion battery with a lithium titanate (LTO) negative electrode"@en ;
+                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LTOBattery"@en ;
                                               skos:prefLabel "LithiumIonTitanateBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q2564903" ;
