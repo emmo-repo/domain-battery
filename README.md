@@ -10,7 +10,7 @@
 
 The Battery Domain Ontology is a specialized domain within the Elementary Multiperspective Materials Ontology [(EMMO)][1], that encompasses essential terms and relationships for battery systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of battery. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development.
 
-A reference documentation is available in [html](https://emmo-repo.github.io/domain-battery/index.html) and [pdf](https://emmo-repo.github.io/domain-battery/battery.pdf) formats.
+A reference documentation is available in [html](https://emmo-repo.github.io/domain-battery/index.html).
 
 ### Persistent Identifiers
 
