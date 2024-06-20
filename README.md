@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/570454101.svg)](https://zenodo.org/badge/latestdoi/570454101)
+![docs](https://github.com/emmo-repo/domain-battery/actions/workflows/doc.yml/badge.svg)
+
 
 <!-- markdownlint-disable MD033 -->
 
