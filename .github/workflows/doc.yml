@@ -53,11 +53,11 @@ jobs:
           echo "HTML context directory already exists"
         fi
 
-        if [ ! -d "docs/_build/html/version/" ]; then
+        if [ ! -d "docs/_build/html/versions/" ]; then
           echo "Creating HTML versions directory"
-          sudo mkdir -p docs/_build/html/version/
+          sudo mkdir -p docs/_build/html/versions/
         else
-          echo "HTML version directory already exists"
+          echo "HTML versions directory already exists"
         fi
     
     - name: Copy context file to HTML directory
@@ -78,17 +78,17 @@ jobs:
       run: |
         git fetch --tags
         git tag | while read TAG; do
-          sudo mkdir -p "docs/_build/html/version/$TAG"
-          sudo cp "battery.ttl" "docs/_build/html/version/$TAG/"
-          sudo cp "battery-inferred.ttl" "docs/_build/html/version/$TAG/"
-          sudo cp "batteryquantities.ttl" "docs/_build/html/version/$TAG/"
+          sudo mkdir -p "docs/_build/html/versions/$TAG"
+          sudo cp "battery.ttl" "docs/_build/html/versions/$TAG/"
+          sudo cp "battery-inferred.ttl" "docs/_build/html/versions/$TAG/"
+          sudo cp "batteryquantities.ttl" "docs/_build/html/versions/$TAG/"
 
         if [ -d "context" ]; then
           echo "Context directory exists, copying context.json to $TAG"
           # Make sure the context directory exists in the version-specific directory
-          sudo mkdir -p "docs/_build/html/version/$TAG/context"
+          sudo mkdir -p "docs/_build/html/versions/$TAG/context"
           # Copy context.json to the tag-specific context directory
-          sudo cp "context/context.json" "docs/_build/html/version/$TAG/context"
+          sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
         else
           echo "No context directory found in the source directory."
         fi
