@@ -96,7 +96,7 @@ We welcome contributions from the community to enhance and expand the ontology. 
 
 ### Acknowledgements
 
-<img src="docs/assets/images/flag_of_europe.png" alt="EU-Flag" width="100">
+<img src="docs/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
 
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
