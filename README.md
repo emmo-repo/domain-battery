@@ -1,111 +1,105 @@
 [![DOI](https://zenodo.org/badge/570454101.svg)](https://zenodo.org/badge/latestdoi/570454101)
 ![docs](https://github.com/emmo-repo/domain-battery/actions/workflows/doc.yml/badge.svg)
 
-
 <!-- markdownlint-disable MD033 -->
 
 # Battery Domain Ontology
 
+<img src="docs/assets/img/fig/svg/domain-battery-logo.svg" alt="domain-battery-logo" width="100%">
+
 <!-- [![CI tests](https://github.com/emmo-repo/domain-battery/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-battery/actions/) -->
+The Battery Domain Ontology is a domain of the [Elementary Multiperspective Materials Ontology (EMMO)][1], for describing battery systems, materials, methods, and data. Its primary objective is to support the creation of [FAIR](https://www.go-fair.org/fair-principles/), [Linked Data](https://en.wikipedia.org/wiki/Linked_data). This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and innovation.
 
-The Battery Domain Ontology is a specialized domain within the Elementary Multiperspective Materials Ontology [(EMMO)][1], that encompasses essential terms and relationships for battery systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of battery. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development.
+Reference documentation is available [here](https://emmo-repo.github.io/domain-battery/index.html).
 
-A reference documentation is available in [html](https://emmo-repo.github.io/domain-battery/index.html).
+# Quick Start
 
-### Persistent Identifiers
+Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the [Getting Started](https://emmo-repo.github.io/domain-battery/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-battery/pages/examples.html) section of the documentation. 
 
-This ontology assigns persistent machine-readable identifiers to concepts from the battery domain. These identifiers facilitate data exchange and interoperability among various tools and systems. It includes annotations to other sources of information including [DBPedia](https://www.dbpedia.org/) and [Wikidata](https://www.wikidata.org/). 
+## Reference IRIs
 
-### Standardized Nomenclature
-
-The ontology builds on standardized nomenclature for battery, relying on recognized authorities including [IUPAC](https://iupac.org/what-we-do/nomenclature/) and the [IEC](https://www.electropedia.org/). IUPAC is the universally-recognized authority on chemical nomenclature and terminology, and IEC is the the world's leading organization that prepares and publishes International Standards for all electrical, electronic and related technologies. This consistency in naming conventions enhances collaboration and data sharing.
-
-## Key Features
-
-- Seamless integration with the EMMO ontology.
-- Provides persistent machine-readable identifiers for battery systems, devices, methods, datasets, and quantities.
-- Standardized nomenclature for battery entities.
-- Facilitates data exchange and interoperability within the EMMO ecosystem.
-
-## Usage
-
-Researchers, domain experts, and developers within the battery communities can utilize the ontology for various purposes, including:
-
-- Incorporating consistent and standardized information into their modeling and simulation activities.
-- Enhancing data interoperability between modeling tools, databases, and platforms.
-- Supporting research projects that require precise and standardized battery knowledge representation.
-- Building applications, databases, or knowledge graphs that leverage EMMO and require battery information.
-- Generating linked data in the semantic web.
-- Complying with FAIR data mandates (FAIR Guidelines available [here](FAIR.md))
-
-## Structure and Integration with EMMO
-
-The Battery Domain Ontology is an official domain on the EMMO. The asserted source consists of two files:
-- `battery.ttl`: describes terms and object properties for the battery domain.
-- `batteryquantities.ttl`: describes the physical quantities related to the battery domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
-
-The battery domain also imports other EMMO domains:
-- [Chemical Substance Domain Ontology](https://github.com/emmo-repo/domain-chemical-substance): provides material annotations for battery (meta)data.
-
+The table below contains a quick cheat sheet of IRIs for accessing different files from the ontology
 The import structure is summarized in the following table:
-| Imported Ontologies | Version           |
-| ------------------- | ----------------- |
-| EMMO                | 1.0.0-beta5       |
-| chemical-substance  | 0.2.0-alpha       |
-| electrochemistry    | 0.7.0-alpha       |
 
-For simplicity, we complie the source files and other imports into a [pre-inferred ontology](inferred_version/battery-inferred.ttl). This is the result of running the asserted source files through a semantic reasoner and includes both asserted and inferred properties in a clear graph. 
+| IRI                                                   | Description                   |
+| ----------------------------------------------------- | ----------------------------- |
+| `https://w3id.org/emmo/domain/battery`                | Base Asserted Ontology*       |
+| `https://w3id.org/emmo/domain/battery/inferred`       | Base Pre-Inferred Ontology*   |
+| `https://w3id.org/emmo/domain/battery/latest`         | Latest Asserted Ontology*     |
+| `https://w3id.org/emmo/domain/battery/source`         | Source of Asserted Ontology*  |
+| `https://w3id.org/emmo/domain/battery/context`        | Latest JSON-LD Context File   |
+| `https://w3id.org/emmo/domain/battery/{VERSION}`      | Version of Asserted Ontology* |
+| `https://w3id.org/emmo/domain/battery/{VERSION}/...`  | ... follows same logic above  |
 
-## Getting Started
+*IRI directs to human readable documentation if called from the web browser and to the source .ttl file if called from an application
 
-### Prerequisites
+## Python
+There are two common ways to work with the ontology in python: loading the ontology as a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) or exploring the content of the ontology using [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy). Examples of both are provided below.
 
-Before you begin, we recommend that you install the following tools. They are not all required, but greatly simplify the process of working with ontologies:
+### rdflib
+In [rdflib](https://rdflib.readthedocs.io/en/stable/), you can import the ontology as a graph, e.g. to run SPARQL queries:
 
-- [Protégé](https://protege.stanford.edu/) (a graphical ontology editor)
-  - Installation instructions are available [here](https://protege.stanford.edu/software.php#desktop-protege).
+```python
+from rdflib import Graph
 
-- [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy) (python package for working with EMMO ontologies)
-  - Installation instructions are available [here](https://github.com/emmo-repo/EMMOntoPy#installation).
+# Define the IRI of the ontology
+echo = "https://w3id.org/emmo/domain/battery"
 
-- [RDFLib](https://rdflib.readthedocs.io/en/stable/) (optional, python package for working with RDF graphs)
-  - Installation instructions are available [here](https://rdflib.readthedocs.io/en/stable/gettingstarted.html).
+# Create an empty graph
+g = Graph()
 
-- [VS Studio Code](https://code.visualstudio.com/) (optional, a code editor with extensions for RDF formats like TTL and JSON-LD)
-  - Installation instructions are available [here](https://code.visualstudio.com/download).
+# Load the ontology from the IRI
+g.parse(echo, format="ttl")
 
-### Quick Start
-
-To quickly explore and make use of the ontology, first download the pre-inferred version [pre-inferred ontology](inferred_version/battery-inferred.ttl). You can then simply open the file in Protégé and explore its content or load the ontology into python using EMMOntoPy.
-
-In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), you can choose to import the ontology from your local downloaded copy or directly from the web. Commands for both options are given below:
+# Print the number of triples in the graph
+print(f"Graph has {len(g)} triples.")
+```
+### EMMOntoPy
+In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), you can choose to import the ontology directly from the web:
 
 ```python
 from ontopy import get_ontology
 
-# Loading from local repository
-battery = get_ontology('/path/to/domain-battery/battery-inferred.ttl').load(url_from_catalog=True)
-
 # Loading from web
-battery = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-battery/master/inferred_version/battery-inferred.ttl').load()
+echo = get_ontology('https://w3id.org/emmo/domain/battery').load()
 ```
 
-## Contributing
+## Usage
 
-We welcome contributions from the community to enhance and expand the ontology. If you have suggestions, improvements, or additional chemical substance information to contribute, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
+This domain ontology supports the creation of Linked Data in any RDF-supported format. Below is an example using [JSON-LD](https://json-ld.org/) to desecribe a zinc foil electrode with some creator information and properties. Please see the documentation for [more examples](https://emmo-repo.github.io/domain-battery/pages/examples.html). 
+
+```json
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@type": "CR2032",
+    "schema:name": "My CR2032 Coin Cell",
+    "schema:manufacturer": {
+       "@id": "https://www.wikidata.org/wiki/Q3041255",
+       "schema:name": "SINTEF"
+    },
+    "hasProperty": {
+       "@type": ["NominalCapacity", "ConventionalProperty"],
+       "hasNumericalPart": {
+          "@type": "Real",
+          "hasNumericalValue": 230
+        },
+        "hasMeasurementUnit": "emmo:MilliAmpereHour"
+     }
+}
+```
 
 ### Acknowledgements
 
-<img src="docs/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
+<img src="docs/assets/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
 
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
-* 957189 - [BIG-MAP](http://www.big-map.eu/) 
+* [957189 - BIG-MAP](http://www.big-map.eu/)
+* [101104022 - Battery2030+](https://battery2030.eu/)
 
 ## License
 
-The Battery Interface Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0)
+The Battery Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
-
