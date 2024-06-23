@@ -12,8 +12,8 @@
 @base <https://w3id.org/emmo/domain/battery/batteryquantities> .
 
 <https://w3id.org/emmo/domain/battery/batteryquantities> rdf:type owl:Ontology ;
-                                              owl:versionIRI <https://w3id.org/emmo/domain/battery/0.10.0-beta/batteryquantities> ;
-                                              owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.15.0-beta/electrochemicalquantities> ;
+                                              owl:versionIRI <https://w3id.org/emmo/domain/battery/0.11.0-beta/batteryquantities> ;
+                                              owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.16.0-beta/electrochemicalquantities> ;
                                               dcterms:abstract "This battery quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about battery quantities. It is designed to integrate with the battery domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common battery quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the battery domain."@en ;
                                               dcterms:contributor "Casper Welzel Andersen" ,
                                                                   "Francesca Lonstad Bleken" ,
@@ -21,7 +21,7 @@
                                               dcterms:creator "Eibar Flores" ,
                                                               "Simon Clark" ;
                                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                              owl:versionInfo "0.10.0-beta" .
+                                              owl:versionInfo "0.11.0-beta" .
 
 #################################################################
 #    Classes
