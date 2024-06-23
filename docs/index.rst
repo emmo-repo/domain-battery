@@ -3,11 +3,11 @@
    :includehidden:
    :hidden:
 
-   Get Started <getstarted>
-   Examples <examples>
-   Class Index <battery>
-   About <about>
-   FAQ <faq>
+   Get Started <pages/getstarted>
+   Examples <pages/examples>
+   Class Index <pages/battery>
+   About <pages/about>
+   FAQ <pages/faq>
 
 Battery Ontology
 ================================
@@ -22,7 +22,7 @@ Welcome to the **EMMO Battery Domain Ontology**, a semantic resource with essent
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/battery/context.json",
             "@type": "CR2032",
             "schema:name": "My CR2032 Coin Cell",
             "schema:manufacturer": {
@@ -53,14 +53,14 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: getstarted.html
+        :link: pages/getstarted.html
 
         :octicon:`rocket;1em;sd-text-info`  Get Started
         ^^^^^^^^^^^
         Let's go! Here is some information to help you get started
 
     .. grid-item-card::
-        :link: battery.html
+        :link: pages/battery.html
 
         :octicon:`book;1em;sd-text-info`  Class Index
         ^^^^^^^^^^^
@@ -69,14 +69,14 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: examples.html
+        :link: pages/examples.html
 
         :octicon:`pencil;1em;sd-text-info`  Examples
         ^^^^^^^^
         Here are some examples that demonstrate basic usage of the ontology
 
     .. grid-item-card::
-        :link: contribute.html
+        :link: pages/contribute.html
 
         :octicon:`thumbsup;1em;sd-text-info`  Contribute
         ^^^^^^^^^^
