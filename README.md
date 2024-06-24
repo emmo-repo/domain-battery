@@ -1,7 +1,9 @@
 [![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-75.0%25-brightgreen)](https://foops.linkeddata.es/FAIR_validator.html)
 ![reason](https://github.com/emmo-repo/domain-battery/actions/workflows/reason.yml/badge.svg)
-[![DOI](https://zenodo.org/badge/570454101.svg)](https://zenodo.org/badge/latestdoi/570454101)
 ![docs](https://github.com/emmo-repo/domain-battery/actions/workflows/doc.yml/badge.svg)
+[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)  
+
+[![DOI](https://zenodo.org/badge/570454101.svg)](https://zenodo.org/badge/latestdoi/570454101)
 
 <!-- markdownlint-disable MD033 -->
 
