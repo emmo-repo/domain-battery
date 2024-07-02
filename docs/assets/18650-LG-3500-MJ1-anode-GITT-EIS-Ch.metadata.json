@@ -152,8 +152,8 @@
     "@type": "fuji:Certification",
     "fuji:certificate": "FAIR Data Certification",
     "fuji:certificationAuthority": {
-      "@type": "Organization",
-      "name": "FAIRsFAIR"
+      "@type": "schema:Organization",
+      "schema:name": "FAIRsFAIR"
     },
     "fuji:issuedDate": "2023-07-01"
   },
