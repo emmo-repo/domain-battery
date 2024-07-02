@@ -14,7 +14,7 @@
     ],
     "@type": "dcat:Dataset",
     "owl:versionInfo": "1.0.0",
-    "dc:identifier": "https://doi.org/10.1234/example.doi",
+    "dc:identifier": "https://doi.org/10.5281/zenodo.7693664",
     "dc:title": "18650-LG-3500-MJ1-anode-GITT-EIS-Ch",
     "dc:description": "A CSV file containing the results of a GITT test with EIS obtained from charging an INR18650-MJ1 battery cell manufactured by LG Chem.",
     "dc:subject": ["battery", "li-ion", "GITT", "EIS"],
@@ -62,7 +62,7 @@
     },
     "dc:relation": [{
       "dc:relationType": "isReferencedBy",
-      "dc:relatedIdentifier": "https://doi.org/10.1234/related.doi"
+      "dc:relatedIdentifier": "https://doi.org/10.5281/zenodo.7693664"
     }],
     "dc:hasVersion": "1.0.0",
     "dc:format": "text/csv",
