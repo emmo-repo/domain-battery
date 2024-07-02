@@ -1,0 +1,151 @@
+{
+    "@context": [
+        "https://w3id.org/emmo/domain/battery/context",
+        {
+            "dc": "http://purl.org/dc/terms/",
+            "schema": "http://schema.org/",
+            "prov": "http://www.w3.org/ns/prov#",
+            "dcat": "http://www.w3.org/ns/dcat#",
+            "vcard": "http://www.w3.org/2006/vcard/ns#",
+            "csvw": "http://www.w3.org/ns/csvw#",
+            "dqv": "http://www.w3.org/ns/dqv#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
+          }
+    ],
+    "@type": "dcat:Dataset",
+    "owl:versionInfo": "1.0.0",
+    "dc:identifier": "https://doi.org/10.1234/example.doi",
+    "dc:title": "18650-LG-3500-MJ1-anode-GITT-EIS-Ch",
+    "dc:description": "A CSV file containing the results of a GITT test with EIS obtained from charging an INR18650-MJ1 battery cell manufactured by LG Chem.",
+    "dc:subject": ["battery", "li-ion", "GITT", "EIS"],
+    "dc:language": "en",
+    "dc:license": {
+      "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:accessRights": "public",
+    "dc:publisher": {
+      "@id": "https://ror.org/04bwf3e34",
+      "schema:name": "German Aerospace Centre"
+    },
+    "dc:creator": {
+      "@id": "https://orcid.org/0000-0002-9019-2290",
+      "schema:name": "Yannick Kuhn",
+      "schema:affiliation": {
+        "@id": "https://ror.org/04bwf3e34",
+        "schema:name": "German Aerospace Centre"
+      }
+    },
+    "dc:contributor": {
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@id": "https://ror.org/01f677e56",
+        "schema:name": "SINTEF"
+      }
+    },
+    "dc:modified": {
+      "@value": "2023-06-26",
+      "@type": "xsd:date"
+    },
+    "dc:created": {
+      "@value": "2023-01-15",
+      "@type": "xsd:date"
+    },
+    "dc:provenance": {
+      "@type": "prov:Activity",
+      "prov:startedAtTime": "2023-01-10",
+      "prov:endedAtTime": "2023-01-15",
+      "prov:wasAssociatedWith": {
+        "@id": "https://orcid.org/0000-0002-9019-2290",
+        "schema:name": "Yannick Kuhn"
+      }
+    },
+    "dc:relation": [{
+      "dc:relationType": "isReferencedBy",
+      "dc:relatedIdentifier": "https://doi.org/10.1234/related.doi"
+    }],
+    "dc:hasVersion": "1.0.0",
+    "dc:format": "text/csv",
+  
+    "schema:name": "18650-LG-3500-MJ1-anode-GITT-EIS-Ch",
+    "schema:description": "A CSV file containing the results of a GITT test with EIS obtained from charging an INR18650-MJ1 battery cell manufactured by LG Chem.",
+    "schema:version": "1.0.0",
+    "schema:contactPoint": {
+      "@type": "schema:ContactPoint",
+      "schema:contactType": "customer support",
+      "schema:email": "mailto:support@example.org",
+      "schema:telephone": "+1-800-555-5555"
+    },
+  
+    "dcat:keyword": ["battery", "li-ion", "GITT", "EIS", "electrochemistry", "LG Chem"],
+    "dcat:distribution": {
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": "https://kadi-dlr.hiu-batteries.de/records/60/files/6bdee518-94be-4439-b147-1dcae23b817f",
+      "dcat:format": "text/csv",
+      "dcat:byteSize": 12345
+    },
+    "dcat:contactPoint": {
+      "@type": "vcard:Organization",
+      "vcard:fn": "Support Team",
+      "vcard:hasEmail": "mailto:support@example.org",
+      "vcard:tel": "+1-800-555-5555",
+      "vcard:adr": {
+        "@type": "vcard:Address",
+        "vcard:street-address": "123 Example St",
+        "vcard:locality": "Example City",
+        "vcard:region": "EX",
+        "vcard:postal-code": "12345",
+        "vcard:country-name": "Example Country"
+      }
+    },
+    "dcat:version": "1.0.0",
+    "dcat:conformsTo": {
+      "@id": "https://www.w3.org/TR/vocab-dcat/"
+    },
+  
+    "csvw:tableSchema": {
+      "csvw:columns": [{
+        "csvw:name": "time",
+        "csvw:titles": "Time / s",
+        "csvw:propertyUrl": {
+          "@type": "Time"
+        },
+        "csvw:datatype": "number",
+        "csvw:required": "true"
+      }, {
+        "csvw:name": "voltage",
+        "csvw:titles": "Voltage / V",
+        "csvw:propertyUrl": {
+          "@type": "CellVoltage"
+        },
+        "csvw:datatype": "number"
+      }, {
+        "csvw:name": "current",
+        "csvw:titles": "Current / A",
+        "csvw:propertyUrl": {
+          "@type": "CellCurrent"
+        },
+        "csvw:datatype": "number"
+      }],
+      "csvw:primaryKey": "time",
+      "csvw:aboutUrl": "#time-{time}"
+    },
+  
+    "dqv:hasQualityAnnotation": {
+      "@type": "dqv:QualityAnnotation",
+      "dqv:inDimension": "http://example.org/quality/accuracy",
+      "rdfs:comment": "The dataset has been manually verified to ensure high accuracy of the GITT and EIS measurements."
+    },
+    "dqv:hasQualityMetric": {
+      "@type": "dqv:QualityMetric",
+      "dqv:computedOn": "2023-06-26",
+      "dqv:hasMetric": "http://example.org/metrics/completeness",
+      "dqv:hasValue": "0.95"
+    },
+    "dqv:hasQualityMeasurement": {
+      "@type": "dqv:QualityMeasurement",
+      "dqv:isMeasurementOf": "http://example.org/metrics/timeliness",
+      "dqv:value": "2023-06-01"
+    }
+  }
+  
