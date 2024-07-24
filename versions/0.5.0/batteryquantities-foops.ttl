@@ -5,11 +5,22 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a a owl:Class ;
+    rdfs:label "StateOfCharge"@en ;
+    rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef,
+        :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+    owl:deprecated true ;
+    skos:altLabel "SoC"@en ;
+    skos:prefLabel "StateOfCharge"@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge"@en .
 
 :battery_22353114_9b0a_42d1_b96c_3a702c273e2d a owl:Class ;
     rdfs:label "DepthOfDischarge"@en ;
     rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef,
         :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+    owl:deprecated true ;
     skos:altLabel "DoD"@en ;
     skos:prefLabel "DepthOfDischarge"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Depth_of_discharge"@en .
@@ -27,22 +38,14 @@
     dcterms:creator "Eibar Flores",
         "Simon Clark" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.16.0-beta/electrochemicalquantities> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.11.0-beta/batteryquantities> ;
-    owl:versionInfo "0.11.0-beta" .
-
-:battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a a owl:Class ;
-    rdfs:label "StateOfCharge"@en ;
-    rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef,
-        :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
-    skos:altLabel "SoC"@en ;
-    skos:prefLabel "StateOfCharge"@en ;
-    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge"@en .
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.12.0-beta/batteryquantities> ;
+    owl:versionInfo "0.12.0-beta" .
 
 :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c a owl:Class ;
     rdfs:label "FullCharge"@en ;
     rdfs:comment "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en ;
-    rdfs:subClassOf :battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a ;
+    rdfs:subClassOf electrochemistry:electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 ;
     skos:prefLabel "FullCharge"@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en .
@@ -52,6 +55,7 @@
     rdfs:comment "electric energy which a battery delivers under specified conditions."@en ;
     rdfs:subClassOf emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2,
         :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+    owl:deprecated true ;
     skos:prefLabel "BatteryEnergy"@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric energy which a battery delivers under specified conditions."@en .
@@ -95,6 +99,12 @@
 [] a owl:Axiom ;
     dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org" ;
     owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c ;
+    owl:annotatedTarget "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en .
+
+[] a owl:Axiom ;
+    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org" ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
     owl:annotatedSource :battery_87bb15ff_4fc2_4929_9938_0b31d9166001 ;
     owl:annotatedTarget "electric energy which a battery delivers under specified conditions."@en .
 
@@ -115,10 +125,4 @@
     owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
     owl:annotatedSource :battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc ;
     owl:annotatedTarget "total period of useful life of a cell or a battery in operation."@en .
-
-[] a owl:Axiom ;
-    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org" ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c ;
-    owl:annotatedTarget "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en .
 
