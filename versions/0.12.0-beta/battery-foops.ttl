@@ -1655,12 +1655,12 @@
     bibo:status "unstable" ;
     vann:preferredNamespacePrefix "battery" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
-    owl:backwardCompatibleWith "0.11.0-beta" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.12.0-beta/batteryquantities>,
+    owl:backwardCompatibleWith "0.12.0-beta" ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.12.1-beta/batteryquantities>,
         <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemistry> ;
-    owl:priorVersion "0.11.0-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.12.0-beta/battery> ;
-    owl:versionInfo "0.12.0-beta" ;
+    owl:priorVersion "0.12.0-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.12.1-beta/battery> ;
+    owl:versionInfo "0.12.1-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
 
 echem:EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 rdfs:comment "An electrochemical cell which is not designed to be electrically recharged."@en ;

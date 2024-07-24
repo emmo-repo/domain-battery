@@ -39,8 +39,8 @@
         "Simon Clark" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
     owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.12.0-beta/batteryquantities> ;
-    owl:versionInfo "0.12.0-beta" .
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.12.1-beta/batteryquantities> ;
+    owl:versionInfo "0.12.1-beta" .
 
 :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c a owl:Class ;
     rdfs:label "FullCharge"@en ;
