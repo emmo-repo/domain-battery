@@ -3,6 +3,208 @@
 Class Index
 ===========
 
+Quantities used in Batteries
+============================
+
+.. raw:: html
+
+   <div id="battery_87bb15ff_4fc2_4929_9938_0b31d9166001"></div>
+
+BatteryEnergy
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">electric energy which a battery delivers under specified conditions.</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
+  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_230809da_bc18_42ec_ac94_4ca6a86292d1"></div>
+
+BatteryQuantity
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_230809da_bc18_42ec_ac94_4ca6a86292d1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Physical quantities defined within the domain of batteries.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_22353114_9b0a_42d1_b96c_3a702c273e2d"></div>
+
+DepthOfDischarge
+----------------
+
+* https://w3id.org/emmo/domain/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">DoD</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
+  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Depth_of_discharge'>https://en.wikipedia.org/wiki/Depth_of_discharge</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c"></div>
+
+FullCharge
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
+  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae"></div>
+
+NominalBatteryProperty
+----------------------
+
+* https://w3id.org/emmo/domain/battery#battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc"></div>
+
+ServiceLife
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">total period of useful life of a cell or a battery in operation.</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
+  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46</a></td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">For primary batteries, service life relates to the total discharge time or capacity under specific conditions.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_b10c88d8_43d9_42dd_9f65_49ce2314513f"></div>
+
+ServiceMass
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">total mass of a battery in its operational condition.</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
+  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_a882d3a6_e055_4743_8fc6_5510485dcfe2"></div>
+
+StartingCapability
+------------------
+
+* https://w3id.org/emmo/domain/battery#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">ability of a battery to supply power to an engine starter motor under specified conditions</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
+  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a"></div>
+
+StateOfCharge
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">SoC</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
+  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/State_of_charge'>https://en.wikipedia.org/wiki/State_of_charge</a></td>
+  </tr>
+  </table>
+
+
 Battery Concepts
 ================
 
@@ -4510,208 +4712,6 @@ ZincSilverOxideBattery
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q900791'>https://www.wikidata.org/wiki/Q900791</a></td>
-  </tr>
-  </table>
-
-
-Battery Quantities
-==================
-
-.. raw:: html
-
-   <div id="battery_87bb15ff_4fc2_4929_9938_0b31d9166001"></div>
-
-BatteryEnergy
--------------
-
-* https://w3id.org/emmo/domain/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">electric energy which a battery delivers under specified conditions.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_230809da_bc18_42ec_ac94_4ca6a86292d1"></div>
-
-BatteryQuantity
----------------
-
-* https://w3id.org/emmo/domain/battery#battery_230809da_bc18_42ec_ac94_4ca6a86292d1
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">Physical quantities defined within the domain of batteries.</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_22353114_9b0a_42d1_b96c_3a702c273e2d"></div>
-
-DepthOfDischarge
-----------------
-
-* https://w3id.org/emmo/domain/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">DoD</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Depth_of_discharge'>https://en.wikipedia.org/wiki/Depth_of_discharge</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c"></div>
-
-FullCharge
-----------
-
-* https://w3id.org/emmo/domain/battery#battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae"></div>
-
-NominalBatteryProperty
-----------------------
-
-* https://w3id.org/emmo/domain/battery#battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc"></div>
-
-ServiceLife
------------
-
-* https://w3id.org/emmo/domain/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">total period of useful life of a cell or a battery in operation.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">For primary batteries, service life relates to the total discharge time or capacity under specific conditions.</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_b10c88d8_43d9_42dd_9f65_49ce2314513f"></div>
-
-ServiceMass
------------
-
-* https://w3id.org/emmo/domain/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">total mass of a battery in its operational condition.</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_a882d3a6_e055_4743_8fc6_5510485dcfe2"></div>
-
-StartingCapability
-------------------
-
-* https://w3id.org/emmo/domain/battery#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">ability of a battery to supply power to an engine starter motor under specified conditions</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a"></div>
-
-StateOfCharge
--------------
-
-* https://w3id.org/emmo/domain/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">SoC</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
-  <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/State_of_charge'>https://en.wikipedia.org/wiki/State_of_charge</a></td>
   </tr>
   </table>
 
