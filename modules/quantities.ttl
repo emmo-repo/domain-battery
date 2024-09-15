@@ -1,0 +1,145 @@
+@prefix : <https://w3id.org/emmo/domain/battery#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix annotations: <https://w3id.org/emmo/top/annotations#> .
+@prefix electrochemistry: <https://w3id.org/emmo/domain/electrochemistry#> .
+@base <https://w3id.org/emmo/domain/battery/batteryquantities> .
+
+<https://w3id.org/emmo/domain/battery/batteryquantities> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://w3id.org/emmo/domain/battery/0.13.0-beta/modules/quantities> ;
+                                                          owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/modules/quantities> ;
+                                                          dcterms:abstract "This battery quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about battery quantities. It is designed to integrate with the battery domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common battery quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the battery domain."@en ;
+                                                          dcterms:contributor "Casper Welzel Andersen" ,
+                                                                              "Francesca Lonstad Bleken" ,
+                                                                              "Jesper Friis" ;
+                                                          dcterms:creator "Eibar Flores" ,
+                                                                          "Simon Clark" ;
+                                                          dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                          owl:versionInfo "0.13.0-beta" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a
+:battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              owl:deprecated "true"^^xsd:boolean ;
+                                              skos:altLabel "SoC"@en ;
+                                              skos:prefLabel "StateOfCharge"@en ;
+                                              emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c
+:battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c rdf:type owl:Class ;
+                                              rdfs:subClassOf electrochemistry:electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 ;
+                                              skos:prefLabel "FullCharge"@en ;
+                                              emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-42" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "state of charge wherein all available active material is in a state such that the charging under the selected conditions produces no significant increase of capacity"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d
+:battery_22353114_9b0a_42d1_b96c_3a702c273e2d rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              owl:deprecated "true"^^xsd:boolean ;
+                                              skos:altLabel "DoD"@en ;
+                                              skos:prefLabel "DepthOfDischarge"@en ;
+                                              emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Depth_of_discharge"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_230809da_bc18_42ec_ac94_4ca6a86292d1
+:battery_230809da_bc18_42ec_ac94_4ca6a86292d1 rdf:type owl:Class ;
+                                              rdfs:subClassOf electrochemistry:electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                              skos:prefLabel "BatteryQuantity"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical quantities defined within the domain of batteries."@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001
+:battery_87bb15ff_4fc2_4929_9938_0b31d9166001 rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              owl:deprecated "true"^^xsd:boolean ;
+                                              skos:prefLabel "BatteryEnergy"@en ;
+                                              emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric energy which a battery delivers under specified conditions."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :battery_87bb15ff_4fc2_4929_9938_0b31d9166001 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "electric energy which a battery delivers under specified conditions."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2
+:battery_a882d3a6_e055_4743_8fc6_5510485dcfe2 rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_09b9021b_f97b_43eb_b83d_0a764b472bc2 ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              skos:prefLabel "StartingCapability"@en ;
+                                              emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "ability of a battery to supply power to an engine starter motor under specified conditions"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :battery_a882d3a6_e055_4743_8fc6_5510485dcfe2 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "ability of a battery to supply power to an engine starter motor under specified conditions"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f
+:battery_b10c88d8_43d9_42dd_9f65_49ce2314513f rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405 ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              skos:prefLabel "ServiceMass"@en ;
+                                              emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-38" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total mass of a battery in its operational condition."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :battery_b10c88d8_43d9_42dd_9f65_49ce2314513f ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "total mass of a battery in its operational condition."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc
+:battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
+                                                              :battery_230809da_bc18_42ec_ac94_4ca6a86292d1 ;
+                                              rdfs:comment "For primary batteries, service life relates to the total discharge time or capacity under specific conditions."@en ,
+                                                           "For secondary cells and batteries, the service life may be expressed in time, number of charge/discharge cycles, or capacity in ampere hours (Ah)."@en ;
+                                              skos:prefLabel "ServiceLife"@en ;
+                                              emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-46" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total period of useful life of a cell or a battery in operation."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "total period of useful life of a cell or a battery in operation."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae
+:battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
+                                              skos:prefLabel "NominalBatteryProperty"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
