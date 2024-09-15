@@ -1,4 +1,5 @@
 from rdflib import Graph
+import os
 
 
 
@@ -83,6 +84,10 @@ def entities_to_rst(entities: list[dict]) -> str:
     rst = ""
 
     for item in entities:
+        # Check if '#' is in the IRI
+        if '#' not in item['IRI']:
+            print(f"Skipping IRI without '#': {item['IRI']}")
+            continue  # Skip this entity if no hash is present
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
@@ -95,7 +100,7 @@ def entities_to_rst(entities: list[dict]) -> str:
         rst += "\n\n"
 
         rst += "* " + item['IRI'] + "\n\n"
-        
+
         rst += ".. raw:: html\n\n"
         indent = "  "
         rst += indent + "<table class=\"element-table\">\n"
@@ -107,12 +112,13 @@ def entities_to_rst(entities: list[dict]) -> str:
                 rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
                 if value.startswith("http"):
                     value = f"""<a href='{value}'>{value}</a>"""
-                value = value.encode('ascii', 'xmlcharrefreplace')
-                value = value.decode('utf-8')
-                value = value.replace('\n', '\n' + indent)
+                else:
+                    value = value.encode('ascii', 'xmlcharrefreplace')
+                    value = value.decode('utf-8')
+                    value = value.replace('\n', '\n' + indent)
                 rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
                 rst += indent + "</tr>\n"
-
+                
         rst += indent + "</table>\n"
         rst += "\n\n"
 
@@ -130,38 +136,40 @@ def render_rst_bottom() -> str:
 
 ########### RUN THE RENDERING WORKFLOW ##############
 
-
 def rendering_workflow():
+    # Adapt based on file structure
+    ttl_modules = []
 
-    # PAGES
-    ttl_modules = [
-        {"section title": "Battery Concepts",
-         "path": "./battery.ttl"},
-        {"section title": "Battery Quantities",
-         "path": "./batteryquantities.ttl"}
-    ]
+    # Check for old structure (root directory)
+    if os.path.isfile("./batteryquantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./batteryquantities.ttl"})
+    elif os.path.isfile("./modules/quantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./modules/quantities.ttl"})
+    else:
+        raise FileNotFoundError("No suitable TTL file found for battery quantities.")
+
+    # Check for the battery file in the correct directory
+    if os.path.isfile("./battery.ttl"):
+        ttl_modules.append({"section title": "Battery Concepts", "path": "./battery.ttl"})
+    else:
+        raise FileNotFoundError("No suitable TTL file found for battery concepts.")
 
     # GENERATE PAGES
     rst_filename = "battery.rst"
-
     rst = render_rst_top()
 
     for module in ttl_modules:
-
         g = load_ttl_from_url(module["path"])
-
         entities_list = extract_terms_info_sparql(g)
         
         page_title = module["section title"]
         rst += page_title + "\n"
-        for ind in range(len(page_title)):
-            rst += "="
-        rst += "\n\n"
+        rst += "=" * len(page_title) + "\n\n"
         rst += entities_to_rst(entities_list)
 
     rst += render_rst_bottom()
 
-    with open("./docs/"+ rst_filename, "w+", encoding="utf-8") as f:
+    with open("./docs/" + rst_filename, "w+", encoding="utf-8") as f:
         f.write(rst)
 
 
