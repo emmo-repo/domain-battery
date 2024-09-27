@@ -1,0 +1,202 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@graph": [
+        {
+            "@type": "ThermalRunawayTest",
+            "hasInput": [
+                {
+                    "@type": "BatteryCell",
+                    "@id": "#battery_cell",
+                    "hasFormFactor": {
+                        "@type": "PairedTerminalPrismatic",
+                        "hasSurface": {
+                            "@type": "SurfaceCA",
+                            "@id": "#SurfaceCA"
+                        }
+                    }
+                }
+            ],
+            "hasOutput": [
+                {
+                    "@type": "DestroyedBatteryCell"
+                },
+                {
+                    "@type": "TestResult",
+                    "@id": "#test_result",
+                    "csw:url": "file_path"
+                }
+            ],
+            "hasSubprocess": [
+                {
+                    "@type": "TemperatureMeasurement",
+                    "hasSample": {
+                        "@id": "#battery_cell"
+                    },
+                    "hasMeasurementDevice": {
+                        "@type": "Thermocouple",
+                        "contacts": {
+                            "@id": "#SurfaceCA"
+                        },
+                        "hasProperty": [
+                            {
+                                "@type": "PositionVector",
+                                "hasPart":[
+                                    {
+                                        "@type": "XCoordinate",
+                                        "hasNumericalPart": {
+                                            "@type": "Real",
+                                            "hasNumericalValue": 1
+                                        },
+                                        "hasMeasurementUnit": "emmo:MilliMetre"
+
+                                    },
+                                    {
+                                        "@type": "YCoordinate",
+                                        "hasNumericalPart": {
+                                            "@type": "Real",
+                                            "hasNumericalValue": 10
+                                        },
+                                        "hasMeasurementUnit": "emmo:MilliMetre"
+                                    },
+                                    {
+                                        "@type": "ZCoordinate",
+                                        "hasNumericalPart": {
+                                            "@type": "Real",
+                                            "hasNumericalValue": 5
+                                        },
+                                        "hasMeasurementUnit": "emmo:MilliMetre"
+                                    }
+                                ]
+                                
+                            }
+                        ]
+                    },
+                    "hasMeasurementParameter": [
+                        {
+                            "@type": "MeasurementFrequency",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 1
+                            },
+                            "hasMeasurementUnit": "emmo:Hertz"
+                        }
+                    ],
+                    "hasOutput": {
+                        "@type": "TemperatureMeasurementResult",
+                        "@inverse": {
+                            "hasPart": {
+                                "@id": "#test_result"
+                            }
+                        }
+                    }
+                },
+                {
+                    "@type": "VoltageMeasurement",
+                    "hasSample": {
+                        "@id": "#battery_cell"
+                    },
+                    "hasMeasurementDevice": {
+                        "@type": "Voltammeter"
+                    },
+                    "hasMeasurementParameter": [
+                        {
+                            "@type": "MeasurementFrequency",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 1
+                            },
+                            "hasMeasurementUnit": "emmo:Hertz"
+                        }
+                    ],
+                    "hasOutput": {
+                        "@type": "VoltageMeasurementResult",
+                        "@inverse": {
+                            "hasPart": {
+                                "@id": "#test_result"
+                            }
+                        }
+                    }
+                },
+                {
+                    "@type": "GasSampling",
+                    "hasSample": {
+                        "@id": "#battery_cell"
+                    },
+                    "hasMeasurementDevice": {
+                        "@type": "GasChromatagraph"
+                    },
+                    "hasMeasurementParameter": [
+                        {
+                            "@type": "MeasurementFrequency",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 0.01
+                            },
+                            "hasMeasurementUnit": "emmo:Hertz"
+                        }
+                    ],
+                    "hasOutput": {
+                        "@type": "MeasurementResult",
+                        "@inverse": {
+                            "hasPart": {
+                                "@id": "#test_result"
+                            }
+                        }
+                    }
+                }
+            ],
+            "hasEquipment": [
+                {
+                    "@type": "Autoclave"
+                },
+                {
+                    "@type": "BatteryCellHolder"
+                }
+            ],
+            "hasTask": [
+                {
+                    "@type": "ExternalHeating",
+                    "hasInput": [
+                        {
+                            "@type": "Power",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 1000
+                            },
+                            "hasMeasurementUnit": "emmo:Watt"
+                        },
+                        {
+                            "@type": "TemperatureLimit",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 200
+                            },
+                            "hasMeasurementUnit": "emmo:DegreeCelsius"
+                        }
+                    ],
+                    "hasNext": {
+                        "@type": "ExternalHeating ",
+                        "hasInput": [
+                            {
+                                "@type": "Power",
+                                "hasNumericalPart": {
+                                    "@type": "Real",
+                                    "hasNumericalValue": 0
+                                },
+                                "hasMeasurementUnit": "emmo:Watt"
+                            },
+                            {
+                                "@type": "TemperatureLimit",
+                                "hasNumericalPart": {
+                                    "@type": "Real",
+                                    "hasNumericalValue": 200
+                                },
+                                "hasMeasurementUnit": "emmo:DegreeCelsius"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
