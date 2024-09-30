@@ -43,13 +43,13 @@ jobs:
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
             batteryquantities.ttl
-        elif [ -f "modules/quantities.ttl" ]; then
+        elif [ -f "shared/battery-quantities.ttl" ]; then
           emmocheck --verbose --url-from-catalog \
             --skip test_namespace \
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
-            modules/quantities.ttl
+            shared/battery-quantities.ttl
         else
-          echo "batteryquantities.ttl or modules/quantities.ttl not found!"
+          echo "batteryquantities.ttl or shared/battery-quantities.ttl not found!"
           exit 1
         fi
