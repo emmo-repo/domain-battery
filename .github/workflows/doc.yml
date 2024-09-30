@@ -89,8 +89,8 @@ jobs:
           if [ -f "batteryquantities.ttl" ]; then
             python docs/scripts/apply_foops_recommendations.py batteryquantities.ttl batteryquantities-foops.ttl
             sudo cp "batteryquantities-foops.ttl" "docs/_build/html/versions/$TAG/batteryquantities.ttl"
-          elif [ -f "modules/quantities.ttl" ]; then
-            python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+          elif [ -f "shared/battery-quantities.ttl" ]; then
+            python docs/scripts/apply_foops_recommendations.py shared/battery-quantities.ttl quantities-foops.ttl
             sudo cp "quantities-foops.ttl" "docs/_build/html/versions/$TAG/quantities.ttl"
           else
             echo "File not found!"
@@ -112,8 +112,8 @@ jobs:
         if [ -f "batteryquantities.ttl" ]; then
           python docs/scripts/apply_foops_recommendations.py batteryquantities.ttl batteryquantities-foops.ttl
           sudo cp "batteryquantities-foops.ttl" "docs/_build/html/batteryquantities.ttl"
-        elif [ -f "modules/quantities.ttl" ]; then
-          python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+        elif [ -f "shared/battery-quantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py shared/battery-quantities.ttl quantities-foops.ttl
           sudo cp "quantities-foops.ttl" "docs/_build/html/quantities.ttl"
         else
           echo "battery quantities file not found!"
