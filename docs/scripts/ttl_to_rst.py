@@ -143,8 +143,8 @@ def rendering_workflow():
     # Check for old structure (root directory)
     if os.path.isfile("./batteryquantities.ttl"):
         ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./batteryquantities.ttl"})
-    elif os.path.isfile("./modules/quantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./modules/quantities.ttl"})
+    elif os.path.isfile("./shared/battery-quantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./shared/battery-quantities.ttl"})
     else:
         raise FileNotFoundError("No suitable TTL file found for battery quantities.")
 
