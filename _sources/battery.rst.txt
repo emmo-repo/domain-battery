@@ -664,61 +664,12 @@ BatteryCrate
 
 .. raw:: html
 
-   <div id="battery_23e6170d_a70b_4de9_a4db_458e24a327ac"></div>
-
-BatteryCycler
--------------
-
-* https://w3id.org/emmo/domain/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">A device for performing cycling measurements of a battery.</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
    <div id="battery_bc033b97_a5b7_455c_94ce_e95676cb816b"></div>
 
 BatteryCyclerSystem
 -------------------
 
 * https://w3id.org/emmo/domain/battery#battery_bc033b97_a5b7_455c_94ce_e95676cb816b
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28"></div>
-
-BatteryCycling
---------------
-
-* https://w3id.org/emmo/domain/battery#battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065"></div>
-
-BatteryCyclingMeasurementResult
--------------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065
 
 .. raw:: html
 
@@ -757,36 +708,6 @@ BatteryInterface
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">An electrochemical interface within a battery cell.</td>
   </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_6c481323_498b_42c6_915a_53490f409430"></div>
-
-BatteryMeasurement
-------------------
-
-* https://w3id.org/emmo/domain/battery#battery_6c481323_498b_42c6_915a_53490f409430
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce"></div>
-
-BatteryMeasurementResult
-------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
-
-.. raw:: html
-
-  <table class="element-table">
   </table>
 
 
@@ -894,21 +815,6 @@ BatteryRack
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-24'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-24</a></td>
   </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_d9b99b14_44e8_473b_af8f_2a160429df69"></div>
-
-BatteryTimeSeriesDataSet
-------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
-
-.. raw:: html
-
-  <table class="element-table">
   </table>
 
 

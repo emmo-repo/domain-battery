@@ -162,20 +162,6 @@
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-12" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "battery supplied to an original equipment manufacturer (OEM) for use only with or in new equipment."@en .
 
-:battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28 a owl:Class ;
-    rdfs:label "BatteryCycling"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-            owl:someValuesFrom :battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-            owl:someValuesFrom :battery_bc033b97_a5b7_455c_94ce_e95676cb816b ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-            owl:someValuesFrom :battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065 ],
-        :battery_6c481323_498b_42c6_915a_53490f409430 ;
-    skos:prefLabel "BatteryCycling"@en .
-
 :battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab a owl:Class ;
     rdfs:label "LeclancheBattery"@en ;
     rdfs:comment "primary battery with a saline electrolyte based on ammonium chloride and zinc chloride, a positive electrode containing manganese dioxide and a negative electrode of zinc"@en ;
@@ -1233,6 +1219,14 @@
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-33" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "state of delivery of some types of secondary battery where the cells contain electrolyte and whose plates are in a discharged state"@en .
 
+:battery_bc033b97_a5b7_455c_94ce_e95676cb816b a owl:Class ;
+    rdfs:label "BatteryCyclerSystem"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
+            owl:someValuesFrom :battery_23e6170d_a70b_4de9_a4db_458e24a327ac ],
+        emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ;
+    skos:prefLabel "BatteryCyclerSystem"@en .
+
 :battery_bcf8f9dd_f493_4547_a5a3_e14b1f4c0f5f a owl:Class ;
     rdfs:label "BatteryTray"@en ;
     rdfs:comment "container with a base and walls for holding several cells or batteries"@en ;
@@ -1397,12 +1391,6 @@
     emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q749635" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a primary battery cell with zinc and copper electrodes and a mixed electrolyte system of copper (II) sulfate and sulfuric acid"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Daniell_cell"@en .
-
-:battery_d9b99b14_44e8_473b_af8f_2a160429df69 a owl:Class ;
-    rdfs:label "BatteryTimeSeriesDataSet"@en ;
-    rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a,
-        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
-    skos:prefLabel "BatteryTimeSeriesDataSet"@en .
 
 :battery_dae4c0f0_c3eb_4662_a0df_767e02014053 a owl:Class ;
     rdfs:label "MoltenSaltCell"@en ;
@@ -1645,9 +1633,9 @@
     dcterms:created "2022-11-25"^^xsd:date ;
     dcterms:creator <https://orcid.org/0000-0002-8758-6109>,
         <https://orcid.org/0000-0003-2954-1233> ;
-    dcterms:issued "2024-09-15"^^xsd:date ;
+    dcterms:issued "2024-09-30"^^xsd:date ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    dcterms:modified "2024-09-15"^^xsd:date ;
+    dcterms:modified "2024-09-30"^^xsd:date ;
     dcterms:publisher "EMMO" ;
     dcterms:source <https://www.electropedia.org> ;
     dcterms:title "Battery Domain Ontology"@en ;
@@ -1655,12 +1643,12 @@
     bibo:status "unstable" ;
     vann:preferredNamespacePrefix "battery" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
-    owl:backwardCompatibleWith "0.12.1beta" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.13.0-beta/modules/quantities>,
+    owl:backwardCompatibleWith "0.13.0-beta" ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.14.0-beta/shared/battery-quantities>,
         <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/electrochemistry> ;
-    owl:priorVersion "0.12.1beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.13.0-beta/battery> ;
-    owl:versionInfo "0.13.0-beta" ;
+    owl:priorVersion "0.13.0-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.14.0-beta/battery> ;
+    owl:versionInfo "0.14.0-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
 
 echem:EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 rdfs:comment "An electrochemical cell which is not designed to be electrically recharged."@en ;
@@ -1691,18 +1679,6 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of cadmium"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery"@en .
 
-:battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065 a owl:Class ;
-    rdfs:label "BatteryCyclingMeasurementResult"@en ;
-    rdfs:subClassOf :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce ;
-    skos:prefLabel "BatteryCyclingMeasurementResult"@en .
-
-:battery_23e6170d_a70b_4de9_a4db_458e24a327ac a owl:Class ;
-    rdfs:label "BatteryCycler"@en ;
-    rdfs:comment "A device for performing cycling measurements of a battery."@en ;
-    rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
-    skos:prefLabel "BatteryCycler"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device for performing cycling measurements of a battery."@en .
-
 :battery_3fcdc2ab_f458_4940_b218_6a10d1764567 a owl:Class ;
     rdfs:label "StandardVoltageCell"@en ;
     rdfs:comment "cell having, at a specified temperature, an invariant and specific open-circuit voltage, used as a reference voltage."@en ;
@@ -1720,14 +1696,6 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
         :battery_68ed592a_7924_45d0_a108_94d6275d57f0 ;
     skos:prefLabel "SilverBattery"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell containing a positive electrode with an active material of silver or containing silver"@en .
-
-:battery_6c481323_498b_42c6_915a_53490f409430 a owl:Class ;
-    rdfs:label "BatteryMeasurement"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-            owl:someValuesFrom :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce ],
-        emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ;
-    skos:prefLabel "BatteryMeasurement"@en .
 
 :battery_75cab90d_4bff_472a_be0f_48e61a272d01 a owl:Class ;
     rdfs:label "NickelMetalHydrideBattery"@en ;
@@ -1790,19 +1758,6 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-40" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell with a cylindrical shape in which the overall height is less than the diameter e.g. in the shape of a button or a coin"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Button_cell"@en .
-
-:battery_bc033b97_a5b7_455c_94ce_e95676cb816b a owl:Class ;
-    rdfs:label "BatteryCyclerSystem"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-            owl:someValuesFrom :battery_23e6170d_a70b_4de9_a4db_458e24a327ac ],
-        emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ;
-    skos:prefLabel "BatteryCyclerSystem"@en .
-
-:battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce a owl:Class ;
-    rdfs:label "BatteryMeasurementResult"@en ;
-    rdfs:subClassOf emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
-    skos:prefLabel "BatteryMeasurementResult"@en .
 
 :battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1 a owl:Class ;
     rdfs:label "AluminiumBattery"@en ;
@@ -2120,6 +2075,18 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-08" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell containing an alkaline electrolyte"@en .
 
+:battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 a owl:Class ;
+    rdfs:label "Battery"@en ;
+    rdfs:comment "one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices"@en ;
+    rdfs:subClassOf echem:electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+    skos:altLabel "ElectricBattery"@en ;
+    skos:prefLabel "Battery"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q267298" ;
+    emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-04" ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Electric_battery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices"@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electric_battery"@en .
+
 :battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0 a owl:Class ;
     rdfs:label "MetalAirBattery"@en ;
     rdfs:comment "battery in which atmospheric oxygen serves as the active material at the positive electrode and a metal as the active material of the negative electrode"@en,
@@ -2138,18 +2105,6 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-01" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "battery in which atmospheric oxygen serves as the active material at the positive electrode and a metal as the active material of the negative electrode"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell"@en .
-
-:battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 a owl:Class ;
-    rdfs:label "Battery"@en ;
-    rdfs:comment "one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices"@en ;
-    rdfs:subClassOf echem:electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
-    skos:altLabel "ElectricBattery"@en ;
-    skos:prefLabel "Battery"@en ;
-    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q267298" ;
-    emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-04" ;
-    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Electric_battery"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices"@en ;
-    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electric_battery"@en .
 
 :battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 a owl:Class ;
     rdfs:label "PrimaryBattery"@en ;
