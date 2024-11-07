@@ -93,8 +93,10 @@
 
 :battery_0e9e80a1_1fb6_45d9_a1dd_d18ebfc48ae2 a owl:Class ;
     rdfs:label "P3DModel"@en ;
+    rdfs:comment "a battery model discretized on a pseudo-three-dimensional grid"@en ;
     rdfs:subClassOf :battery_b1921f7b_afac_465a_a275_26f929f7f936 ;
-    skos:prefLabel "P3DModel"@en .
+    skos:prefLabel "P3DModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery model discretized on a pseudo-three-dimensional grid"@en .
 
 :battery_1191d114_5aec_4167_97b1_c0bca9414c49 a owl:Class ;
     rdfs:label "NonAqueousMetallicFlowBattery"@en ;
@@ -224,13 +226,12 @@
 
 :battery_21634c62_62eb_4a4f_9210_fb056c0bf98f a owl:Class ;
     rdfs:label "LR23"@en ;
-    rdfs:comment "alkaline zinc manganese dioxide cylindrical cell in a R23 case"@en,
-        "usually contains a stack of four LR932 button cells shrink wrapped together"@en ;
+    rdfs:comment "alkaline zinc manganese dioxide cylindrical cell in a R23 case"@en ;
     rdfs:subClassOf :battery_b572826a_b4e4_4986_b57d_f7b945061f8b ;
     skos:altLabel "AlkalineABattery"@en ;
     skos:prefLabel "LR23"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "alkaline zinc manganese dioxide cylindrical cell in a R23 case"@en,
-        "usually contains a stack of four LR932 button cells shrink wrapped together"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "alkaline zinc manganese dioxide cylindrical cell in a R23 case"@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "usually contains a stack of four LR932 button cells shrink wrapped together"@en .
 
 :battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2 a owl:Class ;
     rdfs:label "LithiumIonNickelCobaltAluminiumOxideBattery"@en ;
@@ -244,7 +245,8 @@
             owl:intersectionOf ( :battery_96addc62_ea04_449a_8237_4cd541dd8e5f [ a owl:Restriction ;
                         owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                         owl:someValuesFrom echem:electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4 ] ) ] ;
-    skos:prefLabel "LithiumIonNickelCobaltAluminiumOxideBattery"@en .
+    skos:prefLabel "LithiumIonNickelCobaltAluminiumOxideBattery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a lithium nickel cobalt aluminium oxide positive electrode"@en .
 
 :battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b a owl:Class ;
     rdfs:label "BatteryOnFloat"@en ;
@@ -465,8 +467,10 @@
 
 :battery_4c78a492_b14d_4005_b555_d3c92e8def0f a owl:Class ;
     rdfs:label "BatteryEquivalentCircuitModel"@en ;
+    rdfs:comment "an equivalent circuit model of a battery"@en ;
     rdfs:subClassOf :battery_679f6984_e0dc_4285_9dbb_429c5779590c ;
-    skos:prefLabel "BatteryEquivalentCircuitModel"@en .
+    skos:prefLabel "BatteryEquivalentCircuitModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an equivalent circuit model of a battery"@en .
 
 :battery_4d308636_8dac_4cc9_a0a1_197eefeb203f a owl:Class ;
     rdfs:label "LithiumIonSiliconGraphiteBattery"@en ;
@@ -525,11 +529,13 @@
 
 :battery_52ed5408_da62_483d_97d5_a45755022582 a owl:Class ;
     rdfs:label "P2DModel"@en ;
+    rdfs:comment "a battery model discretized on a pseudo-two-dimensional grid"@en ;
     rdfs:subClassOf :battery_b1921f7b_afac_465a_a275_26f929f7f936 ;
     skos:altLabel "DFNModel"@en,
         "DoyleFullerNewmanModel"@en,
         "NewmanModel"@en ;
-    skos:prefLabel "P2DModel"@en .
+    skos:prefLabel "P2DModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery model discretized on a pseudo-two-dimensional grid"@en .
 
 :battery_54d48300_242b_4af8_96b4_d3436450e094 a owl:Class ;
     rdfs:label "WestonStandardVoltageCell"@en ;
@@ -666,9 +672,11 @@
 
 :battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae a owl:Class ;
     rdfs:label "SwagelokCell"@en ;
+    rdfs:comment "a battery cell in a Swagelok case"@en ;
     rdfs:subClassOf :battery_68ed592a_7924_45d0_a108_94d6275d57f0 ;
     skos:altLabel "SwagelokBatteryCell"@en ;
-    skos:prefLabel "SwagelokCell"@en .
+    skos:prefLabel "SwagelokCell"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell in a Swagelok case"@en .
 
 :battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad a owl:Class ;
     rdfs:label "LithiumFlowBattery"@en ;
@@ -735,8 +743,10 @@
 
 :battery_7c072505_7ea6_4bfd_8403_7133b3a4b806 a owl:Class ;
     rdfs:label "IntentionalBatteryProcess"@en ;
+    rdfs:comment "an intentional battery process"@en ;
     rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-    skos:prefLabel "IntentionalBatteryProcess"@en .
+    skos:prefLabel "IntentionalBatteryProcess"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an intentional battery process"@en .
 
 :battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050 a owl:Class ;
     rdfs:label "AluminiumShuttleBattery"@en ;
@@ -839,7 +849,8 @@
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty echem:electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39 ;
             owl:someValuesFrom echem:electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603 ] ;
-    skos:prefLabel "PrismaticBattery"@en .
+    skos:prefLabel "PrismaticBattery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell in a rigid container with rectangular faces"@en .
 
 :battery_899c3993_9a45_498f_9489_ee40ed3098c9 a owl:Class ;
     rdfs:label "LemonBattery"@en ;
@@ -862,8 +873,16 @@
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a wet battery invented and patented by the French scientist Georges Leclanché in 1866"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Leclanch%C3%A9_cell"@en .
 
+:battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9 a owl:Class ;
+    rdfs:label "BatteryHalfCell"@en ;
+    rdfs:comment "a type of battery cell used to characterize performance of an electrode against a reference."@en ;
+    rdfs:subClassOf :battery_68ed592a_7924_45d0_a108_94d6275d57f0 ;
+    skos:prefLabel "BatteryHalfCell"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of battery cell used to characterize performance of an electrode against a reference."@en .
+
 :battery_910434d7_36fa_4279_b071_9bac5a9daf92 a owl:Class ;
     rdfs:label "MagnesiumShuttleBattery"@en ;
+    rdfs:comment "a magnesium based battery using an ion shuttle mechanism"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
             owl:someValuesFrom echem:electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22 ],
@@ -874,7 +893,8 @@
                         owl:someValuesFrom echem:electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69 ] [ a owl:Restriction ;
                         owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                         owl:someValuesFrom echem:electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22 ] ) ] ;
-    skos:prefLabel "MagnesiumShuttleBattery"@en .
+    skos:prefLabel "MagnesiumShuttleBattery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a magnesium based battery using an ion shuttle mechanism"@en .
 
 :battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0 a owl:Class ;
     rdfs:label "DryCell"@en ;
@@ -1077,12 +1097,11 @@
 
 :battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2 a owl:Class ;
     rdfs:label "KR6"@en ;
-    rdfs:comment "NickelCadmiumAABattery"@en,
-        "nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case"@en ;
+    rdfs:comment "nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case"@en ;
     rdfs:subClassOf :battery_14ffa830_2789_429d_8c05_d2ae0ca51732 ;
+    skos:altLabel "NickelCadmiumAABattery"@en ;
     skos:prefLabel "KR6"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "NickelCadmiumAABattery"@en,
-        "nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case"@en .
 
 :battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22 a owl:Class ;
     rdfs:label "LithiumAirBattery"@en ;
@@ -1221,11 +1240,10 @@
 
 :battery_bc033b97_a5b7_455c_94ce_e95676cb816b a owl:Class ;
     rdfs:label "BatteryCyclerSystem"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-            owl:someValuesFrom :battery_23e6170d_a70b_4de9_a4db_458e24a327ac ],
-        emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ;
-    skos:prefLabel "BatteryCyclerSystem"@en .
+    rdfs:comment "a system for performing battery cycling characterization"@en ;
+    rdfs:subClassOf emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ;
+    skos:prefLabel "BatteryCyclerSystem"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a system for performing battery cycling characterization"@en .
 
 :battery_bcf8f9dd_f493_4547_a5a3_e14b1f4c0f5f a owl:Class ;
     rdfs:label "BatteryTray"@en ;
@@ -1265,6 +1283,7 @@
 
 :battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4 a owl:Class ;
     rdfs:label "LithiumIonSiliconBattery"@en ;
+    rdfs:comment "a lithium-ion battery with a silicon metal negative electrode"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty echem:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
             owl:someValuesFrom echem:electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51 ],
@@ -1274,8 +1293,8 @@
             owl:intersectionOf ( :battery_96addc62_ea04_449a_8237_4cd541dd8e5f [ a owl:Restriction ;
                         owl:onProperty echem:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                         owl:someValuesFrom echem:electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51 ] ) ] ;
-    skos:altLabel "a lithium-ion battery with a silicon metal negative electrode"@en ;
-    skos:prefLabel "LithiumIonSiliconBattery"@en .
+    skos:prefLabel "LithiumIonSiliconBattery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a silicon metal negative electrode"@en .
 
 :battery_c6b0d98f_e566_46b1_9dea_635a3299c512 a owl:Class ;
     rdfs:label "FirstCharge"@en ;
@@ -1519,17 +1538,21 @@
 
 :battery_ef791f05_41d4_4bdb_a1fc_fd455ed0ecb2 a owl:Class ;
     rdfs:label "P4DModel"@en ;
+    rdfs:comment "a battery model discretized on a pseudo-four-dimensional grid"@en ;
     rdfs:subClassOf :battery_b1921f7b_afac_465a_a275_26f929f7f936 ;
-    skos:prefLabel "P4DModel"@en .
+    skos:prefLabel "P4DModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery model discretized on a pseudo-four-dimensional grid"@en .
 
 :battery_f13ac384_e21a_40b3_9ee8_023c2586049a a owl:Class ;
     rdfs:label "MagnesiumMetalBattery"@en ;
+    rdfs:comment "a battery containing a magnesium metal electrode"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty echem:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
             owl:someValuesFrom echem:electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69 ],
         :battery_53dec2af_0a2a_4205_a9b2_ae96ed717027 ;
     owl:deprecated true ;
-    skos:prefLabel "MagnesiumMetalBattery"@en .
+    skos:prefLabel "MagnesiumMetalBattery"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery containing a magnesium metal electrode"@en .
 
 :battery_f5fea163_410c_4e35_9408_15d5732c9f32 a owl:Class ;
     rdfs:label "LithiumThionylChlorideBattery"@en ;
@@ -1553,8 +1576,10 @@
 
 :battery_f768ea27_09ba_4875_a5cc_2c644b0753a3 a owl:Class ;
     rdfs:label "BatteryPhenomenon"@en ;
+    rdfs:comment "a battery phenomenon"@en ;
     rdfs:subClassOf emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 ;
-    skos:prefLabel "BatteryPhenomenon"@en .
+    skos:prefLabel "BatteryPhenomenon"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery phenomenon"@en .
 
 :battery_f8720768_b348_4547_929b_2ffbb3fec199 a owl:Class ;
     rdfs:label "SilverOxideCadmiumBattery"@en ;
@@ -1622,6 +1647,7 @@
     skos:altLabel "LTOBattery"@en ;
     skos:prefLabel "LithiumIonTitanateBattery"@en ;
     emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q2564903" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium ion battery with a lithium titanate (LTO) negative electrode"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Lithium-titanate_battery"@en .
 
 <https://w3id.org/emmo/domain/battery/battery> a owl:Ontology ;
@@ -1633,9 +1659,9 @@
     dcterms:created "2022-11-25"^^xsd:date ;
     dcterms:creator <https://orcid.org/0000-0002-8758-6109>,
         <https://orcid.org/0000-0003-2954-1233> ;
-    dcterms:issued "2024-09-30"^^xsd:date ;
+    dcterms:issued "2024-11-07"^^xsd:date ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    dcterms:modified "2024-09-30"^^xsd:date ;
+    dcterms:modified "2024-11-07"^^xsd:date ;
     dcterms:publisher "EMMO" ;
     dcterms:source <https://www.electropedia.org> ;
     dcterms:title "Battery Domain Ontology"@en ;
@@ -1643,12 +1669,12 @@
     bibo:status "unstable" ;
     vann:preferredNamespacePrefix "battery" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
-    owl:backwardCompatibleWith "0.13.0-beta" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.14.0-beta/shared/battery-quantities>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/electrochemistry> ;
-    owl:priorVersion "0.13.0-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.14.0-beta/battery> ;
-    owl:versionInfo "0.14.0-beta" ;
+    owl:backwardCompatibleWith "0.14.0-beta" ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.15.0-beta/shared/battery-quantities>,
+        <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/electrochemistry> ;
+    owl:priorVersion "0.14.0-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery> ;
+    owl:versionInfo "0.15.0-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
 
 echem:EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 rdfs:comment "An electrochemical cell which is not designed to be electrically recharged."@en ;
@@ -1798,8 +1824,10 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
 
 :battery_679f6984_e0dc_4285_9dbb_429c5779590c a owl:Class ;
     rdfs:label "ElectrochemicalEquivalentCircuitModel"@en ;
+    rdfs:comment "an equivalent circuit model of an electrochemical system or device"@en ;
     rdfs:subClassOf emmo:EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11 ;
-    skos:prefLabel "ElectrochemicalEquivalentCircuitModel"@en .
+    skos:prefLabel "ElectrochemicalEquivalentCircuitModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an equivalent circuit model of an electrochemical system or device"@en .
 
 :battery_7eb62323_1001_4320_8fb5_c590ce93d3ce a owl:Class ;
     rdfs:label "LeadAcidBattery"@en ;
@@ -1972,8 +2000,10 @@ echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 rdfs:comment "An electrochemical
 
 :battery_b1921f7b_afac_465a_a275_26f929f7f936 a owl:Class ;
     rdfs:label "BatteryContinuumModel"@en ;
+    rdfs:comment "a battery model based on solving continuity equations"@en ;
     rdfs:subClassOf emmo:EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea ;
-    skos:prefLabel "BatteryContinuumModel"@en .
+    skos:prefLabel "BatteryContinuumModel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery model based on solving continuity equations"@en .
 
 :battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2 a owl:Class ;
     rdfs:label "NickelOxideBattery"@en ;

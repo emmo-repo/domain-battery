@@ -61,6 +61,10 @@ DepthOfDischarge
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the ratio of the discharged capacity to the rated capacity of an electrochemical device</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">DoD</td>
   </tr>
@@ -106,6 +110,10 @@ NominalBatteryProperty
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery property defined by the manufacturer and determined under some specified conditions</td>
+  </tr>
   </table>
 
 
@@ -194,6 +202,10 @@ StateOfCharge
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the ratio of the charged capacity to the rated capacity of an electrochemical device</td>
+  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">SoC</td>
@@ -636,6 +648,10 @@ BatteryContinuumModel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery model based on solving continuity equations</td>
+  </tr>
   </table>
 
 
@@ -674,6 +690,10 @@ BatteryCyclerSystem
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a system for performing battery cycling characterization</td>
+  </tr>
   </table>
 
 
@@ -689,6 +709,29 @@ BatteryEquivalentCircuitModel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an equivalent circuit model of a battery</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9"></div>
+
+BatteryHalfCell
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a type of battery cell used to characterize performance of an electrode against a reference.</td>
+  </tr>
   </table>
 
 
@@ -792,6 +835,10 @@ BatteryPhenomenon
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery phenomenon</td>
+  </tr>
   </table>
 
 
@@ -1334,6 +1381,10 @@ ElectrochemicalEquivalentCircuitModel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an equivalent circuit model of an electrochemical system or device</td>
+  </tr>
   </table>
 
 
@@ -1622,6 +1673,10 @@ IntentionalBatteryProcess
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an intentional battery process</td>
+  </tr>
   </table>
 
 
@@ -1712,26 +1767,11 @@ KR6
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">NickelCadmiumAABattery</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2"></div>
-
-KR6
----
-
-* https://w3id.org/emmo/domain/battery#battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">nickel cadmium (NiCd) cylindrical cell in an R6 (AA) case</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">NickelCadmiumAABattery</td>
   </tr>
   </table>
 
@@ -1874,29 +1914,6 @@ LR23
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">alkaline zinc manganese dioxide cylindrical cell in a R23 case</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">AlkalineABattery</td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="battery_21634c62_62eb_4a4f_9210_fb056c0bf98f"></div>
-
-LR23
-----
-
-* https://w3id.org/emmo/domain/battery#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">usually contains a stack of four LR932 button cells shrink wrapped together</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
@@ -2443,7 +2460,7 @@ LithiumIonNickelCobaltAluminiumOxideBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">a lithium-ion battery with a lithium nickel cobalt aluminium oxide positive electrode</td>
   </tr>
   </table>
@@ -2516,7 +2533,7 @@ LithiumIonSiliconBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">a lithium-ion battery with a silicon metal negative electrode</td>
   </tr>
   </table>
@@ -2592,6 +2609,10 @@ LithiumIonTitanateBattery
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a lithium ion battery with a lithium titanate (LTO) negative electrode</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">LTOBattery</td>
   </tr>
@@ -2602,10 +2623,6 @@ LithiumIonTitanateBattery
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q2564903'>https://www.wikidata.org/wiki/Q2564903</a></td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">a lithium ion battery with a lithium titanate (LTO) negative electrode</td>
   </tr>
   </table>
 
@@ -2810,6 +2827,10 @@ MagnesiumMetalBattery
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery containing a magnesium metal electrode</td>
+  </tr>
   </table>
 
 
@@ -2825,6 +2846,10 @@ MagnesiumShuttleBattery
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a magnesium based battery using an ion shuttle mechanism</td>
+  </tr>
   </table>
 
 
@@ -3331,6 +3356,10 @@ P2DModel
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery model discretized on a pseudo-two-dimensional grid</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">DFNModel, DoyleFullerNewmanModel, NewmanModel</td>
   </tr>
@@ -3349,6 +3378,10 @@ P3DModel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery model discretized on a pseudo-three-dimensional grid</td>
+  </tr>
   </table>
 
 
@@ -3364,6 +3397,10 @@ P4DModel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery model discretized on a pseudo-four-dimensional grid</td>
+  </tr>
   </table>
 
 
@@ -3657,7 +3694,7 @@ PrismaticBattery
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">a battery cell in a rigid container with rectangular faces</td>
   </tr>
   </table>
@@ -4152,6 +4189,10 @@ SwagelokCell
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery cell in a Swagelok case</td>
+  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">SwagelokBatteryCell</td>
