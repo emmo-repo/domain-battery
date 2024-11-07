@@ -17,8 +17,8 @@
 @base <https://w3id.org/emmo/domain/battery/battery> .
 
 <https://w3id.org/emmo/domain/battery/battery> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.14.0-beta/battery> ;
-                                                owl:imports <https://w3id.org/emmo/domain/battery/0.14.0-beta/shared/battery-quantities> ,
+                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery> ;
+                                                owl:imports <https://w3id.org/emmo/domain/battery/0.15.0-beta/shared/battery-quantities> ,
                                                             <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/electrochemistry> ;
                                                 dcterms:abstract "The Battery Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for battery components, cells, interfaces, methods, models, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of batteries. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development." ;
                                                 dcterms:bibliographicCitation "https://zenodo.org/doi/10.5281/zenodo.7693672" ;
@@ -28,9 +28,9 @@
                                                 dcterms:created "2022-11-25"^^xsd:date ;
                                                 dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                 <https://orcid.org/0000-0003-2954-1233> ;
-                                                dcterms:issued "2024-09-30"^^xsd:date ;
+                                                dcterms:issued "2024-11-07"^^xsd:date ;
                                                 dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                dcterms:modified "2024-09-30"^^xsd:date ;
+                                                dcterms:modified "2024-11-07"^^xsd:date ;
                                                 dcterms:publisher "EMMO" ;
                                                 dcterms:source <https://www.electropedia.org> ;
                                                 dcterms:title "Battery Domain Ontology"@en ;
@@ -38,9 +38,9 @@
                                                 bibo:status "unstable" ;
                                                 vann:preferredNamespacePrefix "battery" ;
                                                 vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
-                                                owl:backwardCompatibleWith "0.13.0-beta" ;
-                                                owl:priorVersion "0.13.0-beta" ;
-                                                owl:versionInfo "0.14.0-beta" ;
+                                                owl:backwardCompatibleWith "0.14.0-beta" ;
+                                                owl:priorVersion "0.14.0-beta" ;
+                                                owl:versionInfo "0.15.0-beta" ;
                                                 foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
 
 #################################################################
@@ -437,6 +437,10 @@
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q7234684" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a potassium ion shuttle battery with two potassium insertion electrodes"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Potassium-ion_battery"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
+:battery_23e6170d_a70b_4de9_a4db_458e24a327ac rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce
@@ -1315,6 +1319,13 @@
                                                               ] ;
                                               skos:prefLabel "FullFlowBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of redox flow battery that store electroactive material only in external tanks"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9
+:battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_68ed592a_7924_45d0_a108_94d6275d57f0 ;
+                                              skos:prefLabel "BatteryHalfCell"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of battery cell used to characterize performance of an electrode against a reference."@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fce9aeef
