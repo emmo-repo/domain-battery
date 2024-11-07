@@ -9,8 +9,8 @@
 @base <https://w3id.org/emmo/domain/battery/battery-products> .
 
 <https://w3id.org/emmo/domain/battery/battery-products> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery-products> ;
-                                                        owl:imports <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery> .
+                                                        owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.1-beta/battery-products> ;
+                                                        owl:imports <https://w3id.org/emmo/domain/battery/0.15.1-beta/battery> .
 
 #################################################################
 #    Annotation properties
