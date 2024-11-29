@@ -44,8 +44,8 @@
     dcterms:creator "Eibar Flores",
         "Simon Clark" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.24.0-beta/modules/quantities> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.2-beta/shared/battery-quantities> ;
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.24.1-beta/modules/quantities> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.16.0-beta/shared/battery-quantities> ;
     owl:versionInfo "0.15.1-beta" .
 
 :battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c a owl:Class ;
