@@ -1,0 +1,400 @@
+@prefix : <https://w3id.org/emmo/domain/battery-model-lithium-ion#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix annotations: <https://w3id.org/emmo/top/annotations#> .
+@prefix electrochemistry: <https://w3id.org/emmo/domain/electrochemistry#> .
+@base <https://w3id.org/emmo/domain/battery/subdomains/battery-model-lithium-ion> .
+
+<https://w3id.org/emmo/domain/battery/subdomains/battery-model-lithium-ion> rdf:type owl:Ontology ;
+                                                                            owl:versionIRI <https://w3id.org/emmo/domain/battery-model-lithium-ion/0.18.0-beta/subdomains/battery-model-lithium-ion> ;
+                                                                            owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/battery> ;
+                                                                            dcterms:abstract "The battery-model-lithium-ion extension contains the terms and relations specific to the process of modelling lithium-ion batteries." .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_0a5b99ee_995b_4899_a79b_925a4086da37
+:battery_0a5b99ee_995b_4899_a79b_925a4086da37 rdf:type owl:AnnotationProperty ;
+                                           skos:prefLabel "bpxKey"@en ;
+                                           rdfs:subPropertyOf rdfs:label .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_1b718841_5d72_4071_bb71_fc4a754f5e30
+:battery_1b718841_5d72_4071_bb71_fc4a754f5e30 rdf:type owl:AnnotationProperty ;
+                                           skos:prefLabel "cidemodKey"@en ;
+                                           rdfs:subPropertyOf rdfs:label .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e5e86474_8623_48ea_a1cf_502bdb10aa14
+:battery_e5e86474_8623_48ea_a1cf_502bdb10aa14 rdf:type owl:AnnotationProperty ;
+                                           skos:prefLabel "battmoKey"@en ;
+                                           rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
+:battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
+                                               skos:prefLabel "InitialLithiumConcentrationInElectrolyte"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the initial amount concentration of lithium in an electrolyte"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Initial concentration [mol.m-3]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','initial_concentration','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0a1e73c5_e91b_4365_88d4_1e1f476bf776
+:battery_0a1e73c5_e91b_4365_88d4_1e1f476bf776 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
+                                               skos:prefLabel "PositiveElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Surface area per unit volume [m-1]']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
+:battery_0e2f4fe6_570a_4d13_81e9_de1d4f9987af rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                               skos:prefLabel "NegativeElectrodeActiveMaterialOpenCircuitVoltage"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','OCP [V]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'OCP','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
+:battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 ;
+                                               skos:prefLabel "BatteryCellDensity"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the overall density of a lithium-ion battery cell, calculated as the quotient of the total mass and the total volume"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Density [kg.m-3]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['properties','density','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_1923575e_05b0_4b8b_8d58_0b2f2ba41c3e
+:battery_1923575e_05b0_4b8b_8d58_0b2f2ba41c3e rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc ;
+                                               skos:prefLabel "ElectrolyteConductivity"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Conductivity [S.m-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','ionic_conductivity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
+:battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
+                                               skos:prefLabel "NegativeElectrodeLithiumStoichiometricCoefficientAtSOC0"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Minimum stoichiometry']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry0','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_404126e0_cb1b_44e4_98dc_2474185767a1
+:battery_404126e0_cb1b_44e4_98dc_2474185767a1 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
+                                               skos:prefLabel "PositiveElectrodeReactionRateConstant"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'kinetic_constant','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_43f77743_1af6_4a0f_9cc6_285c2a450549
+:battery_43f77743_1af6_4a0f_9cc6_285c2a450549 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
+                                               skos:prefLabel "PositiveElectrodeElectronicConductivity"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Conductivity [S.m-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','electronic_conductivity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_47288277_4aed_447e_b659_0c975d031406
+:battery_47288277_4aed_447e_b659_0c975d031406 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_43003c86_9d15_433b_9789_ee2940920656 ;
+                                               skos:prefLabel "SeparatorThickness"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Separator','Thickness [m]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['separator','thickness','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_4c274506_af5b_4ef1_8217_829ffd459f28
+:battery_4c274506_af5b_4ef1_8217_829ffd459f28 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                               skos:prefLabel "LithiumDiffusivityInElectrolyte"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in an electrolyte"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity [m2.s-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_4d69edda_d2fa_40b0_9c1e_52e08debf578
+:battery_4d69edda_d2fa_40b0_9c1e_52e08debf578 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "ActivationEnergyOfLithiumDiffusivityInPositiveElectrode"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity activation energy [J.mol-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'diffusion_constant','arrhenius','activation_energy']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_50247e71_75fe_4986_959e_fd06c6be98db
+:battery_50247e71_75fe_4986_959e_fd06c6be98db rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                               skos:prefLabel "LithiumDiffusivityInNegativeElectrode"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the negative electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Diffusivity [m2.s-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'diffusion_constant','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
+:battery_52ab4fdd_f945_4541_9ce6_cd6fd3a05861 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                               skos:prefLabel "PositiveElectrodeActiveMaterialOpenCircuitVoltage"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','OCP [V]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'OCP','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_56b9cd1f_5397_4385_9292_30d93d9e7a05
+:battery_56b9cd1f_5397_4385_9292_30d93d9e7a05 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "PostiveElectrodeActivationEnergyOfReaction"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_56de36fe_e8e1_486c_8d29_061ac8d28c13
+:battery_56de36fe_e8e1_486c_8d29_061ac8d28c13 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "ActivationEnergyOfLithiumDiffusivityInElectrolyte"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity activation energy [J.mol-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','arrhenius','activation_energy']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_58400817_3282_46e5_942e_3a1538631403
+:battery_58400817_3282_46e5_942e_3a1538631403 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
+                                               skos:prefLabel "PositiveElectrodeActiveMaterialParticleRadius"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Particle radius [m]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'particle_radius','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_5cb403c4_4f28_46cb_81c4_21c5c47ef14a
+:battery_5cb403c4_4f28_46cb_81c4_21c5c47ef14a rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
+                                               skos:prefLabel "NegativeElectrodeCoatingPorosity"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Porosity']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','porosity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_62f5beeb_6d1e_442a_8048_3ebe08882964
+:battery_62f5beeb_6d1e_442a_8048_3ebe08882964 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
+                                               skos:prefLabel "PositiveElectrodeCoatingThickness"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the positive electrode coating"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Thickness [m]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','thickness','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_7481c4c9_c247_4248_a045_a1077230acba
+:battery_7481c4c9_c247_4248_a045_a1077230acba rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
+                                               skos:prefLabel "PositiveElectrodeCoatingPorosity"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Porosity']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','porosity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_80920875_62ac_4e29_b970_ec4316e76aa5
+:battery_80920875_62ac_4e29_b970_ec4316e76aa5 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
+                                               skos:prefLabel "PositiveElectrodeLithiumStoichiometricCoefficientAtSOC0"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Minimum stoichiometry']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry0','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_86af4487_33c1_4562_a00b_3a8252ffe378
+:battery_86af4487_33c1_4562_a00b_3a8252ffe378 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "ActivationEnergyOfLithiumDiffusivityInNegativeElectrode"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Diffusivity activation energy [J.mol-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'diffusion_constant','arrhenius','activation_energy']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0
+:battery_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "ActivationEnergyOfElectrolyteConductivity"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the ionic conductivity of an electrolyte"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Conductivity activation energy [J.mol-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','ionic_conductivity','arrhenius','activation_energy']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8c336ae9_1818_4b08_a660_4bb83b28351f
+:battery_8c336ae9_1818_4b08_a660_4bb83b28351f rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
+                                               skos:prefLabel "NegativeElectrodeLithiumStoichiometricCoefficientAtSOC100"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Maximum stoichiometry']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry1','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_99041897_5c08_40ed_9118_3e77e9b0e191
+:battery_99041897_5c08_40ed_9118_3e77e9b0e191 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
+                                               skos:prefLabel "PositiveElectrodeLithiumStoichiometricCoefficientAtSOC100"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum stoichiometry']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry1','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7
+:battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_b4f4ed28_d24c_4a00_9583_62ab839abeca ;
+                                               skos:prefLabel "BatteryCellLumpedSpecificHeatCapacity"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lumped specific heat capacity of a battery cell"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Specific heat capacity [J.K-1.kg-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['properties','specific_heat','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_9d558b56_d3b8_429a_a4e2_d2ffab895e42
+:battery_9d558b56_d3b8_429a_a4e2_d2ffab895e42 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                               skos:prefLabel "PositiveElectrodeEntropicChangeCoefficient"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Entropic change coefficient [V.K-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'entropy_coefficient','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a4858e4d_dd3b_48ce_97ba_3eeb8571b633
+:battery_a4858e4d_dd3b_48ce_97ba_3eeb8571b633 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
+                                               skos:prefLabel "SeparatorPorosity"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Separator','Porosity']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['separator','porosity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b4184e46_c53c_47cc_9bfc_186fd77836a5
+:battery_b4184e46_c53c_47cc_9bfc_186fd77836a5 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed ;
+                                               skos:prefLabel "BatteryCellVolume"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total volume of a battery cell, determined by its external dimensions"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Volume [m3]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['properties','volume','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_be3da3e2_58a9_4e58_adc2_7336d312717c
+:battery_be3da3e2_58a9_4e58_adc2_7336d312717c rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
+                                               skos:prefLabel "NegativeElectrodeElectronicConductivity"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the electronic conductivity of the negative electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Conductivity [S.m-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','electronic_conductivity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_bfe553c2_a63e_49b6_a209_0855dfc39724
+:battery_bfe553c2_a63e_49b6_a209_0855dfc39724 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
+                                               skos:prefLabel "NegativeElectrodeActiveMaterialParticleRadius"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Particle radius [m]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'particle_radius','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3
+:battery_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
+                                               skos:prefLabel "NegativeElectrodeReactionRateConstant"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'kinetic_constant','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c5f9b91e_a770_4e9b_837e_fa2a76019111
+:battery_c5f9b91e_a770_4e9b_837e_fa2a76019111 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
+                                               skos:prefLabel "NegativeElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Surface area per unit volume [m-1]']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c69a9d55_823f_4113_a305_ebc89dde7de3
+:battery_c69a9d55_823f_4113_a305_ebc89dde7de3 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
+                                               skos:prefLabel "PositiveElectrodeMaximumLithiumConcentration"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum concentration of lithium in the positive electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum concentration [mol.m-3]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'maximum_concentration','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
+:battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e ;
+                                               skos:prefLabel "BatteryCellSurfaceArea"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the external surface area of a battery cell"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Parameterisation','Cell','External surface area [m2]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['properties','external_surface_area','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124
+:battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
+                                               skos:prefLabel "NegativeElectrodeCoatingThickness"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the negative electrode coating"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Thickness [m]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','thickness','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
+:battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_d97b27cb_61a4_4568_a38b_4edd4f224acc ;
+                                               skos:prefLabel "LithiumTransportNumber"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "transport number of lithium ion in electrolyte"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Cation transference number']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','transference_number','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e59188bb_ce66_49f6_84aa_ecb98e76941e
+:battery_e59188bb_ce66_49f6_84aa_ecb98e76941e rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                               skos:prefLabel "LithiumDiffusivityInPositiveElectrode"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the positive electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity [m2.s-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'diffusion_constant','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e808a26a_5812_49e9_894c_b793c7fe0c38
+:battery_e808a26a_5812_49e9_894c_b793c7fe0c38 rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
+                                               skos:prefLabel "NegativeElectrodeMaximumLithiumConcentration"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum concentration of lithium in the negative electrode"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Maximum concentration [mol.m-3]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'maximum_concentration','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
+:battery_eac57b09_5cc9_41d7_b2c8_40218d7fd47c rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                               skos:prefLabel "NegativeElectrodeEntropicChangeCoefficient"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Entropic change coefficient [V.K-1]']"@en ;
+                                               :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'entropy_coefficient','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_fda9539d_5232_471c_8945_b9a8ec7247fe
+:battery_fda9539d_5232_471c_8945_b9a8ec7247fe rdf:type owl:Class ;
+                                               rdfs:subClassOf electrochemistry:electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                               skos:prefLabel "NegativeElectrodeActivationEnergyOfReaction"@en ;
+                                               :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+electrochemistry:electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['simulation','initial_state','exterior_temperature','value']"@en ;
+                                                                       :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Ambient temperature [K]']"@en .
+
+
+electrochemistry:electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9 :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['simulation','triggers','voltage','lower']"@en ;
+                                                                       :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Lower voltage cut-off [V]']"@en .
+
+
+electrochemistry:electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['simulation','initial_state','initial_temperature','value']"@en ;
+                                                                       :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Initial temperature [K]']"@en .
+
+
+electrochemistry:electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3 :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['properties','area','value']"@en ;
+                                                                       :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Electrode area [m2]']"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

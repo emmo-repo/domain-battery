@@ -1,16 +1,25 @@
-@prefix : <https://w3id.org/emmo/domain/battery/battery#> .
+@prefix : <https://w3id.org/emmo/domain/battery#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix emmo: <https://w3id.org/emmo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://www.schema.org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix echem: <https://w3id.org/emmo/domain/electrochemistry#> .
+@prefix schema: <https://schema.org/> .
+@prefix chemsub: <https://w3id.org/emmo/domain/chemicalsubstance#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix annotations: <https://w3id.org/emmo/top/annotations#> .
 @base <https://w3id.org/emmo/domain/battery/modules/battery-cell-geometry> .
 
 <https://w3id.org/emmo/domain/battery/modules/battery-cell-geometry> rdf:type owl:Ontology ;
-                                                              owl:versionIRI <https://w3id.org/emmo/domain/battery/0.17.0-beta/modules/battery-cell-geometry> ;
-                                                              owl:imports <https://w3id.org/emmo/domain/battery/0.17.0-beta/battery> .
+                                                              owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-cell-geometry> ;
+                                                              owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/reference/battery-reference> ;
+                                                              dcterms:abstract "The battery-cell-geometry module contains the terms and relations specific to the description of battery cell design and architecture." .
 
 #################################################################
 #    Object Properties
