@@ -5,7 +5,7 @@
 
    Get Started <pages/getstarted>
    Examples <pages/examples>
-   Class Index <pages/battery>
+   Class Index <battery>
    About <pages/about>
    FAQ <pages/faq>
 
