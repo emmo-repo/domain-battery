@@ -1,0 +1,8 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://w3id.org/emmo/domain/battery/modules/battery-manufacturing> a owl:Ontology ;
+    dcterms:abstract "The battery-manufacturing module contains the terms and relations for the general process of manufacturing batteries. Battery specific extensions are available." ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/reference/battery-reference> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-manufacturing> .
+

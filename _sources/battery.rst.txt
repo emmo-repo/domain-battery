@@ -3,8 +3,8 @@
 Class Index
 ===========
 
-Quantities used in Batteries
-============================
+Battery-quantities
+==================
 
 .. raw:: html
 
@@ -28,7 +28,6 @@ BatteryEnergy
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_230809da_bc18_42ec_ac94_4ca6a86292d1"></div>
@@ -46,7 +45,6 @@ BatteryQuantity
   <td class="element-table-value">Physical quantities defined within the domain of batteries.</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -74,7 +72,6 @@ DepthOfDischarge
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_1cfab1de_8a2c_49cd_abbe_a71a3f1ba78c"></div>
@@ -97,7 +94,6 @@ FullCharge
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_fb9baf9b_680e_493e_a755_da9bb1fc9fae"></div>
@@ -115,7 +111,6 @@ NominalBatteryProperty
   <td class="element-table-value">a battery property defined by the manufacturer and determined under some specified conditions</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -143,7 +138,6 @@ ServiceLife
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b10c88d8_43d9_42dd_9f65_49ce2314513f"></div>
@@ -166,7 +160,6 @@ ServiceMass
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a882d3a6_e055_4743_8fc6_5510485dcfe2"></div>
@@ -188,7 +181,6 @@ StartingCapability
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-26</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -216,9 +208,8 @@ StateOfCharge
   </tr>
   </table>
 
-
-Battery Concepts
-================
+Battery-reference
+=================
 
 .. raw:: html
 
@@ -246,7 +237,6 @@ Alkaline4SR44
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b"></div>
@@ -273,7 +263,6 @@ AlkalineA23
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd"></div>
@@ -295,7 +284,6 @@ AlkalineA27
   <td class="element-table-value">8LR732</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -323,7 +311,6 @@ AlkalineCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_cbc032aa_657f_4dca_87f8_edaccc70348d"></div>
@@ -350,7 +337,6 @@ AlkalineLanternBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d"></div>
@@ -373,7 +359,6 @@ AlkalinePP3
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b5910d2f_3114_4663_8d46_e418ff859251"></div>
@@ -395,7 +380,6 @@ AlkalineZincAirBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-02'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-02</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -431,7 +415,6 @@ AlkalineZincManganeseDioxideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_44cb1e3b_480c_4594_a79a_4e4f001050ea"></div>
@@ -453,7 +436,6 @@ AluminiumAirBattery
   <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Aluminium%E2%80%93air_battery'>https://en.wikipedia.org/wiki/Aluminium%E2%80%93air_battery</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -480,7 +462,6 @@ AluminiumBattery
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q85741073'>https://www.wikidata.org/wiki/Q85741073</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -512,7 +493,6 @@ AluminiumShuttleBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_edc98332_248a_436a_a352_5a7897150c4f"></div>
@@ -531,7 +511,6 @@ AqueousMetallicFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca"></div>
@@ -549,7 +528,6 @@ AqueousOrganicFlowBattery
   <td class="element-table-value">a full redox flow battery with aqueous electrolytes that contain organic species as the active components</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -585,7 +563,6 @@ Battery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_4dfa5c98_e185_456b_9f06_89364ac637e5"></div>
@@ -607,7 +584,6 @@ BatteryBase
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-09'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-09</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -635,7 +611,6 @@ BatteryCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b1921f7b_afac_465a_a275_26f929f7f936"></div>
@@ -653,7 +628,6 @@ BatteryContinuumModel
   <td class="element-table-value">a battery model based on solving continuity equations</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -677,7 +651,6 @@ BatteryCrate
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_bc033b97_a5b7_455c_94ce_e95676cb816b"></div>
@@ -695,7 +668,6 @@ BatteryCyclerSystem
   <td class="element-table-value">a system for performing battery cycling characterization</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -715,7 +687,6 @@ BatteryEquivalentCircuitModel
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9"></div>
@@ -733,7 +704,6 @@ BatteryHalfCell
   <td class="element-table-value">a type of battery cell used to characterize performance of an electrode against a reference.</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -753,7 +723,6 @@ BatteryInterface
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec"></div>
@@ -771,7 +740,6 @@ BatteryModule
   <td class="element-table-value">a modular assembly of multiple battery cells in a case, designed to be integrated into a larger battery pack</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -794,7 +762,6 @@ BatteryOnFloat
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-35'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-35</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -822,7 +789,6 @@ BatteryPack
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_f768ea27_09ba_4875_a5cc_2c644b0753a3"></div>
@@ -840,7 +806,6 @@ BatteryPhenomenon
   <td class="element-table-value">a battery phenomenon</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -864,7 +829,6 @@ BatteryRack
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_bcf8f9dd_f493_4547_a5a3_e14b1f4c0f5f"></div>
@@ -886,7 +850,6 @@ BatteryTray
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-35'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-35</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -913,7 +876,6 @@ BufferBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-16'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-16</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -945,7 +907,6 @@ BunsenCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_980da224_75c0_4c47_af95_b51ca1443213"></div>
@@ -963,7 +924,6 @@ CR2016
   <td class="element-table-value">a Li | MnO2 coin cell with a R2016 case</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -987,7 +947,6 @@ CR2025
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b"></div>
@@ -1010,7 +969,6 @@ CR2032
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d27fd24f_a96c_4db3_a579_777bb423043d"></div>
@@ -1029,7 +987,6 @@ CadmiumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f"></div>
@@ -1047,7 +1004,6 @@ CalciumAirBattery
   <td class="element-table-value">a metal-air battery with a calcium negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1075,7 +1031,6 @@ CalciumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_2099e6d6_680b_476c_a123_f6c89ff93389"></div>
@@ -1094,7 +1049,6 @@ CalciumIonBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_e3717684_26bd_40ce_b279_e7b39cc3e67e"></div>
@@ -1112,7 +1066,6 @@ CalciumSulfurBattery
   <td class="element-table-value">a battery with a calcium negative electrode and a sulfur positive electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1143,7 +1096,6 @@ ClarkCell
   <td class="element-table-value">included for historical reference</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1179,7 +1131,6 @@ CoinCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40"></div>
@@ -1205,7 +1156,6 @@ CylindricalBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-39'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-39</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1237,7 +1187,6 @@ DaniellCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_0493552f_6463_4f57_bdbf_31b5b15ea72f"></div>
@@ -1264,7 +1213,6 @@ DischargedEmptyBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737"></div>
@@ -1286,7 +1234,6 @@ DrainedChargedBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-29'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-29</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1318,7 +1265,6 @@ DryCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a1924455_6f7e_4a2d_afd3_95527523183a"></div>
@@ -1340,7 +1286,6 @@ DryChargedBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-30'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-30</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1368,7 +1313,6 @@ EarthBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_679f6984_e0dc_4285_9dbb_429c5779590c"></div>
@@ -1386,7 +1330,6 @@ ElectrochemicalEquivalentCircuitModel
   <td class="element-table-value">an equivalent circuit model of an electrochemical system or device</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1414,7 +1357,6 @@ EmergencyBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_7aa76ea6_f388_4b1b_9d77_187526a1e31f"></div>
@@ -1436,7 +1378,6 @@ FaurePlate
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-19'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-19</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1460,7 +1401,6 @@ FilledChargedBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b8a811a8_733e_45e9_ac8a_8a6e93781265"></div>
@@ -1482,7 +1422,6 @@ FilledDischargedBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-33'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-33</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1509,7 +1448,6 @@ FirstCharge
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-43'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-43</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1541,7 +1479,6 @@ FrogBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_8c808507_976a_4225_8099_604dc7abc5ea"></div>
@@ -1559,7 +1496,6 @@ FullFlowBattery
   <td class="element-table-value">a type of redox flow battery that store electroactive material only in external tanks</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1591,7 +1527,6 @@ GroveCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a71a4bf2_dee6_4aa4_8ad4_9f38c261fb84"></div>
@@ -1614,7 +1549,6 @@ HR6
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_aaac65cb_050c_407a_953a_f3ad3b675baa"></div>
@@ -1632,7 +1566,6 @@ HybridFlowBattery
   <td class="element-table-value">a type of redox flow battery comprising at least one solid electroactive material that is deposited or stripped within the stack</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1660,7 +1593,6 @@ HydrogenBromineBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_7c072505_7ea6_4bfd_8403_7133b3a4b806"></div>
@@ -1678,7 +1610,6 @@ IntentionalBatteryProcess
   <td class="element-table-value">an intentional battery process</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1702,7 +1633,6 @@ IronAirBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_f93bd38a_c44a_4a79_95fb_9937504b9448"></div>
@@ -1720,7 +1650,6 @@ IronBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of iron or containing iron</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1752,7 +1681,6 @@ IronRedoxFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_ad7c1d81_9a9f_4174_88ea_3ba3e8f4dbe2"></div>
@@ -1774,7 +1702,6 @@ KR6
   <td class="element-table-value">NickelCadmiumAABattery</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1802,7 +1729,6 @@ LR03
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91"></div>
@@ -1824,7 +1750,6 @@ LR1
   <td class="element-table-value">AlkalineNBattery, N</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1848,7 +1773,6 @@ LR12
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d00e842e_ee0b_4e25_bd17_d64d76d69730"></div>
@@ -1870,7 +1794,6 @@ LR14
   <td class="element-table-value">AlkalineCBattery, C</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1898,7 +1821,6 @@ LR20
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_21634c62_62eb_4a4f_9210_fb056c0bf98f"></div>
@@ -1920,7 +1842,6 @@ LR23
   <td class="element-table-value">AlkalineABattery</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1944,7 +1865,6 @@ LR25
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359"></div>
@@ -1966,7 +1886,6 @@ LR44
   <td class="element-table-value">LR1154</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -1993,7 +1912,6 @@ LR6
   <td class="element-table-value">introduced 1907, but added to ANSI standard sizes in 1947</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2033,7 +1951,6 @@ LeadAcidBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_76288c39_86d7_45cf_85f8_a498ccf6f531"></div>
@@ -2051,7 +1968,6 @@ LeadBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of lead or containing lead</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2079,7 +1995,6 @@ LeclancheBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4"></div>
@@ -2105,7 +2020,6 @@ LeclancheWetCell
   <td class="element-table-value">included for historical reference</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2137,7 +2051,6 @@ LemonBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22"></div>
@@ -2163,7 +2076,6 @@ LithiumAirBattery
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q6126452'>https://www.wikidata.org/wiki/Q6126452</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2199,7 +2111,6 @@ LithiumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_126e9af4_41b4_45b8_81ca_b36af2841d5b"></div>
@@ -2222,7 +2133,6 @@ LithiumCarbonMonofluorideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_eb37da80_4500_49c6_ac9b_da2b3d810efc"></div>
@@ -2244,7 +2154,6 @@ LithiumCopperOxideBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-11'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-11</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2271,7 +2180,6 @@ LithiumFlowBattery
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q17142201'>https://www.wikidata.org/wiki/Q17142201</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2307,7 +2215,6 @@ LithiumIonBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_4f0b1312_da2f_4039_a06d_d571ce51f835"></div>
@@ -2334,7 +2241,6 @@ LithiumIonCobaltOxideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_2018e0da_4c25_46e9_83db_38431fc81ce0"></div>
@@ -2356,7 +2262,6 @@ LithiumIonGraphiteBattery
   <td class="element-table-value">GrBattery</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2388,7 +2293,6 @@ LithiumIonIronPhosphateBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd"></div>
@@ -2414,7 +2318,6 @@ LithiumIonManganeseIronPhosphateBattery
   <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/LMFP_battery'>https://en.wikipedia.org/wiki/LMFP_battery</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2446,7 +2349,6 @@ LithiumIonManganeseOxideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2"></div>
@@ -2464,7 +2366,6 @@ LithiumIonNickelCobaltAluminiumOxideBattery
   <td class="element-table-value">a lithium-ion battery with a lithium nickel cobalt aluminium oxide positive electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2492,7 +2393,6 @@ LithiumIonNickelManganeseCobaltOxideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_72542944_ee85_4335_9f6d_621840e38686"></div>
@@ -2519,7 +2419,6 @@ LithiumIonPolymerBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4"></div>
@@ -2537,7 +2436,6 @@ LithiumIonSiliconBattery
   <td class="element-table-value">a lithium-ion battery with a silicon metal negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2557,7 +2455,6 @@ LithiumIonSiliconGraphiteBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d51a2b95_a327_4ef5_8692_ab6c412f4945"></div>
@@ -2576,7 +2473,6 @@ LithiumIonSiliconOxideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b3405eb1_801e_416b_8cd2_1473f1868e27"></div>
@@ -2594,7 +2490,6 @@ LithiumIonSiliconOxideGraphiteBattery
   <td class="element-table-value">a lithium-ion battery with a blended silicon oxide graphite negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2626,7 +2521,6 @@ LithiumIonTitanateBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_fcbbda5e_7ba3_4355_8817_b90159e59847"></div>
@@ -2649,7 +2543,6 @@ LithiumIronDisulphideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363"></div>
@@ -2671,7 +2564,6 @@ LithiumManganeseDioxideBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-10'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-10</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2699,7 +2591,6 @@ LithiumMetalBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a5c1aa29_5404_4746_a9d0_0262c44ca419"></div>
@@ -2725,7 +2616,6 @@ LithiumSulfurBattery
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q899170'>https://www.wikidata.org/wiki/Q899170</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2753,7 +2643,6 @@ LithiumThionylChlorideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_80c5a33a_db50_4560_8c04_ba1ce014177e"></div>
@@ -2771,7 +2660,6 @@ MagnesiumAirBattery
   <td class="element-table-value">a metal-air battery with a magnesium negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2795,7 +2683,6 @@ MagnesiumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e"></div>
@@ -2813,7 +2700,6 @@ MagnesiumIonBattery
   <td class="element-table-value">a shuttle battery for magnesium ions with two magnesium insertion electrodes</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2833,7 +2719,6 @@ MagnesiumMetalBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_910434d7_36fa_4279_b071_9bac5a9daf92"></div>
@@ -2851,7 +2736,6 @@ MagnesiumShuttleBattery
   <td class="element-table-value">a magnesium based battery using an ion shuttle mechanism</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2875,7 +2759,6 @@ MaintanenceFreeBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_5ae0d63a_51a9_433f_b92b_da7fd66ace6e"></div>
@@ -2893,7 +2776,6 @@ MembranelessFlowBattery
   <td class="element-table-value">a redox flow battery that separates electrolytes by leveraging laminar flow, rather than using a typical ion-perm-selective membrane</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2928,7 +2810,6 @@ MercuryBattery
   <td class="element-table-value">included for historical reference</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -2968,7 +2849,6 @@ MetalAirBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_cf82b3bd_25cc_4930_bf49_c57711da1847"></div>
@@ -2986,7 +2866,6 @@ MetalCarbonDioxideBattery
   <td class="element-table-value">battery in which gaseous carbon dioxide serves as the active material at the positive electrode and a metal as the active material of the negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3022,7 +2901,6 @@ MoltenSaltCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_84b41796_e958_4740_925c_94c180b91e0f"></div>
@@ -3049,7 +2927,6 @@ MonoblocBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_1251f69a_6aab_41df_8e68_eabfcca43bde"></div>
@@ -3075,7 +2952,6 @@ NeutralZincAirBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-05'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-05</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3111,7 +2987,6 @@ NickelCadmiumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a316de25_e469_4a60_81fa_fcb0f372502f"></div>
@@ -3146,7 +3021,6 @@ NickelIronBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_75cab90d_4bff_472a_be0f_48e61a272d01"></div>
@@ -3177,7 +3051,6 @@ NickelMetalHydrideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2"></div>
@@ -3195,7 +3068,6 @@ NickelOxideBattery
   <td class="element-table-value">a battery with a nickel oxide positive electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3222,7 +3094,6 @@ NickelZincBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-04</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3258,7 +3129,6 @@ NickelZincBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_8229b502_2e65_4652_b51d_173c697cf24a"></div>
@@ -3281,7 +3151,6 @@ NonAqueousCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_1191d114_5aec_4167_97b1_c0bca9414c49"></div>
@@ -3300,7 +3169,6 @@ NonAqueousMetallicFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_5555b4bc_216e_4772_a914_b66b6e783079"></div>
@@ -3318,7 +3186,6 @@ NonAqueousOrganicFlowBattery
   <td class="element-table-value">a full redox flow battery with non-aqueous electrolytes that contain metallic species as the active components</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3342,7 +3209,6 @@ OEMBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_52ed5408_da62_483d_97d5_a45755022582"></div>
@@ -3365,7 +3231,6 @@ P2DModel
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_0e9e80a1_1fb6_45d9_a1dd_d18ebfc48ae2"></div>
@@ -3384,7 +3249,6 @@ P3DModel
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_ef791f05_41d4_4bdb_a1fc_fd455ed0ecb2"></div>
@@ -3402,7 +3266,6 @@ P4DModel
   <td class="element-table-value">a battery model discretized on a pseudo-four-dimensional grid</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3426,7 +3289,6 @@ PaperLinedCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_69173be9_7105_43da_8635_033364616783"></div>
@@ -3448,7 +3310,6 @@ PasteLinedCell
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-16'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-16</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3476,7 +3337,6 @@ PilotBatteryCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_9d625cce_b579_4a6b_9e92_079f2c5a29bb"></div>
@@ -3503,7 +3363,6 @@ PlantePlate
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_557c1a8f_0e10_423c_9ab8_5bc316056ef4"></div>
@@ -3525,7 +3384,6 @@ PocketPlate
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-21'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-21</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3553,7 +3411,6 @@ PolysulfideBromideFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a306c4d2_9f74_4910_8b42_52e33552cd90"></div>
@@ -3571,7 +3428,6 @@ PotassiumBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of potassium or containing potassium</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3599,7 +3455,6 @@ PotassiumIonBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_b079217c_572e_4cc4_be38_a8388977085b"></div>
@@ -3622,7 +3477,6 @@ PotatoBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_392b3f47_d62a_4bd4_a819_b58b09b8843a"></div>
@@ -3644,7 +3498,6 @@ PouchCell
   <td class="element-table-value">CoffeeBagBattery, PouchBatteryCell</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3680,7 +3533,6 @@ PrimaryBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d"></div>
@@ -3698,7 +3550,6 @@ PrismaticBattery
   <td class="element-table-value">a battery cell in a rigid container with rectangular faces</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3721,7 +3572,6 @@ RandlesCircuitModel
   <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Randles_circuit'>https://en.wikipedia.org/wiki/Randles_circuit</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3749,7 +3599,6 @@ RedoxFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f"></div>
@@ -3771,7 +3620,6 @@ ReplacementBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-13'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-13</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3803,7 +3651,6 @@ ReserveBatteryCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_ffe472c5_8e0d_49d6_b2be_9453145b4507"></div>
@@ -3825,7 +3672,6 @@ RockingChairBattery
   <td class="element-table-value">InsertionBattery, ShuttlecockBattery, SwingCell</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3865,7 +3711,6 @@ SecondaryBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92"></div>
@@ -3888,7 +3733,6 @@ SiliconAirBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d"></div>
@@ -3906,7 +3750,6 @@ SiliconBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of silicon or containing silicon</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3926,7 +3769,6 @@ SilverBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d95593e8_03cd_404b_8b2b_beb97417a16a"></div>
@@ -3944,7 +3786,6 @@ SilverOxideBattery
   <td class="element-table-value">cell containing a positive electrode with an active material of silver oxide or containing silver oxide</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -3980,7 +3821,6 @@ SilverOxideCadmiumBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413"></div>
@@ -4011,7 +3851,6 @@ SilverZincBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_1dc7221d_bea7_49dd_8215_f57cd96cd073"></div>
@@ -4034,7 +3873,6 @@ SinteredPlate
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8"></div>
@@ -4053,7 +3891,6 @@ SodiumAirBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d"></div>
@@ -4071,7 +3908,6 @@ SodiumBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of sodium or containing sodium</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4099,7 +3935,6 @@ SodiumIonBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_d3855d31_6aad_4b6d_ab35_c61669df583e"></div>
@@ -4117,7 +3952,6 @@ SodiumIonHardCarbonBattery
   <td class="element-table-value">a sodium-ion battery with a hard carbon negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4153,7 +3987,6 @@ SolidStateBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_3fcdc2ab_f458_4940_b218_6a10d1764567"></div>
@@ -4176,7 +4009,6 @@ StandardVoltageCell
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae"></div>
@@ -4198,7 +4030,6 @@ SwagelokCell
   <td class="element-table-value">SwagelokBatteryCell</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4226,7 +4057,6 @@ TrickleCharge
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_a779f0df_51d3_44cd_97f2_863c28843af8"></div>
@@ -4248,7 +4078,6 @@ UnformedDryCell
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-34'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-34</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4288,7 +4117,6 @@ ValveRegulatedLeadAcidBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_e2aac68e_f880_4be5_87e6_73eba9f75955"></div>
@@ -4319,7 +4147,6 @@ VanadiumRedoxFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_27e95677_3fff_476e_aac9_fe6df5d1535d"></div>
@@ -4346,7 +4173,6 @@ VoltaicPile
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_54d48300_242b_4af8_96b4_d3436450e094"></div>
@@ -4368,7 +4194,6 @@ WestonStandardVoltageCell
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-18'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-18</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4395,7 +4220,6 @@ WetCell
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q11563836'>https://www.wikidata.org/wiki/Q11563836</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4427,7 +4251,6 @@ ZincAirBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11"></div>
@@ -4445,7 +4268,6 @@ ZincBattery
   <td class="element-table-value">cell containing a negative electrode with an active material of zinc or containing zinc</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4481,7 +4303,6 @@ ZincBromineFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a"></div>
@@ -4503,7 +4324,6 @@ ZincCarbonBattery
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-07'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-04-07</a></td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4531,7 +4351,6 @@ ZincCeriumFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_55a8a42d_0f83_473d_82b0_32640114b7db"></div>
@@ -4558,7 +4377,6 @@ ZincChlorideBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b"></div>
@@ -4577,7 +4395,6 @@ ZincChlorineFlowBattery
   </tr>
   </table>
 
-
 .. raw:: html
 
    <div id="battery_5afce525_90b7_4807_87f0_ab23a52a0320"></div>
@@ -4595,7 +4412,6 @@ ZincFlowBattery
   <td class="element-table-value">a flow battery with a zinc negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4626,7 +4442,6 @@ ZincShuttleBattery
   <td class="element-table-value">the name "zinc-ion battery" is a misnomer as it uses a metallic zinc negative electrode instead of a zinc-insertion negative electrode</td>
   </tr>
   </table>
-
 
 .. raw:: html
 
@@ -4662,7 +4477,2277 @@ ZincSilverOxideBattery
   </tr>
   </table>
 
+Battery
+=======
+
+Battery-testing
+===============
+
+.. raw:: html
+
+   <div id="battery_7985009d_a3ac_4850_8b85_76899d432814"></div>
+
+Autoclave
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_7985009d_a3ac_4850_8b85_76899d432814
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a machine that carries out proceses at elevated pressure and/or temperature</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557"></div>
+
+BatteryCellHolder
+-----------------
+
+* https://w3id.org/emmo/domain/battery#battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a holder that mounts a battery and its terminals for a test</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_23e6170d_a70b_4de9_a4db_458e24a327ac"></div>
+
+BatteryCycler
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">A device for performing cycling measurements of a battery.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28"></div>
+
+BatteryCycling
+--------------
+
+* https://w3id.org/emmo/domain/battery#battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of electrochemically charging and discharging a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6c481323_498b_42c6_915a_53490f409430"></div>
+
+BatteryMeasurement
+------------------
+
+* https://w3id.org/emmo/domain/battery#battery_6c481323_498b_42c6_915a_53490f409430
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a measurement performed on a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce"></div>
+
+BatteryMeasurementResult
+------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the result of a battery measurement</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_dca7729a_421a_4921_90cf_9692bb9eb081"></div>
+
+BatteryTest
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a test performed on a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9"></div>
+
+BatteryTestResult
+-----------------
+
+* https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the output of a battery test</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d9b99b14_44e8_473b_af8f_2a160429df69"></div>
+
+BatteryTimeSeriesDataSet
+------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a timeseries dataset resulting from a battery measurement</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8f56258f_78ab_45f1_9038_08973fab9e4e"></div>
+
+DestroyedBatteryCell
+--------------------
+
+* https://w3id.org/emmo/domain/battery#battery_8f56258f_78ab_45f1_9038_08973fab9e4e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery cell which is destroyed by some process</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb"></div>
+
+ExternalHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of applying a controlled amount of heat to a sample</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_875a302c_a1f4_45b9_933a_559c5b775dad"></div>
+
+GasChromatograph
+----------------
+
+* https://w3id.org/emmo/domain/battery#battery_875a302c_a1f4_45b9_933a_559c5b775dad
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">equipment for determining the composition of gas</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_f952d3be_723d_4767_ac4e_8b72bac862d6"></div>
+
+GasSampling
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_f952d3be_723d_4767_ac4e_8b72bac862d6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of characterizing a gas sample</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_3a48b817_e54b_40fe_b00a_abfeea56383c"></div>
+
+NailPenetration
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_3a48b817_e54b_40fe_b00a_abfeea56383c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of penetrating a battery with a nail</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d"></div>
+
+OneSidedHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of applying heating to one side of a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d345eb7f_25da_436c_bed3_ae73f97d9500"></div>
+
+SoftVenting
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_d345eb7f_25da_436c_bed3_ae73f97d9500
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4"></div>
+
+ThermalRunawayTest
+------------------
+
+* https://w3id.org/emmo/domain/battery#battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a test to investigate the thermal runaway characteristics of a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e0bb1bbe_704a_46c2_b399_285b4c788476"></div>
+
+ThermalRunawayTriggerProcess
+----------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of triggering an action based on thermal runaway event</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_28e33d95_1f87_4572_8e58_7e9cddc03d64"></div>
+
+ThermalRunawayTriggerWorkflow
+-----------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_28e33d95_1f87_4572_8e58_7e9cddc03d64
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a workflow that is triggered by a thermal runaway process.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_5b871e13_89ab_4dde_8ea0_062067a6708a"></div>
+
+TwoSidedHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of apply heat to a battery on two sides</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_61a9b526_1241_417c_ac3f_c25b996b139e"></div>
+
+hasParameter
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_61a9b526_1241_417c_ac3f_c25b996b139e
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_df4ff8f1_2cf2_444a_9498_23f533bd295c"></div>
+
+hasTestEquipment
+----------------
+
+* https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_da3b3f28_aaad_4d67_b674_df47e109fb8b"></div>
+
+hasTestObject
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_da3b3f28_aaad_4d67_b674_df47e109fb8b
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+Battery-manufacturing
+=====================
+
+Battery-cell-geometry
+=====================
+
+.. raw:: html
+
+   <div id="battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb"></div>
+
+LengthA
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge A</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">a, length_a</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_ad84886e_f899_4c89_9dde_1866bd27074f"></div>
+
+LengthA1
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_ad84886e_f899_4c89_9dde_1866bd27074f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge A1</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6ad5e601_1bd3_4883_b863_f9df73345843"></div>
+
+LengthA2
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_6ad5e601_1bd3_4883_b863_f9df73345843
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge A2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_032ee3d7_7747_4daf_ab8f_edec0ae50cd6"></div>
+
+LengthA3
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_032ee3d7_7747_4daf_ab8f_edec0ae50cd6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge A3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_872b6e08_3479_488d_b956_d818514effa1"></div>
+
+LengthA4
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_872b6e08_3479_488d_b956_d818514effa1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge A4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_efb2c4b8_acb1_44a1_a72d_101ea984e171"></div>
+
+LengthB
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_efb2c4b8_acb1_44a1_a72d_101ea984e171
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_50bc3671_f4d2_4e1f_8a81_f5ade6dd1182"></div>
+
+LengthB1
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_50bc3671_f4d2_4e1f_8a81_f5ade6dd1182
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B1</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e7592356_3a59_414c_ab6f_c266fd07c5b0"></div>
+
+LengthB2
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_e7592356_3a59_414c_ab6f_c266fd07c5b0
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_3d02bd29_5dc3_4af2_9e5e_d70dbde50650"></div>
+
+LengthB3
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_3d02bd29_5dc3_4af2_9e5e_d70dbde50650
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8b8be70f_315d_49fc_8ff0_0c35caeff99e"></div>
+
+LengthB4
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_8b8be70f_315d_49fc_8ff0_0c35caeff99e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_32cbc7a2_353b_4382_9879_8322f98e04e2"></div>
+
+LengthB5
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_32cbc7a2_353b_4382_9879_8322f98e04e2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge B5</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_c1eda7a6_d643_450a_a540_3cc561787fc4"></div>
+
+LengthC
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_c1eda7a6_d643_450a_a540_3cc561787fc4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d7d0da1d_3fab_4913_9c5f_4b14e35eca42"></div>
+
+LengthC1
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_d7d0da1d_3fab_4913_9c5f_4b14e35eca42
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C1</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_af5f72a5_8711_4674_b305_66d7c5d368a9"></div>
+
+LengthC2
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_af5f72a5_8711_4674_b305_66d7c5d368a9
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_a39f4276_64b8_4be8_ab2b_ed22b23e2648"></div>
+
+LengthC3
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_a39f4276_64b8_4be8_ab2b_ed22b23e2648
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6dffcba3_a594_42ac_8744_f1fb137c09a6"></div>
+
+LengthC4
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_6dffcba3_a594_42ac_8744_f1fb137c09a6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_630410d8_9bba_4002_ac5c_ce3f53c6ece0"></div>
+
+LengthC5
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_630410d8_9bba_4002_ac5c_ce3f53c6ece0
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C5</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_9e56dd14_9cac_4991_9b65_69a604a6e195"></div>
+
+LengthC6
+--------
+
+* https://w3id.org/emmo/domain/battery#battery_9e56dd14_9cac_4991_9b65_69a604a6e195
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge C6</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_64235b5b_edb5_4b23_92df_2e03a0b8241e"></div>
+
+LengthE
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_64235b5b_edb5_4b23_92df_2e03a0b8241e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge E</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d4ba55c4_b2a9_40ad_acf5_8c4842ea60f5"></div>
+
+LengthN
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_d4ba55c4_b2a9_40ad_acf5_8c4842ea60f5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge N</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0ff55c54_23f7_4b0f_8f0a_342ab90f6979"></div>
+
+LengthO
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_0ff55c54_23f7_4b0f_8f0a_342ab90f6979
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge O</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_82ae1702_0a35_4c7b_b277_4e3cdd07dbe0"></div>
+
+LengthP
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_82ae1702_0a35_4c7b_b277_4e3cdd07dbe0
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the length of edge P</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_197b253e_4ce3_41d5_8e2d_2e1611ec2c81"></div>
+
+OppositeTerminalCylindrical
+---------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_197b253e_4ce3_41d5_8e2d_2e1611ec2c81
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical cell form factor with opposite terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc"></div>
+
+OppositeTerminalPouch
+---------------------
+
+* https://w3id.org/emmo/domain/battery#battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a pouch cell form factor with opposite terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_478b78f9_6ce8_4776_a519_76b49c1ef969"></div>
+
+OppositeTerminalPouchWithSealingSeam
+------------------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_478b78f9_6ce8_4776_a519_76b49c1ef969
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a pouch cell form factor with opposite terminals and with a sealing seam</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0cc7e361_ac09_44c4_a682_ff2d732c0039"></div>
+
+OppositeTerminalPouchWithoutSealingSeam
+---------------------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_0cc7e361_ac09_44c4_a682_ff2d732c0039
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a pouch cell form factor with opposite terminals and without a sealing seam</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_cef18b45_9bb6_49de_bbbb_4072844efd7e"></div>
+
+OppositeTerminalPrismatic
+-------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_cef18b45_9bb6_49de_bbbb_4072844efd7e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a prismatic cell form factor with opposite terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_695555cc_b814_4fa8_92ae_8753c8c50d17"></div>
+
+OppositeTerminalPrismaticVentSurfaceB2A2
+----------------------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_695555cc_b814_4fa8_92ae_8753c8c50d17
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an opposite terminal prismatic cell form factor with the vent on surface B2A2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_37d6f6a8_0bc9_4996_89dd_7dd506cc7528"></div>
+
+PairedTerminalCylindrical
+-------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_37d6f6a8_0bc9_4996_89dd_7dd506cc7528
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindricel cell form factor with paired terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_597f75a1_bff5_4196_bc80_a4cbc0d35c77"></div>
+
+PairedTerminalPouch
+-------------------
+
+* https://w3id.org/emmo/domain/battery#battery_597f75a1_bff5_4196_bc80_a4cbc0d35c77
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a pouch cell form factor with paired terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_b55058a1_98f5_4440_9061_423ee9a366cb"></div>
+
+PairedTerminalPrismatic
+-----------------------
+
+* https://w3id.org/emmo/domain/battery#battery_b55058a1_98f5_4440_9061_423ee9a366cb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a prismatic cell form factor with paired terminals</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_521914d3_4e25_48eb_ab57_58b902d631ff"></div>
+
+PairedTerminalPrismaticVentSurfaceAC
+------------------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_521914d3_4e25_48eb_ab57_58b902d631ff
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a paired terminal prismatic cell form factor with the vent on surface AC</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">Prismatic_PT</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_71b238b9_5185_4d83_ad72_a4c3258e3471"></div>
+
+PairedTerminalPrismaticVentSurfaceCA
+------------------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_71b238b9_5185_4d83_ad72_a4c3258e3471
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a paired terminal prismatic cell form factor with the vent on surface CA</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_21256d7a_ec4f_437e_8bd0_a826329240eb"></div>
+
+Surface
+-------
+
+* https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a continuous two-dimensional geometrical entity</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e947f245_0f40_4316_b1ee_4846f17f928e"></div>
+
+SurfaceA2B2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_e947f245_0f40_4316_b1ee_4846f17f928e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a2 and b2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_657cfd4f_42e4_4524_8d22_4ab86ec051a6"></div>
+
+SurfaceA2C
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_657cfd4f_42e4_4524_8d22_4ab86ec051a6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a2 and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_84c76b36_815c_45a0_a508_0f5cf168d148"></div>
+
+SurfaceA3B
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_84c76b36_815c_45a0_a508_0f5cf168d148
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a3 and b</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8e55049d_3e09_4bf4_b05e_2f272c9a4172"></div>
+
+SurfaceA3C
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_8e55049d_3e09_4bf4_b05e_2f272c9a4172
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a3 and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_c2697785_d9c4_4f39_96d4_020988a3919c"></div>
+
+SurfaceA4C
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_c2697785_d9c4_4f39_96d4_020988a3919c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a4 and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_5b4c1029_1fdb_4c20_9ffe_a7b06394431c"></div>
+
+SurfaceAB
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_5b4c1029_1fdb_4c20_9ffe_a7b06394431c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a and b</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_69c580b6_9968_4ebd_837e_f287af89d4e6"></div>
+
+SurfaceAB2
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_69c580b6_9968_4ebd_837e_f287af89d4e6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a and b2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_00350f34_6f0b_4219_95a5_17cc1a42c585"></div>
+
+SurfaceAC
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_00350f34_6f0b_4219_95a5_17cc1a42c585
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths a and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_c4d016c7_4a21_4221_848b_6089ceca274a"></div>
+
+SurfaceB2A
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_c4d016c7_4a21_4221_848b_6089ceca274a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b2 and a</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_59d146f3_ae0e_4942_b8af_328d51edb429"></div>
+
+SurfaceB2A2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_59d146f3_ae0e_4942_b8af_328d51edb429
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b2 and a2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_2c4ac2f9_f82e_457c_a99c_40358620ac2d"></div>
+
+SurfaceB2C3
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_2c4ac2f9_f82e_457c_a99c_40358620ac2d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b2 and c3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_05ac6195_9565_4639_b3c2_529bd11b63fb"></div>
+
+SurfaceB2C4
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_05ac6195_9565_4639_b3c2_529bd11b63fb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b2 and c4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d215302b_92b5_4baf_b9ad_b5ee320db49e"></div>
+
+SurfaceB3C
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_d215302b_92b5_4baf_b9ad_b5ee320db49e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b3 and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8b492a60_7abb_4d47_862f_d81669536183"></div>
+
+SurfaceB3C2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_8b492a60_7abb_4d47_862f_d81669536183
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b3 and c2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_fd15bee2_96b9_4a55_aa7e_320400ab6de1"></div>
+
+SurfaceB4C
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_fd15bee2_96b9_4a55_aa7e_320400ab6de1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b4 and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4ca3da8f_45ce_4f52_bdb0_4d7b2ed9f473"></div>
+
+SurfaceB4C2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_4ca3da8f_45ce_4f52_bdb0_4d7b2ed9f473
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b4 and c2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_ad227c8d_40a5_4252_a8c0_9d383ddcae88"></div>
+
+SurfaceBA
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_ad227c8d_40a5_4252_a8c0_9d383ddcae88
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b and a</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6f5a330b_eaa9_4ab2_bde0_0ff1293b5b91"></div>
+
+SurfaceBA3
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_6f5a330b_eaa9_4ab2_bde0_0ff1293b5b91
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b and a3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375"></div>
+
+SurfaceBC
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b and c</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_bb3c5cff_830f_4399_b023_e4b24d99f33f"></div>
+
+SurfaceBC3
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_bb3c5cff_830f_4399_b023_e4b24d99f33f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b and c3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_87ed29ca_690e_46e1_823d_5bb58031017e"></div>
+
+SurfaceBC4
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_87ed29ca_690e_46e1_823d_5bb58031017e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths b and c4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e60b76e0_fea8_460c_bf7d_522d7a9019dc"></div>
+
+SurfaceC2B3
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_e60b76e0_fea8_460c_bf7d_522d7a9019dc
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c2 and b3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d7d5ed4d_0f90_4fba_86e7_191e7b4c18b6"></div>
+
+SurfaceC2B4
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_d7d5ed4d_0f90_4fba_86e7_191e7b4c18b6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c2 and b4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_55511306_cc27_424e_8547_0d455f9588e8"></div>
+
+SurfaceC3B
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_55511306_cc27_424e_8547_0d455f9588e8
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c3 and b</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0b82c3b5_ce5d_4d43_aabb_2047d88d4286"></div>
+
+SurfaceC3B2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_0b82c3b5_ce5d_4d43_aabb_2047d88d4286
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c3 and b2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_243a052d_cef2_4eca_b04a_c6e8953f2b7f"></div>
+
+SurfaceC4B
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_243a052d_cef2_4eca_b04a_c6e8953f2b7f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c4 and b</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_11a1a23f_0a2d_45ca_972c_e9e83d568e87"></div>
+
+SurfaceC4B2
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_11a1a23f_0a2d_45ca_972c_e9e83d568e87
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c4 and b2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_33064544_01cb_4de9_8a6b_d086ec36c213"></div>
+
+SurfaceCA
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_33064544_01cb_4de9_8a6b_d086ec36c213
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and a</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_7a42ff38_a95f_412b_a763_cf1cdce3609a"></div>
+
+SurfaceCA2
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_7a42ff38_a95f_412b_a763_cf1cdce3609a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and a2</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_fc8cd031_6015_4c36_994f_f95e58510059"></div>
+
+SurfaceCA3
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_fc8cd031_6015_4c36_994f_f95e58510059
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and a3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_b547837b_d831_4901_81de_c0c186cc5083"></div>
+
+SurfaceCA4
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_b547837b_d831_4901_81de_c0c186cc5083
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and a4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_384fb66d_0df0_4850_a612_e0b38b3d2cef"></div>
+
+SurfaceCB
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_384fb66d_0df0_4850_a612_e0b38b3d2cef
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and b</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d1d23f15_dc61_475d_b470_90283c679b40"></div>
+
+SurfaceCB3
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_d1d23f15_dc61_475d_b470_90283c679b40
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and b3</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_78b946f3_3503_42d6_b1c7_a3d14bedf574"></div>
+
+SurfaceCB4
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_78b946f3_3503_42d6_b1c7_a3d14bedf574
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths c and b4</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4c658988_a25d_4336_9188_ea413c68ec50"></div>
+
+SurfaceEN
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_4c658988_a25d_4336_9188_ea413c68ec50
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths e and n</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_a478b9dd_607a_4f37_8b4e_c5d81e4ba83c"></div>
+
+SurfaceNE
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_a478b9dd_607a_4f37_8b4e_c5d81e4ba83c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths n and e</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_984d837e_1d6e_4802_8648_612410efbcb3"></div>
+
+SurfaceOP
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_984d837e_1d6e_4802_8648_612410efbcb3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths o and p</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6d240260_a6c2_45f3_948e_a3468a286479"></div>
+
+SurfacePO
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_6d240260_a6c2_45f3_948e_a3468a286479
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the surface bounded by lengths p and o</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25"></div>
+
+hasSurface
+----------
+
+* https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+Battery-manufacturing-lithium-ion
+=================================
+
+Battery-model-lithium-ion
+=========================
+
+.. raw:: html
+
+   <div id="battery_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
+
+ActivationEnergyOfLithiumDiffusivityInElectrolyte
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_56de36fe_e8e1_486c_8d29_061ac8d28c13
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
+
+ActivationEnergyOfLithiumDiffusivityInNegativeElectrode
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_86af4487_33c1_4562_a00b_3a8252ffe378
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
+
+ActivationEnergyOfLithiumDiffusivityInPositiveElectrode
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4d69edda_d2fa_40b0_9c1e_52e08debf578
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
+
+BatteryCellDensity
+------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the overall density of a lithium-ion battery cell, calculated as the quotient of the total mass and the total volume</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
+
+BatteryCellLumpedSpecificHeatCapacity
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the lumped specific heat capacity of a battery cell</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6"></div>
+
+BatteryCellSurfaceArea
+----------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the external surface area of a battery cell</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
+
+BatteryCellVolume
+-----------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_b4184e46_c53c_47cc_9bfc_186fd77836a5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the total volume of a battery cell, determined by its external dimensions</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
+
+InitialLithiumConcentrationInElectrolyte
+----------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the initial amount concentration of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
+
+LithiumDiffusivityInElectrolyte
+-------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4c274506_af5b_4ef1_8217_829ffd459f28
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_50247e71_75fe_4986_959e_fd06c6be98db"></div>
+
+LithiumDiffusivityInNegativeElectrode
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_50247e71_75fe_4986_959e_fd06c6be98db
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
+
+LithiumDiffusivityInPositiveElectrode
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e59188bb_ce66_49f6_84aa_ecb98e76941e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
+
+LithiumTransportNumber
+----------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">transport number of lithium ion in electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124"></div>
+
+NegativeElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the negative electrode coating</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3"></div>
+
+NegativeElectrodeLithiumStoichiometricCoefficientAtSOC0
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 0%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
+
+NegativeElectrodeLithiumStoichiometricCoefficientAtSOC100
+---------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_8c336ae9_1818_4b08_a660_4bb83b28351f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 100%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e808a26a_5812_49e9_894c_b793c7fe0c38"></div>
+
+NegativeElectrodeMaximumLithiumConcentration
+--------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e808a26a_5812_49e9_894c_b793c7fe0c38
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_62f5beeb_6d1e_442a_8048_3ebe08882964"></div>
+
+PositiveElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_62f5beeb_6d1e_442a_8048_3ebe08882964
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the positive electrode coating</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
+
+PositiveElectrodeLithiumStoichiometricCoefficientAtSOC0
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_80920875_62ac_4e29_b970_ec4316e76aa5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 0%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_99041897_5c08_40ed_9118_3e77e9b0e191"></div>
+
+PositiveElectrodeLithiumStoichiometricCoefficientAtSOC100
+---------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_99041897_5c08_40ed_9118_3e77e9b0e191
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 100%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
+
+PositiveElectrodeMaximumLithiumConcentration
+--------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_c69a9d55_823f_4113_a305_ebc89dde7de3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
+
+battmoKey
+---------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e5e86474_8623_48ea_a1cf_502bdb10aa14
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
+
+bpxKey
+------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0a5b99ee_995b_4899_a79b_925a4086da37
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
+
+cidemodKey
+----------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_1b718841_5d72_4071_bb71_fc4a754f5e30
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+Battery-products
+================
+
+.. raw:: html
+
+   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
+
+INR1865025R
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">25R</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120785885'>https://www.wikidata.org/wiki/Q120785885</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
+
+INR1865035E
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">35E</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799558'>https://www.wikidata.org/wiki/Q120799558</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
+
+INR18650MJ1
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MJ1</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120766894'>https://www.wikidata.org/wiki/Q120766894</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
+
+INR18650P28A
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28A</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799517'>https://www.wikidata.org/wiki/Q120799517</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
+
+INR18650P28B
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28B</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120767033'>https://www.wikidata.org/wiki/Q120767033</a></td>
+  </tr>
+  </table>
 
 
-    
-        

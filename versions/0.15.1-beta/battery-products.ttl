@@ -1,0 +1,57 @@
+@prefix : <https://w3id.org/emmo/domain/battery#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:battery_09cdc3de_2aea_4925_9a65_2f078e72eec4 a owl:Class ;
+    rdfs:label "INR1865035E"@en ;
+    rdfs:comment "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en ;
+    rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+    skos:altLabel "35E"@en ;
+    skos:prefLabel "INR1865035E"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799558"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en .
+
+:battery_50de8c6a_294c_4576_8592_cf05c9d32000 a owl:Class ;
+    rdfs:label "INR1865025R"@en ;
+    rdfs:comment "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en ;
+    rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+    skos:altLabel "25R"@en ;
+    skos:prefLabel "INR1865025R"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120785885" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en .
+
+:battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f a owl:Class ;
+    rdfs:label "INR18650P28B"@en ;
+    rdfs:comment "a cylindrical 18650 lithium-ion battery cell manufactured by Molicel"@en ;
+    rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+    skos:altLabel "P28B"@en ;
+    skos:prefLabel "INR18650P28B"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120767033" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell manufactured by Molicel"@en .
+
+:battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b a owl:Class ;
+    rdfs:label "INR18650MJ1"@en ;
+    rdfs:comment "a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem"@en ;
+    rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+    skos:altLabel "MJ1"@en ;
+    skos:prefLabel "INR18650MJ1"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120766894" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem"@en .
+
+:battery_f1489778_c355_4cd5_b5ca_35d082ac896a a owl:Class ;
+    rdfs:label "INR18650P28A"@en ;
+    rdfs:comment "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel"@en ;
+    rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+    skos:altLabel "P28A"@en ;
+    skos:prefLabel "INR18650P28A"@en ;
+    emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799517"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel"@en .
+
+<https://w3id.org/emmo/domain/battery/modules/battery-products> a owl:Ontology ;
+    dcterms:abstract "The battery-products module contains the terms and relations for describing products related to batteries." ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/reference/battery-reference> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-products> .
+
