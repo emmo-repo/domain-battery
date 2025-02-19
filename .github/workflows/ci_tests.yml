@@ -22,34 +22,20 @@ jobs:
         pip install -U setuptools wheel
         pip install -r requirements.txt
 
-    - name: Run EMMO Check - battery
+    - name: Find and run EMMO Check on all .ttl files
       run: |
-        if [ -f "battery.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            battery.ttl
-        else
-          echo "battery.ttl not found!"
+        TTL_FILES=$(find . -type f \( -path "./modules/*.ttl" -o -path "./reference/*.ttl" -o -path "./subdomains/*.ttl" -o -path "./*.ttl" \))
+        
+        if [ -z "$TTL_FILES" ]; then
+          echo "No .ttl files found!"
           exit 1
         fi
 
-    - name: Run EMMO Check - batteryquantities
-      run: |
-        if [ -f "batteryquantities.ttl" ]; then
+        for file in $TTL_FILES; do
+          echo "Running EMMO check on $file"
           emmocheck --verbose --url-from-catalog \
             --skip test_namespace \
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
-            batteryquantities.ttl
-        elif [ -f "shared/battery-quantities.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            shared/battery-quantities.ttl
-        else
-          echo "batteryquantities.ttl or shared/battery-quantities.ttl not found!"
-          exit 1
-        fi
+            "$file"
+        done
