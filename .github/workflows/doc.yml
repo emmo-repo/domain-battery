@@ -29,8 +29,10 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo apt-get update -y
+        sudo apt-get install -y pandoc
         python -m pip install --upgrade pip
-        pip install Markdown==3.4.3 rdflib==6.3.2 pandoc
+        pip install Markdown==3.4.3 rdflib==6.3.2
 
     - name: Find all TTL files (excluding inferred)
       run: |
@@ -45,11 +47,19 @@ jobs:
     - name: Render documentation from TTL
       run: python docs/scripts/ttl_to_rst.py ttl_files_list.txt
 
+    - name: Check for duplicate labels in battery.rst
+      run: |
+        if grep -n "label" docs/battery.rst; then
+          echo "WARNING: Duplicate label definitions detected in battery.rst!"
+          exit 1
+        fi
+
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        pre-build-command: "apt-get update -y && apt-get install -y pandoc"
+        pre-build-command: "sudo apt-get update -y && sudo apt-get install -y pandoc"
+        build-command: "make html"
 
     - name: Create context file from TTL
       run: python docs/scripts/ttl_to_context.py ttl_files_list.txt
