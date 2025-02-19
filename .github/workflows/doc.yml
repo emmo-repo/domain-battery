@@ -49,22 +49,23 @@ jobs:
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        pre-build-command: "apt-get update -y; apt-get install -y pandoc"
+        pre-build-command: "apt-get update -y && apt-get install -y pandoc"
 
     - name: Create context file from TTL
       run: python docs/scripts/ttl_to_context.py ttl_files_list.txt
 
     - name: Ensure HTML directories exist
       run: |
-        mkdir -p docs/_build/html/context/
-        mkdir -p docs/_build/html/assets/
-        mkdir -p docs/_build/html/versions/
+        sudo mkdir -p docs/_build/html/context/
+        sudo mkdir -p docs/_build/html/assets/
+        sudo mkdir -p docs/_build/html/versions/
+        sudo chmod -R 777 docs/_build/html/
 
     - name: Copy assets directory to HTML directory
-      run: cp -r docs/assets/* docs/_build/html/assets/
+      run: sudo cp -r docs/assets/* docs/_build/html/assets/
     
     - name: Copy context file to HTML directory
-      run: cp context/context.json docs/_build/html/context/
+      run: sudo cp context/context.json docs/_build/html/context/
 
     - name: Commit changes
       run: |
@@ -85,26 +86,26 @@ jobs:
       run: |
         git fetch --tags
         git tag | while read TAG; do
-          mkdir -p "docs/_build/html/versions/$TAG"
+          sudo mkdir -p "docs/_build/html/versions/$TAG"
 
           # Process all TTL files dynamically
           while read file; do
             output_name=$(basename "$file" .ttl)-foops.ttl
             python docs/scripts/apply_foops_recommendations.py "$file" "$output_name"
-            cp "$output_name" "docs/_build/html/versions/$TAG/$(basename "$file")"
+            sudo cp "$output_name" "docs/_build/html/versions/$TAG/$(basename "$file")"
           done < ttl_files_list.txt
 
           # Ensure inferred file is included
           if [ -s inferred_ttl_list.txt ]; then
             while read inferred_file; do
-              cp "$inferred_file" "docs/_build/html/versions/$TAG/"
+              sudo cp "$inferred_file" "docs/_build/html/versions/$TAG/"
             done < inferred_ttl_list.txt
           fi
 
           # Copy context file if it exists
           if [ -d "context" ]; then
-            mkdir -p "docs/_build/html/versions/$TAG/context"
-            cp "context/context.json" "docs/_build/html/versions/$TAG/context"
+            sudo mkdir -p "docs/_build/html/versions/$TAG/context"
+            sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
           fi
         done
 
@@ -113,13 +114,13 @@ jobs:
         while read file; do
           output_name=$(basename "$file" .ttl)-foops.ttl
           python docs/scripts/apply_foops_recommendations.py "$file" "$output_name"
-          cp "$output_name" "docs/_build/html/$(basename "$file")"
+          sudo cp "$output_name" "docs/_build/html/$(basename "$file")"
         done < ttl_files_list.txt
 
         # Ensure inferred file is copied
         if [ -s inferred_ttl_list.txt ]; then
           while read inferred_file; do
-            cp "$inferred_file" "docs/_build/html/"
+            sudo cp "$inferred_file" "docs/_build/html/"
           done < inferred_ttl_list.txt
         fi
 
