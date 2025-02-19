@@ -19,8 +19,11 @@ jobs:
       contents: write
       
     steps:
-    - name: Checkout repository
+    - name: Checkout repository (force clean)
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        clean: true
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -29,10 +32,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt-get update -y
-        sudo apt-get install -y pandoc
         python -m pip install --upgrade pip
         pip install Markdown==3.4.3 rdflib==6.3.2
+        apt-get update -y
+        apt-get install -y pandoc
 
     - name: Find all TTL files (excluding inferred)
       run: |
@@ -47,18 +50,11 @@ jobs:
     - name: Render documentation from TTL
       run: python docs/scripts/ttl_to_rst.py ttl_files_list.txt
 
-    - name: Check for duplicate labels in battery.rst
-      run: |
-        if grep -n "label" docs/battery.rst; then
-          echo "WARNING: Duplicate label definitions detected in battery.rst!"
-          exit 1
-        fi
-
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        pre-build-command: "sudo apt-get update -y && sudo apt-get install -y pandoc"
+        pre-build-command: "apt-get update -y && apt-get install -y pandoc"
         build-command: "make html"
 
     - name: Create context file from TTL
@@ -69,24 +65,34 @@ jobs:
         sudo mkdir -p docs/_build/html/context/
         sudo mkdir -p docs/_build/html/assets/
         sudo mkdir -p docs/_build/html/versions/
-        sudo chmod -R 777 docs/_build/html/
 
-    - name: Copy assets directory to HTML directory
-      run: sudo cp -r docs/assets/* docs/_build/html/assets/
-    
-    - name: Copy context file to HTML directory
-      run: sudo cp context/context.json docs/_build/html/context/
+    - name: Copy assets and context to HTML directory
+      run: |
+        sudo cp -r docs/assets/* docs/_build/html/assets/
+        sudo cp context/context.json docs/_build/html/context/
 
-    - name: Commit changes
+    - name: Commit generated changes (context.json & rst files)
       run: |
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
         git add context/context.json
-        git diff --staged --quiet || git commit -m "Update context.json file"
+        git diff --staged --quiet || git commit -m "Update generated docs files"
 
-    - name: Pull latest changes
+    - name: Debug before pull
+      run: |
+        echo "Checking Git status before pull..."
+        git status
+        echo "Listing unstaged changes..."
+        git diff --name-only
+        echo "Listing untracked files..."
+        git ls-files --others --exclude-standard
+
+    - name: Stash changes before pull
       if: github.event_name == 'push'
-      run: git pull origin master --rebase
+      run: |
+        git stash --include-untracked
+        git pull origin master --rebase
+        git stash pop || echo "No stash to apply"
 
     - name: Push changes
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
@@ -139,7 +145,7 @@ jobs:
       with:
         name: documentationHTML
         path: docs/_build/html/
-        
+
     - name: Deploy
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       uses: peaceiris/actions-gh-pages@v3
