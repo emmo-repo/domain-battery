@@ -1,39 +1,32 @@
+import sys
 from rdflib import Graph
 import os
 
-
-
 ########## LOAD TTL ################
 
-
-def load_ttl_from_url(url:str)->Graph:
+def load_ttl_from_file(filepath: str) -> Graph:
+    """Loads a Turtle (.ttl) file into an RDFLib Graph."""
     g = Graph()
-    g.parse(url, format="turtle")
+    g.parse(filepath, format="turtle")
     return g
 
+########## QUERY TTL ################
 
-
-
-########## QUERY TLL ################
-
-def extract_terms_info_sparql(g: Graph)-> list:
-
+def extract_terms_info_sparql(g: Graph) -> list:
     text_entities = []
 
-    # SPARQL QUERY #
     PREFIXES = """
         PREFIX emmo: <https://w3id.org/emmo#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         """
 
-    list_entity_types = ["IRI", "prefLabel", "Elucidation", "Alternative Label(s)", "IEC Reference", "IUPAC Reference", "Wikipedia Reference", "Wikidata Reference", "Comment", ]
+    list_entity_types = ["IRI", "prefLabel", "Elucidation", "Alternative Label(s)", "IEC Reference", "IUPAC Reference", "Wikipedia Reference", "Wikidata Reference", "Comment"]
 
-    query =  PREFIXES  + """
+    query = PREFIXES + """
         SELECT ?iri ?prefLabel ?elucidation (GROUP_CONCAT(?altLabel; SEPARATOR=", ") AS ?altLabels) ?iecref ?iupacref ?wikipediaref ?wikidataref ?comment
         WHERE {
             ?iri skos:prefLabel ?prefLabel.
-
             OPTIONAL { ?iri emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ?elucidation . }
             OPTIONAL { ?iri skos:altLabel ?altLabel . }
             OPTIONAL { ?iri emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f ?iecref . }
@@ -42,49 +35,32 @@ def extract_terms_info_sparql(g: Graph)-> list:
             OPTIONAL { ?iri emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 ?wikidataref . }
             OPTIONAL { ?iri rdfs:comment ?comment . }
         }
-
         GROUP BY ?iri ?prefLabel ?elucidation
-
         """
         
     qres = g.query(query)
 
     for hit in qres:    
-        hit_dict = {entity_type:str(entity) for entity_type, entity in zip(list_entity_types, hit)}
+        hit_dict = {entity_type: str(entity) for entity_type, entity in zip(list_entity_types, hit)}
         text_entities.append(hit_dict)
 
     text_entities.sort(key=lambda e: e["prefLabel"])
-
     return text_entities
 
-
-
-
-
-########## RENDER HTML TOP ################
+########## RENDER RST ################
 
 def render_rst_top() -> str:
-
-    top_rst = """
+    return """
 ===========
 Class Index
 ===========
 
 """
 
-    return top_rst
-
-
-
-
-########## RENDER ENTITIES ################
-
 def entities_to_rst(entities: list[dict]) -> str:
-    
     rst = ""
 
     for item in entities:
-        # Check if '#' is in the IRI
         if '#' not in item['IRI']:
             print(f"Skipping IRI without '#': {item['IRI']}")
             continue  # Skip this entity if no hash is present
@@ -95,85 +71,69 @@ def entities_to_rst(entities: list[dict]) -> str:
         rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
         
         rst += item['prefLabel'] + "\n"
-        for ind in range(len(item['prefLabel'])):
-            rst += "-"
-        rst += "\n\n"
-
+        rst += "-" * len(item['prefLabel']) + "\n\n"
         rst += "* " + item['IRI'] + "\n\n"
 
         rst += ".. raw:: html\n\n"
         indent = "  "
         rst += indent + "<table class=\"element-table\">\n"
+        
         for key, value in item.items():
-
-            if (key not in ['IRI', 'prefLabel']) & (value != "None") & (value != ""):
-
+            if key not in ['IRI', 'prefLabel'] and value not in ["None", ""]:
                 rst += indent + "<tr>\n"
                 rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
+                
                 if value.startswith("http"):
                     value = f"""<a href='{value}'>{value}</a>"""
                 else:
-                    value = value.encode('ascii', 'xmlcharrefreplace')
-                    value = value.decode('utf-8')
+                    value = value.encode('ascii', 'xmlcharrefreplace').decode('utf-8')
                     value = value.replace('\n', '\n' + indent)
+
                 rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
                 rst += indent + "</tr>\n"
-                
-        rst += indent + "</table>\n"
-        rst += "\n\n"
+        
+        rst += indent + "</table>\n\n"
 
     return rst
 
-
-########## RENDER RST BOTTOM ################
-
-
 def render_rst_bottom() -> str:
-    return """
-    
-        """
-
+    return "\n"
 
 ########### RUN THE RENDERING WORKFLOW ##############
 
-def rendering_workflow():
-    # Adapt based on file structure
-    ttl_modules = []
+def rendering_workflow(ttl_list_file: str):
+    """Reads TTL file paths from list and processes them."""
+    
+    # Read file paths from the list
+    with open(ttl_list_file, "r") as f:
+        ttl_files = [line.strip() for line in f.readlines()]
 
-    # Check for old structure (root directory)
-    if os.path.isfile("./batteryquantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./batteryquantities.ttl"})
-    elif os.path.isfile("./shared/battery-quantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Batteries", "path": "./shared/battery-quantities.ttl"})
-    else:
-        raise FileNotFoundError("No suitable TTL file found for battery quantities.")
+    if not ttl_files:
+        raise FileNotFoundError("No valid TTL files found.")
 
-    # Check for the battery file in the correct directory
-    if os.path.isfile("./battery.ttl"):
-        ttl_modules.append({"section title": "Battery Concepts", "path": "./battery.ttl"})
-    else:
-        raise FileNotFoundError("No suitable TTL file found for battery concepts.")
-
-    # GENERATE PAGES
     rst_filename = "battery.rst"
     rst = render_rst_top()
 
-    for module in ttl_modules:
-        g = load_ttl_from_url(module["path"])
+    for ttl_file in ttl_files:
+        print(f"Processing: {ttl_file}")
+        g = load_ttl_from_file(ttl_file)
         entities_list = extract_terms_info_sparql(g)
         
-        page_title = module["section title"]
+        page_title = os.path.basename(ttl_file).replace(".ttl", "").capitalize()
         rst += page_title + "\n"
         rst += "=" * len(page_title) + "\n\n"
         rst += entities_to_rst(entities_list)
 
     rst += render_rst_bottom()
 
+    os.makedirs("./docs", exist_ok=True)
     with open("./docs/" + rst_filename, "w+", encoding="utf-8") as f:
         f.write(rst)
 
-
-
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python ttl_to_rst.py ttl_files_list.txt")
+        sys.exit(1)
 
-    rendering_workflow()
+    ttl_list_file = sys.argv[1]
+    rendering_workflow(ttl_list_file)
