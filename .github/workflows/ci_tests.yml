@@ -31,11 +31,23 @@ jobs:
           exit 1
         fi
 
+        FAILED_FILES=()
+
         for file in $TTL_FILES; do
           echo "Running EMMO check on $file"
-          emmocheck --verbose --url-from-catalog \
+          if ! emmocheck --verbose --url-from-catalog \
             --skip test_namespace \
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
-            "$file"
+            "$file"; then
+            FAILED_FILES+=("$file")
+          fi
         done
+
+        if [ ${#FAILED_FILES[@]} -ne 0 ]; then
+          echo "The following files failed EMMO check:"
+          for failed in "${FAILED_FILES[@]}"; do
+            echo " - $failed"
+          done
+          exit 1
+        fi
