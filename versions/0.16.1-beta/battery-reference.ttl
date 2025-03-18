@@ -1649,10 +1649,10 @@
 
 <https://w3id.org/emmo/domain/battery/reference/battery-reference> a owl:Ontology ;
     dcterms:abstract "Reference terms for the battery ontology" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.1-beta/reference/battery-quantities>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.28.1-beta/reference/electrochemistry-reference> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.1-beta/reference/battery-reference> ;
-    owl:versionInfo "0.18.1-beta" .
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.2-beta/reference/battery-quantities>,
+        <https://w3id.org/emmo/domain/electrochemistry/0.28.2-beta/reference/electrochemistry-reference> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.2-beta/reference/battery-reference> ;
+    owl:versionInfo "0.18.2-beta" .
 
 echem:EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 rdfs:comment "An electrochemical cell which is not designed to be electrically recharged."@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrochemical cell which is not designed to be electrically recharged."@en .
