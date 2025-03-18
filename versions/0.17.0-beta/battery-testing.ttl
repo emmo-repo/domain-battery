@@ -130,8 +130,8 @@
 
 <https://w3id.org/emmo/domain/battery/modules/battery-testing> a owl:Ontology ;
     dcterms:abstract "The battery-testing module contains the terms and relations specific to the testing of batteries" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/reference/battery-reference> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-testing> .
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.1-beta/reference/battery-reference> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.1-beta/modules/battery-testing> .
 
 :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce a owl:Class ;
     rdfs:label "BatteryMeasurementResult"@en ;

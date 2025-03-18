@@ -4477,417 +4477,6 @@ ZincSilverOxideBattery
   </tr>
   </table>
 
-Battery
-=======
-
-Battery-testing
-===============
-
-.. raw:: html
-
-   <div id="battery_7985009d_a3ac_4850_8b85_76899d432814"></div>
-
-Autoclave
----------
-
-* https://w3id.org/emmo/domain/battery#battery_7985009d_a3ac_4850_8b85_76899d432814
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a machine that carries out proceses at elevated pressure and/or temperature</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557"></div>
-
-BatteryCellHolder
------------------
-
-* https://w3id.org/emmo/domain/battery#battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a holder that mounts a battery and its terminals for a test</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_23e6170d_a70b_4de9_a4db_458e24a327ac"></div>
-
-BatteryCycler
--------------
-
-* https://w3id.org/emmo/domain/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">A device for performing cycling measurements of a battery.</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28"></div>
-
-BatteryCycling
---------------
-
-* https://w3id.org/emmo/domain/battery#battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of electrochemically charging and discharging a battery</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_6c481323_498b_42c6_915a_53490f409430"></div>
-
-BatteryMeasurement
-------------------
-
-* https://w3id.org/emmo/domain/battery#battery_6c481323_498b_42c6_915a_53490f409430
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a measurement performed on a battery</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce"></div>
-
-BatteryMeasurementResult
-------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the result of a battery measurement</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_dca7729a_421a_4921_90cf_9692bb9eb081"></div>
-
-BatteryTest
------------
-
-* https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a test performed on a battery</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9"></div>
-
-BatteryTestResult
------------------
-
-* https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the output of a battery test</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_d9b99b14_44e8_473b_af8f_2a160429df69"></div>
-
-BatteryTimeSeriesDataSet
-------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a timeseries dataset resulting from a battery measurement</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_8f56258f_78ab_45f1_9038_08973fab9e4e"></div>
-
-DestroyedBatteryCell
---------------------
-
-* https://w3id.org/emmo/domain/battery#battery_8f56258f_78ab_45f1_9038_08973fab9e4e
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a battery cell which is destroyed by some process</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb"></div>
-
-ExternalHeating
----------------
-
-* https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of applying a controlled amount of heat to a sample</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_875a302c_a1f4_45b9_933a_559c5b775dad"></div>
-
-GasChromatograph
-----------------
-
-* https://w3id.org/emmo/domain/battery#battery_875a302c_a1f4_45b9_933a_559c5b775dad
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">equipment for determining the composition of gas</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_f952d3be_723d_4767_ac4e_8b72bac862d6"></div>
-
-GasSampling
------------
-
-* https://w3id.org/emmo/domain/battery#battery_f952d3be_723d_4767_ac4e_8b72bac862d6
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of characterizing a gas sample</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_3a48b817_e54b_40fe_b00a_abfeea56383c"></div>
-
-NailPenetration
----------------
-
-* https://w3id.org/emmo/domain/battery#battery_3a48b817_e54b_40fe_b00a_abfeea56383c
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of penetrating a battery with a nail</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d"></div>
-
-OneSidedHeating
----------------
-
-* https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of applying heating to one side of a battery</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_d345eb7f_25da_436c_bed3_ae73f97d9500"></div>
-
-SoftVenting
------------
-
-* https://w3id.org/emmo/domain/battery#battery_d345eb7f_25da_436c_bed3_ae73f97d9500
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction.</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4"></div>
-
-ThermalRunawayTest
-------------------
-
-* https://w3id.org/emmo/domain/battery#battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a test to investigate the thermal runaway characteristics of a battery</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_e0bb1bbe_704a_46c2_b399_285b4c788476"></div>
-
-ThermalRunawayTriggerProcess
-----------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of triggering an action based on thermal runaway event</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_28e33d95_1f87_4572_8e58_7e9cddc03d64"></div>
-
-ThermalRunawayTriggerWorkflow
------------------------------
-
-* https://w3id.org/emmo/domain/battery#battery_28e33d95_1f87_4572_8e58_7e9cddc03d64
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a workflow that is triggered by a thermal runaway process.</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_5b871e13_89ab_4dde_8ea0_062067a6708a"></div>
-
-TwoSidedHeating
----------------
-
-* https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the process of apply heat to a battery on two sides</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_61a9b526_1241_417c_ac3f_c25b996b139e"></div>
-
-hasParameter
-------------
-
-* https://w3id.org/emmo/domain/battery#battery_61a9b526_1241_417c_ac3f_c25b996b139e
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-.. raw:: html
-
-   <div id="battery_df4ff8f1_2cf2_444a_9498_23f533bd295c"></div>
-
-hasTestEquipment
-----------------
-
-* https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-.. raw:: html
-
-   <div id="battery_da3b3f28_aaad_4d67_b674_df47e109fb8b"></div>
-
-hasTestObject
--------------
-
-* https://w3id.org/emmo/domain/battery#battery_da3b3f28_aaad_4d67_b674_df47e109fb8b
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-Battery-manufacturing
-=====================
-
 Battery-cell-geometry
 =====================
 
@@ -6209,8 +5798,546 @@ hasSurface
   <table class="element-table">
   </table>
 
-Battery-manufacturing-lithium-ion
-=================================
+Battery-testing
+===============
+
+.. raw:: html
+
+   <div id="battery_7985009d_a3ac_4850_8b85_76899d432814"></div>
+
+Autoclave
+---------
+
+* https://w3id.org/emmo/domain/battery#battery_7985009d_a3ac_4850_8b85_76899d432814
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a machine that carries out proceses at elevated pressure and/or temperature</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557"></div>
+
+BatteryCellHolder
+-----------------
+
+* https://w3id.org/emmo/domain/battery#battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a holder that mounts a battery and its terminals for a test</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_23e6170d_a70b_4de9_a4db_458e24a327ac"></div>
+
+BatteryCycler
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">A device for performing cycling measurements of a battery.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28"></div>
+
+BatteryCycling
+--------------
+
+* https://w3id.org/emmo/domain/battery#battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of electrochemically charging and discharging a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6c481323_498b_42c6_915a_53490f409430"></div>
+
+BatteryMeasurement
+------------------
+
+* https://w3id.org/emmo/domain/battery#battery_6c481323_498b_42c6_915a_53490f409430
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a measurement performed on a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce"></div>
+
+BatteryMeasurementResult
+------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the result of a battery measurement</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_dca7729a_421a_4921_90cf_9692bb9eb081"></div>
+
+BatteryTest
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a test performed on a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9"></div>
+
+BatteryTestResult
+-----------------
+
+* https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the output of a battery test</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d9b99b14_44e8_473b_af8f_2a160429df69"></div>
+
+BatteryTimeSeriesDataSet
+------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a timeseries dataset resulting from a battery measurement</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8f56258f_78ab_45f1_9038_08973fab9e4e"></div>
+
+DestroyedBatteryCell
+--------------------
+
+* https://w3id.org/emmo/domain/battery#battery_8f56258f_78ab_45f1_9038_08973fab9e4e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a battery cell which is destroyed by some process</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb"></div>
+
+ExternalHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of applying a controlled amount of heat to a sample</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_875a302c_a1f4_45b9_933a_559c5b775dad"></div>
+
+GasChromatograph
+----------------
+
+* https://w3id.org/emmo/domain/battery#battery_875a302c_a1f4_45b9_933a_559c5b775dad
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">equipment for determining the composition of gas</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_f952d3be_723d_4767_ac4e_8b72bac862d6"></div>
+
+GasSampling
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_f952d3be_723d_4767_ac4e_8b72bac862d6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of characterizing a gas sample</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_3a48b817_e54b_40fe_b00a_abfeea56383c"></div>
+
+NailPenetration
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_3a48b817_e54b_40fe_b00a_abfeea56383c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of penetrating a battery with a nail</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d"></div>
+
+OneSidedHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of applying heating to one side of a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_d345eb7f_25da_436c_bed3_ae73f97d9500"></div>
+
+SoftVenting
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_d345eb7f_25da_436c_bed3_ae73f97d9500
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4"></div>
+
+ThermalRunawayTest
+------------------
+
+* https://w3id.org/emmo/domain/battery#battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a test to investigate the thermal runaway characteristics of a battery</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e0bb1bbe_704a_46c2_b399_285b4c788476"></div>
+
+ThermalRunawayTriggerProcess
+----------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of triggering an action based on thermal runaway event</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_28e33d95_1f87_4572_8e58_7e9cddc03d64"></div>
+
+ThermalRunawayTriggerWorkflow
+-----------------------------
+
+* https://w3id.org/emmo/domain/battery#battery_28e33d95_1f87_4572_8e58_7e9cddc03d64
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a workflow that is triggered by a thermal runaway process.</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_5b871e13_89ab_4dde_8ea0_062067a6708a"></div>
+
+TwoSidedHeating
+---------------
+
+* https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the process of apply heat to a battery on two sides</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_61a9b526_1241_417c_ac3f_c25b996b139e"></div>
+
+hasParameter
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_61a9b526_1241_417c_ac3f_c25b996b139e
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_df4ff8f1_2cf2_444a_9498_23f533bd295c"></div>
+
+hasTestEquipment
+----------------
+
+* https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_da3b3f28_aaad_4d67_b674_df47e109fb8b"></div>
+
+hasTestObject
+-------------
+
+* https://w3id.org/emmo/domain/battery#battery_da3b3f28_aaad_4d67_b674_df47e109fb8b
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+Battery-manufacturing
+=====================
+
+Battery-products
+================
+
+.. raw:: html
+
+   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
+
+INR1865025R
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">25R</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120785885'>https://www.wikidata.org/wiki/Q120785885</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
+
+INR1865035E
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">35E</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799558'>https://www.wikidata.org/wiki/Q120799558</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
+
+INR18650MJ1
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MJ1</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120766894'>https://www.wikidata.org/wiki/Q120766894</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
+
+INR18650P28A
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28A</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799517'>https://www.wikidata.org/wiki/Q120799517</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
+
+INR18650P28B
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28B</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120767033'>https://www.wikidata.org/wiki/Q120767033</a></td>
+  </tr>
+  </table>
 
 Battery-model-lithium-ion
 =========================
@@ -6617,137 +6744,10 @@ cidemodKey
   <table class="element-table">
   </table>
 
-Battery-products
-================
+Battery-manufacturing-lithium-ion
+=================================
 
-.. raw:: html
-
-   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
-
-INR1865025R
------------
-
-* https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">25R</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120785885'>https://www.wikidata.org/wiki/Q120785885</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
-
-INR1865035E
------------
-
-* https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">35E</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799558'>https://www.wikidata.org/wiki/Q120799558</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
-
-INR18650MJ1
------------
-
-* https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">MJ1</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120766894'>https://www.wikidata.org/wiki/Q120766894</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
-
-INR18650P28A
-------------
-
-* https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">P28A</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799517'>https://www.wikidata.org/wiki/Q120799517</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
-
-INR18650P28B
-------------
-
-* https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">P28B</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120767033'>https://www.wikidata.org/wiki/Q120767033</a></td>
-  </tr>
-  </table>
+Battery
+=======
 
 
