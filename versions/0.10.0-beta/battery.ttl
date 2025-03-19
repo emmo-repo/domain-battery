@@ -25,12 +25,12 @@
     vann:preferredNamespacePrefix "battery" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
     owl:backwardCompatibleWith "0.17.0-beta" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.2-beta/modules/battery-cell-geometry>,
-        <https://w3id.org/emmo/domain/battery/0.18.2-beta/modules/battery-manufacturing>,
-        <https://w3id.org/emmo/domain/battery/0.18.2-beta/modules/battery-testing>,
-        <https://w3id.org/emmo/domain/battery/0.18.2-beta/reference/battery-reference> ;
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.3-beta/modules/battery-cell-geometry>,
+        <https://w3id.org/emmo/domain/battery/0.18.3-beta/modules/battery-manufacturing>,
+        <https://w3id.org/emmo/domain/battery/0.18.3-beta/modules/battery-testing>,
+        <https://w3id.org/emmo/domain/battery/0.18.3-beta/reference/battery-reference> ;
     owl:priorVersion "0.17.0-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.2-beta/battery> ;
-    owl:versionInfo "0.18.2-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.3-beta/battery> ;
+    owl:versionInfo "0.18.3-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
 
