@@ -2454,7 +2454,7 @@
 
 ###  https://w3id.org/emmo/domain/battery#battery_f768ea27_09ba_4875_a5cc_2c644b0753a3
 :battery_f768ea27_09ba_4875_a5cc_2c644b0753a3 rdf:type owl:Class ;
-                                              rdfs:subClassOf emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 ;
+                                              rdfs:subClassOf emmo:EMMO_5cc4e111_3eb1_44a3_9369_5af3846cf605 ;
                                               skos:prefLabel "BatteryPhenomenon"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery phenomenon"@en .
 
