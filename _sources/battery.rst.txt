@@ -3,6 +3,9 @@
 Class Index
 ===========
 
+Battery
+=======
+
 Battery-quantities
 ==================
 
@@ -4477,6 +4480,547 @@ ZincSilverOxideBattery
   </tr>
   </table>
 
+Battery-manufacturing-lithium-ion
+=================================
+
+Battery-model-lithium-ion
+=========================
+
+.. raw:: html
+
+   <div id="battery_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
+
+ActivationEnergyOfLithiumDiffusivityInElectrolyte
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_56de36fe_e8e1_486c_8d29_061ac8d28c13
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
+
+ActivationEnergyOfLithiumDiffusivityInNegativeElectrode
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_86af4487_33c1_4562_a00b_3a8252ffe378
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
+
+ActivationEnergyOfLithiumDiffusivityInPositiveElectrode
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4d69edda_d2fa_40b0_9c1e_52e08debf578
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
+
+BatteryCellDensity
+------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the overall density of a lithium-ion battery cell, calculated as the quotient of the total mass and the total volume</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
+
+BatteryCellLumpedSpecificHeatCapacity
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the lumped specific heat capacity of a battery cell</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6"></div>
+
+BatteryCellSurfaceArea
+----------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the external surface area of a battery cell</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
+
+BatteryCellVolume
+-----------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_b4184e46_c53c_47cc_9bfc_186fd77836a5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the total volume of a battery cell, determined by its external dimensions</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
+
+InitialLithiumConcentrationInElectrolyte
+----------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the initial amount concentration of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
+
+LithiumDiffusivityInElectrolyte
+-------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4c274506_af5b_4ef1_8217_829ffd459f28
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_50247e71_75fe_4986_959e_fd06c6be98db"></div>
+
+LithiumDiffusivityInNegativeElectrode
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_50247e71_75fe_4986_959e_fd06c6be98db
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
+
+LithiumDiffusivityInPositiveElectrode
+-------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e59188bb_ce66_49f6_84aa_ecb98e76941e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
+
+LithiumTransportNumber
+----------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">transport number of lithium ion in electrolyte</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124"></div>
+
+NegativeElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the negative electrode coating</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3"></div>
+
+NegativeElectrodeLithiumStoichiometricCoefficientAtSOC0
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 0%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
+
+NegativeElectrodeLithiumStoichiometricCoefficientAtSOC100
+---------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_8c336ae9_1818_4b08_a660_4bb83b28351f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 100%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e808a26a_5812_49e9_894c_b793c7fe0c38"></div>
+
+NegativeElectrodeMaximumLithiumConcentration
+--------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e808a26a_5812_49e9_894c_b793c7fe0c38
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_62f5beeb_6d1e_442a_8048_3ebe08882964"></div>
+
+PositiveElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_62f5beeb_6d1e_442a_8048_3ebe08882964
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the positive electrode coating</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
+
+PositiveElectrodeLithiumStoichiometricCoefficientAtSOC0
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_80920875_62ac_4e29_b970_ec4316e76aa5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 0%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_99041897_5c08_40ed_9118_3e77e9b0e191"></div>
+
+PositiveElectrodeLithiumStoichiometricCoefficientAtSOC100
+---------------------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_99041897_5c08_40ed_9118_3e77e9b0e191
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 100%</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
+
+PositiveElectrodeMaximumLithiumConcentration
+--------------------------------------------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_c69a9d55_823f_4113_a305_ebc89dde7de3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
+
+battmoKey
+---------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e5e86474_8623_48ea_a1cf_502bdb10aa14
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
+
+bpxKey
+------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0a5b99ee_995b_4899_a79b_925a4086da37
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+.. raw:: html
+
+   <div id="battery_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
+
+cidemodKey
+----------
+
+* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_1b718841_5d72_4071_bb71_fc4a754f5e30
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+Battery-products
+================
+
+.. raw:: html
+
+   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
+
+INR1865025R
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">25R</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120785885'>https://www.wikidata.org/wiki/Q120785885</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
+
+INR1865035E
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">35E</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799558'>https://www.wikidata.org/wiki/Q120799558</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
+
+INR18650MJ1
+-----------
+
+* https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MJ1</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120766894'>https://www.wikidata.org/wiki/Q120766894</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
+
+INR18650P28A
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28A</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799517'>https://www.wikidata.org/wiki/Q120799517</a></td>
+  </tr>
+  </table>
+
+.. raw:: html
+
+   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
+
+INR18650P28B
+------------
+
+* https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">P28B</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120767033'>https://www.wikidata.org/wiki/Q120767033</a></td>
+  </tr>
+  </table>
+
 Battery-cell-geometry
 =====================
 
@@ -6205,549 +6749,5 @@ hasTestObject
 
 Battery-manufacturing
 =====================
-
-Battery-products
-================
-
-.. raw:: html
-
-   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
-
-INR1865025R
------------
-
-* https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">25R</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120785885'>https://www.wikidata.org/wiki/Q120785885</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
-
-INR1865035E
------------
-
-* https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">35E</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799558'>https://www.wikidata.org/wiki/Q120799558</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
-
-INR18650MJ1
------------
-
-* https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">MJ1</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120766894'>https://www.wikidata.org/wiki/Q120766894</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
-
-INR18650P28A
-------------
-
-* https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">P28A</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120799517'>https://www.wikidata.org/wiki/Q120799517</a></td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
-
-INR18650P28B
-------------
-
-* https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">P28B</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q120767033'>https://www.wikidata.org/wiki/Q120767033</a></td>
-  </tr>
-  </table>
-
-Battery-model-lithium-ion
-=========================
-
-.. raw:: html
-
-   <div id="battery_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
-
-ActivationEnergyOfLithiumDiffusivityInElectrolyte
--------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_56de36fe_e8e1_486c_8d29_061ac8d28c13
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
-
-ActivationEnergyOfLithiumDiffusivityInNegativeElectrode
--------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_86af4487_33c1_4562_a00b_3a8252ffe378
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
-
-ActivationEnergyOfLithiumDiffusivityInPositiveElectrode
--------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4d69edda_d2fa_40b0_9c1e_52e08debf578
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
-
-BatteryCellDensity
-------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the overall density of a lithium-ion battery cell, calculated as the quotient of the total mass and the total volume</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
-
-BatteryCellLumpedSpecificHeatCapacity
--------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_9cba2158_26ba_4dd7_b082_ba66dbb960c7
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the lumped specific heat capacity of a battery cell</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6"></div>
-
-BatteryCellSurfaceArea
-----------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the external surface area of a battery cell</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
-
-BatteryCellVolume
------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_b4184e46_c53c_47cc_9bfc_186fd77836a5
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the total volume of a battery cell, determined by its external dimensions</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
-
-InitialLithiumConcentrationInElectrolyte
-----------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the initial amount concentration of lithium in an electrolyte</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
-
-LithiumDiffusivityInElectrolyte
--------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_4c274506_af5b_4ef1_8217_829ffd459f28
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the diffusivity of lithium in an electrolyte</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_50247e71_75fe_4986_959e_fd06c6be98db"></div>
-
-LithiumDiffusivityInNegativeElectrode
--------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_50247e71_75fe_4986_959e_fd06c6be98db
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the diffusivity of lithium in the negative electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
-
-LithiumDiffusivityInPositiveElectrode
--------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e59188bb_ce66_49f6_84aa_ecb98e76941e
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the diffusivity of lithium in the positive electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
-
-LithiumTransportNumber
-----------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">transport number of lithium ion in electrolyte</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124"></div>
-
-NegativeElectrodeCoatingThickness
----------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_cdc91ec0_9fc5_4551_bbd9_6824c2920124
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">thickness of the negative electrode coating</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3"></div>
-
-NegativeElectrodeLithiumStoichiometricCoefficientAtSOC0
--------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 0%</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
-
-NegativeElectrodeLithiumStoichiometricCoefficientAtSOC100
----------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_8c336ae9_1818_4b08_a660_4bb83b28351f
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the stoichiometric coefficient of lithium in the negative electrode active material at cell state-of-charge of 100%</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_e808a26a_5812_49e9_894c_b793c7fe0c38"></div>
-
-NegativeElectrodeMaximumLithiumConcentration
---------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e808a26a_5812_49e9_894c_b793c7fe0c38
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">maximum concentration of lithium in the negative electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_62f5beeb_6d1e_442a_8048_3ebe08882964"></div>
-
-PositiveElectrodeCoatingThickness
----------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_62f5beeb_6d1e_442a_8048_3ebe08882964
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">thickness of the positive electrode coating</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
-
-PositiveElectrodeLithiumStoichiometricCoefficientAtSOC0
--------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_80920875_62ac_4e29_b970_ec4316e76aa5
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 0%</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_99041897_5c08_40ed_9118_3e77e9b0e191"></div>
-
-PositiveElectrodeLithiumStoichiometricCoefficientAtSOC100
----------------------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_99041897_5c08_40ed_9118_3e77e9b0e191
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">the stoichiometric coefficient of lithium in the positive electrode active material at cell state-of-charge of 100%</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
-
-PositiveElectrodeMaximumLithiumConcentration
---------------------------------------------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_c69a9d55_823f_4113_a305_ebc89dde7de3
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">maximum concentration of lithium in the positive electrode</td>
-  </tr>
-  </table>
-
-.. raw:: html
-
-   <div id="battery_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
-
-battmoKey
----------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_e5e86474_8623_48ea_a1cf_502bdb10aa14
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-.. raw:: html
-
-   <div id="battery_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
-
-bpxKey
-------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_0a5b99ee_995b_4899_a79b_925a4086da37
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-.. raw:: html
-
-   <div id="battery_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
-
-cidemodKey
-----------
-
-* https://w3id.org/emmo/domain/battery-model-lithium-ion#battery_1b718841_5d72_4071_bb71_fc4a754f5e30
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-Battery-manufacturing-lithium-ion
-=================================
-
-Battery
-=======
 
 

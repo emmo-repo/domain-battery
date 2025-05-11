@@ -3,6 +3,6 @@
 
 <https://w3id.org/emmo/domain/battery/subdomains/battery-manufacturing-lithium-ion> a owl:Ontology ;
     dcterms:abstract "The battery-manufacturing-lithium-ion extension contains the terms and relations specific to the process of manufacturing lithium-ion batteries." ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.4-beta/battery> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.4-beta/subdomains/battery-manufacturing-lithium-ion> .
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.5-beta/battery> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.5-beta/subdomains/battery-manufacturing-lithium-ion> .
 
