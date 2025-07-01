@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Example: Custom Battery Cell Metadata &#8212; BattInfo  documentation</title>
+    <title>Example: Custom Battery Cell Metadata (JSON-LD + RDF) &#8212; BattInfo  documentation</title>
   
   
   
@@ -308,8 +308,10 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="example_person_jsonld.html">JSON-LD: A Simple Introduction Using a Person</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_load_with_emmontopy.html">Exploring the Ontology with EMMOntoPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_linked_data_battery_cell_metadata.html">Example: Simple Battery Cell Metadata</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example: Custom Battery Cell Metadata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</a></li>
 </ul>
 </div>
 </nav></div>
@@ -350,7 +352,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../pages/examples.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Example: Custom Battery Cell Metadata</li>
+    <li class="breadcrumb-item active" aria-current="page">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</li>
   </ul>
 </nav>
 </div>
@@ -367,105 +369,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="Example:-Custom-Battery-Cell-Metadata">
-<h1>Example: Custom Battery Cell Metadata<a class="headerlink" href="#Example:-Custom-Battery-Cell-Metadata" title="Permalink to this heading">#</a></h1>
-<p>Let’s describe two instances of custom R2032 coin cells with different materials!</p>
-<p>This example covers a few topics:</p>
+  <section id="Example:-Custom-Battery-Cell-Metadata-(JSON-LD-+-RDF)">
+<h1>Example: Custom Battery Cell Metadata (JSON-LD + RDF)<a class="headerlink" href="#Example:-Custom-Battery-Cell-Metadata-(JSON-LD-+-RDF)" title="Permalink to this heading">#</a></h1>
+<p>In this notebook, we define two custom battery cells (R2032 coin cells) using JSON-LD, enriched with semantic information from ontologies. We then parse this data into an RDF graph and query it using SPARQL.</p>
+<p>This example illustrates:</p>
 <ul class="simple">
-<li><p>How to describe a resource using ontology terms and JSON-LD</p></li>
-<li><p>How machines convert JSON-LD into triples</p></li>
-<li><p>How to filter your cells based on some criteria <strong>[Moderate]</strong></p></li>
-<li><p>How to use the ontology to fetch more information from other sources <strong>[Advanced]</strong></p></li>
+<li><p>How to describe battery cells using ontology terms</p></li>
+<li><p>How JSON-LD is interpreted as semantic triples</p></li>
+<li><p>How to use SPARQL to explore structured linked data</p></li>
+<li><p>How to extend this structure for data integration or digital twins</p></li>
 </ul>
-<p>A live version of this notebook is available on Google Colab <a class="reference external" href="https://colab.research.google.com/drive/1k3dGZTz4bDeH4JPToqXsN0svCUkswPDN?usp=sharing">here</a></p>
-<section id="Describe-the-powder-using-ontology-terms-in-JSON-LD-format">
-<h2>Describe the powder using ontology terms in JSON-LD format<a class="headerlink" href="#Describe-the-powder-using-ontology-terms-in-JSON-LD-format" title="Permalink to this heading">#</a></h2>
-<p>The JSON-LD data that we will use is:</p>
+<section id="Describe-Battery-Cells-Using-JSON-LD">
+<h2>Describe Battery Cells Using JSON-LD<a class="headerlink" href="#Describe-Battery-Cells-Using-JSON-LD" title="Permalink to this heading">#</a></h2>
+<p>Below are two JSON-LD descriptions of battery cells:</p>
+<ul class="simple">
+<li><p>An LFP/Graphite R2032 coin cell</p></li>
+<li><p>An LNO/Graphite R2032 coin cell</p></li>
+</ul>
+<p>These objects use ontology-defined terms such as:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">BatteryCell</span></code>, <code class="docutils literal notranslate"><span class="pre">Electrode</span></code>, <code class="docutils literal notranslate"><span class="pre">Graphite</span></code>, <code class="docutils literal notranslate"><span class="pre">LithiumIronPhosphate</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NominalVoltage</span></code>, <code class="docutils literal notranslate"><span class="pre">hasProperty</span></code>, and <code class="docutils literal notranslate"><span class="pre">emmo:Volt</span></code></p></li>
+</ul>
+<p>We also use <code class="docutils literal notranslate"><span class="pre">schema:name</span></code> and <code class="docutils literal notranslate"><span class="pre">schema:manufacturer</span></code> for basic metadata.</p>
+<p>Each block is fully self-contained and semantically interpretable.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">jsonld_LFPGr</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;My LFP-Graphite R2032 Coin Cell&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:manufacturer&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q3041255&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasPositiveElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;LithiumIronPhosphate&quot;</span>
-                <span class="p">}</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasNegativeElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Graphite&quot;</span>
-                <span class="p">}</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasCase&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;R2032&quot;</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasProperty&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NominalVoltage&quot;</span><span class="p">,</span> <span class="s2">&quot;ConventionalProperty&quot;</span><span class="p">],</span>
-               <span class="s2">&quot;hasNumericalPart&quot;</span><span class="p">:</span> <span class="p">{</span>
-                     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Real&quot;</span><span class="p">,</span>
-                     <span class="s2">&quot;hasNumericalValue&quot;</span><span class="p">:</span> <span class="mf">3.2</span>
-               <span class="p">},</span>
-               <span class="s2">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;emmo:Volt&quot;</span>
-            <span class="p">}</span>
-         <span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>jsonld_LFPGr = {
+            &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+            &quot;@type&quot;: &quot;BatteryCell&quot;,
+            &quot;schema:name&quot;: &quot;My LFP-Graphite R2032 Coin Cell&quot;,
+            &quot;schema:manufacturer&quot;: {
+               &quot;@id&quot;: &quot;https://www.wikidata.org/wiki/Q3041255&quot;,
+               &quot;schema:name&quot;: &quot;SINTEF&quot;
+            },
+            &quot;hasPositiveElectrode&quot;: {
+                &quot;@type&quot;: &quot;Electrode&quot;,
+                &quot;hasActiveMaterial&quot;: {
+                    &quot;@type&quot;: &quot;LithiumIronPhosphate&quot;
+                }
+            },
+            &quot;hasNegativeElectrode&quot;: {
+                &quot;@type&quot;: &quot;Electrode&quot;,
+                &quot;hasActiveMaterial&quot;: {
+                    &quot;@type&quot;: &quot;Graphite&quot;
+                }
+            },
+            &quot;hasCase&quot;: {
+                &quot;@type&quot;: &quot;R2032&quot;
+            },
+            &quot;hasProperty&quot;: {
+               &quot;@type&quot;: [&quot;NominalVoltage&quot;, &quot;ConventionalProperty&quot;],
+               &quot;hasNumericalPart&quot;: {
+                     &quot;@type&quot;: &quot;RealData&quot;,
+                     &quot;hasNumberValue&quot;: 3.2
+               },
+               &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
+            }
+         }
 
-<span class="n">jsonld_LNOGr</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;My LNO-Graphite R2032 Coin Cell&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:manufacturer&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q3041255&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasPositiveElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;LithiumNickelOxide&quot;</span>
-                <span class="p">}</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasNegativeElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Graphite&quot;</span>
-                <span class="p">}</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasCase&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;R2032&quot;</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasProperty&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NominalVoltage&quot;</span><span class="p">,</span> <span class="s2">&quot;ConventionalProperty&quot;</span><span class="p">],</span>
-               <span class="s2">&quot;hasNumericalPart&quot;</span><span class="p">:</span> <span class="p">{</span>
-                     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Real&quot;</span><span class="p">,</span>
-                     <span class="s2">&quot;hasNumericalValue&quot;</span><span class="p">:</span> <span class="mf">3.6</span>
-               <span class="p">},</span>
-               <span class="s2">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;emmo:Volt&quot;</span>
-            <span class="p">}</span>
-         <span class="p">}</span>
+jsonld_LNOGr = {
+            &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+            &quot;@type&quot;: &quot;BatteryCell&quot;,
+            &quot;schema:name&quot;: &quot;My LNO-Graphite R2032 Coin Cell&quot;,
+            &quot;schema:manufacturer&quot;: {
+               &quot;@id&quot;: &quot;https://www.wikidata.org/wiki/Q3041255&quot;,
+               &quot;schema:name&quot;: &quot;SINTEF&quot;
+            },
+            &quot;hasPositiveElectrode&quot;: {
+                &quot;@type&quot;: &quot;Electrode&quot;,
+                &quot;hasActiveMaterial&quot;: {
+                    &quot;@type&quot;: &quot;LithiumNickelOxide&quot;
+                }
+            },
+            &quot;hasNegativeElectrode&quot;: {
+                &quot;@type&quot;: &quot;Electrode&quot;,
+                &quot;hasActiveMaterial&quot;: {
+                    &quot;@type&quot;: &quot;Graphite&quot;
+                }
+            },
+            &quot;hasCase&quot;: {
+                &quot;@type&quot;: &quot;R2032&quot;
+            },
+            &quot;hasProperty&quot;: {
+               &quot;@type&quot;: [&quot;NominalVoltage&quot;, &quot;ConventionalProperty&quot;],
+               &quot;hasNumericalPart&quot;: {
+                     &quot;@type&quot;: &quot;RealData&quot;,
+                     &quot;hasNumberValue&quot;: 3.6
+               },
+               &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
+            }
+         }
 </pre></div>
 </div>
 </div>
 </section>
-<section id="Parse-this-description-into-a-graph">
-<h2>Parse this description into a graph<a class="headerlink" href="#Parse-this-description-into-a-graph" title="Permalink to this heading">#</a></h2>
-<p>Now let’s see how a machine would process this data by reading it into a Graph!</p>
-<p>First, we install and import the python dependencies that we need for this example.</p>
+<section id="Parse-JSON-LD-into-an-RDF-Graph">
+<h2>Parse JSON-LD into an RDF Graph<a class="headerlink" href="#Parse-JSON-LD-into-an-RDF-Graph" title="Permalink to this heading">#</a></h2>
+<p>We now create a new RDFLib graph and load the JSON-LD descriptions into it. This converts each JSON-LD block into RDF triples — the building blocks of the Semantic Web. You can then query this graph using SPARQL to retrieve specific metadata or relationships.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span># Install and import dependencies
-!pip install jsonschema rdflib requests matplotlib &gt; /dev/null
-
-import json
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import json
 import rdflib
 import requests
 import sys
@@ -476,30 +484,49 @@ import matplotlib.pyplot as plt
 </div>
 <p>We create the graph using a very handy python package called <a class="reference external" href="https://rdflib.readthedocs.io/en/stable/">rdflib</a>, which provides us a way to parse our json-ld data, run some queries using the language <a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>, and serialize the graph in any RDF compatible format (e.g. JSON-LD, Turtle, etc.).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new graph</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a new graph
+g = rdflib.Graph()
 
-<span class="c1"># Parse our json-ld data into the graph</span>
-<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">jsonld_LFPGr</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">jsonld_LNOGr</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
+# Parse our json-ld data into the graph
+g.parse(data=json.dumps(jsonld_LFPGr), format=&quot;json-ld&quot;)
+g.parse(data=json.dumps(jsonld_LNOGr), format=&quot;json-ld&quot;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;Graph identifier=N8f27c4923b764f0488705608c881fd1a (&lt;class &#39;rdflib.graph.Graph&#39;&gt;)&gt;
+</pre></div></div>
+</div>
+</section>
+<section id="Query-All-Triples-in-the-Graph">
+<h2>Query All Triples in the Graph<a class="headerlink" href="#Query-All-Triples-in-the-Graph" title="Permalink to this heading">#</a></h2>
+<p>We begin by running a simple SPARQL query that returns all triples (<code class="docutils literal notranslate"><span class="pre">subject</span> <span class="pre">→</span> <span class="pre">predicate</span> <span class="pre">→</span> <span class="pre">object</span></code>) in the graph. This is useful for inspecting what data was parsed and verifying that your JSON-LD was interpreted correctly.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a SPARQL query to return all the triples in the graph
+query_all = &quot;&quot;&quot;
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+&quot;&quot;&quot;
 
-<span class="c1"># Create a SPARQL query to return all the triples in the graph</span>
-<span class="n">query_all</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?subject ?predicate ?object</span>
-<span class="s2">WHERE {</span>
-<span class="s2">  ?subject ?predicate ?object</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span>
+# Execute the SPARQL query
+all_the_things = g.query(query_all)
 
-<span class="c1"># Execute the SPARQL query</span>
-<span class="n">all_the_things</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query_all</span><span class="p">)</span>
-
-<span class="c1"># Print the results</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">all_the_things</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+# Print the results
+for row in all_the_things:
+    print(row)
 <br/></pre></div>
 </div>
 </div>
@@ -508,95 +535,87 @@ import matplotlib.pyplot as plt
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LFP-Graphite R2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;Na8888f67843f40fa8bc9efe32a39bd02&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N1fe8535096ed436e92cc736bb203262f&#39;))
-(rdflib.term.BNode(&#39;N8a25bf6bf45743e0bbbd9401567d5dc4&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#Volt&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
-(rdflib.term.BNode(&#39;Nabed07743a4948009530f6c30a72a556&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;N8a25bf6bf45743e0bbbd9401567d5dc4&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;N8a25bf6bf45743e0bbbd9401567d5dc4&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;Nabed07743a4948009530f6c30a72a556&#39;))
-(rdflib.term.BNode(&#39;Nf303668168c149ee9db9d3c1f077f92f&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
-(rdflib.term.BNode(&#39;Nc84b874ca480485c82214ff777e4d5b0&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemicalsubstance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db&#39;))
-(rdflib.term.BNode(&#39;N9d60b680f9a548f79d824e66f9f3f3a0&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;N9d60b680f9a548f79d824e66f9f3f3a0&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N8a25bf6bf45743e0bbbd9401567d5dc4&#39;))
-(rdflib.term.BNode(&#39;Ndeb892b2acee4a638d8f785513faa6d7&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LNO-Graphite R2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;N345c98843d9f46c89e490dbf667eacc6&#39;))
+(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;))
+(rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N956b235930804560ba4a75e392e00909&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LFP-Graphite R2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LNO-Graphite R2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
+(rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.2&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;N33cefdfbfe344a61acd465ce81d0dfe4&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db&#39;))
 (rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;SINTEF&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Ndeb892b2acee4a638d8f785513faa6d7&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;N87fd0510c5d342d0b6d1ec1efab55efc&#39;))
-(rdflib.term.BNode(&#39;N318dda34a11b4390946ce22a6278c83c&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N607b1c335401415da79f95196fce8dd5&#39;))
-(rdflib.term.BNode(&#39;Nd522762dfe0c4e7aa318d88f5435c081&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;N87fd0510c5d342d0b6d1ec1efab55efc&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
-(rdflib.term.BNode(&#39;Nf303668168c149ee9db9d3c1f077f92f&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#Volt&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
-(rdflib.term.BNode(&#39;Nbc45ccd0825c4ae9b894d0ae1d293482&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemicalsubstance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Na8888f67843f40fa8bc9efe32a39bd02&#39;))
-(rdflib.term.BNode(&#39;N8a25bf6bf45743e0bbbd9401567d5dc4&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
-(rdflib.term.BNode(&#39;N9d60b680f9a548f79d824e66f9f3f3a0&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;Nbc45ccd0825c4ae9b894d0ae1d293482&#39;))
-(rdflib.term.BNode(&#39;Nf303668168c149ee9db9d3c1f077f92f&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;Nabed07743a4948009530f6c30a72a556&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.6&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
-(rdflib.term.BNode(&#39;N318dda34a11b4390946ce22a6278c83c&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;Na8888f67843f40fa8bc9efe32a39bd02&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;N607b1c335401415da79f95196fce8dd5&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemicalsubstance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
-(rdflib.term.BNode(&#39;Nd522762dfe0c4e7aa318d88f5435c081&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.2&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
-(rdflib.term.BNode(&#39;N1fe8535096ed436e92cc736bb203262f&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemicalsubstance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;Nf303668168c149ee9db9d3c1f077f92f&#39;))
-(rdflib.term.BNode(&#39;Nf303668168c149ee9db9d3c1f077f92f&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;Nd522762dfe0c4e7aa318d88f5435c081&#39;))
-(rdflib.term.BNode(&#39;N345c98843d9f46c89e490dbf667eacc6&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
-(rdflib.term.BNode(&#39;Ne6858b3f64a9483f925ccd464076ab04&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;Ndeb892b2acee4a638d8f785513faa6d7&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;Nc84b874ca480485c82214ff777e4d5b0&#39;))
-(rdflib.term.BNode(&#39;N1fa58317b5c04a40bdc836b0e29a051d&#39;), rdflib.term.URIRef(&#39;http://emmo.info/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;N318dda34a11b4390946ce22a6278c83c&#39;))
+(rdflib.term.BNode(&#39;N82447aa146ba442bafedb57375bb5466&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;))
+(rdflib.term.BNode(&#39;N956b235930804560ba4a75e392e00909&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
+(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;))
+(rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
+(rdflib.term.BNode(&#39;N4a7dd7876f0c4be2bc303e43205b2055&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
+(rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;Nc1d2defec20f4fbf9924b6ecf35dd526&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
+(rdflib.term.BNode(&#39;N4365811abd3d4ede8b4e6daedfd41057&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
+(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
+(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
+(rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N4365811abd3d4ede8b4e6daedfd41057&#39;))
+(rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N4a7dd7876f0c4be2bc303e43205b2055&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;))
+(rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N33cefdfbfe344a61acd465ce81d0dfe4&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
+(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;N82447aa146ba442bafedb57375bb5466&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;))
+(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;Nc1d2defec20f4fbf9924b6ecf35dd526&#39;))
+(rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.6&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
+(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
+(rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
 </pre></div></div>
 </div>
 <p>You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples.</p>
 </section>
-<section id="Query-the-Graph-to-select-instances-with-certain-properties-[Advanced]">
-<h2>Query the Graph to select instances with certain properties [Advanced]<a class="headerlink" href="#Query-the-Graph-to-select-instances-with-certain-properties-[Advanced]" title="Permalink to this heading">#</a></h2>
-<p>Now, let’s write a SPARQL query to return the names of cells that have a nominal voltage greater than 3.5 V?</p>
+<section id="Filtering-Battery-Cells-by-Voltage-(Example)">
+<h2>Filtering Battery Cells by Voltage (Example)<a class="headerlink" href="#Filtering-Battery-Cells-by-Voltage-(Example)" title="Permalink to this heading">#</a></h2>
+<p>You can define a SPARQL query to return only cells with a <code class="docutils literal notranslate"><span class="pre">NominalVoltage</span></code> greater than 3.5 V. This demonstrates how JSON-LD + RDF can support rich filtering and data analytics with minimal effort.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch the context</span>
-<span class="n">context_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&#39;</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">context_url</span><span class="p">)</span>
-<span class="n">context_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from ontopy import get_ontology
 
-<span class="c1"># Look for the relevant IRIs in the context</span>
-<span class="n">BatteryCell_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;BatteryCell&#39;</span><span class="p">)</span>
-<span class="n">NominalVoltage_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;NominalVoltage&#39;</span><span class="p">)</span>
-<span class="n">hasProperty_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hasProperty&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@id&#39;</span><span class="p">)</span>
-<span class="n">hasNumericalPart_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hasNumericalPart&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@id&#39;</span><span class="p">)</span>
-<span class="n">hasNumericalValue_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hasNumericalValue&#39;</span><span class="p">)</span>
-<span class="n">hasMeasurementUnit_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hasMeasurementUnit&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@id&#39;</span><span class="p">)</span>
+# Loading from web
+battinfo = get_ontology(&#39;https://w3id.org/emmo/domain/battery/inferred&#39;).load()
 
-<span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">PREFIX schema: &lt;https://schema.org/&gt;</span>
-<span class="s2">PREFIX emmo: &lt;http://emmo.info/emmo#&gt;</span>
+query = f&quot;&quot;&quot;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX emmo: &lt;http://emmo.info/emmo#&gt;
 
-<span class="s2">SELECT ?cellName WHERE </span><span class="se">{{</span>
-<span class="s2">    ?cell a &lt;</span><span class="si">{</span><span class="n">BatteryCell_iri</span><span class="si">}</span><span class="s2">&gt;;</span>
-<span class="s2">          schema:name ?cellName;</span>
-<span class="s2">          &lt;</span><span class="si">{</span><span class="n">hasProperty_iri</span><span class="si">}</span><span class="s2">&gt; ?property.</span>
+SELECT ?cellName WHERE {{
+    ?cell a &lt;{battinfo.BatteryCell.iri}&gt;;
+          schema:name ?cellName;
+          &lt;{battinfo.hasProperty.iri}&gt; ?property.
 
-<span class="s2">    ?property a &lt;</span><span class="si">{</span><span class="n">NominalVoltage_iri</span><span class="si">}</span><span class="s2">&gt;;</span>
-<span class="s2">              &lt;</span><span class="si">{</span><span class="n">hasNumericalPart_iri</span><span class="si">}</span><span class="s2">&gt; ?numericalPart.</span>
+    ?property a &lt;{battinfo.NominalVoltage.iri}&gt;;
+              &lt;{battinfo.hasNumericalPart.iri}&gt; ?numericalPart.
 
-<span class="s2">    ?numericalPart &lt;</span><span class="si">{</span><span class="n">hasNumericalValue_iri</span><span class="si">}</span><span class="s2">&gt; ?voltage.</span>
+    ?numericalPart &lt;{battinfo.hasNumberValue.iri}&gt; ?voltage.
 
-<span class="s2">    FILTER (?voltage &gt; 3.5)</span>
-<span class="se">}}</span>
-<span class="s2">&quot;&quot;&quot;</span>
+    FILTER (?voltage &gt; 3.5)
+}}
+&quot;&quot;&quot;
 
-<span class="c1"># Execute the SPARQL query</span>
-<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+# Execute the SPARQL query
+results = g.query(query)
 
-<span class="c1"># Print the results</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+# Print the results
+for row in results:
+    print(row)
 <br/></pre></div>
 </div>
 </div>
@@ -613,35 +632,22 @@ import matplotlib.pyplot as plt
 <h2>Fetch additional information from other sources [Advanced]<a class="headerlink" href="#Fetch-additional-information-from-other-sources-[Advanced]" title="Permalink to this heading">#</a></h2>
 <p>Ontologies contain a lot of information about the meaning of things, but they don’t always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let’s see how you can use the ontology to fetch additional information from other sources.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parse the ontology into the knowledge graph</span>
-<span class="n">ontology</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry-inferred.ttl&quot;</span>
-<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">ontology</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the ontology to find the wikidata id for LithiumNickelOxide
+query = f&quot;&quot;&quot;
+SELECT ?wikidataId
+WHERE {{
+    &lt;{battinfo.LithiumNickelOxide.iri}&gt; &lt;{battinfo.wikidataReference.iri}&gt; ?wikidataId .
+}}
+&quot;&quot;&quot;
 
-<span class="c1"># Fetch the context</span>
-<span class="n">context_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&#39;</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">context_url</span><span class="p">)</span>
-<span class="n">context_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+qres = g.query(query)
+for row in qres:
+    wikidata_id = row.wikidataId.split(&#39;/&#39;)[-1]
 
-<span class="c1"># Look for the IRI of LithiumNickelOxide in the context</span>
-<span class="n">LithiumNickelOxide_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;LithiumNickelOxide&#39;</span><span class="p">)</span>
-<span class="n">wikidata_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;wikidataReference&#39;</span><span class="p">)</span>
-
-<span class="c1"># Query the ontology to find the wikidata id for LithiumNickelOxide</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?wikidataId</span>
-<span class="s2">WHERE {</span>
-<span class="s2">    &lt;</span><span class="si">%s</span><span class="s2">&gt; &lt;</span><span class="si">%s</span><span class="s2">&gt; ?wikidataId .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">LithiumNickelOxide_iri</span><span class="p">,</span> <span class="n">wikidata_iri</span><span class="p">)</span>
-
-<span class="n">qres</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">qres</span><span class="p">:</span>
-    <span class="n">wikidata_id</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">wikidataId</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The PubChem ID of Lithiun Nickel Oxide is: </span><span class="si">{</span><span class="n">wikidata_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+print(f&quot;The PubChem ID of Lithiun Nickel Oxide is: {wikidata_id}&quot;)
 </pre></div>
 </div>
 </div>
@@ -655,30 +661,30 @@ The PubChem ID of Lithiun Nickel Oxide is: Q81988484
 </div>
 <p>Finally, let’s retireve more information about Lithium Nickel Oxide from Wikidata and PubChem</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query the Wikidata knowledge graph for more information</span>
-<span class="n">wikidata_endpoint</span> <span class="o">=</span> <span class="s2">&quot;https://query.wikidata.org/sparql&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the Wikidata knowledge graph for more information
+wikidata_endpoint = &quot;https://query.wikidata.org/sparql&quot;
 
-<span class="c1"># SPARQL query to get the PubChem ID</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?id WHERE {</span>
-<span class="s2">  wd:</span><span class="si">%s</span><span class="s2"> wdt:P662 ?id .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">wikidata_id</span>
+# SPARQL query to get the PubChem ID
+query = &quot;&quot;&quot;
+SELECT ?id WHERE {
+  wd:%s wdt:P662 ?id .
+}
+&quot;&quot;&quot; % wikidata_id
 
-<span class="c1"># Execute the request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wikidata_endpoint</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">})</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+# Execute the request
+response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
+data = response.json()
 
-<span class="c1"># Extract and display the PubChem ID</span>
-<span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">]:</span>
-    <span class="n">PubChemId</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The PubChem ID for a LithiumNickelOxide cell: </span><span class="si">{</span><span class="n">PubChemId</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+# Extract and display the PubChem ID
+if data[&#39;results&#39;][&#39;bindings&#39;]:
+    PubChemId = data[&#39;results&#39;][&#39;bindings&#39;][0][&#39;id&#39;][&#39;value&#39;]
+    print(f&quot;The PubChem ID for a LithiumNickelOxide cell: {PubChemId}&quot;)
 
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;None found.&quot;</span><span class="p">)</span>
+else:
+    print(&quot;None found.&quot;)
 </pre></div>
 </div>
 </div>
@@ -691,25 +697,25 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_pubchem_compound_data</span><span class="p">(</span><span class="n">cid</span><span class="p">):</span>
-    <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://pubchem.ncbi.nlm.nih.gov/rest/pug&quot;</span>
-    <span class="n">compound_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s2">/compound/cid/</span><span class="si">{</span><span class="n">cid</span><span class="si">}</span><span class="s2">/JSON&quot;</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">compound_url</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">None</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_pubchem_compound_data(cid):
+    base_url = &quot;https://pubchem.ncbi.nlm.nih.gov/rest/pug&quot;
+    compound_url = f&quot;{base_url}/compound/cid/{cid}/JSON&quot;
+    response = requests.get(compound_url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
 
-<span class="c1"># Fetch data for the compound with CID 138395181</span>
-<span class="n">compound_data</span> <span class="o">=</span> <span class="n">get_pubchem_compound_data</span><span class="p">(</span><span class="n">PubChemId</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">compound_data</span><span class="p">:</span>
-    <span class="n">pretty_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">compound_data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># Pretty-print the JSON data</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">pretty_json</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data not found or error in API request.&quot;</span><span class="p">)</span>
+# Fetch data for the compound with CID 138395181
+compound_data = get_pubchem_compound_data(PubChemId)
+if compound_data:
+    pretty_json = json.dumps(compound_data, indent=4)  # Pretty-print the JSON data
+    print(pretty_json)
+else:
+    print(&quot;Data not found or error in API request.&quot;)
 </pre></div>
 </div>
 </div>
@@ -1032,6 +1038,20 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
                 {
                     &#34;urn&#34;: {
                         &#34;label&#34;: &#34;SMILES&#34;,
+                        &#34;name&#34;: &#34;Absolute&#34;,
+                        &#34;datatype&#34;: 1,
+                        &#34;version&#34;: &#34;2.3.0&#34;,
+                        &#34;software&#34;: &#34;OEChem&#34;,
+                        &#34;source&#34;: &#34;OpenEye Scientific Software&#34;,
+                        &#34;release&#34;: &#34;2024.12.12&#34;
+                    },
+                    &#34;value&#34;: {
+                        &#34;sval&#34;: &#34;[Li+].[O-2].[O-2].[Ni+2]&#34;
+                    }
+                },
+                {
+                    &#34;urn&#34;: {
+                        &#34;label&#34;: &#34;SMILES&#34;,
                         &#34;name&#34;: &#34;Canonical&#34;,
                         &#34;datatype&#34;: 1,
                         &#34;version&#34;: &#34;2.1.5&#34;,
@@ -1105,6 +1125,30 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
 </pre></div></div>
 </div>
 </section>
+<section id="Summary-and-Next-Steps">
+<h2>Summary and Next Steps<a class="headerlink" href="#Summary-and-Next-Steps" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, we demonstrated how to:</p>
+<ul class="simple">
+<li><p>Create semantically rich battery cell descriptions using JSON-LD</p></li>
+<li><p>Use ontology terms from EMMO and Schema.org</p></li>
+<li><p>Convert the data to RDF using RDFLib</p></li>
+<li><p>Run SPARQL queries to inspect and analyze structured data</p></li>
+</ul>
+<p>This approach is ideal for:</p>
+<ul class="simple">
+<li><p>Sharing metadata in a standardized way</p></li>
+<li><p>Integrating battery data into digital twins or modeling platforms</p></li>
+<li><p>Building searchable knowledge graphs for research</p></li>
+</ul>
+<section id="Next-Steps:">
+<h3>Next Steps:<a class="headerlink" href="#Next-Steps:" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add more properties like capacity, electrolyte, or separator</p></li>
+<li><p>Validate JSON-LD structure with JSON Schema or SHACL</p></li>
+<li><p>Extend to test protocols and datasets</p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
@@ -1154,10 +1198,15 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Describe-the-powder-using-ontology-terms-in-JSON-LD-format">Describe the powder using ontology terms in JSON-LD format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Parse-this-description-into-a-graph">Parse this description into a graph</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Query-the-Graph-to-select-instances-with-certain-properties-[Advanced]">Query the Graph to select instances with certain properties [Advanced]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Describe-Battery-Cells-Using-JSON-LD">Describe Battery Cells Using JSON-LD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Parse-JSON-LD-into-an-RDF-Graph">Parse JSON-LD into an RDF Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Query-All-Triples-in-the-Graph">Query All Triples in the Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Filtering-Battery-Cells-by-Voltage-(Example)">Filtering Battery Cells by Voltage (Example)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Fetch-additional-information-from-other-sources-[Advanced]">Fetch additional information from other sources [Advanced]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary-and-Next-Steps">Summary and Next Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Next-Steps:">Next Steps:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

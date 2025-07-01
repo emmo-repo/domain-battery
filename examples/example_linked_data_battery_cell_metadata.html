@@ -51,8 +51,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/example_linked_data_battery_cell_metadata';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Example: Custom Battery Cell Metadata" href="example_linked_data_custom_battery_cell_metadata.html" />
-    <link rel="prev" title="Examples" href="../pages/examples.html" />
+    <link rel="next" title="Example: Custom Battery Cell Metadata (JSON-LD + RDF)" href="example_linked_data_custom_battery_cell_metadata.html" />
+    <link rel="prev" title="Exploring the Ontology with EMMOntoPy" href="example_load_with_emmontopy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -308,8 +308,10 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="example_person_jsonld.html">JSON-LD: A Simple Introduction Using a Person</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_load_with_emmontopy.html">Exploring the Ontology with EMMOntoPy</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Example: Simple Battery Cell Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Example: Custom Battery Cell Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</a></li>
 </ul>
 </div>
 </nav></div>
@@ -383,26 +385,26 @@ document.write(`
 <h2>Describe the powder using ontology terms in JSON-LD format<a class="headerlink" href="#Describe-the-powder-using-ontology-terms-in-JSON-LD-format" title="Permalink to this heading">#</a></h2>
 <p>The JSON-LD data that we will use is:</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">jsonld</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;CR2032&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;My CR2032 Coin Cell&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;schema:manufacturer&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q3041255&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span>
-            <span class="p">},</span>
-            <span class="s2">&quot;hasProperty&quot;</span><span class="p">:</span> <span class="p">{</span>
-               <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NominalCapacity&quot;</span><span class="p">,</span> <span class="s2">&quot;ConventionalProperty&quot;</span><span class="p">],</span>
-               <span class="s2">&quot;hasNumericalPart&quot;</span><span class="p">:</span> <span class="p">{</span>
-                     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Real&quot;</span><span class="p">,</span>
-                     <span class="s2">&quot;hasNumericalValue&quot;</span><span class="p">:</span> <span class="mi">230</span>
-               <span class="p">},</span>
-               <span class="s2">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;emmo:MilliAmpereHour&quot;</span>
-            <span class="p">}</span>
-         <span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>jsonld = {
+            &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+            &quot;@type&quot;: &quot;CR2032&quot;,
+            &quot;schema:name&quot;: &quot;My CR2032 Coin Cell&quot;,
+            &quot;schema:manufacturer&quot;: {
+               &quot;@id&quot;: &quot;https://www.wikidata.org/wiki/Q3041255&quot;,
+               &quot;schema:name&quot;: &quot;SINTEF&quot;
+            },
+            &quot;hasProperty&quot;: {
+               &quot;@type&quot;: [&quot;NominalCapacity&quot;, &quot;ConventionalProperty&quot;],
+               &quot;hasNumericalPart&quot;: {
+                     &quot;@type&quot;: &quot;RealData&quot;,
+                     &quot;hasNumberValue&quot;: 230
+               },
+               &quot;hasMeasurementUnit&quot;: &quot;emmo:MilliAmpereHour&quot;
+            }
+         }
 </pre></div>
 </div>
 </div>
@@ -412,12 +414,10 @@ document.write(`
 <p>Now let’s see how a machine would process this data by reading it into a Graph!</p>
 <p>First, we install and import the python dependencies that we need for this example.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span># Install and import dependencies
-!pip install jsonschema rdflib requests matplotlib &gt; /dev/null
-
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Import dependencies
 import json
 import rdflib
 import requests
@@ -429,29 +429,29 @@ import matplotlib.pyplot as plt
 </div>
 <p>We create the graph using a very handy python package called <a class="reference external" href="https://rdflib.readthedocs.io/en/stable/">rdflib</a>, which provides us a way to parse our json-ld data, run some queries using the language <a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>, and serialize the graph in any RDF compatible format (e.g. JSON-LD, Turtle, etc.).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new graph</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a new graph
+g = rdflib.Graph()
 
-<span class="c1"># Parse our json-ld data into the graph</span>
-<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">jsonld</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
+# Parse our json-ld data into the graph
+g.parse(data=json.dumps(jsonld), format=&quot;json-ld&quot;)
 
-<span class="c1"># Create a SPARQL query to return all the triples in the graph</span>
-<span class="n">query_all</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?subject ?predicate ?object</span>
-<span class="s2">WHERE {</span>
-<span class="s2">  ?subject ?predicate ?object</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span>
+# Create a SPARQL query to return all the triples in the graph
+query_all = &quot;&quot;&quot;
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+&quot;&quot;&quot;
 
-<span class="c1"># Execute the SPARQL query</span>
-<span class="n">all_the_things</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query_all</span><span class="p">)</span>
+# Execute the SPARQL query
+all_the_things = g.query(query_all)
 
-<span class="c1"># Print the results</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">all_the_things</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+# Print the results
+for row in all_the_things:
+    print(row)
 <br/></pre></div>
 </div>
 </div>
@@ -460,17 +460,17 @@ import matplotlib.pyplot as plt
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(rdflib.term.BNode(&#39;N4c3bba051ecb4cb7a8336502c67cf29b&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;file:///content/NominalCapacity&#39;))
-(rdflib.term.BNode(&#39;N4c52ea3012a7451c8194bcd5f42b1679&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;Nc3ad291a291c481481cd4df5c311af50&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;N4c3bba051ecb4cb7a8336502c67cf29b&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#MilliAmpereHour&#39;))
-(rdflib.term.BNode(&#39;N4c3bba051ecb4cb7a8336502c67cf29b&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;Nc3ad291a291c481481cd4df5c311af50&#39;))
-(rdflib.term.BNode(&#39;N4c52ea3012a7451c8194bcd5f42b1679&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b&#39;))
-(rdflib.term.BNode(&#39;Nc3ad291a291c481481cd4df5c311af50&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;230&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#integer&#39;)))
-(rdflib.term.BNode(&#39;N4c52ea3012a7451c8194bcd5f42b1679&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My CR2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;N4c3bba051ecb4cb7a8336502c67cf29b&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;N4c52ea3012a7451c8194bcd5f42b1679&#39;), rdflib.term.URIRef(&#39;http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N4c3bba051ecb4cb7a8336502c67cf29b&#39;))
 (rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;SINTEF&#39;))
+(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My CR2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
+(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;))
+(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;))
+(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#MilliAmpereHour&#39;))
+(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100&#39;))
+(rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;230&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#integer&#39;)))
+(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b&#39;))
 </pre></div></div>
 </div>
 <p>You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples. Let’s look at a couple in more detail to understand what’s going on.</p>
@@ -518,31 +518,31 @@ import matplotlib.pyplot as plt
 </table>
 <p>This tells the machine that a certain node in the graph is a a type of some thing that exists in the EMMO domain ‘battery’. And this gets to one of the difficult bits for humans: many ontologies (like EMMO) use UUIDs for term names to ensure that they are universally unique. It works, but it sacrifices the human readability. Luckily we can get around this by assigning human-readable annotations to that term and/or mapping the IRI to a human readable label in a JSON-LD context like we did above.</p>
 <p>Go ahead, click the link and see if you can figure out what this thing is…</p>
-<p>…<em>it’s a CR2016!</em> Now we can see how our simple description in the JSON-LD file has now been converted to a machine-readable IRI.</p>
+<p>…<em>it’s a CR2032!</em> Now we can see how our simple description in the JSON-LD file has now been converted to a machine-readable IRI.</p>
 </section>
 <section id="Query-the-graph-using-SPARQL-[Moderate]">
 <h2>Query the graph using SPARQL [Moderate]<a class="headerlink" href="#Query-the-graph-using-SPARQL-[Moderate]" title="Permalink to this heading">#</a></h2>
 <p>Now, let’s write a SPARQL query to get back some specific thing…like what is the name of the manufacturer?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">PREFIX schema: &lt;https://schema.org/&gt;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>query = &quot;&quot;&quot;
+PREFIX schema: &lt;https://schema.org/&gt;
 
-<span class="s2">SELECT ?manufacturerName</span>
-<span class="s2">WHERE {</span>
-<span class="s2">  ?thing schema:manufacturer ?manufacturer .</span>
-<span class="s2">  ?manufacturer schema:name ?manufacturerName .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span>
+SELECT ?manufacturerName
+WHERE {
+  ?thing schema:manufacturer ?manufacturer .
+  ?manufacturer schema:name ?manufacturerName .
+}
+&quot;&quot;&quot;
 
-<span class="c1"># Execute the SPARQL query</span>
-<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+# Execute the SPARQL query
+results = g.query(query)
 
-<span class="c1"># Print the results</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+# Print the results
+for row in results:
+    print(row)
 <br/></pre></div>
 </div>
 </div>
@@ -555,40 +555,30 @@ import matplotlib.pyplot as plt
 </pre></div></div>
 </div>
 </section>
-<section id="Fetch-additional-information-from-other-sources-[Advanced]">
-<h2>Fetch additional information from other sources [Advanced]<a class="headerlink" href="#Fetch-additional-information-from-other-sources-[Advanced]" title="Permalink to this heading">#</a></h2>
-<p>Ontologies contain a lot of information about the meaning of things, but they don’t always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let’s see how you can use the ontology to fetch additional information from other sources.</p>
-<p>First, we parse the ontology into the knowledge graph and retrieve the IRIs for the terms that we are interested in. In this case, we want to retrieve more information about CR2032 from Wikidata, so we query the ontology to find CR2032’s Wikidata ID.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<section id="Retrieve-External-Identifiers-Using-EMMOntoPy">
+<h2>Retrieve External Identifiers Using EMMOntoPy<a class="headerlink" href="#Retrieve-External-Identifiers-Using-EMMOntoPy" title="Permalink to this heading">#</a></h2>
+<p>Ontologies contain rich semantic descriptions, but they don’t always embed all external information directly. Instead, they often include references (like Wikidata IDs) to link concepts to authoritative external sources.</p>
+<p>In this example, we use <strong>EMMOntoPy</strong>, a Python interface for OWL ontologies, to query the ontology and extract the <strong>Wikidata ID</strong> associated with a specific class — in this case, the <code class="docutils literal notranslate"><span class="pre">CR2032</span></code> coin cell.</p>
+<p>EMMOntoPy allows us to access ontology classes and properties by their human-readable labels (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;CR2032&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;wikidataReference&quot;</span></code>), and we use these to build a SPARQL query. This query is then executed over the ontology graph to extract the Wikidata IRI for <code class="docutils literal notranslate"><span class="pre">CR2032</span></code>.</p>
+<p>We can later use this IRI to retrieve additional metadata directly from Wikidata or other linked data endpoints — a common pattern in semantic data workflows.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parse the ontology into the knowledge graph</span>
-<span class="n">ontology</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/inferred_version/battery-inferred.ttl&quot;</span>
-<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">ontology</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from ontopy import get_ontology
 
-<span class="c1"># Fetch the context</span>
-<span class="n">context_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json&#39;</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">context_url</span><span class="p">)</span>
-<span class="n">context_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="c1"># Look for the IRI of CR2032 in the context</span>
-<span class="n">cr2032_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;CR2032&#39;</span><span class="p">)</span>
-<span class="n">wikidata_iri</span> <span class="o">=</span> <span class="n">context_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@context&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;wikidataReference&#39;</span><span class="p">)</span>
-
-<span class="c1"># Query the ontology to find the wikidata id for CR2032</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?wikidataId</span>
-<span class="s2">WHERE {</span>
-<span class="s2">    &lt;</span><span class="si">%s</span><span class="s2">&gt; &lt;</span><span class="si">%s</span><span class="s2">&gt; ?wikidataId .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">cr2032_iri</span><span class="p">,</span> <span class="n">wikidata_iri</span><span class="p">)</span>
-
-<span class="n">qres</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">qres</span><span class="p">:</span>
-    <span class="n">wikidata_id</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">wikidataId</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Wikidata ID of CR2032: </span><span class="si">{</span><span class="n">wikidata_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+# Loading from web
+battinfo = get_ontology(&#39;https://w3id.org/emmo/domain/battery/inferred&#39;).load()
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>wikidata_url = battinfo.CR2032.wikidataReference[0]
+wikidata_id = wikidata_url.split(&#39;/&#39;)[-1]
+print(f&quot;The Wikidata ID for CR2032 is: {wikidata_id}&quot;)
 </pre></div>
 </div>
 </div>
@@ -597,38 +587,41 @@ import matplotlib.pyplot as plt
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-The Wikidata ID of CR2032: Q5013811
+The Wikidata ID for CR2032 is: Q5013811
 </pre></div></div>
 </div>
 <p>Now that we have the Wikidata ID for CR2032, we can query their SPARQL endpoint to retrieve some property. Let’s ask it for the thickness.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query the Wikidata knowledge graph for more information about zinc</span>
-<span class="n">wikidata_endpoint</span> <span class="o">=</span> <span class="s2">&quot;https://query.wikidata.org/sparql&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the Wikidata knowledge graph for more information about zinc
+wikidata_endpoint = &quot;https://query.wikidata.org/sparql&quot;
 
-<span class="c1"># SPARQL query to get the thickness of a CR2032 cell</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?value ?unit WHERE {</span>
-<span class="s2">  wd:</span><span class="si">%s</span><span class="s2"> p:P2386 ?statement .</span>
-<span class="s2">  ?statement ps:P2386 ?value .</span>
-<span class="s2">  OPTIONAL {</span>
-<span class="s2">    ?statement psv:P2386 ?valueNode .</span>
-<span class="s2">    ?valueNode wikibase:quantityUnit ?unit .</span>
-<span class="s2">  }</span>
-<span class="s2">}</span>
+# SPARQL query to get the thickness of a CR2032 cell and label for the unit
+query = &quot;&quot;&quot;
+SELECT ?value ?unit ?unitLabel WHERE {
+  wd:%s p:P2386 ?statement .
+  ?statement ps:P2386 ?value .
+  OPTIONAL {
+    ?statement psv:P2386 ?valueNode .
+    ?valueNode wikibase:quantityUnit ?unit .
+    ?unit rdfs:label ?unitLabel .
+    FILTER (lang(?unitLabel) = &quot;en&quot;)
+  }
+}
+&quot;&quot;&quot; % wikidata_id
 
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">wikidata_id</span>
+# Execute the request
+response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
+data = response.json()
 
-<span class="c1"># Execute the request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wikidata_endpoint</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">})</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+# Extract and print the thickness value
+binding = data[&#39;results&#39;][&#39;bindings&#39;][0]
+thickness = binding[&#39;value&#39;][&#39;value&#39;]
+unit_label = binding.get(&#39;unitLabel&#39;, {}).get(&#39;value&#39;, binding.get(&#39;unit&#39;, {}).get(&#39;value&#39;, &#39;&#39;))
 
-<span class="c1"># Extract and print the thickness value</span>
-<span class="n">thickness</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
-<span class="n">unit</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;unit&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wikidata says the thickness of a CR2032 cell is: </span><span class="si">{</span><span class="n">thickness</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">unit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+print(f&quot;Wikidata says the thickness of a CR2032 cell is: {thickness} {unit_label}&quot;)
 </pre></div>
 </div>
 </div>
@@ -637,33 +630,33 @@ The Wikidata ID of CR2032: Q5013811
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Wikidata says the thickness of a CR2032 cell is: 20 http://www.wikidata.org/entity/Q174789
+Wikidata says the thickness of a CR2032 cell is: 20 millimetre
 </pre></div></div>
 </div>
 <p>We can also retrieve more complex data. For example, let’s ask Wikidata to show us an image of a CR2032.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SPARQL query to get the image of the CR2032 cell (Q758)</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?image WHERE {</span>
-<span class="s2">  wd:</span><span class="si">%s</span><span class="s2"> wdt:P18 ?image .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">wikidata_id</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># SPARQL query to get the image of the CR2032 cell (Q758)
+query = &quot;&quot;&quot;
+SELECT ?image WHERE {
+  wd:%s wdt:P18 ?image .
+}
+&quot;&quot;&quot; % wikidata_id
 
-<span class="c1"># Execute the request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wikidata_endpoint</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">})</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+# Execute the request
+response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
+data = response.json()
 
-<span class="c1"># Extract and display the image URL</span>
-<span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">]:</span>
-    <span class="n">image_url</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;image&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Image of a CR2032- cell: </span><span class="si">{</span><span class="n">image_url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">image_url</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">))</span>  <span class="c1"># Adjust width and height as needed</span>
+# Extract and display the image URL
+if data[&#39;results&#39;][&#39;bindings&#39;]:
+    image_url = data[&#39;results&#39;][&#39;bindings&#39;][0][&#39;image&#39;][&#39;value&#39;]
+    print(f&quot;Image of a CR2032- cell: {image_url}&quot;)
+    display(Image(url=image_url, width=300))  # Adjust width and height as needed
 
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No image found.&quot;</span><span class="p">)</span>
+else:
+    print(&quot;No image found.&quot;)
 </pre></div>
 </div>
 </div>
@@ -683,29 +676,29 @@ Image of a CR2032- cell: http://commons.wikimedia.org/wiki/Special:FilePath/CR20
 </div>
 <p>Finally, let’s retireve the id for CR2032 in the Google Knowledge Graph and see what it has to say!</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SPARQL query to get the Google Knowledge Graph ID of the CR2032 cell</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT ?id WHERE {</span>
-<span class="s2">  wd:</span><span class="si">%s</span><span class="s2"> wdt:P2671 ?id .</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">wikidata_id</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># SPARQL query to get the Google Knowledge Graph ID of the CR2032 cell
+query = &quot;&quot;&quot;
+SELECT ?id WHERE {
+  wd:%s wdt:P2671 ?id .
+}
+&quot;&quot;&quot; % wikidata_id
 
-<span class="c1"># Execute the request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wikidata_endpoint</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">})</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+# Execute the request
+response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
+data = response.json()
 
-<span class="c1"># Extract and display the Google Knowledge Graph ID</span>
-<span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">]:</span>
-    <span class="n">gkgid</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
-    <span class="n">gkgns</span> <span class="o">=</span> <span class="s1">&#39;https://www.google.com/search?kgmid=&#39;</span>
-    <span class="n">gkg</span> <span class="o">=</span> <span class="n">gkgns</span> <span class="o">+</span> <span class="n">gkgid</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Google Knowledge Graph entry for a CR2032 cell: </span><span class="si">{</span><span class="n">gkg</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+# Extract and display the Google Knowledge Graph ID
+if data[&#39;results&#39;][&#39;bindings&#39;]:
+    gkgid = data[&#39;results&#39;][&#39;bindings&#39;][0][&#39;id&#39;][&#39;value&#39;]
+    gkgns = &#39;https://www.google.com/search?kgmid=&#39;
+    gkg = gkgns + gkgid
+    print(f&quot;The Google Knowledge Graph entry for a CR2032 cell: {gkg}&quot;)
 
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;None found.&quot;</span><span class="p">)</span>
+else:
+    print(&quot;None found.&quot;)
 </pre></div>
 </div>
 </div>
@@ -717,14 +710,30 @@ Image of a CR2032- cell: http://commons.wikimedia.org/wiki/Special:FilePath/CR20
 The Google Knowledge Graph entry for a CR2032 cell: https://www.google.com/search?kgmid=/g/11bc5qf2g9
 </pre></div></div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
-</pre></div>
-</div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
+</section>
+<section id="Summary">
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, we explored how to combine ontologies, JSON-LD, and external knowledge graphs (like Wikidata) to build semantically rich descriptions of battery components.</p>
+<section id="What-We-Did">
+<h3>What We Did<a class="headerlink" href="#What-We-Did" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Described a battery cell</strong> (e.g., CR2032) using JSON-LD and ontology terms from the EMMO battery domain.</p></li>
+<li><p><strong>Queried the ontology</strong> using EMMOntoPy to retrieve structured metadata, including external identifiers like Wikidata IDs.</p></li>
+<li><p><strong>Parsed JSON-LD into RDF</strong> using RDFLib, enabling SPARQL queries over the resulting knowledge graph.</p></li>
+<li><p><strong>Executed live SPARQL queries against Wikidata</strong> to retrieve additional information — such as the physical thickness of the CR2032 cell.</p></li>
+<li><p><strong>Mapped raw IRIs to readable labels</strong> to improve interpretability of results (e.g., converting unit IRIs to “millimetre”).</p></li>
+</ul>
+</section>
+<section id="Why-This-Matters">
+<h3>Why This Matters<a class="headerlink" href="#Why-This-Matters" title="Permalink to this heading">#</a></h3>
+<p>By linking structured ontology-based descriptions to external resources like Wikidata:</p>
+<ul class="simple">
+<li><p>We <strong>avoid data duplication</strong> while gaining access to curated, up-to-date public knowledge.</p></li>
+<li><p>We create <strong>machine-interpretable metadata</strong> that can support automated reasoning, traceability, and interoperability.</p></li>
+<li><p>We set the foundation for <strong>semantic integration</strong> across research domains, data platforms, and digital twin ecosystems.</p></li>
+</ul>
+<p>This approach scales well from simple battery metadata to rich, queryable knowledge graphs that connect batteries with materials, processes, and real-world data.</p>
+</section>
 </section>
 </section>
 
@@ -740,12 +749,12 @@ The Google Knowledge Graph entry for a CR2032 cell: https://www.google.com/searc
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../pages/examples.html"
+       href="example_load_with_emmontopy.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Examples</p>
+        <p class="prev-next-title">Exploring the Ontology with EMMOntoPy</p>
       </div>
     </a>
     <a class="right-next"
@@ -753,7 +762,7 @@ The Google Knowledge Graph entry for a CR2032 cell: https://www.google.com/searc
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example: Custom Battery Cell Metadata</p>
+        <p class="prev-next-title">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -779,7 +788,12 @@ The Google Knowledge Graph entry for a CR2032 cell: https://www.google.com/searc
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Parse-this-description-into-a-graph">Parse this description into a graph</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Examine-and-explore-the-triples">Examine and explore the triples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Query-the-graph-using-SPARQL-[Moderate]">Query the graph using SPARQL [Moderate]</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Fetch-additional-information-from-other-sources-[Advanced]">Fetch additional information from other sources [Advanced]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Retrieve-External-Identifiers-Using-EMMOntoPy">Retrieve External Identifiers Using EMMOntoPy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#What-We-Did">What We Did</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Why-This-Matters">Why This Matters</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
