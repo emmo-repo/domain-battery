@@ -1,0 +1,74 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@base": "https://example.org/protocol#",
+    "@graph": [
+        {
+            "@type": "FormationCycling",
+            "hasTerminationParameter": {
+                "@type": "NumberOfIterations",
+                "hasNumericalPart": {
+                    "@type": "RealData",
+                    "hasNumberValue": 3
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            },
+            "hasBeginTask": {"@id": "_:resting"},
+            "hasTask": [
+                {
+                    "@type": "Resting",
+                    "@id": "_:resting",
+                    "hasTerminationParameter": {
+                        "@type": "Duration",
+                        "hasNumericalPart": {
+                            "@type": "RealData",
+                            "hasNumberValue": 1
+                        },
+                        "hasMeasurementUnit": "emmo:Hour"
+                    },
+                    "precedes": {"@id": "_:constant_current_charging"}
+                },
+                {
+                    "@type": "Charging",
+                    "@id": "_:constant_current_charging",
+                    "hasControlParameter": {
+                        "@type": "CRate",
+                        "hasNumericalPart": {
+                            "@type": "RealData",
+                            "hasNumberValue": 0.05
+                        },
+                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    },
+                    "hasTerminationParameter": {
+                        "@type": "UpperVoltageLimit",
+                        "hasNumericalPart": {
+                            "@type": "RealData",
+                            "hasNumberValue": 4.2
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    },
+                    "precedes": {"@id": "_:constant_voltage_charging"}
+                },
+                {
+                    "@type": "Charging",
+                    "@id": "_:constant_voltage_charging",
+                    "hasControlParameter": {
+                        "@type": "Voltage",
+                        "hasNumericalPart": {
+                            "@type": "RealData",
+                            "hasNumberValue": 4.2
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    },
+                    "hasTerminationParameter": {
+                        "@type": "LowerCRateLimit",
+                        "hasNumericalPart": {
+                            "@type": "RealData",
+                            "hasNumberValue": 0.01
+                        },
+                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    }
+                }
+            ]
+        }
+    ]
+}
