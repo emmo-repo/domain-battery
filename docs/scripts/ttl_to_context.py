@@ -85,6 +85,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
             "@id": "https://w3id.org/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d",
             "@type": "@id"
         },
+        "Hold": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1"
     }
 
     # Inject manual additions into context
