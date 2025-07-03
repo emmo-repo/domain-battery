@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Example: Custom Battery Cell Metadata (JSON-LD + RDF) &#8212; BattInfo  documentation</title>
+    <title>Custom Battery Cell Metadata &#8212; BattInfo  documentation</title>
   
   
   
@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Class Index" href="../battery.html" />
-    <link rel="prev" title="Example: Simple Battery Cell Metadata" href="example_linked_data_battery_cell_metadata.html" />
+    <link rel="prev" title="Simple Battery Cell Metadata" href="example_linked_data_battery_cell_metadata.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -310,8 +310,8 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="example_person_jsonld.html">JSON-LD: A Simple Introduction Using a Person</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_load_with_emmontopy.html">Exploring the Ontology with EMMOntoPy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_linked_data_battery_cell_metadata.html">Example: Simple Battery Cell Metadata</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_linked_data_battery_cell_metadata.html">Simple Battery Cell Metadata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Custom Battery Cell Metadata</a></li>
 </ul>
 </div>
 </nav></div>
@@ -352,7 +352,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../pages/examples.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</li>
+    <li class="breadcrumb-item active" aria-current="page">Custom Battery Cell Metadata</li>
   </ul>
 </nav>
 </div>
@@ -369,8 +369,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="Example:-Custom-Battery-Cell-Metadata-(JSON-LD-+-RDF)">
-<h1>Example: Custom Battery Cell Metadata (JSON-LD + RDF)<a class="headerlink" href="#Example:-Custom-Battery-Cell-Metadata-(JSON-LD-+-RDF)" title="Permalink to this heading">#</a></h1>
+  <section id="Custom-Battery-Cell-Metadata">
+<h1>Custom Battery Cell Metadata<a class="headerlink" href="#Custom-Battery-Cell-Metadata" title="Permalink to this heading">#</a></h1>
 <p>In this notebook, we define two custom battery cells (R2032 coin cells) using JSON-LD, enriched with semantic information from ontologies. We then parse this data into an RDF graph and query it using SPARQL.</p>
 <p>This example illustrates:</p>
 <ul class="simple">
@@ -394,7 +394,7 @@ document.write(`
 <p>We also use <code class="docutils literal notranslate"><span class="pre">schema:name</span></code> and <code class="docutils literal notranslate"><span class="pre">schema:manufacturer</span></code> for basic metadata.</p>
 <p>Each block is fully self-contained and semantically interpretable.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>jsonld_LFPGr = {
@@ -470,7 +470,7 @@ jsonld_LNOGr = {
 <h2>Parse JSON-LD into an RDF Graph<a class="headerlink" href="#Parse-JSON-LD-into-an-RDF-Graph" title="Permalink to this heading">#</a></h2>
 <p>We now create a new RDFLib graph and load the JSON-LD descriptions into it. This converts each JSON-LD block into RDF triples — the building blocks of the Semantic Web. You can then query this graph using SPARQL to retrieve specific metadata or relationships.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import json
@@ -484,7 +484,7 @@ import matplotlib.pyplot as plt
 </div>
 <p>We create the graph using a very handy python package called <a class="reference external" href="https://rdflib.readthedocs.io/en/stable/">rdflib</a>, which provides us a way to parse our json-ld data, run some queries using the language <a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>, and serialize the graph in any RDF compatible format (e.g. JSON-LD, Turtle, etc.).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a new graph
@@ -497,12 +497,12 @@ g.parse(data=json.dumps(jsonld_LNOGr), format=&quot;json-ld&quot;)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;Graph identifier=N8f27c4923b764f0488705608c881fd1a (&lt;class &#39;rdflib.graph.Graph&#39;&gt;)&gt;
+&lt;Graph identifier=Nedd5721389ac416c8e39b3018726d4e6 (&lt;class &#39;rdflib.graph.Graph&#39;&gt;)&gt;
 </pre></div></div>
 </div>
 </section>
@@ -510,7 +510,7 @@ g.parse(data=json.dumps(jsonld_LNOGr), format=&quot;json-ld&quot;)
 <h2>Query All Triples in the Graph<a class="headerlink" href="#Query-All-Triples-in-the-Graph" title="Permalink to this heading">#</a></h2>
 <p>We begin by running a simple SPARQL query that returns all triples (<code class="docutils literal notranslate"><span class="pre">subject</span> <span class="pre">→</span> <span class="pre">predicate</span> <span class="pre">→</span> <span class="pre">object</span></code>) in the graph. This is useful for inspecting what data was parsed and verifying that your JSON-LD was interpreted correctly.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a SPARQL query to return all the triples in the graph
@@ -535,56 +535,56 @@ for row in all_the_things:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;))
-(rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N956b235930804560ba4a75e392e00909&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LFP-Graphite R2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LNO-Graphite R2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;N8d0d484409b943e096e597b0594c407a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.2&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;N33cefdfbfe344a61acd465ce81d0dfe4&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db&#39;))
+(rdflib.term.BNode(&#39;Nf7409c01f9d148dbb30f671e5d555a12&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.6&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
+(rdflib.term.BNode(&#39;N99f92e57532843d69c8cae74f27272c3&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
+(rdflib.term.BNode(&#39;Nbac6e3c31ec9453a82b9813ef6896366&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.2&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
+(rdflib.term.BNode(&#39;Nb50ad5f394e34bef92855a353bac2ebf&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;N29e9baeaafc5459abce23b1e4f887b57&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LNO-Graphite R2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;N676da53fa4df4b31a439afa0ed806bb1&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My LFP-Graphite R2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;N85697940f08248ce85ddbb6f6a83e929&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
+(rdflib.term.BNode(&#39;Ndfc310121d864b9a88f50b50ebf7ce91&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;N12e9d62d77864d3ebc03c15495c9e9ce&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
+(rdflib.term.BNode(&#39;N6b0a63e8d5cd4a0eb2993b4248d40dfb&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
 (rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;SINTEF&#39;))
-(rdflib.term.BNode(&#39;N82447aa146ba442bafedb57375bb5466&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;))
-(rdflib.term.BNode(&#39;N956b235930804560ba4a75e392e00909&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
-(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;))
-(rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
-(rdflib.term.BNode(&#39;N4a7dd7876f0c4be2bc303e43205b2055&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
-(rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
-(rdflib.term.BNode(&#39;Nc1d2defec20f4fbf9924b6ecf35dd526&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
-(rdflib.term.BNode(&#39;N4365811abd3d4ede8b4e6daedfd41057&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303&#39;))
-(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
-(rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
-(rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N4365811abd3d4ede8b4e6daedfd41057&#39;))
-(rdflib.term.BNode(&#39;Nb050d7b25ad6466eac1e151e827c64db&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N4a7dd7876f0c4be2bc303e43205b2055&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N71b5186d4cb04f989a3d8eac04798f9d&#39;))
-(rdflib.term.BNode(&#39;Nc79c3b5539084bfdb546f5176fcf6fa9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N33cefdfbfe344a61acd465ce81d0dfe4&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
-(rdflib.term.BNode(&#39;N16bd5675eec64de0b903ee0896db00d9&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;N82447aa146ba442bafedb57375bb5466&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;Nddfe3db7393e484783862bfc91ab4210&#39;))
-(rdflib.term.BNode(&#39;N083f046e81aa46fdb76d54d1e8054444&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;Nc1d2defec20f4fbf9924b6ecf35dd526&#39;))
-(rdflib.term.BNode(&#39;N5a076058f0474418bc04c9ab28278757&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;3.6&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#double&#39;)))
-(rdflib.term.BNode(&#39;N5f2c77c0261647c6a474a080a393d22a&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
-(rdflib.term.BNode(&#39;N0187a74911ac4e7c969fd68f82c25d21&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;Nf7409c01f9d148dbb30f671e5d555a12&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;Ndfc310121d864b9a88f50b50ebf7ce91&#39;))
+(rdflib.term.BNode(&#39;Ndfc310121d864b9a88f50b50ebf7ce91&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N99f92e57532843d69c8cae74f27272c3&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;Nbf110fbc5b0442019b7eb80ec6bb07db&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;Nce1d679a3813417eb0d21bcc45ad0a6d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
+(rdflib.term.BNode(&#39;N676da53fa4df4b31a439afa0ed806bb1&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6&#39;))
+(rdflib.term.BNode(&#39;N9d1fd95b7b914022acf6e5ab15f5b8e1&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N676da53fa4df4b31a439afa0ed806bb1&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39&#39;), rdflib.term.BNode(&#39;Nce1d679a3813417eb0d21bcc45ad0a6d&#39;))
+(rdflib.term.BNode(&#39;Nbf110fbc5b0442019b7eb80ec6bb07db&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3&#39;))
+(rdflib.term.BNode(&#39;N12e9d62d77864d3ebc03c15495c9e9ce&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
+(rdflib.term.BNode(&#39;N6b0a63e8d5cd4a0eb2993b4248d40dfb&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N0d5cd1e7853e47b4b2c038d652fc253d&#39;))
+(rdflib.term.BNode(&#39;Nb50ad5f394e34bef92855a353bac2ebf&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N29e9baeaafc5459abce23b1e4f887b57&#39;))
+(rdflib.term.BNode(&#39;N0d5cd1e7853e47b4b2c038d652fc253d&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90&#39;))
+(rdflib.term.BNode(&#39;N12e9d62d77864d3ebc03c15495c9e9ce&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;Nbac6e3c31ec9453a82b9813ef6896366&#39;))
+(rdflib.term.BNode(&#39;N9d1fd95b7b914022acf6e5ab15f5b8e1&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee&#39;), rdflib.term.BNode(&#39;N85697940f08248ce85ddbb6f6a83e929&#39;))
+(rdflib.term.BNode(&#39;N676da53fa4df4b31a439afa0ed806bb1&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;Nf7409c01f9d148dbb30f671e5d555a12&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
+(rdflib.term.BNode(&#39;N676da53fa4df4b31a439afa0ed806bb1&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#Volt&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138&#39;), rdflib.term.BNode(&#39;N9d1fd95b7b914022acf6e5ab15f5b8e1&#39;))
+(rdflib.term.BNode(&#39;N12e9d62d77864d3ebc03c15495c9e9ce&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;N6b0a63e8d5cd4a0eb2993b4248d40dfb&#39;))
+(rdflib.term.BNode(&#39;Nbc3015ce8c0c4c4aa913118188bceb98&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N12e9d62d77864d3ebc03c15495c9e9ce&#39;))
+(rdflib.term.BNode(&#39;N0db4fb66c6504a2fa4196fbd71879ef5&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616&#39;), rdflib.term.BNode(&#39;Nb50ad5f394e34bef92855a353bac2ebf&#39;))
+(rdflib.term.BNode(&#39;Nbac6e3c31ec9453a82b9813ef6896366&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
 </pre></div></div>
 </div>
 <p>You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples.</p>
 </section>
-<section id="Filtering-Battery-Cells-by-Voltage-(Example)">
-<h2>Filtering Battery Cells by Voltage (Example)<a class="headerlink" href="#Filtering-Battery-Cells-by-Voltage-(Example)" title="Permalink to this heading">#</a></h2>
+<section id="Filtering-Battery-Cells-by-Voltage">
+<h2>Filtering Battery Cells by Voltage<a class="headerlink" href="#Filtering-Battery-Cells-by-Voltage" title="Permalink to this heading">#</a></h2>
 <p>You can define a SPARQL query to return only cells with a <code class="docutils literal notranslate"><span class="pre">NominalVoltage</span></code> greater than 3.5 V. This demonstrates how JSON-LD + RDF can support rich filtering and data analytics with minimal effort.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from ontopy import get_ontology
@@ -632,7 +632,7 @@ for row in results:
 <h2>Fetch additional information from other sources [Advanced]<a class="headerlink" href="#Fetch-additional-information-from-other-sources-[Advanced]" title="Permalink to this heading">#</a></h2>
 <p>Ontologies contain a lot of information about the meaning of things, but they don’t always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let’s see how you can use the ontology to fetch additional information from other sources.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the ontology to find the wikidata id for LithiumNickelOxide
@@ -661,7 +661,7 @@ The PubChem ID of Lithiun Nickel Oxide is: Q81988484
 </div>
 <p>Finally, let’s retireve more information about Lithium Nickel Oxide from Wikidata and PubChem</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the Wikidata knowledge graph for more information
@@ -697,7 +697,7 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_pubchem_compound_data(cid):
@@ -1168,7 +1168,7 @@ else:
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Example: Simple Battery Cell Metadata</p>
+        <p class="prev-next-title">Simple Battery Cell Metadata</p>
       </div>
     </a>
     <a class="right-next"
@@ -1201,7 +1201,7 @@ else:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Describe-Battery-Cells-Using-JSON-LD">Describe Battery Cells Using JSON-LD</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Parse-JSON-LD-into-an-RDF-Graph">Parse JSON-LD into an RDF Graph</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Query-All-Triples-in-the-Graph">Query All Triples in the Graph</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Filtering-Battery-Cells-by-Voltage-(Example)">Filtering Battery Cells by Voltage (Example)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Filtering-Battery-Cells-by-Voltage">Filtering Battery Cells by Voltage</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Fetch-additional-information-from-other-sources-[Advanced]">Fetch additional information from other sources [Advanced]</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary-and-Next-Steps">Summary and Next Steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Next-Steps:">Next Steps:</a></li>

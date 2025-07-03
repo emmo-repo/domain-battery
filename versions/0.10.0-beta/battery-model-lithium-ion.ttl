@@ -203,8 +203,8 @@
 
 <https://w3id.org/emmo/domain/battery/subdomains/battery-model-lithium-ion> a owl:Ontology ;
     dcterms:abstract "The battery-model-lithium-ion extension contains the terms and relations specific to the process of modelling lithium-ion batteries." ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.5-beta/battery> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery-model-lithium-ion/0.18.5-beta/subdomains/battery-model-lithium-ion> .
+    owl:imports <https://w3id.org/emmo/domain/battery/0.18.6-beta/battery> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/battery-model-lithium-ion/0.18.6-beta/subdomains/battery-model-lithium-ion> .
 
 electrochemistry:electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e :battery_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Cell','Ambient temperature [K]']"@en ;
     :battery_1b718841_5d72_4071_bb71_fc4a754f5e30 "['simulation','initial_state','exterior_temperature','value']"@en .

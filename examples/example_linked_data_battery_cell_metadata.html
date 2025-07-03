@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Example: Simple Battery Cell Metadata &#8212; BattInfo  documentation</title>
+    <title>Simple Battery Cell Metadata &#8212; BattInfo  documentation</title>
   
   
   
@@ -51,7 +51,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/example_linked_data_battery_cell_metadata';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Example: Custom Battery Cell Metadata (JSON-LD + RDF)" href="example_linked_data_custom_battery_cell_metadata.html" />
+    <link rel="next" title="Custom Battery Cell Metadata" href="example_linked_data_custom_battery_cell_metadata.html" />
     <link rel="prev" title="Exploring the Ontology with EMMOntoPy" href="example_load_with_emmontopy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -310,8 +310,8 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="example_person_jsonld.html">JSON-LD: A Simple Introduction Using a Person</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_load_with_emmontopy.html">Exploring the Ontology with EMMOntoPy</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example: Simple Battery Cell Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Simple Battery Cell Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Custom Battery Cell Metadata</a></li>
 </ul>
 </div>
 </nav></div>
@@ -352,7 +352,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../pages/examples.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Example: Simple Battery Cell Metadata</li>
+    <li class="breadcrumb-item active" aria-current="page">Simple Battery Cell Metadata</li>
   </ul>
 </nav>
 </div>
@@ -369,8 +369,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="Example:-Simple-Battery-Cell-Metadata">
-<h1>Example: Simple Battery Cell Metadata<a class="headerlink" href="#Example:-Simple-Battery-Cell-Metadata" title="Permalink to this heading">#</a></h1>
+  <section id="Simple-Battery-Cell-Metadata">
+<h1>Simple Battery Cell Metadata<a class="headerlink" href="#Simple-Battery-Cell-Metadata" title="Permalink to this heading">#</a></h1>
 <p>Let’s describe an instance of a simple CR2032 coin cell with a capacity defined in a specification sheet from the manufacturer!</p>
 <p>This example covers a few topics:</p>
 <ul class="simple">
@@ -385,7 +385,7 @@ document.write(`
 <h2>Describe the powder using ontology terms in JSON-LD format<a class="headerlink" href="#Describe-the-powder-using-ontology-terms-in-JSON-LD-format" title="Permalink to this heading">#</a></h2>
 <p>The JSON-LD data that we will use is:</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>jsonld = {
@@ -414,7 +414,7 @@ document.write(`
 <p>Now let’s see how a machine would process this data by reading it into a Graph!</p>
 <p>First, we install and import the python dependencies that we need for this example.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Import dependencies
@@ -429,7 +429,7 @@ import matplotlib.pyplot as plt
 </div>
 <p>We create the graph using a very handy python package called <a class="reference external" href="https://rdflib.readthedocs.io/en/stable/">rdflib</a>, which provides us a way to parse our json-ld data, run some queries using the language <a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>, and serialize the graph in any RDF compatible format (e.g. JSON-LD, Turtle, etc.).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a new graph
@@ -461,16 +461,16 @@ for row in all_the_things:
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 (rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;SINTEF&#39;))
-(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
-(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My CR2032 Coin Cell&#39;))
-(rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
-(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
-(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;))
-(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;))
-(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#MilliAmpereHour&#39;))
-(rdflib.term.BNode(&#39;N97abaf9184ed436e88fb38baf2b81614&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100&#39;))
-(rdflib.term.BNode(&#39;N0b88e5adb66b4fc38247f92fd0e58eda&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;230&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#integer&#39;)))
-(rdflib.term.BNode(&#39;Nafdb15bd733243ed8437da4ab4804713&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b&#39;))
+(rdflib.term.BNode(&#39;Na34f2abdb78d44d69060d98294546cda&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0&#39;), rdflib.term.BNode(&#39;N72de31d60ed94fa98a884e7d964226b0&#39;))
+(rdflib.term.BNode(&#39;Nd4cf6308611c4920a4582b0daeecbf57&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204&#39;), rdflib.term.BNode(&#39;Na34f2abdb78d44d69060d98294546cda&#39;))
+(rdflib.term.BNode(&#39;N72de31d60ed94fa98a884e7d964226b0&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4&#39;), rdflib.term.Literal(&#39;230&#39;, datatype=rdflib.term.URIRef(&#39;http://www.w3.org/2001/XMLSchema#integer&#39;)))
+(rdflib.term.BNode(&#39;Na34f2abdb78d44d69060d98294546cda&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456&#39;))
+(rdflib.term.BNode(&#39;Nd4cf6308611c4920a4582b0daeecbf57&#39;), rdflib.term.URIRef(&#39;https://schema.org/name&#39;), rdflib.term.Literal(&#39;My CR2032 Coin Cell&#39;))
+(rdflib.term.BNode(&#39;Nd4cf6308611c4920a4582b0daeecbf57&#39;), rdflib.term.URIRef(&#39;https://schema.org/manufacturer&#39;), rdflib.term.URIRef(&#39;https://www.wikidata.org/wiki/Q3041255&#39;))
+(rdflib.term.BNode(&#39;Nd4cf6308611c4920a4582b0daeecbf57&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b&#39;))
+(rdflib.term.BNode(&#39;Na34f2abdb78d44d69060d98294546cda&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100&#39;))
+(rdflib.term.BNode(&#39;N72de31d60ed94fa98a884e7d964226b0&#39;), rdflib.term.URIRef(&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486&#39;))
+(rdflib.term.BNode(&#39;Na34f2abdb78d44d69060d98294546cda&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569&#39;), rdflib.term.URIRef(&#39;https://w3id.org/emmo#MilliAmpereHour&#39;))
 </pre></div></div>
 </div>
 <p>You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples. Let’s look at a couple in more detail to understand what’s going on.</p>
@@ -524,7 +524,7 @@ for row in all_the_things:
 <h2>Query the graph using SPARQL [Moderate]<a class="headerlink" href="#Query-the-graph-using-SPARQL-[Moderate]" title="Permalink to this heading">#</a></h2>
 <p>Now, let’s write a SPARQL query to get back some specific thing…like what is the name of the manufacturer?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>query = &quot;&quot;&quot;
@@ -562,7 +562,7 @@ for row in results:
 <p>EMMOntoPy allows us to access ontology classes and properties by their human-readable labels (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;CR2032&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;wikidataReference&quot;</span></code>), and we use these to build a SPARQL query. This query is then executed over the ontology graph to extract the Wikidata IRI for <code class="docutils literal notranslate"><span class="pre">CR2032</span></code>.</p>
 <p>We can later use this IRI to retrieve additional metadata directly from Wikidata or other linked data endpoints — a common pattern in semantic data workflows.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from ontopy import get_ontology
@@ -573,7 +573,7 @@ battinfo = get_ontology(&#39;https://w3id.org/emmo/domain/battery/inferred&#39;)
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>wikidata_url = battinfo.CR2032.wikidataReference[0]
@@ -592,7 +592,7 @@ The Wikidata ID for CR2032 is: Q5013811
 </div>
 <p>Now that we have the Wikidata ID for CR2032, we can query their SPARQL endpoint to retrieve some property. Let’s ask it for the thickness.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the Wikidata knowledge graph for more information about zinc
@@ -635,7 +635,7 @@ Wikidata says the thickness of a CR2032 cell is: 20 millimetre
 </div>
 <p>We can also retrieve more complex data. For example, let’s ask Wikidata to show us an image of a CR2032.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># SPARQL query to get the image of the CR2032 cell (Q758)
@@ -676,7 +676,7 @@ Image of a CR2032- cell: http://commons.wikimedia.org/wiki/Special:FilePath/CR20
 </div>
 <p>Finally, let’s retireve the id for CR2032 in the Google Knowledge Graph and see what it has to say!</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># SPARQL query to get the Google Knowledge Graph ID of the CR2032 cell
@@ -762,7 +762,7 @@ The Google Knowledge Graph entry for a CR2032 cell: https://www.google.com/searc
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</p>
+        <p class="prev-next-title">Custom Battery Cell Metadata</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

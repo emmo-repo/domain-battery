@@ -6,7 +6,7 @@
         "id": "1wseTQGaB4x9"
       },
       "source": [
-        "# Example: Custom Battery Cell Metadata (JSON-LD + RDF)\n",
+        "# Custom Battery Cell Metadata\n",
         "\n",
         "In this notebook, we define two custom battery cells (R2032 coin cells) using JSON-LD, enriched with semantic information from ontologies. We then parse this data into an RDF graph and query it using SPARQL.\n",
         "\n",
@@ -41,7 +41,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 22,
+      "execution_count": 30,
       "metadata": {
         "id": "gohQKEBrF2QP"
       },
@@ -127,7 +127,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 23,
+      "execution_count": 31,
       "metadata": {
         "id": "wk4sFl_eA2ML"
       },
@@ -152,7 +152,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 24,
+      "execution_count": 32,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -164,10 +164,10 @@
         {
           "data": {
             "text/plain": [
-              "<Graph identifier=N8f27c4923b764f0488705608c881fd1a (<class 'rdflib.graph.Graph'>)>"
+              "<Graph identifier=Nedd5721389ac416c8e39b3018726d4e6 (<class 'rdflib.graph.Graph'>)>"
             ]
           },
-          "execution_count": 24,
+          "execution_count": 32,
           "metadata": {},
           "output_type": "execute_result"
         }
@@ -192,54 +192,54 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 25,
+      "execution_count": 33,
       "metadata": {},
       "outputs": [
         {
           "name": "stdout",
           "output_type": "stream",
           "text": [
-            "(rdflib.term.BNode('N71b5186d4cb04f989a3d8eac04798f9d'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('N8d0d484409b943e096e597b0594c407a'))\n",
-            "(rdflib.term.BNode('N0187a74911ac4e7c969fd68f82c25d21'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N956b235930804560ba4a75e392e00909'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My LFP-Graphite R2032 Coin Cell'))\n",
-            "(rdflib.term.BNode('N5f2c77c0261647c6a474a080a393d22a'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('N5a076058f0474418bc04c9ab28278757'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My LNO-Graphite R2032 Coin Cell'))\n",
-            "(rdflib.term.BNode('N71b5186d4cb04f989a3d8eac04798f9d'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
-            "(rdflib.term.BNode('Nb050d7b25ad6466eac1e151e827c64db'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
-            "(rdflib.term.BNode('N8d0d484409b943e096e597b0594c407a'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n",
-            "(rdflib.term.BNode('Nc79c3b5539084bfdb546f5176fcf6fa9'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
-            "(rdflib.term.BNode('N8d0d484409b943e096e597b0594c407a'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('3.2', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#double')))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
-            "(rdflib.term.BNode('N33cefdfbfe344a61acd465ce81d0dfe4'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db'))\n",
+            "(rdflib.term.BNode('Nf7409c01f9d148dbb30f671e5d555a12'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('3.6', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#double')))\n",
+            "(rdflib.term.BNode('N99f92e57532843d69c8cae74f27272c3'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303'))\n",
+            "(rdflib.term.BNode('Nbac6e3c31ec9453a82b9813ef6896366'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('3.2', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#double')))\n",
+            "(rdflib.term.BNode('Nb50ad5f394e34bef92855a353bac2ebf'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
+            "(rdflib.term.BNode('N29e9baeaafc5459abce23b1e4f887b57'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My LNO-Graphite R2032 Coin Cell'))\n",
+            "(rdflib.term.BNode('N676da53fa4df4b31a439afa0ed806bb1'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('My LFP-Graphite R2032 Coin Cell'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
+            "(rdflib.term.BNode('N85697940f08248ce85ddbb6f6a83e929'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303'))\n",
+            "(rdflib.term.BNode('Ndfc310121d864b9a88f50b50ebf7ce91'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
+            "(rdflib.term.BNode('N12e9d62d77864d3ebc03c15495c9e9ce'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6'))\n",
+            "(rdflib.term.BNode('N6b0a63e8d5cd4a0eb2993b4248d40dfb'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
             "(rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'), rdflib.term.URIRef('https://schema.org/name'), rdflib.term.Literal('SINTEF'))\n",
-            "(rdflib.term.BNode('N82447aa146ba442bafedb57375bb5466'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616'), rdflib.term.BNode('Nc79c3b5539084bfdb546f5176fcf6fa9'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616'), rdflib.term.BNode('Nb050d7b25ad6466eac1e151e827c64db'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('N5f2c77c0261647c6a474a080a393d22a'))\n",
-            "(rdflib.term.BNode('N956b235930804560ba4a75e392e00909'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303'))\n",
-            "(rdflib.term.BNode('N5f2c77c0261647c6a474a080a393d22a'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138'), rdflib.term.BNode('N0187a74911ac4e7c969fd68f82c25d21'))\n",
-            "(rdflib.term.BNode('N5a076058f0474418bc04c9ab28278757'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
-            "(rdflib.term.BNode('N71b5186d4cb04f989a3d8eac04798f9d'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6'))\n",
-            "(rdflib.term.BNode('N4a7dd7876f0c4be2bc303e43205b2055'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'))\n",
-            "(rdflib.term.BNode('Nddfe3db7393e484783862bfc91ab4210'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
-            "(rdflib.term.BNode('Nc1d2defec20f4fbf9924b6ecf35dd526'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3'))\n",
-            "(rdflib.term.BNode('N4365811abd3d4ede8b4e6daedfd41057'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303'))\n",
-            "(rdflib.term.BNode('N5f2c77c0261647c6a474a080a393d22a'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6'))\n",
-            "(rdflib.term.BNode('N71b5186d4cb04f989a3d8eac04798f9d'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('https://w3id.org/emmo#Volt'))\n",
-            "(rdflib.term.BNode('Nddfe3db7393e484783862bfc91ab4210'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N4365811abd3d4ede8b4e6daedfd41057'))\n",
-            "(rdflib.term.BNode('Nb050d7b25ad6466eac1e151e827c64db'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N4a7dd7876f0c4be2bc303e43205b2055'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('N71b5186d4cb04f989a3d8eac04798f9d'))\n",
-            "(rdflib.term.BNode('Nc79c3b5539084bfdb546f5176fcf6fa9'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N33cefdfbfe344a61acd465ce81d0dfe4'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'))\n",
-            "(rdflib.term.BNode('N16bd5675eec64de0b903ee0896db00d9'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39'), rdflib.term.BNode('N82447aa146ba442bafedb57375bb5466'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138'), rdflib.term.BNode('Nddfe3db7393e484783862bfc91ab4210'))\n",
-            "(rdflib.term.BNode('N083f046e81aa46fdb76d54d1e8054444'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39'), rdflib.term.BNode('Nc1d2defec20f4fbf9924b6ecf35dd526'))\n",
-            "(rdflib.term.BNode('N5a076058f0474418bc04c9ab28278757'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4'), rdflib.term.Literal('3.6', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#double')))\n",
-            "(rdflib.term.BNode('N5f2c77c0261647c6a474a080a393d22a'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('https://w3id.org/emmo#Volt'))\n",
-            "(rdflib.term.BNode('N0187a74911ac4e7c969fd68f82c25d21'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n"
+            "(rdflib.term.BNode('Nf7409c01f9d148dbb30f671e5d555a12'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138'), rdflib.term.BNode('Ndfc310121d864b9a88f50b50ebf7ce91'))\n",
+            "(rdflib.term.BNode('Ndfc310121d864b9a88f50b50ebf7ce91'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N99f92e57532843d69c8cae74f27272c3'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39'), rdflib.term.BNode('Nbf110fbc5b0442019b7eb80ec6bb07db'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://schema.org/manufacturer'), rdflib.term.URIRef('https://www.wikidata.org/wiki/Q3041255'))\n",
+            "(rdflib.term.BNode('Nce1d679a3813417eb0d21bcc45ad0a6d'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3'))\n",
+            "(rdflib.term.BNode('N676da53fa4df4b31a439afa0ed806bb1'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6'))\n",
+            "(rdflib.term.BNode('N9d1fd95b7b914022acf6e5ab15f5b8e1'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('N676da53fa4df4b31a439afa0ed806bb1'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39'), rdflib.term.BNode('Nce1d679a3813417eb0d21bcc45ad0a6d'))\n",
+            "(rdflib.term.BNode('Nbf110fbc5b0442019b7eb80ec6bb07db'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3'))\n",
+            "(rdflib.term.BNode('N12e9d62d77864d3ebc03c15495c9e9ce'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('https://w3id.org/emmo#Volt'))\n",
+            "(rdflib.term.BNode('N6b0a63e8d5cd4a0eb2993b4248d40dfb'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N0d5cd1e7853e47b4b2c038d652fc253d'))\n",
+            "(rdflib.term.BNode('Nb50ad5f394e34bef92855a353bac2ebf'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N29e9baeaafc5459abce23b1e4f887b57'))\n",
+            "(rdflib.term.BNode('N0d5cd1e7853e47b4b2c038d652fc253d'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90'))\n",
+            "(rdflib.term.BNode('N12e9d62d77864d3ebc03c15495c9e9ce'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('Nbac6e3c31ec9453a82b9813ef6896366'))\n",
+            "(rdflib.term.BNode('N9d1fd95b7b914022acf6e5ab15f5b8e1'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee'), rdflib.term.BNode('N85697940f08248ce85ddbb6f6a83e929'))\n",
+            "(rdflib.term.BNode('N676da53fa4df4b31a439afa0ed806bb1'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0'), rdflib.term.BNode('Nf7409c01f9d148dbb30f671e5d555a12'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'))\n",
+            "(rdflib.term.BNode('N676da53fa4df4b31a439afa0ed806bb1'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569'), rdflib.term.URIRef('https://w3id.org/emmo#Volt'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138'), rdflib.term.BNode('N9d1fd95b7b914022acf6e5ab15f5b8e1'))\n",
+            "(rdflib.term.BNode('N12e9d62d77864d3ebc03c15495c9e9ce'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616'), rdflib.term.BNode('N6b0a63e8d5cd4a0eb2993b4248d40dfb'))\n",
+            "(rdflib.term.BNode('Nbc3015ce8c0c4c4aa913118188bceb98'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'), rdflib.term.BNode('N12e9d62d77864d3ebc03c15495c9e9ce'))\n",
+            "(rdflib.term.BNode('N0db4fb66c6504a2fa4196fbd71879ef5'), rdflib.term.URIRef('https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616'), rdflib.term.BNode('Nb50ad5f394e34bef92855a353bac2ebf'))\n",
+            "(rdflib.term.BNode('Nbac6e3c31ec9453a82b9813ef6896366'), rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef('https://w3id.org/emmo#EMMO_18d180e4_5e3e_42f7_820c_e08951223486'))\n"
           ]
         }
       ],
@@ -268,14 +268,14 @@
       "source": [
         "You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples.\n",
         "\n",
-        "## Filtering Battery Cells by Voltage (Example)\n",
+        "## Filtering Battery Cells by Voltage\n",
         "\n",
         "You can define a SPARQL query to return only cells with a `NominalVoltage` greater than 3.5 V. This demonstrates how JSON-LD + RDF can support rich filtering and data analytics with minimal effort."
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": 26,
+      "execution_count": 34,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -337,7 +337,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 27,
+      "execution_count": 35,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -381,7 +381,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 28,
+      "execution_count": 36,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -424,7 +424,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 29,
+      "execution_count": 37,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"

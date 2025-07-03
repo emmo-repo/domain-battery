@@ -310,8 +310,8 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">JSON-LD: A Simple Introduction Using a Person</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_load_with_emmontopy.html">Exploring the Ontology with EMMOntoPy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_linked_data_battery_cell_metadata.html">Example: Simple Battery Cell Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Example: Custom Battery Cell Metadata (JSON-LD + RDF)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_linked_data_battery_cell_metadata.html">Simple Battery Cell Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_linked_data_custom_battery_cell_metadata.html">Custom Battery Cell Metadata</a></li>
 </ul>
 </div>
 </nav></div>
@@ -388,60 +388,6 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;type</span></code>: A type indicator, often from a vocabulary like <code class="docutils literal notranslate"><span class="pre">schema:Person</span></code>.</p></li>
 </ul>
 <p>These additions allow machines—not just humans—to understand what your data is about.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Install the required library for JSON schema validation
-!pip install jsonschema
-!pip install rdflib
-</pre></div>
-</div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Requirement already satisfied: jsonschema in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (4.24.0)
-Requirement already satisfied: referencing&gt;=0.28.4 in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from jsonschema) (0.36.2)
-Requirement already satisfied: attrs&gt;=22.2.0 in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from jsonschema) (25.3.0)
-Requirement already satisfied: jsonschema-specifications&gt;=2023.03.6 in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from jsonschema) (2025.4.1)
-Requirement already satisfied: rpds-py&gt;=0.7.1 in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from jsonschema) (0.25.1)
-Requirement already satisfied: typing-extensions&gt;=4.4.0 in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from referencing&gt;=0.28.4-&gt;jsonschema) (4.14.0)
-</pre></div></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area stderr docutils container">
-<div class="highlight"><pre>
-
-[notice] A new release of pip available: 22.3.1 -&gt; 25.1.1
-[notice] To update, run: python.exe -m pip install --upgrade pip
-</pre></div></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Requirement already satisfied: rdflib in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (6.2.0)
-Requirement already satisfied: setuptools in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from rdflib) (65.5.0)
-Requirement already satisfied: isodate in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from rdflib) (0.7.2)
-Requirement already satisfied: pyparsing in c:\users\simonc\documents\github-local\ontologies\domain-battery\.venv\lib\site-packages (from rdflib) (3.2.1)
-</pre></div></div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area stderr docutils container">
-<div class="highlight"><pre>
-
-[notice] A new release of pip available: 22.3.1 -&gt; 25.1.1
-[notice] To update, run: python.exe -m pip install --upgrade pip
-</pre></div></div>
-</div>
 </section>
 <section id="A-Person-in-JSON-LD">
 <h2>A Person in JSON-LD<a class="headerlink" href="#A-Person-in-JSON-LD" title="Permalink to this heading">#</a></h2>
@@ -454,7 +400,7 @@ Requirement already satisfied: pyparsing in c:\users\simonc\documents\github-loc
 <p>This indicates that the terms used (like givenName, birthDate, or affiliation) come from the <a class="reference external" href="https://schema.org">schema.org</a> vocabulary. This mapping enables software agents and data systems to interpret the data consistently, beyond just reading key-value pairs.</p>
 <p>Using JSON-LD in this way makes the data both human-readable and machine-interpretable, opening the door to powerful integration, validation, and reasoning across systems.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import jsonschema
@@ -498,7 +444,7 @@ person_data = {
 <li><p>Integrating structured data into APIs or semantic pipelines</p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>person_schema = {
@@ -588,7 +534,7 @@ JSON data is valid according to the schema.
 <li><p>Integrate data across schemas and domains</p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Step 1: Create an RDF Graph
@@ -684,7 +630,7 @@ for row in results:
 </ul>
 <p>This pattern is central to working with linked data: describing entities with types, and then querying them using semantic relationships.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define and execute a SPARQL query for all instances of Organization
@@ -760,7 +706,7 @@ https://ror.org/01f677e56
 <h3>Result<a class="headerlink" href="#Result" title="Permalink to this heading">#</a></h3>
 <p>The query prints a list of birth dates (as literals) for up to 10 individuals defined in your RDF graph.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define and execute a SPARQL query for all instances of Organization
@@ -795,8 +741,8 @@ for row in results:
 </div>
 </section>
 </section>
-<section id="Summary:-Linked-Data-with-JSON-LD,-RDFLib,-and-SPARQL">
-<h2>Summary: Linked Data with JSON-LD, RDFLib, and SPARQL<a class="headerlink" href="#Summary:-Linked-Data-with-JSON-LD,-RDFLib,-and-SPARQL" title="Permalink to this heading">#</a></h2>
+<section id="Summary">
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
 <p>In this notebook, we explored how <strong>JSON-LD</strong> can transform regular JSON into semantically enriched, machine-readable data using well-defined vocabularies like <a class="reference external" href="https://schema.org">schema.org</a>.</p>
 <section id="Key-Concepts-Covered">
 <h3>Key Concepts Covered<a class="headerlink" href="#Key-Concepts-Covered" title="Permalink to this heading">#</a></h3>
@@ -813,9 +759,6 @@ for row in results:
 </ul>
 </li>
 </ul>
-</section>
-<section id="id3">
-<h3>Why This Matters<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <p>By combining JSON-LD, RDFLib, and SPARQL:</p>
 <ul class="simple">
 <li><p>You can enrich your data with standardized semantics</p></li>
@@ -824,8 +767,6 @@ for row in results:
 <li><p>Integrate your metadata with larger knowledge graphs (e.g., Wikidata, Google Knowledge Graph)</p></li>
 </ul>
 <p>This notebook serves as a practical introduction to <strong>semantic data modeling and querying</strong> — a foundational component of linked data applications and the Semantic Web.</p>
-<hr class="docutils" />
-<p><em>Next steps</em>: Consider applying these techniques to your own datasets, such as experiment metadata, digital twins, or structured research outputs.</p>
 </section>
 </section>
 </section>
@@ -901,9 +842,8 @@ for row in results:
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Result">Result</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary:-Linked-Data-with-JSON-LD,-RDFLib,-and-SPARQL">Summary: Linked Data with JSON-LD, RDFLib, and SPARQL</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Key-Concepts-Covered">Key Concepts Covered</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Why This Matters</a></li>
 </ul>
 </li>
 </ul>
