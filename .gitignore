@@ -35,3 +35,4 @@ wheels/
 # Logs and database files
 *.log
 *.sqlite3
+/.project
