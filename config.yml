@@ -1,0 +1,27 @@
+ontology_name: "Domain Battery"
+ontology_adjective: "battery"
+ontology_noun: "battery"
+ontology_abbreviation: "BATT"
+ontology_uri: "https://w3id.org/emmo/domain/battery"
+ontology_prefix: "https://w3id.org/emmo/domain/battery#"
+ontology_description: "The ontology for battery systems."
+
+ttl_files:
+  - section_title: "Battery Domain Ontology"
+    path: "battery.ttl"
+  - section_title: "Battery Reference"
+    path: "reference/battery-reference.ttl"
+  - section_title: "Battery Quantities"
+    path: "reference/battery-quantities.ttl"
+  - section_title: "Battery Manufacturing"
+    path: "modules/battery-manufacturing.ttl"
+  - section_title: "Battery Testing"
+    path: "modules/battery-testing.ttl"
+  - section_title: "Battery Cell Geometry"
+    path: "modules/battery-cell-geometry.ttl"
+
+output:
+  inferred_ttl: "battery-inferred.ttl"
+  rst_file: "docs/battery.rst"
+
+emmocheck_classes: []
