@@ -355,12 +355,12 @@ def _add_table_row(rst, key, value):
         key = get_preferred_label(key)
     except AttributeError:
         key = key
-    rst += "  <tr>\\n"
-    rst += f'    <td class="element-table-key"><span class="element-table-key">{key}</span></td>\\n'
+    rst += "  <tr>\n"
+    rst += f'    <td class="element-table-key"><span class="element-table-key">{key}</span></td>\n'
     rst += '    <td class="element-table-value">'
     rst += value
-    rst += "</td>\\n"
-    rst += "  </tr>\\n"
+    rst += "</td>\n"
+    rst += "  </tr>\n"
     return rst
 
 
@@ -411,12 +411,12 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
         if val is None:
             return ""
         if isinstance(val, (list, tuple)):
-            return "\\n\\n".join(str(x).strip() for x in val if str(x).strip()).strip()
+            return "\n\n".join(str(x).strip() for x in val if str(x).strip()).strip()
         return str(val).strip()
 
     def _indent(block: str, n: int = 3) -> str:
         pad = " " * n
-        return "\\n".join((pad + ln) if ln.strip() else "" for ln in block.splitlines())
+        return "\n".join((pad + ln) if ln.strip() else "" for ln in block.splitlines())
 
     # normalized (via _norm) labels that should render as admonitions
     CALLOUTS = {
@@ -444,12 +444,12 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
         # ---- section header
-        rst += "\\n----\\n\\n"
-        rst += ".. raw:: html\\n\\n"
-        rst += f'   <div id="{iri_suffix}"></div>\\n\\n'
+        rst += "\n----\n\n"
+        rst += ".. raw:: html\n\n"
+        rst += f'   <div id="{iri_suffix}"></div>\n\n'
         title = item[onto.prefLabel]
-        rst += f"{title}\\n{'-' * len(title)}\\n\\n"
-        rst += f"IRI: {item['IRI']}\\n\\n"
+        rst += f"{title}\n{'-' * len(title)}\n\n"
+        rst += f"IRI: {item['IRI']}\n\n"
 
         # ---- normalize keys once (and keep pretty display names)
         norm = {}          # canonical key -> value
@@ -463,8 +463,8 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
         TABLE_SKIP = set(TABLE_SKIP_BASE) | set(CALLOUTS.keys())
 
         # ---- table (non-callout props)
-        rst += ".. raw:: html\\n\\n"
-        rst += '  <table class="element-table">\\n'
+        rst += ".. raw:: html\n\n"
+        rst += '  <table class="element-table">\n'
 
         for ck, value in norm.items():
             if ck in TABLE_SKIP or value in ("None", "", None):
@@ -499,7 +499,7 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
         if norm.get("subclasses"):
             rst = _add_table_row(rst, 'subclasses', ", ".join(_get_links(item, "subclasses")))
 
-        rst += "  </table>\\n\\n"
+        rst += "  </table>\n\n"
 
         # ---- callouts (admonitions) after the table
         for ck, (directive, title_txt) in CALLOUTS.items():
@@ -512,7 +512,7 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
                 items = [str(x).strip() for x in raw if str(x).strip()]
             else:
                 # split a single string on blank lines into separate items
-                items = [p.strip() for p in str(raw).split("\\n\\n") if p.strip()]
+                items = [p.strip() for p in str(raw).split("\n\n") if p.strip()]
 
             if not items:
                 continue
@@ -520,16 +520,16 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
             for item_text in items:
                 if directive == "admonition":
                     hdr = title_txt or (display_name.get(ck, ck).capitalize())
-                    rst += f".. admonition:: {hdr}\\n\\n"
+                    rst += f".. admonition:: {hdr}\n\n"
                 else:
-                    rst += f".. {directive}::\\n\\n"
-                rst += _indent(item_text) + "\\n\\n"
+                    rst += f".. {directive}::\n\n"
+                rst += _indent(item_text) + "\n\n"
 
     return rst
 
 
 def render_rst_bottom():
-    return "End of Document.\\n"
+    return "End of Document.\n"
 
 def generate_rst_documentation():
     config = load_ontology_config()
@@ -541,7 +541,7 @@ def generate_rst_documentation():
         if os.path.isfile(filepath):
             onto = load_ttl_from_file(filepath)
             entities = extract_terms_info_sparql(onto)
-            rst_content += f"\\n{module['section_title']}\\n{'=' * len(module['section_title'])}\\n\\n"
+            rst_content += f"\n{module['section_title']}\n{'=' * len(module['section_title'])}\n\n"
             rst_content += render_rst_abstract(onto)
             rst_content += entities_to_rst(entities, onto)
 
