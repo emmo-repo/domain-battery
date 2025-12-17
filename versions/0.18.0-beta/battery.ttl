@@ -1,36 +1,46 @@
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <https://w3id.org/emmo/domain/battery#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix echem: <https://w3id.org/emmo/domain/electrochemistry#> .
+@prefix schema: <https://schema.org/> .
+@prefix chemsub: <https://w3id.org/emmo/domain/chemicalsubstance#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix annotations: <https://w3id.org/emmo/top/annotations#> .
+@base <https://w3id.org/emmo/domain/battery/battery> .
 
-<https://w3id.org/emmo/domain/battery/battery> a owl:Ontology ;
-    dcterms:abstract "The Battery Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for battery components, cells, interfaces, methods, models, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of batteries. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development." ;
-    dcterms:bibliographicCitation "https://zenodo.org/doi/10.5281/zenodo.7693672" ;
-    dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
-        <https://orcid.org/0000-0002-1560-809X>,
-        <https://orcid.org/0000-0002-2547-155X> ;
-    dcterms:created "2022-11-25"^^xsd:date ;
-    dcterms:creator <https://orcid.org/0000-0002-8758-6109>,
-        <https://orcid.org/0000-0003-2954-1233> ;
-    dcterms:issued "2025-07-03"^^xsd:date ;
-    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    dcterms:modified "2025-07-03"^^xsd:date ;
-    dcterms:publisher "EMMO" ;
-    dcterms:source <https://www.electropedia.org> ;
-    dcterms:title "Battery Domain Ontology"@en ;
-    bibo:doi "10.5281/zenodo.7693672" ;
-    bibo:status "unstable" ;
-    vann:preferredNamespacePrefix "battery" ;
-    vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
-    owl:backwardCompatibleWith "0.18.5-beta" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.6-beta/modules/battery-cell-geometry>,
-        <https://w3id.org/emmo/domain/battery/0.18.6-beta/modules/battery-manufacturing>,
-        <https://w3id.org/emmo/domain/battery/0.18.6-beta/modules/battery-testing>,
-        <https://w3id.org/emmo/domain/battery/0.18.6-beta/reference/battery-reference> ;
-    owl:priorVersion "0.18.5-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6-beta/battery> ;
-    owl:versionInfo "0.18.6-beta" ;
-    foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .
-
+<https://w3id.org/emmo/domain/battery/battery> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.0-beta/battery> ;
+                                                owl:imports <https://w3id.org/emmo/domain/battery/0.18.0-beta/reference/battery-reference> ,
+                                                            <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-cell-geometry> ,
+                                                            <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-manufacturing> ,
+                                                            <https://w3id.org/emmo/domain/battery/0.18.0-beta/modules/battery-testing> ;
+                                                dcterms:abstract "The Battery Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for battery components, cells, interfaces, methods, models, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of batteries. This ontology serves as a foundational resource for harmonizing battery knowledge representation, enhancing data interoperability, and accelerating progress in battery research and development." ;
+                                                dcterms:bibliographicCitation "https://zenodo.org/doi/10.5281/zenodo.7693672" ;
+                                                dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
+                                                                    <https://orcid.org/0000-0002-1560-809X> ,
+                                                                    <https://orcid.org/0000-0002-2547-155X> ;
+                                                dcterms:created "2022-11-25"^^xsd:date ;
+                                                dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
+                                                                <https://orcid.org/0000-0003-2954-1233> ;
+                                                dcterms:issued "2025-02-18"^^xsd:date ;
+                                                dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                dcterms:modified "2025-02-18"^^xsd:date ;
+                                                dcterms:publisher "EMMO" ;
+                                                dcterms:source <https://www.electropedia.org> ;
+                                                dcterms:title "Battery Domain Ontology"@en ;
+                                                bibo:doi "10.5281/zenodo.7693672" ;
+                                                bibo:status "unstable" ;
+                                                vann:preferredNamespacePrefix "battery" ;
+                                                vann:preferredNamespaceUri "https://w3id.org/emmo/domain/battery" ;
+                                                owl:backwardCompatibleWith "0.17.0-beta" ;
+                                                owl:priorVersion "0.17.0-beta" ;
+                                                owl:versionInfo "0.18.0-beta" ;
+                                                foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/docs/assets/img/fig/png/domain-battery-logo.png" .

@@ -1,188 +1,207 @@
-@prefix : <https://w3id.org/emmo/domain/battery#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix emmo: <https://w3id.org/emmo#> .
+@prefix : <https://w3id.org/emmo/domain/battery/battery#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://www.schema.org#> .
+@base <https://w3id.org/emmo/domain/battery/module/battery-testing> .
 
-:battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4 a owl:Class ;
-    rdfs:label "ThermalRunawayTest"@en ;
-    rdfs:comment "a test to investigate the thermal runaway characteristics of a battery"@en ;
-    rdfs:subClassOf :battery_dca7729a_421a_4921_90cf_9692bb9eb081 ;
-    skos:prefLabel "ThermalRunawayTest"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test to investigate the thermal runaway characteristics of a battery"@en .
+<https://w3id.org/emmo/domain/battery/module/battery-testing> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.1-beta/module/battery-testing> ;
+                                                               owl:imports <https://w3id.org/emmo/domain/battery/0.15.1-beta/battery> .
 
-:battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28 a owl:Class ;
-    rdfs:label "BatteryCycling"@en ;
-    rdfs:comment "the process of electrochemically charging and discharging a battery"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-            owl:someValuesFrom :battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-            owl:someValuesFrom :battery_bc033b97_a5b7_455c_94ce_e95676cb816b ],
-        :battery_6c481323_498b_42c6_915a_53490f409430 ;
-    skos:prefLabel "BatteryCycling"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of electrochemically charging and discharging a battery"@en .
+#################################################################
+#    Object Properties
+#################################################################
 
-:battery_23e6170d_a70b_4de9_a4db_458e24a327ac a owl:Class ;
-    rdfs:label "BatteryCycler"@en ;
-    rdfs:comment "A device for performing cycling measurements of a battery."@en ;
-    rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
-    skos:prefLabel "BatteryCycler"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device for performing cycling measurements of a battery."@en .
+###  https://w3id.org/emmo/domain/battery#battery_61a9b526_1241_417c_ac3f_c25b996b139e
+<https://w3id.org/emmo/domain/battery#battery_61a9b526_1241_417c_ac3f_c25b996b139e> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasParameter"@en .
 
-:battery_28e33d95_1f87_4572_8e58_7e9cddc03d64 a owl:Class ;
-    rdfs:label "ThermalRunawayTriggerWorkflow"@en ;
-    rdfs:comment "a workflow that is triggered by a thermal runaway process."@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-            owl:someValuesFrom :battery_e0bb1bbe_704a_46c2_b399_285b4c788476 ],
-        emmo:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
-    skos:prefLabel "ThermalRunawayTriggerWorkflow"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a workflow that is triggered by a thermal runaway process."@en .
 
-:battery_3a48b817_e54b_40fe_b00a_abfeea56383c a owl:Class ;
-    rdfs:label "NailPenetration"@en ;
-    rdfs:comment "the process of penetrating a battery with a nail"@en ;
-    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
-    skos:prefLabel "NailPenetration"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of penetrating a battery with a nail"@en .
+###  https://w3id.org/emmo/domain/battery#battery_da3b3f28_aaad_4d67_b674_df47e109fb8b
+<https://w3id.org/emmo/domain/battery#battery_da3b3f28_aaad_4d67_b674_df47e109fb8b> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasTestObject"@en .
 
-:battery_5b871e13_89ab_4dde_8ea0_062067a6708a a owl:Class ;
-    rdfs:label "TwoSidedHeating"@en ;
-    rdfs:comment "the process of apply heat to a battery on two sides"@en ;
-    rdfs:subClassOf :battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb ;
-    skos:prefLabel "TwoSidedHeating"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of apply heat to a battery on two sides"@en .
 
-:battery_61a9b526_1241_417c_ac3f_c25b996b139e a owl:ObjectProperty ;
-    rdfs:label "hasParameter"@en ;
-    rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-    skos:prefLabel "hasParameter"@en .
+###  https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c
+<https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasTestEquipment"@en .
 
-:battery_7985009d_a3ac_4850_8b85_76899d432814 a owl:Class ;
-    rdfs:label "Autoclave"@en ;
-    rdfs:comment "a machine that carries out proceses at elevated pressure and/or temperature"@en ;
-    rdfs:subClassOf emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    skos:prefLabel "Autoclave"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a machine that carries out proceses at elevated pressure and/or temperature"@en .
 
-:battery_875a302c_a1f4_45b9_933a_559c5b775dad a owl:Class ;
-    rdfs:label "GasChromatograph"@en ;
-    rdfs:comment "equipment for determining the composition of gas"@en ;
-    rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
-    skos:prefLabel "GasChromatograph"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "equipment for determining the composition of gas"@en .
+#################################################################
+#    Classes
+#################################################################
 
-:battery_8f56258f_78ab_45f1_9038_08973fab9e4e a owl:Class ;
-    rdfs:label "DestroyedBatteryCell"@en ;
-    rdfs:comment "a battery cell which is destroyed by some process"@en ;
-    rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
-    skos:prefLabel "DestroyedBatteryCell"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell which is destroyed by some process"@en .
+###  https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb
+<https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ExternalHeating"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying a controlled amount of heat to a sample"@en .
 
-:battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d a owl:Class ;
-    rdfs:label "OneSidedHeating"@en ;
-    rdfs:comment "the process of applying heating to one side of a battery"@en ;
-    rdfs:subClassOf :battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb ;
-    skos:prefLabel "OneSidedHeating"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying heating to one side of a battery"@en .
 
-:battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557 a owl:Class ;
-    rdfs:label "BatteryCellHolder"@en ;
-    rdfs:comment "a holder that mounts a battery and its terminals for a test"@en ;
-    rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    skos:prefLabel "BatteryCellHolder"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a holder that mounts a battery and its terminals for a test"@en .
+###  https://w3id.org/emmo/domain/battery#battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4
+<https://w3id.org/emmo/domain/battery#battery_0415f8c5_ac75_4020_b339_bba5a4f5aef4> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ThermalRunawayTest"@en .
 
-:battery_d345eb7f_25da_436c_bed3_ae73f97d9500 a owl:Class ;
-    rdfs:label "SoftVenting"@en ;
-    rdfs:comment "a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction."@en ;
-    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
-    skos:prefLabel "SoftVenting"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction."@en .
 
-:battery_d9b99b14_44e8_473b_af8f_2a160429df69 a owl:Class ;
-    rdfs:label "BatteryTimeSeriesDataSet"@en ;
-    rdfs:comment "a timeseries dataset resulting from a battery measurement"@en ;
-    rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a,
-        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
-    skos:prefLabel "BatteryTimeSeriesDataSet"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a timeseries dataset resulting from a battery measurement"@en .
+###  https://w3id.org/emmo/domain/battery#battery_28e33d95_1f87_4572_8e58_7e9cddc03d64
+<https://w3id.org/emmo/domain/battery#battery_28e33d95_1f87_4572_8e58_7e9cddc03d64> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476>
+                                                                                                    ] ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ThermalRunawayTriggerWorkflow"@en .
 
-:battery_da3b3f28_aaad_4d67_b674_df47e109fb8b a owl:ObjectProperty ;
-    rdfs:label "hasTestObject"@en ;
-    rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
-    skos:prefLabel "hasTestObject"@en .
 
-:battery_df4ff8f1_2cf2_444a_9498_23f533bd295c a owl:ObjectProperty ;
-    rdfs:label "hasTestEquipment"@en ;
-    rdfs:subPropertyOf emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
-    skos:prefLabel "hasTestEquipment"@en .
+###  https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9
+<https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryTestResult"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the output of a battery test"@en .
 
-:battery_f952d3be_723d_4767_ac4e_8b72bac862d6 a owl:Class ;
-    rdfs:label "GasSampling"@en ;
-    rdfs:comment "the process of characterizing a gas sample"@en ;
-    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
-    skos:prefLabel "GasSampling"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of characterizing a gas sample"@en .
 
-<https://w3id.org/emmo/domain/battery/modules/battery-testing> a owl:Ontology ;
-    dcterms:abstract "The battery-testing module contains the terms and relations specific to the testing of batteries" ;
-    owl:imports <https://w3id.org/emmo/domain/battery/0.18.6-beta/reference/battery-reference>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/modules/electrochemistry-testing> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6-beta/modules/battery-testing> .
+###  https://w3id.org/emmo/domain/battery#battery_3a48b817_e54b_40fe_b00a_abfeea56383c
+<https://w3id.org/emmo/domain/battery#battery_3a48b817_e54b_40fe_b00a_abfeea56383c> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "NailPenetration"@en .
 
-:battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce a owl:Class ;
-    rdfs:label "BatteryMeasurementResult"@en ;
-    rdfs:comment "the result of a battery measurement"@en ;
-    rdfs:subClassOf emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
-    skos:prefLabel "BatteryMeasurementResult"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the result of a battery measurement"@en .
 
-:battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9 a owl:Class ;
-    rdfs:label "BatteryTestResult"@en ;
-    rdfs:comment "the output of a battery test"@en ;
-    rdfs:subClassOf emmo:EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978 ;
-    skos:prefLabel "BatteryTestResult"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the output of a battery test"@en .
+###  https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a
+<https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "TwoSidedHeating"@en .
 
-:battery_6c481323_498b_42c6_915a_53490f409430 a owl:Class ;
-    rdfs:label "BatteryMeasurement"@en ;
-    rdfs:comment "a measurement performed on a battery"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-            owl:someValuesFrom :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce ],
-        emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ;
-    skos:prefLabel "BatteryMeasurement"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a measurement performed on a battery"@en .
 
-:battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 a owl:Class .
+###  https://w3id.org/emmo/domain/battery#battery_7985009d_a3ac_4850_8b85_76899d432814
+<https://w3id.org/emmo/domain/battery#battery_7985009d_a3ac_4850_8b85_76899d432814> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Autoclave"@en .
 
-:battery_bc033b97_a5b7_455c_94ce_e95676cb816b a owl:Class .
 
-:battery_dca7729a_421a_4921_90cf_9692bb9eb081 a owl:Class ;
-    rdfs:label "BatteryTest"@en ;
-    rdfs:comment "a test performed on a battery"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-            owl:someValuesFrom :battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9 ],
-        emmo:EMMO_22522299_4091_4d1f_82a2_3890492df6db ;
-    skos:prefLabel "BatteryTest"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test performed on a battery"@en .
+###  https://w3id.org/emmo/domain/battery#battery_875a302c_a1f4_45b9_933a_559c5b775dad
+<https://w3id.org/emmo/domain/battery#battery_875a302c_a1f4_45b9_933a_559c5b775dad> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "GasChromatograph"@en .
 
-:battery_e0bb1bbe_704a_46c2_b399_285b4c788476 a owl:Class ;
-    rdfs:label "ThermalRunawayTriggerProcess"@en ;
-    rdfs:comment "the process of triggering an action based on thermal runaway event"@en ;
-    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
-    skos:prefLabel "ThermalRunawayTriggerProcess"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of triggering an action based on thermal runaway event"@en .
 
-:battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb a owl:Class ;
-    rdfs:label "ExternalHeating"@en ;
-    rdfs:comment "the process of applying a controlled amount of heat to a sample"@en ;
-    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
-    skos:prefLabel "ExternalHeating"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying a controlled amount of heat to a sample"@en .
+###  https://w3id.org/emmo/domain/battery#battery_8f56258f_78ab_45f1_9038_08973fab9e4e
+<https://w3id.org/emmo/domain/battery#battery_8f56258f_78ab_45f1_9038_08973fab9e4e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "DestroyedBatteryCell"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell which is destroyed by some process"@en .
 
+
+###  https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d
+<https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1eab3ecb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OneSidedHeating"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557
+<https://w3id.org/emmo/domain/battery#battery_d07216b3_f8df_4905_8a6d_e8ec0abf0557> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryCellHolder"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a holder that mounts a battery and its terminals for a test"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d345eb7f_25da_436c_bed3_ae73f97d9500
+<https://w3id.org/emmo/domain/battery#battery_d345eb7f_25da_436c_bed3_ae73f97d9500> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SoftVenting"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process emitting gas and electrolyte vapour which starts with the opening of the burst plate and ends with the initialization of the main thermal runaway reaction."@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081
+<https://w3id.org/emmo/domain/battery#battery_dca7729a_421a_4921_90cf_9692bb9eb081> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_22522299_4091_4d1f_82a2_3890492df6db ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_2fbaf395_f3d4_4b86_8e8e_97a1fb6783f9>
+                                                                                                    ] ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryTest"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476
+<https://w3id.org/emmo/domain/battery#battery_e0bb1bbe_704a_46c2_b399_285b4c788476> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ThermalRunawayTriggerProcess"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_f952d3be_723d_4767_ac4e_8b72bac862d6
+<https://w3id.org/emmo/domain/battery#battery_f952d3be_723d_4767_ac4e_8b72bac862d6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "GasSampling"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of characterizing a gas sample"@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
+:battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryMeasurementResult"@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28
+:battery_1d33b96d_f362_41e5_b670_d33cd6a7ab28 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_6c481323_498b_42c6_915a_53490f409430 ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                owl:someValuesFrom :battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                owl:someValuesFrom :battery_bc033b97_a5b7_455c_94ce_e95676cb816b
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                owl:someValuesFrom :battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065
+                                                              ] ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryCycling"@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065
+:battery_2198cf67_b5d2_4325_9b6a_dde0a26fd065 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryCyclingMeasurementResult"@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_23e6170d_a70b_4de9_a4db_458e24a327ac
+:battery_23e6170d_a70b_4de9_a4db_458e24a327ac rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryCycler"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device for performing cycling measurements of a battery."@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_6c481323_498b_42c6_915a_53490f409430
+:battery_6c481323_498b_42c6_915a_53490f409430 rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                owl:someValuesFrom :battery_14ea92c1_2682_4c52_83a5_632adcfdb1ce
+                                                              ] ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryMeasurement"@en .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17
+:battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17 rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_bc033b97_a5b7_455c_94ce_e95676cb816b
+:battery_bc033b97_a5b7_455c_94ce_e95676cb816b rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo/domain/battery/battery#battery_d9b99b14_44e8_473b_af8f_2a160429df69
+:battery_d9b99b14_44e8_473b_af8f_2a160429df69 rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
+                                                              emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "BatteryTimeSeriesDataSet"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

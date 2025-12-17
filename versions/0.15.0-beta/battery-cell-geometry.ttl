@@ -1,549 +1,547 @@
-@prefix : <https://w3id.org/emmo/domain/battery#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix echem: <https://w3id.org/emmo/domain/electrochemistry#> .
-@prefix emmo: <https://w3id.org/emmo#> .
+@prefix : <https://w3id.org/emmo/domain/battery/battery#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-:battery_032ee3d7_7747_4daf_ab8f_edec0ae50cd6 a owl:Class ;
-    rdfs:label "LengthA3"@en ;
-    rdfs:comment "the length of edge A3"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthA3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge A3"@en .
-
-:battery_05ac6195_9565_4639_b3c2_529bd11b63fb a owl:Class ;
-    rdfs:label "SurfaceB2C4"@en ;
-    rdfs:comment "the surface bounded by lengths b2 and c4"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB2C4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and c4"@en .
-
-:battery_0b82c3b5_ce5d_4d43_aabb_2047d88d4286 a owl:Class ;
-    rdfs:label "SurfaceC3B2"@en ;
-    rdfs:comment "the surface bounded by lengths c3 and b2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC3B2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c3 and b2"@en .
-
-:battery_0cc7e361_ac09_44c4_a682_ff2d732c0039 a owl:Class ;
-    rdfs:label "OppositeTerminalPouchWithoutSealingSeam"@en ;
-    rdfs:comment "a pouch cell form factor with opposite terminals and without a sealing seam"@en ;
-    rdfs:subClassOf :battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc ;
-    skos:prefLabel "OppositeTerminalPouchWithoutSealingSeam"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals and without a sealing seam"@en .
-
-:battery_0ff55c54_23f7_4b0f_8f0a_342ab90f6979 a owl:Class ;
-    rdfs:label "LengthO"@en ;
-    rdfs:comment "the length of edge O"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthO"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge O"@en .
-
-:battery_11a1a23f_0a2d_45ca_972c_e9e83d568e87 a owl:Class ;
-    rdfs:label "SurfaceC4B2"@en ;
-    rdfs:comment "the surface bounded by lengths c4 and b2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC4B2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c4 and b2"@en .
-
-:battery_197b253e_4ce3_41d5_8e2d_2e1611ec2c81 a owl:Class ;
-    rdfs:label "OppositeTerminalCylindrical"@en ;
-    rdfs:comment "a cylindrical cell form factor with opposite terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5 ;
-    skos:prefLabel "OppositeTerminalCylindrical"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical cell form factor with opposite terminals"@en .
-
-:battery_243a052d_cef2_4eca_b04a_c6e8953f2b7f a owl:Class ;
-    rdfs:label "SurfaceC4B"@en ;
-    rdfs:comment "the surface bounded by lengths c4 and b"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC4B"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c4 and b"@en .
-
-:battery_2c4ac2f9_f82e_457c_a99c_40358620ac2d a owl:Class ;
-    rdfs:label "SurfaceB2C3"@en ;
-    rdfs:comment "the surface bounded by lengths b2 and c3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB2C3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and c3"@en .
-
-:battery_32cbc7a2_353b_4382_9879_8322f98e04e2 a owl:Class ;
-    rdfs:label "LengthB5"@en ;
-    rdfs:comment "the length of edge B5"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB5"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B5"@en .
-
-:battery_37d6f6a8_0bc9_4996_89dd_7dd506cc7528 a owl:Class ;
-    rdfs:label "PairedTerminalCylindrical"@en ;
-    rdfs:comment "a cylindricel cell form factor with paired terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5 ;
-    skos:prefLabel "PairedTerminalCylindrical"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindricel cell form factor with paired terminals"@en .
-
-:battery_3d02bd29_5dc3_4af2_9e5e_d70dbde50650 a owl:Class ;
-    rdfs:label "LengthB3"@en ;
-    rdfs:comment "the length of edge B3"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B3"@en .
-
-:battery_478b78f9_6ce8_4776_a519_76b49c1ef969 a owl:Class ;
-    rdfs:label "OppositeTerminalPouchWithSealingSeam"@en ;
-    rdfs:comment "a pouch cell form factor with opposite terminals and with a sealing seam"@en ;
-    rdfs:subClassOf :battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc ;
-    skos:prefLabel "OppositeTerminalPouchWithSealingSeam"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals and with a sealing seam"@en .
-
-:battery_4c658988_a25d_4336_9188_ea413c68ec50 a owl:Class ;
-    rdfs:label "SurfaceEN"@en ;
-    rdfs:comment "the surface bounded by lengths e and n"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceEN"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths e and n"@en .
-
-:battery_4ca3da8f_45ce_4f52_bdb0_4d7b2ed9f473 a owl:Class ;
-    rdfs:label "SurfaceB4C2"@en ;
-    rdfs:comment "the surface bounded by lengths b4 and c2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB4C2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b4 and c2"@en .
-
-:battery_50bc3671_f4d2_4e1f_8a81_f5ade6dd1182 a owl:Class ;
-    rdfs:label "LengthB1"@en ;
-    rdfs:comment "the length of edge B1"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB1"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B1"@en .
-
-:battery_521914d3_4e25_48eb_ab57_58b902d631ff a owl:Class ;
-    rdfs:label "PairedTerminalPrismaticVentSurfaceAC"@en ;
-    rdfs:comment "a paired terminal prismatic cell form factor with the vent on surface AC"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
-            owl:someValuesFrom :battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
-            owl:someValuesFrom :battery_efb2c4b8_acb1_44a1_a72d_101ea984e171 ],
-        [ a owl:Restriction ;
-            owl:onProperty :battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25 ;
-            owl:someValuesFrom :battery_00350f34_6f0b_4219_95a5_17cc1a42c585 ],
-        [ a owl:Restriction ;
-            owl:onProperty :battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25 ;
-            owl:someValuesFrom :battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375 ],
-        [ a owl:Restriction ;
-            owl:onProperty :battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25 ;
-            owl:someValuesFrom :battery_33064544_01cb_4de9_8a6b_d086ec36c213 ],
-        [ a owl:Restriction ;
-            owl:onProperty :battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25 ;
-            owl:someValuesFrom :battery_384fb66d_0df0_4850_a612_e0b38b3d2cef ],
-        :battery_b55058a1_98f5_4440_9061_423ee9a366cb ;
-    skos:altLabel "Prismatic_PT"@en ;
-    skos:prefLabel "PairedTerminalPrismaticVentSurfaceAC"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a paired terminal prismatic cell form factor with the vent on surface AC"@en .
-
-:battery_55511306_cc27_424e_8547_0d455f9588e8 a owl:Class ;
-    rdfs:label "SurfaceC3B"@en ;
-    rdfs:comment "the surface bounded by lengths c3 and b"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC3B"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c3 and b"@en .
-
-:battery_597f75a1_bff5_4196_bc80_a4cbc0d35c77 a owl:Class ;
-    rdfs:label "PairedTerminalPouch"@en ;
-    rdfs:comment "a pouch cell form factor with paired terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b ;
-    skos:prefLabel "PairedTerminalPouch"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with paired terminals"@en .
-
-:battery_59d146f3_ae0e_4942_b8af_328d51edb429 a owl:Class ;
-    rdfs:label "SurfaceB2A2"@en ;
-    rdfs:comment "the surface bounded by lengths b2 and a2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB2A2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and a2"@en .
-
-:battery_5b4c1029_1fdb_4c20_9ffe_a7b06394431c a owl:Class ;
-    rdfs:label "SurfaceAB"@en ;
-    rdfs:comment "the surface bounded by lengths a and b"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceAB"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and b"@en .
-
-:battery_630410d8_9bba_4002_ac5c_ce3f53c6ece0 a owl:Class ;
-    rdfs:label "LengthC5"@en ;
-    rdfs:comment "the length of edge C5"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC5"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C5"@en .
-
-:battery_64235b5b_edb5_4b23_92df_2e03a0b8241e a owl:Class ;
-    rdfs:label "LengthE"@en ;
-    rdfs:comment "the length of edge E"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthE"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge E"@en .
-
-:battery_657cfd4f_42e4_4524_8d22_4ab86ec051a6 a owl:Class ;
-    rdfs:label "SurfaceA2C"@en ;
-    rdfs:comment "the surface bounded by lengths a2 and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceA2C"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a2 and c"@en .
-
-:battery_695555cc_b814_4fa8_92ae_8753c8c50d17 a owl:Class ;
-    rdfs:label "OppositeTerminalPrismaticVentSurfaceB2A2"@en ;
-    rdfs:comment "an opposite terminal prismatic cell form factor with the vent on surface B2A2"@en ;
-    rdfs:subClassOf :battery_cef18b45_9bb6_49de_bbbb_4072844efd7e ;
-    skos:prefLabel "OppositeTerminalPrismaticVentSurfaceB2A2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an opposite terminal prismatic cell form factor with the vent on surface B2A2"@en .
-
-:battery_69c580b6_9968_4ebd_837e_f287af89d4e6 a owl:Class ;
-    rdfs:label "SurfaceAB2"@en ;
-    rdfs:comment "the surface bounded by lengths a and b2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceAB2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and b2"@en .
-
-:battery_6ad5e601_1bd3_4883_b863_f9df73345843 a owl:Class ;
-    rdfs:label "LengthA2"@en ;
-    rdfs:comment "the length of edge A2"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthA2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge A2"@en .
-
-:battery_6d240260_a6c2_45f3_948e_a3468a286479 a owl:Class ;
-    rdfs:label "SurfacePO"@en ;
-    rdfs:comment "the surface bounded by lengths p and o"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfacePO"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths p and o"@en .
-
-:battery_6dffcba3_a594_42ac_8744_f1fb137c09a6 a owl:Class ;
-    rdfs:label "LengthC4"@en ;
-    rdfs:comment "the length of edge C4"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C4"@en .
-
-:battery_6f5a330b_eaa9_4ab2_bde0_0ff1293b5b91 a owl:Class ;
-    rdfs:label "SurfaceBA3"@en ;
-    rdfs:comment "the surface bounded by lengths b and a3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceBA3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and a3"@en .
-
-:battery_71b238b9_5185_4d83_ad72_a4c3258e3471 a owl:Class ;
-    rdfs:label "PairedTerminalPrismaticVentSurfaceCA"@en ;
-    rdfs:comment "a paired terminal prismatic cell form factor with the vent on surface CA"@en ;
-    rdfs:subClassOf :battery_b55058a1_98f5_4440_9061_423ee9a366cb ;
-    skos:prefLabel "PairedTerminalPrismaticVentSurfaceCA"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a paired terminal prismatic cell form factor with the vent on surface CA"@en .
-
-:battery_78b946f3_3503_42d6_b1c7_a3d14bedf574 a owl:Class ;
-    rdfs:label "SurfaceCB4"@en ;
-    rdfs:comment "the surface bounded by lengths c and b4"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCB4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b4"@en .
-
-:battery_7a42ff38_a95f_412b_a763_cf1cdce3609a a owl:Class ;
-    rdfs:label "SurfaceCA2"@en ;
-    rdfs:comment "the surface bounded by lengths c and a2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCA2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a2"@en .
-
-:battery_82ae1702_0a35_4c7b_b277_4e3cdd07dbe0 a owl:Class ;
-    rdfs:label "LengthP"@en ;
-    rdfs:comment "the length of edge P"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthP"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge P"@en .
-
-:battery_84c76b36_815c_45a0_a508_0f5cf168d148 a owl:Class ;
-    rdfs:label "SurfaceA3B"@en ;
-    rdfs:comment "the surface bounded by lengths a3 and b"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceA3B"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a3 and b"@en .
-
-:battery_872b6e08_3479_488d_b956_d818514effa1 a owl:Class ;
-    rdfs:label "LengthA4"@en ;
-    rdfs:comment "the length of edge A4"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthA4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge A4"@en .
-
-:battery_87ed29ca_690e_46e1_823d_5bb58031017e a owl:Class ;
-    rdfs:label "SurfaceBC4"@en ;
-    rdfs:comment "the surface bounded by lengths b and c4"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceBC4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c4"@en .
-
-:battery_8b492a60_7abb_4d47_862f_d81669536183 a owl:Class ;
-    rdfs:label "SurfaceB3C2"@en ;
-    rdfs:comment "the surface bounded by lengths b3 and c2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB3C2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b3 and c2"@en .
-
-:battery_8b8be70f_315d_49fc_8ff0_0c35caeff99e a owl:Class ;
-    rdfs:label "LengthB4"@en ;
-    rdfs:comment "the length of edge B4"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B4"@en .
-
-:battery_8e55049d_3e09_4bf4_b05e_2f272c9a4172 a owl:Class ;
-    rdfs:label "SurfaceA3C"@en ;
-    rdfs:comment "the surface bounded by lengths a3 and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceA3C"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a3 and c"@en .
-
-:battery_984d837e_1d6e_4802_8648_612410efbcb3 a owl:Class ;
-    rdfs:label "SurfaceOP"@en ;
-    rdfs:comment "the surface bounded by lengths o and p"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceOP"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths o and p"@en .
-
-:battery_9e56dd14_9cac_4991_9b65_69a604a6e195 a owl:Class ;
-    rdfs:label "LengthC6"@en ;
-    rdfs:comment "the length of edge C6"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC6"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C6"@en .
-
-:battery_a39f4276_64b8_4be8_ab2b_ed22b23e2648 a owl:Class ;
-    rdfs:label "LengthC3"@en ;
-    rdfs:comment "the length of edge C3"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C3"@en .
-
-:battery_a478b9dd_607a_4f37_8b4e_c5d81e4ba83c a owl:Class ;
-    rdfs:label "SurfaceNE"@en ;
-    rdfs:comment "the surface bounded by lengths n and e"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceNE"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths n and e"@en .
-
-:battery_ad227c8d_40a5_4252_a8c0_9d383ddcae88 a owl:Class ;
-    rdfs:label "SurfaceBA"@en ;
-    rdfs:comment "the surface bounded by lengths b and a"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceBA"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and a"@en .
-
-:battery_ad84886e_f899_4c89_9dde_1866bd27074f a owl:Class ;
-    rdfs:label "LengthA1"@en ;
-    rdfs:comment "the length of edge A1"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthA1"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge A1"@en .
-
-:battery_af5f72a5_8711_4674_b305_66d7c5d368a9 a owl:Class ;
-    rdfs:label "LengthC2"@en ;
-    rdfs:comment "the length of edge C2"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C2"@en .
-
-:battery_b547837b_d831_4901_81de_c0c186cc5083 a owl:Class ;
-    rdfs:label "SurfaceCA4"@en ;
-    rdfs:comment "the surface bounded by lengths c and a4"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCA4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a4"@en .
-
-:battery_bb3c5cff_830f_4399_b023_e4b24d99f33f a owl:Class ;
-    rdfs:label "SurfaceBC3"@en ;
-    rdfs:comment "the surface bounded by lengths b and c3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceBC3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c3"@en .
-
-:battery_c1eda7a6_d643_450a_a540_3cc561787fc4 a owl:Class ;
-    rdfs:label "LengthC"@en ;
-    rdfs:comment "the length of edge C"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C"@en .
-
-:battery_c2697785_d9c4_4f39_96d4_020988a3919c a owl:Class ;
-    rdfs:label "SurfaceA4C"@en ;
-    rdfs:comment "the surface bounded by lengths a4 and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceA4C"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a4 and c"@en .
-
-:battery_c4d016c7_4a21_4221_848b_6089ceca274a a owl:Class ;
-    rdfs:label "SurfaceB2A"@en ;
-    rdfs:comment "the surface bounded by lengths b2 and a"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB2A"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and a"@en .
-
-:battery_d1d23f15_dc61_475d_b470_90283c679b40 a owl:Class ;
-    rdfs:label "SurfaceCB3"@en ;
-    rdfs:comment "the surface bounded by lengths c and b3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCB3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b3"@en .
-
-:battery_d215302b_92b5_4baf_b9ad_b5ee320db49e a owl:Class ;
-    rdfs:label "SurfaceB3C"@en ;
-    rdfs:comment "the surface bounded by lengths b3 and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB3C"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b3 and c"@en .
-
-:battery_d4ba55c4_b2a9_40ad_acf5_8c4842ea60f5 a owl:Class ;
-    rdfs:label "LengthN"@en ;
-    rdfs:comment "the length of edge N"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthN"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge N"@en .
-
-:battery_d7d0da1d_3fab_4913_9c5f_4b14e35eca42 a owl:Class ;
-    rdfs:label "LengthC1"@en ;
-    rdfs:comment "the length of edge C1"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthC1"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge C1"@en .
-
-:battery_d7d5ed4d_0f90_4fba_86e7_191e7b4c18b6 a owl:Class ;
-    rdfs:label "SurfaceC2B4"@en ;
-    rdfs:comment "the surface bounded by lengths c2 and b4"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC2B4"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c2 and b4"@en .
-
-:battery_e60b76e0_fea8_460c_bf7d_522d7a9019dc a owl:Class ;
-    rdfs:label "SurfaceC2B3"@en ;
-    rdfs:comment "the surface bounded by lengths c2 and b3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceC2B3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c2 and b3"@en .
-
-:battery_e7592356_3a59_414c_ab6f_c266fd07c5b0 a owl:Class ;
-    rdfs:label "LengthB2"@en ;
-    rdfs:comment "the length of edge B2"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B2"@en .
-
-:battery_e947f245_0f40_4316_b1ee_4846f17f928e a owl:Class ;
-    rdfs:label "SurfaceA2B2"@en ;
-    rdfs:comment "the surface bounded by lengths a2 and b2"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceA2B2"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a2 and b2"@en .
-
-:battery_fc8cd031_6015_4c36_994f_f95e58510059 a owl:Class ;
-    rdfs:label "SurfaceCA3"@en ;
-    rdfs:comment "the surface bounded by lengths c and a3"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCA3"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a3"@en .
-
-:battery_fd15bee2_96b9_4a55_aa7e_320400ab6de1 a owl:Class ;
-    rdfs:label "SurfaceB4C"@en ;
-    rdfs:comment "the surface bounded by lengths b4 and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceB4C"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b4 and c"@en .
-
-<https://w3id.org/emmo/domain/battery/modules/battery-cell-geometry> a owl:Ontology ;
-    dcterms:abstract "The battery-cell-geometry module contains the terms and relations specific to the description of battery cell design and architecture." ;
-    owl:imports <https://w3id.org/emmo/1.0.0>,
-        <https://w3id.org/emmo/domain/battery/0.18.6-beta/reference/battery-reference> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6-beta/modules/battery-cell-geometry> .
-
-echem:electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941 emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
-
-:battery_00350f34_6f0b_4219_95a5_17cc1a42c585 a owl:Class ;
-    rdfs:label "SurfaceAC"@en ;
-    rdfs:comment "the surface bounded by lengths a and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceAC"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and c"@en .
-
-:battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375 a owl:Class ;
-    rdfs:label "SurfaceBC"@en ;
-    rdfs:comment "the surface bounded by lengths b and c"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceBC"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c"@en .
-
-:battery_33064544_01cb_4de9_8a6b_d086ec36c213 a owl:Class ;
-    rdfs:label "SurfaceCA"@en ;
-    rdfs:comment "the surface bounded by lengths c and a"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCA"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a"@en .
-
-:battery_384fb66d_0df0_4850_a612_e0b38b3d2cef a owl:Class ;
-    rdfs:label "SurfaceCB"@en ;
-    rdfs:comment "the surface bounded by lengths c and b"@en ;
-    rdfs:subClassOf :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    skos:prefLabel "SurfaceCB"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b"@en .
-
-:battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb a owl:Class ;
-    rdfs:label "LengthA"@en ;
-    rdfs:comment "the length of edge A"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:altLabel "a"@en,
-        "length_a"@en ;
-    skos:prefLabel "LengthA"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge A"@en .
-
-:battery_cef18b45_9bb6_49de_bbbb_4072844efd7e a owl:Class ;
-    rdfs:label "OppositeTerminalPrismatic"@en ;
-    rdfs:comment "a prismatic cell form factor with opposite terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_6775b232_c58a_4303_8164_137261329db6 ;
-    skos:prefLabel "OppositeTerminalPrismatic"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic cell form factor with opposite terminals"@en .
-
-:battery_efb2c4b8_acb1_44a1_a72d_101ea984e171 a owl:Class ;
-    rdfs:label "LengthB"@en ;
-    rdfs:comment "the length of edge B"@en ;
-    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
-    skos:prefLabel "LengthB"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the length of edge B"@en .
-
-:battery_b55058a1_98f5_4440_9061_423ee9a366cb a owl:Class ;
-    rdfs:label "PairedTerminalPrismatic"@en ;
-    rdfs:comment "a prismatic cell form factor with paired terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_6775b232_c58a_4303_8164_137261329db6 ;
-    skos:prefLabel "PairedTerminalPrismatic"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic cell form factor with paired terminals"@en ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
-
-:battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc a owl:Class ;
-    rdfs:label "OppositeTerminalPouch"@en ;
-    rdfs:comment "a pouch cell form factor with opposite terminals"@en ;
-    rdfs:subClassOf echem:electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b ;
-    skos:prefLabel "OppositeTerminalPouch"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals"@en ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "for the nomenclature of surfaces and lengths, cells are oriented laying on their largest surface, with the positive terminal facing left, and manufacturer text or barcode facing upwards"@en .
-
-:battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25 a owl:ObjectProperty ;
-    rdfs:label "hasSurface"@en ;
-    rdfs:range :battery_21256d7a_ec4f_437e_8bd0_a826329240eb ;
-    rdfs:subPropertyOf emmo:EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420 ;
-    skos:prefLabel "hasSurface"@en .
-
-:battery_21256d7a_ec4f_437e_8bd0_a826329240eb a owl:Class ;
-    rdfs:label "Surface"@en ;
-    rdfs:comment "a continuous two-dimensional geometrical entity"@en ;
-    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
-    skos:prefLabel "Surface"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a continuous two-dimensional geometrical entity"@en .
+@prefix schema: <https://www.schema.org#> .
+@base <https://w3id.org/emmo/domain/battery/battery-cell-geometry> .
 
+<https://w3id.org/emmo/domain/battery/battery-cell-geometry> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery-cell-geometry> ;
+                                                              owl:imports <https://w3id.org/emmo/domain/battery/0.15.0-beta/battery> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25
+<https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf emmo:EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420 ;
+                                                                                    rdfs:range <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasSurface"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_00350f34_6f0b_4219_95a5_17cc1a42c585
+<https://w3id.org/emmo/domain/battery#battery_00350f34_6f0b_4219_95a5_17cc1a42c585> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceAC"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_032ee3d7_7747_4daf_ab8f_edec0ae50cd6
+<https://w3id.org/emmo/domain/battery#battery_032ee3d7_7747_4daf_ab8f_edec0ae50cd6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthA3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_05ac6195_9565_4639_b3c2_529bd11b63fb
+<https://w3id.org/emmo/domain/battery#battery_05ac6195_9565_4639_b3c2_529bd11b63fb> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB2C4"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and c4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0b82c3b5_ce5d_4d43_aabb_2047d88d4286
+<https://w3id.org/emmo/domain/battery#battery_0b82c3b5_ce5d_4d43_aabb_2047d88d4286> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC3B2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c3 and b2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0cc7e361_ac09_44c4_a682_ff2d732c0039
+<https://w3id.org/emmo/domain/battery#battery_0cc7e361_ac09_44c4_a682_ff2d732c0039> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalPouchWithoutSealingSeam"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals and without a sealing seam"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_0ff55c54_23f7_4b0f_8f0a_342ab90f6979
+<https://w3id.org/emmo/domain/battery#battery_0ff55c54_23f7_4b0f_8f0a_342ab90f6979> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthO"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_11a1a23f_0a2d_45ca_972c_e9e83d568e87
+<https://w3id.org/emmo/domain/battery#battery_11a1a23f_0a2d_45ca_972c_e9e83d568e87> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC4B2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c4 and b2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_197b253e_4ce3_41d5_8e2d_2e1611ec2c81
+<https://w3id.org/emmo/domain/battery#battery_197b253e_4ce3_41d5_8e2d_2e1611ec2c81> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalCylindrical"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical cell form factor with opposite terminals"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb
+<https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Surface"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_243a052d_cef2_4eca_b04a_c6e8953f2b7f
+<https://w3id.org/emmo/domain/battery#battery_243a052d_cef2_4eca_b04a_c6e8953f2b7f> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC4B"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c4 and b"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375
+<https://w3id.org/emmo/domain/battery#battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceBC"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_2c4ac2f9_f82e_457c_a99c_40358620ac2d
+<https://w3id.org/emmo/domain/battery#battery_2c4ac2f9_f82e_457c_a99c_40358620ac2d> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB2C3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and c3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_32cbc7a2_353b_4382_9879_8322f98e04e2
+<https://w3id.org/emmo/domain/battery#battery_32cbc7a2_353b_4382_9879_8322f98e04e2> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB5"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_33064544_01cb_4de9_8a6b_d086ec36c213
+<https://w3id.org/emmo/domain/battery#battery_33064544_01cb_4de9_8a6b_d086ec36c213> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCA"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_37d6f6a8_0bc9_4996_89dd_7dd506cc7528
+<https://w3id.org/emmo/domain/battery#battery_37d6f6a8_0bc9_4996_89dd_7dd506cc7528> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PairedTerminalCylindrical"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindricel cell form factor with paired terminals"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_384fb66d_0df0_4850_a612_e0b38b3d2cef
+<https://w3id.org/emmo/domain/battery#battery_384fb66d_0df0_4850_a612_e0b38b3d2cef> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCB"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_3d02bd29_5dc3_4af2_9e5e_d70dbde50650
+<https://w3id.org/emmo/domain/battery#battery_3d02bd29_5dc3_4af2_9e5e_d70dbde50650> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb
+<https://w3id.org/emmo/domain/battery#battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "a"@en ,
+                                                                                                                                   "length_a"@en ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthA"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_478b78f9_6ce8_4776_a519_76b49c1ef969
+<https://w3id.org/emmo/domain/battery#battery_478b78f9_6ce8_4776_a519_76b49c1ef969> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalPouchWithSealingSeam"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals and with a sealing seam"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_4c658988_a25d_4336_9188_ea413c68ec50
+<https://w3id.org/emmo/domain/battery#battery_4c658988_a25d_4336_9188_ea413c68ec50> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceEN"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths e and n"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_4ca3da8f_45ce_4f52_bdb0_4d7b2ed9f473
+<https://w3id.org/emmo/domain/battery#battery_4ca3da8f_45ce_4f52_bdb0_4d7b2ed9f473> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB4C2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b4 and c2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_50bc3671_f4d2_4e1f_8a81_f5ade6dd1182
+<https://w3id.org/emmo/domain/battery#battery_50bc3671_f4d2_4e1f_8a81_f5ade6dd1182> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB1"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_521914d3_4e25_48eb_ab57_58b902d631ff
+<https://w3id.org/emmo/domain/battery#battery_521914d3_4e25_48eb_ab57_58b902d631ff> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_b55058a1_98f5_4440_9061_423ee9a366cb> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_3e26a894_0356_4d7d_8abe_ef7fb94e4ebb>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_efb2c4b8_acb1_44a1_a72d_101ea984e171>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25> ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_00350f34_6f0b_4219_95a5_17cc1a42c585>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25> ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_29e6d5a1_fffe_4dc0_b8b0_f16fa7a1b375>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25> ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_33064544_01cb_4de9_8a6b_d086ec36c213>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://w3id.org/emmo/domain/battery#battery_d2f96c8b_419c_40f7_b893_6c6df89d7b25> ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/battery#battery_384fb66d_0df0_4850_a612_e0b38b3d2cef>
+                                                                                                    ] ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Prismatic_PT"@en ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PairedTerminalPrismaticVentSurfaceAC"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a paired terminal prismatic cell form factor with the vent on surface AC"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_55511306_cc27_424e_8547_0d455f9588e8
+<https://w3id.org/emmo/domain/battery#battery_55511306_cc27_424e_8547_0d455f9588e8> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC3B"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c3 and b"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_597f75a1_bff5_4196_bc80_a4cbc0d35c77
+<https://w3id.org/emmo/domain/battery#battery_597f75a1_bff5_4196_bc80_a4cbc0d35c77> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PairedTerminalPouch"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with paired terminals"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_59d146f3_ae0e_4942_b8af_328d51edb429
+<https://w3id.org/emmo/domain/battery#battery_59d146f3_ae0e_4942_b8af_328d51edb429> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB2A2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and a2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_5b4c1029_1fdb_4c20_9ffe_a7b06394431c
+<https://w3id.org/emmo/domain/battery#battery_5b4c1029_1fdb_4c20_9ffe_a7b06394431c> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceAB"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and b"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_630410d8_9bba_4002_ac5c_ce3f53c6ece0
+<https://w3id.org/emmo/domain/battery#battery_630410d8_9bba_4002_ac5c_ce3f53c6ece0> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC5"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_64235b5b_edb5_4b23_92df_2e03a0b8241e
+<https://w3id.org/emmo/domain/battery#battery_64235b5b_edb5_4b23_92df_2e03a0b8241e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthE"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_657cfd4f_42e4_4524_8d22_4ab86ec051a6
+<https://w3id.org/emmo/domain/battery#battery_657cfd4f_42e4_4524_8d22_4ab86ec051a6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceA2C"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a2 and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_695555cc_b814_4fa8_92ae_8753c8c50d17
+<https://w3id.org/emmo/domain/battery#battery_695555cc_b814_4fa8_92ae_8753c8c50d17> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_cef18b45_9bb6_49de_bbbb_4072844efd7e> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalPrismaticVentSurfaceB2A2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an opposite terminal prismatic cell form factor with the vent on surface B2A2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_69c580b6_9968_4ebd_837e_f287af89d4e6
+<https://w3id.org/emmo/domain/battery#battery_69c580b6_9968_4ebd_837e_f287af89d4e6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceAB2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a and b2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_6ad5e601_1bd3_4883_b863_f9df73345843
+<https://w3id.org/emmo/domain/battery#battery_6ad5e601_1bd3_4883_b863_f9df73345843> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthA2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_6d240260_a6c2_45f3_948e_a3468a286479
+<https://w3id.org/emmo/domain/battery#battery_6d240260_a6c2_45f3_948e_a3468a286479> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfacePO"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths p and o"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_6dffcba3_a594_42ac_8744_f1fb137c09a6
+<https://w3id.org/emmo/domain/battery#battery_6dffcba3_a594_42ac_8744_f1fb137c09a6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_6f5a330b_eaa9_4ab2_bde0_0ff1293b5b91
+<https://w3id.org/emmo/domain/battery#battery_6f5a330b_eaa9_4ab2_bde0_0ff1293b5b91> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceBA3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and a3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_71b238b9_5185_4d83_ad72_a4c3258e3471
+<https://w3id.org/emmo/domain/battery#battery_71b238b9_5185_4d83_ad72_a4c3258e3471> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_b55058a1_98f5_4440_9061_423ee9a366cb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PairedTerminalPrismaticVentSurfaceCA"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a paired terminal prismatic cell form factor with the vent on surface CA"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_78b946f3_3503_42d6_b1c7_a3d14bedf574
+<https://w3id.org/emmo/domain/battery#battery_78b946f3_3503_42d6_b1c7_a3d14bedf574> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCB4"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_7a42ff38_a95f_412b_a763_cf1cdce3609a
+<https://w3id.org/emmo/domain/battery#battery_7a42ff38_a95f_412b_a763_cf1cdce3609a> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCA2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_82ae1702_0a35_4c7b_b277_4e3cdd07dbe0
+<https://w3id.org/emmo/domain/battery#battery_82ae1702_0a35_4c7b_b277_4e3cdd07dbe0> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthP"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_84c76b36_815c_45a0_a508_0f5cf168d148
+<https://w3id.org/emmo/domain/battery#battery_84c76b36_815c_45a0_a508_0f5cf168d148> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceA3B"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a3 and b"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_872b6e08_3479_488d_b956_d818514effa1
+<https://w3id.org/emmo/domain/battery#battery_872b6e08_3479_488d_b956_d818514effa1> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthA4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_87ed29ca_690e_46e1_823d_5bb58031017e
+<https://w3id.org/emmo/domain/battery#battery_87ed29ca_690e_46e1_823d_5bb58031017e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceBC4"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8b492a60_7abb_4d47_862f_d81669536183
+<https://w3id.org/emmo/domain/battery#battery_8b492a60_7abb_4d47_862f_d81669536183> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB3C2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b3 and c2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8b8be70f_315d_49fc_8ff0_0c35caeff99e
+<https://w3id.org/emmo/domain/battery#battery_8b8be70f_315d_49fc_8ff0_0c35caeff99e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_8e55049d_3e09_4bf4_b05e_2f272c9a4172
+<https://w3id.org/emmo/domain/battery#battery_8e55049d_3e09_4bf4_b05e_2f272c9a4172> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceA3C"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a3 and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_984d837e_1d6e_4802_8648_612410efbcb3
+<https://w3id.org/emmo/domain/battery#battery_984d837e_1d6e_4802_8648_612410efbcb3> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceOP"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths o and p"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_9e56dd14_9cac_4991_9b65_69a604a6e195
+<https://w3id.org/emmo/domain/battery#battery_9e56dd14_9cac_4991_9b65_69a604a6e195> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC6"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a39f4276_64b8_4be8_ab2b_ed22b23e2648
+<https://w3id.org/emmo/domain/battery#battery_a39f4276_64b8_4be8_ab2b_ed22b23e2648> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a478b9dd_607a_4f37_8b4e_c5d81e4ba83c
+<https://w3id.org/emmo/domain/battery#battery_a478b9dd_607a_4f37_8b4e_c5d81e4ba83c> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceNE"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths n and e"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_ad227c8d_40a5_4252_a8c0_9d383ddcae88
+<https://w3id.org/emmo/domain/battery#battery_ad227c8d_40a5_4252_a8c0_9d383ddcae88> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceBA"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and a"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_ad84886e_f899_4c89_9dde_1866bd27074f
+<https://w3id.org/emmo/domain/battery#battery_ad84886e_f899_4c89_9dde_1866bd27074f> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthA1"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_af5f72a5_8711_4674_b305_66d7c5d368a9
+<https://w3id.org/emmo/domain/battery#battery_af5f72a5_8711_4674_b305_66d7c5d368a9> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b547837b_d831_4901_81de_c0c186cc5083
+<https://w3id.org/emmo/domain/battery#battery_b547837b_d831_4901_81de_c0c186cc5083> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCA4"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b55058a1_98f5_4440_9061_423ee9a366cb
+<https://w3id.org/emmo/domain/battery#battery_b55058a1_98f5_4440_9061_423ee9a366cb> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58a_4303_8164_137261329db6> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PairedTerminalPrismatic"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic cell form factor with paired terminals"@en ;
+                                                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc
+<https://w3id.org/emmo/domain/battery#battery_b66bc898_f902_4b44_9f8a_c19ed224a9bc> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalPouch"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a pouch cell form factor with opposite terminals"@en ;
+                                                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "for the nomenclature of surfaces and lengths, cells are oriented laying on their largest surface, with the positive terminal facing left, and manufacturer text or barcode facing upwards"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_bb3c5cff_830f_4399_b023_e4b24d99f33f
+<https://w3id.org/emmo/domain/battery#battery_bb3c5cff_830f_4399_b023_e4b24d99f33f> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceBC3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b and c3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c1eda7a6_d643_450a_a540_3cc561787fc4
+<https://w3id.org/emmo/domain/battery#battery_c1eda7a6_d643_450a_a540_3cc561787fc4> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c2697785_d9c4_4f39_96d4_020988a3919c
+<https://w3id.org/emmo/domain/battery#battery_c2697785_d9c4_4f39_96d4_020988a3919c> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceA4C"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a4 and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c4d016c7_4a21_4221_848b_6089ceca274a
+<https://w3id.org/emmo/domain/battery#battery_c4d016c7_4a21_4221_848b_6089ceca274a> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB2A"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b2 and a"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_cef18b45_9bb6_49de_bbbb_4072844efd7e
+<https://w3id.org/emmo/domain/battery#battery_cef18b45_9bb6_49de_bbbb_4072844efd7e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58a_4303_8164_137261329db6> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OppositeTerminalPrismatic"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic cell form factor with opposite terminals"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d1d23f15_dc61_475d_b470_90283c679b40
+<https://w3id.org/emmo/domain/battery#battery_d1d23f15_dc61_475d_b470_90283c679b40> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCB3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and b3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d215302b_92b5_4baf_b9ad_b5ee320db49e
+<https://w3id.org/emmo/domain/battery#battery_d215302b_92b5_4baf_b9ad_b5ee320db49e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB3C"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b3 and c"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d4ba55c4_b2a9_40ad_acf5_8c4842ea60f5
+<https://w3id.org/emmo/domain/battery#battery_d4ba55c4_b2a9_40ad_acf5_8c4842ea60f5> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthN"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d7d0da1d_3fab_4913_9c5f_4b14e35eca42
+<https://w3id.org/emmo/domain/battery#battery_d7d0da1d_3fab_4913_9c5f_4b14e35eca42> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthC1"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_d7d5ed4d_0f90_4fba_86e7_191e7b4c18b6
+<https://w3id.org/emmo/domain/battery#battery_d7d5ed4d_0f90_4fba_86e7_191e7b4c18b6> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC2B4"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c2 and b4"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e60b76e0_fea8_460c_bf7d_522d7a9019dc
+<https://w3id.org/emmo/domain/battery#battery_e60b76e0_fea8_460c_bf7d_522d7a9019dc> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceC2B3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c2 and b3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e7592356_3a59_414c_ab6f_c266fd07c5b0
+<https://w3id.org/emmo/domain/battery#battery_e7592356_3a59_414c_ab6f_c266fd07c5b0> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e947f245_0f40_4316_b1ee_4846f17f928e
+<https://w3id.org/emmo/domain/battery#battery_e947f245_0f40_4316_b1ee_4846f17f928e> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceA2B2"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths a2 and b2"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_efb2c4b8_acb1_44a1_a72d_101ea984e171
+<https://w3id.org/emmo/domain/battery#battery_efb2c4b8_acb1_44a1_a72d_101ea984e171> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LengthB"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_fc8cd031_6015_4c36_994f_f95e58510059
+<https://w3id.org/emmo/domain/battery#battery_fc8cd031_6015_4c36_994f_f95e58510059> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceCA3"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths c and a3"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_fd15bee2_96b9_4a55_aa7e_320400ab6de1
+<https://w3id.org/emmo/domain/battery#battery_fd15bee2_96b9_4a55_aa7e_320400ab6de1> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/emmo/domain/battery#battery_21256d7a_ec4f_437e_8bd0_a826329240eb> ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceB4C"@en ;
+                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the surface bounded by lengths b4 and c"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941> emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

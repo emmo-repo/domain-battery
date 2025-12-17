@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,36 +14,37 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=357b5d8a" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -55,6 +55,7 @@
     <link rel="prev" title="Examples" href="../pages/examples.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -62,23 +63,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -86,7 +80,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -94,21 +87,31 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -120,54 +123,48 @@
     
   </div>
   
-  
   <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+        <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/getstarted.html">
-                        Get Started
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/getstarted.html">
+    Get Started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../pages/examples.html">
-                        Examples
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../battery.html">
-                        Class Index
-                      </a>
-                    </li>
-                
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../pages/examples.html">
+    Examples
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/about.html">
-                        About
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/faq.html">
-                        FAQ
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../battery.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -178,26 +175,22 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script></div>
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
     </div>
     
@@ -205,29 +198,32 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -236,51 +232,49 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+          
+          
+            <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/getstarted.html">
-                        Get Started
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/getstarted.html">
+    Get Started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../pages/examples.html">
-                        Examples
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../battery.html">
-                        Class Index
-                      </a>
-                    </li>
-                
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../pages/examples.html">
+    Examples
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/about.html">
-                        About
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/faq.html">
-                        FAQ
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../battery.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -289,22 +283,20 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script></div>
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
       </div>
     
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
@@ -319,30 +311,33 @@ document.write(`
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
         <div class="header-article-item">
 
-
-
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -352,7 +347,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../pages/examples.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">JSON-LD: A Simple Introduction Using a Person</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">JSON-LD: A Simple Introduction Using a Person</span></li>
   </ul>
 </nav>
 </div>
@@ -367,10 +362,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="JSON-LD:-A-Simple-Introduction-Using-a-Person">
-<h1>JSON-LD: A Simple Introduction Using a Person<a class="headerlink" href="#JSON-LD:-A-Simple-Introduction-Using-a-Person" title="Permalink to this heading">#</a></h1>
+<h1>JSON-LD: A Simple Introduction Using a Person<a class="headerlink" href="#JSON-LD:-A-Simple-Introduction-Using-a-Person" title="Link to this heading">#</a></h1>
 <p><strong>JSON-LD</strong> (JavaScript Object Notation for Linked Data) is a lightweight syntax to express linked data using JSON. It allows you to add semantic meaning to data by referencing concepts from ontologies or controlled vocabularies like <a class="reference external" href="https://schema.org/">schema.org</a>.</p>
 <p>In this notebook, we use the example of a person to demonstrate how to:</p>
 <ul class="simple">
@@ -380,7 +375,7 @@ document.write(`
 </ul>
 <p>You can think of JSON-LD as “JSON + semantics”.</p>
 <section id="From-JSON-to-JSON-LD">
-<h2>From JSON to JSON-LD<a class="headerlink" href="#From-JSON-to-JSON-LD" title="Permalink to this heading">#</a></h2>
+<h2>From JSON to JSON-LD<a class="headerlink" href="#From-JSON-to-JSON-LD" title="Link to this heading">#</a></h2>
 <p>Here’s what JSON-LD adds to regular JSON:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;context</span></code>: A mapping between your terms (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;firstName&quot;</span></code>) and standardized URIs that define their meaning (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;schema:givenName&quot;</span></code>).</p></li>
@@ -390,7 +385,7 @@ document.write(`
 <p>These additions allow machines—not just humans—to understand what your data is about.</p>
 </section>
 <section id="A-Person-in-JSON-LD">
-<h2>A Person in JSON-LD<a class="headerlink" href="#A-Person-in-JSON-LD" title="Permalink to this heading">#</a></h2>
+<h2>A Person in JSON-LD<a class="headerlink" href="#A-Person-in-JSON-LD" title="Link to this heading">#</a></h2>
 <p>Below is an example of a person described using JSON-LD. This is not just a person named “Simon Clark” — it is a semantically described entity with a globally unique identifier (<code class="docutils literal notranslate"><span class="pre">&#64;id</span></code>), and relationships (such as their employer) that are also fully structured as linked data.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> block maps the terms used in the JSON document to well-defined concepts from external vocabularies.</p>
 <p>For example:</p>
@@ -403,32 +398,32 @@ document.write(`
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import jsonschema
-from jsonschema import validate
-import json
-import rdflib
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">jsonschema</span>
+<span class="kn">from</span> <span class="nn">jsonschema</span> <span class="kn">import</span> <span class="n">validate</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">rdflib</span>
 
-# Regular JSON representation of a person
-person_data = {
-    &quot;@context&quot;: &quot;https://schema.org/&quot;,
-    &quot;@id&quot;: &quot;https://orcid.org/0000-0002-8758-6109&quot;,
-    &quot;@type&quot;: &quot;Person&quot;,
-    &quot;givenName&quot;: &quot;Simon&quot;,
-    &quot;familyName&quot;: &quot;Clark&quot;,
-    &quot;gender&quot;: {&quot;@type&quot;: &quot;Male&quot;},
-    &quot;birthDate&quot;: &quot;1987-04-23&quot;,
-    &quot;affiliation&quot;: {
-        &quot;@id&quot;: &quot;https://ror.org/01f677e56&quot;,
-        &quot;name&quot;: &quot;SINTEF&quot;,
-        &quot;@type&quot;: &quot;ResearchOrganization&quot;
-    }
-}
+<span class="c1"># Regular JSON representation of a person</span>
+<span class="n">person_data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://orcid.org/0000-0002-8758-6109&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Person&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;givenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Simon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;familyName&quot;</span><span class="p">:</span> <span class="s2">&quot;Clark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gender&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Male&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;birthDate&quot;</span><span class="p">:</span> <span class="s2">&quot;1987-04-23&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;affiliation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://ror.org/01f677e56&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;ResearchOrganization&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </section>
 <section id="Validating-JSON-LD-Structure-with-a-JSON-Schema">
-<h2>Validating JSON-LD Structure with a JSON Schema<a class="headerlink" href="#Validating-JSON-LD-Structure-with-a-JSON-Schema" title="Permalink to this heading">#</a></h2>
+<h2>Validating JSON-LD Structure with a JSON Schema<a class="headerlink" href="#Validating-JSON-LD-Structure-with-a-JSON-Schema" title="Link to this heading">#</a></h2>
 <p>While JSON-LD enriches data with semantic meaning, it is still fundamentally JSON — which means we can use <strong>JSON Schema</strong> to validate its structure.</p>
 <p>In the code below, we define a <strong>JSON Schema</strong> to validate the structure of a person object. This schema enforces that:</p>
 <ul class="simple">
@@ -447,52 +442,52 @@ person_data = {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>person_schema = {
-    &quot;type&quot;: &quot;object&quot;,
-    &quot;properties&quot;: {
-        &quot;@context&quot;: {
-            &quot;type&quot;: [&quot;string&quot;, &quot;object&quot;]  # object form if using inline mappings
-        },
-        &quot;@type&quot;: {
-            &quot;type&quot;: &quot;string&quot;,
-        },
-        &quot;@id&quot;: {
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;format&quot;: &quot;uri&quot;
-        },
-        &quot;givenName&quot;: {
-            &quot;type&quot;: &quot;string&quot;
-        },
-        &quot;familyName&quot;: {
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;minLength&quot;: 1
-        },
-        &quot;birthDate&quot;: {
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;format&quot;: &quot;date&quot;,
-            &quot;pattern&quot;: &quot;^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$&quot;
-        },
-        &quot;gender&quot;: {
-            &quot;type&quot;: &quot;object&quot;
-        },
-        &quot;affiliation&quot;: {
-            &quot;type&quot;: &quot;object&quot;
-        }
-    },
-    &quot;required&quot;: [&quot;@context&quot;, &quot;@type&quot;, &quot;@id&quot;, &quot;givenName&quot;, &quot;familyName&quot;, &quot;birthDate&quot;, &quot;affiliation&quot;]
-}
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">person_schema</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="s2">&quot;object&quot;</span><span class="p">]</span>  <span class="c1"># object form if using inline mappings</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;uri&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;givenName&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;familyName&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;minLength&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;birthDate&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^[0-9]</span><span class="si">{4}</span><span class="s2">-[0-1][0-9]-[0-3][0-9]$&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;gender&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;affiliation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;@context&quot;</span><span class="p">,</span> <span class="s2">&quot;@type&quot;</span><span class="p">,</span> <span class="s2">&quot;@id&quot;</span><span class="p">,</span> <span class="s2">&quot;givenName&quot;</span><span class="p">,</span> <span class="s2">&quot;familyName&quot;</span><span class="p">,</span> <span class="s2">&quot;birthDate&quot;</span><span class="p">,</span> <span class="s2">&quot;affiliation&quot;</span><span class="p">]</span>
+<span class="p">}</span>
 
-# Function to validate JSON data against the schema
-def validate_json(data, schema):
-    try:
-        validate(instance=data, schema=schema)
-        return True, &quot;JSON data is valid according to the schema.&quot;
-    except jsonschema.exceptions.ValidationError as ve:
-        return False, ve.message
+<span class="c1"># Function to validate JSON data against the schema</span>
+<span class="k">def</span> <span class="nf">validate_json</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;JSON data is valid according to the schema.&quot;</span>
+    <span class="k">except</span> <span class="n">jsonschema</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">ValidationError</span> <span class="k">as</span> <span class="n">ve</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="n">ve</span><span class="o">.</span><span class="n">message</span>
 
-# Validate the sample JSON data
-is_valid, message = validate_json(person_data, person_schema)
-print(message)
+<span class="c1"># Validate the sample JSON data</span>
+<span class="n">is_valid</span><span class="p">,</span> <span class="n">message</span> <span class="o">=</span> <span class="n">validate_json</span><span class="p">(</span><span class="n">person_data</span><span class="p">,</span> <span class="n">person_schema</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -506,26 +501,26 @@ JSON data is valid according to the schema.
 </div>
 </section>
 <section id="Querying-JSON-LD-Data-with-SPARQL-and-RDFLib">
-<h2>Querying JSON-LD Data with SPARQL and RDFLib<a class="headerlink" href="#Querying-JSON-LD-Data-with-SPARQL-and-RDFLib" title="Permalink to this heading">#</a></h2>
+<h2>Querying JSON-LD Data with SPARQL and RDFLib<a class="headerlink" href="#Querying-JSON-LD-Data-with-SPARQL-and-RDFLib" title="Link to this heading">#</a></h2>
 <p>In this section, we demonstrate how to use <code class="docutils literal notranslate"><span class="pre">rdflib</span></code> to work with JSON-LD data and execute SPARQL queries against it.</p>
 <section id="Step-1:-Create-an-RDF-Graph">
-<h3>Step 1: Create an RDF Graph<a class="headerlink" href="#Step-1:-Create-an-RDF-Graph" title="Permalink to this heading">#</a></h3>
+<h3>Step 1: Create an RDF Graph<a class="headerlink" href="#Step-1:-Create-an-RDF-Graph" title="Link to this heading">#</a></h3>
 <p>We start by creating an RDF graph using <code class="docutils literal notranslate"><span class="pre">rdflib.Graph()</span></code>, which serves as a container for all the triples (subject-predicate-object statements) derived from our data.</p>
 </section>
 <section id="Step-2:-Load-Schema.org-Vocabulary">
-<h3>Step 2: Load Schema.org Vocabulary<a class="headerlink" href="#Step-2:-Load-Schema.org-Vocabulary" title="Permalink to this heading">#</a></h3>
+<h3>Step 2: Load Schema.org Vocabulary<a class="headerlink" href="#Step-2:-Load-Schema.org-Vocabulary" title="Link to this heading">#</a></h3>
 <p>We load the full <a class="reference external" href="https://schema.org">Schema.org</a> vocabulary into the graph from its latest official JSON-LD release. This gives us access to the class hierarchy and definitions used in our person data, including terms like <code class="docutils literal notranslate"><span class="pre">schema:Person</span></code> and <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code>.</p>
 </section>
 <section id="Step-3:-Load-JSON-LD-Person-Data">
-<h3>Step 3: Load JSON-LD Person Data<a class="headerlink" href="#Step-3:-Load-JSON-LD-Person-Data" title="Permalink to this heading">#</a></h3>
+<h3>Step 3: Load JSON-LD Person Data<a class="headerlink" href="#Step-3:-Load-JSON-LD-Person-Data" title="Link to this heading">#</a></h3>
 <p>We convert the <code class="docutils literal notranslate"><span class="pre">person_data</span></code> dictionary into a JSON string and parse it into the RDF graph. This integrates our structured data with the schema definitions, allowing us to query both vocabulary and instance data together.</p>
 </section>
 <section id="Step-4:-Run-a-SPARQL-Query">
-<h3>Step 4: Run a SPARQL Query<a class="headerlink" href="#Step-4:-Run-a-SPARQL-Query" title="Permalink to this heading">#</a></h3>
+<h3>Step 4: Run a SPARQL Query<a class="headerlink" href="#Step-4:-Run-a-SPARQL-Query" title="Link to this heading">#</a></h3>
 <p>We execute a SPARQL query to retrieve all subclasses (direct or indirect) of <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code> using the <code class="docutils literal notranslate"><span class="pre">rdfs:subClassOf*</span></code> path operator. This is useful when you want to identify all organization-related types defined in Schema.org.</p>
 </section>
 <section id="Output">
-<h3>Output<a class="headerlink" href="#Output" title="Permalink to this heading">#</a></h3>
+<h3>Output<a class="headerlink" href="#Output" title="Link to this heading">#</a></h3>
 <p>The result is a list of IRIs for types that are (transitively) subclasses of <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code>. This could include entities like <code class="docutils literal notranslate"><span class="pre">schema:EducationalOrganization</span></code>, <code class="docutils literal notranslate"><span class="pre">schema:Corporation</span></code>, or <code class="docutils literal notranslate"><span class="pre">schema:ResearchOrganization</span></code>.</p>
 <p>This approach demonstrates how JSON-LD + Schema.org + SPARQL can provide a powerful way to:</p>
 <ul class="simple">
@@ -537,31 +532,31 @@ JSON data is valid according to the schema.
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Step 1: Create an RDF Graph
-g = rdflib.Graph()
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step 1: Create an RDF Graph</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
 
-# Step 2: Load Schema.org Vocabulary
-g.parse(&quot;https://schema.org/version/latest/schemaorg-current-http.jsonld&quot;, format=&quot;json-ld&quot;)
+<span class="c1"># Step 2: Load Schema.org Vocabulary</span>
+<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;https://schema.org/version/latest/schemaorg-current-http.jsonld&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
 
-# Step 3: Load JSON-LD Person Data
-person_data_str = json.dumps(person_data)
-g.parse(data=person_data_str, format=&quot;json-ld&quot;)
+<span class="c1"># Step 3: Load JSON-LD Person Data</span>
+<span class="n">person_data_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">person_data</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">person_data_str</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
 
-# Step 4: Run a SPARQL Query
-sparql_query = &quot;&quot;&quot;
-PREFIX schema: &lt;http://schema.org/&gt;
-SELECT DISTINCT ?type WHERE {
-  ?type rdfs:subClassOf* schema:Organization .
-}
-LIMIT 20
-&quot;&quot;&quot;
+<span class="c1"># Step 4: Run a SPARQL Query</span>
+<span class="n">sparql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">PREFIX schema: &lt;http://schema.org/&gt;</span>
+<span class="s2">SELECT DISTINCT ?type WHERE {</span>
+<span class="s2">  ?type rdfs:subClassOf* schema:Organization .</span>
+<span class="s2">}</span>
+<span class="s2">LIMIT 20</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Execute the SPARQL query
-results = g.query(sparql_query)
+<span class="c1"># Execute the SPARQL query</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sparql_query</span><span class="p">)</span>
 
-# Print the results
-for row in results:
-    print(row)
+<span class="c1"># Print the results</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -595,10 +590,10 @@ for row in results:
 </section>
 </section>
 <section id="Querying-Instances-of-schema:Organization">
-<h2>Querying Instances of <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code><a class="headerlink" href="#Querying-Instances-of-schema:Organization" title="Permalink to this heading">#</a></h2>
+<h2>Querying Instances of <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code><a class="headerlink" href="#Querying-Instances-of-schema:Organization" title="Link to this heading">#</a></h2>
 <p>In this example, we go one step further by querying for actual <strong>instances</strong> of <code class="docutils literal notranslate"><span class="pre">schema:Organization</span></code> (or any of its subclasses) present in the RDF graph.</p>
 <section id="What-This-SPARQL-Query-Does">
-<h3>What This SPARQL Query Does<a class="headerlink" href="#What-This-SPARQL-Query-Does" title="Permalink to this heading">#</a></h3>
+<h3>What This SPARQL Query Does<a class="headerlink" href="#What-This-SPARQL-Query-Does" title="Link to this heading">#</a></h3>
 <p>This SPARQL query performs two key operations:</p>
 <ol class="arabic">
 <li><p>It uses:</p>
@@ -616,12 +611,12 @@ for row in results:
 </ol>
 </section>
 <section id="Why-This-Matters">
-<h3>Why This Matters<a class="headerlink" href="#Why-This-Matters" title="Permalink to this heading">#</a></h3>
+<h3>Why This Matters<a class="headerlink" href="#Why-This-Matters" title="Link to this heading">#</a></h3>
 <p>This allows us to extract not just definitions (as in the previous example), but <strong>real data entries</strong> that correspond to organizations — such as companies, research institutes, or educational organizations — described in your JSON-LD.</p>
 <p>Since our <code class="docutils literal notranslate"><span class="pre">person_data</span></code> includes an <code class="docutils literal notranslate"><span class="pre">affiliation</span></code> field that references a <code class="docutils literal notranslate"><span class="pre">schema:ResearchOrganization</span></code>, this query will match that and return it.</p>
 </section>
 <section id="id1">
-<h3>Output<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Output<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>The output is a list of IRIs identifying each organization instance in the graph. This provides a powerful way to:</p>
 <ul class="simple">
 <li><p>Discover all known organizations in your data</p></li>
@@ -633,25 +628,25 @@ for row in results:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define and execute a SPARQL query for all instances of Organization
-sparql_query = &quot;&quot;&quot;
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX schema: &lt;http://schema.org/&gt;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define and execute a SPARQL query for all instances of Organization</span>
+<span class="n">sparql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+<span class="s2">PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
+<span class="s2">PREFIX schema: &lt;http://schema.org/&gt;</span>
 
-SELECT ?instance WHERE {
-    ?subclass rdfs:subClassOf* schema:Organization .
-    ?instance rdf:type ?subclass .
-}
-LIMIT 10
-&quot;&quot;&quot;
+<span class="s2">SELECT ?instance WHERE {</span>
+<span class="s2">    ?subclass rdfs:subClassOf* schema:Organization .</span>
+<span class="s2">    ?instance rdf:type ?subclass .</span>
+<span class="s2">}</span>
+<span class="s2">LIMIT 10</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Execute the SPARQL query
-results = g.query(sparql_query)
+<span class="c1"># Execute the SPARQL query</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sparql_query</span><span class="p">)</span>
 
-# Print the results
-for row in results:
-    print(row[0])
+<span class="c1"># Print the results</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -666,10 +661,10 @@ https://ror.org/01f677e56
 </section>
 </section>
 <section id="Querying-Birth-Dates-of-Persons">
-<h2>Querying Birth Dates of Persons<a class="headerlink" href="#Querying-Birth-Dates-of-Persons" title="Permalink to this heading">#</a></h2>
+<h2>Querying Birth Dates of Persons<a class="headerlink" href="#Querying-Birth-Dates-of-Persons" title="Link to this heading">#</a></h2>
 <p>In this example, we execute a SPARQL query to retrieve the birth dates of individuals in the graph who are typed as <code class="docutils literal notranslate"><span class="pre">schema:Person</span></code>.</p>
 <section id="What-the-Query-Does">
-<h3>What the Query Does<a class="headerlink" href="#What-the-Query-Does" title="Permalink to this heading">#</a></h3>
+<h3>What the Query Does<a class="headerlink" href="#What-the-Query-Does" title="Link to this heading">#</a></h3>
 <p>This SPARQL query looks for:</p>
 <ol class="arabic">
 <li><p>Individuals explicitly typed as <code class="docutils literal notranslate"><span class="pre">schema:Person</span></code>:</p>
@@ -692,42 +687,42 @@ https://ror.org/01f677e56
 </ol>
 </section>
 <section id="id2">
-<h3>Why This Matters<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>Why This Matters<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>This kind of query is useful when you want to extract <strong>attribute values</strong> from structured data. In this case, we’re retrieving <strong>dates of birth</strong> for people in the graph. These values can then be used for analytics, filtering, or even plotting demographics.</p>
 </section>
 <section id="Assumptions">
-<h3>Assumptions<a class="headerlink" href="#Assumptions" title="Permalink to this heading">#</a></h3>
+<h3>Assumptions<a class="headerlink" href="#Assumptions" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>It assumes that <code class="docutils literal notranslate"><span class="pre">schema:birthDate</span></code> is used directly with a literal (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;1987-04-23&quot;</span></code>).</p></li>
 <li><p>If the birth date is represented as a nested object or typed node, additional handling would be required in the query.</p></li>
 </ul>
 </section>
 <section id="Result">
-<h3>Result<a class="headerlink" href="#Result" title="Permalink to this heading">#</a></h3>
+<h3>Result<a class="headerlink" href="#Result" title="Link to this heading">#</a></h3>
 <p>The query prints a list of birth dates (as literals) for up to 10 individuals defined in your RDF graph.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define and execute a SPARQL query for all instances of Organization
-sparql_query = &quot;&quot;&quot;
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX schema: &lt;http://schema.org/&gt;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define and execute a SPARQL query for all instances of Organization</span>
+<span class="n">sparql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+<span class="s2">PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
+<span class="s2">PREFIX schema: &lt;http://schema.org/&gt;</span>
 
-SELECT ?bday WHERE {
-    ?subject rdf:type schema:Person .
-    ?subject schema:birthDate ?bday .
-}
-LIMIT 10
-&quot;&quot;&quot;
+<span class="s2">SELECT ?bday WHERE {</span>
+<span class="s2">    ?subject rdf:type schema:Person .</span>
+<span class="s2">    ?subject schema:birthDate ?bday .</span>
+<span class="s2">}</span>
+<span class="s2">LIMIT 10</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Execute the SPARQL query
-results = g.query(sparql_query)
+<span class="c1"># Execute the SPARQL query</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sparql_query</span><span class="p">)</span>
 
-# Print the results
-for row in results:
-    print(row[0])
+<span class="c1"># Print the results</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -742,10 +737,10 @@ for row in results:
 </section>
 </section>
 <section id="Summary">
-<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
+<h2>Summary<a class="headerlink" href="#Summary" title="Link to this heading">#</a></h2>
 <p>In this notebook, we explored how <strong>JSON-LD</strong> can transform regular JSON into semantically enriched, machine-readable data using well-defined vocabularies like <a class="reference external" href="https://schema.org">schema.org</a>.</p>
 <section id="Key-Concepts-Covered">
-<h3>Key Concepts Covered<a class="headerlink" href="#Key-Concepts-Covered" title="Permalink to this heading">#</a></h3>
+<h3>Key Concepts Covered<a class="headerlink" href="#Key-Concepts-Covered" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>JSON-LD Basics</strong>: We structured a <code class="docutils literal notranslate"><span class="pre">Person</span></code> object with fields like <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;type</span></code>, and <code class="docutils literal notranslate"><span class="pre">&#64;id</span></code>, connecting each field to a formal semantic definition.</p></li>
 <li><p><strong>JSON Schema Validation</strong>: We used <code class="docutils literal notranslate"><span class="pre">jsonschema</span></code> to ensure that our JSON-LD documents are syntactically valid before graph conversion.</p></li>
@@ -776,11 +771,10 @@ for row in results:
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../pages/examples.html"
@@ -800,23 +794,24 @@ for row in results:
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#From-JSON-to-JSON-LD">From JSON to JSON-LD</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#A-Person-in-JSON-LD">A Person in JSON-LD</a></li>
@@ -850,12 +845,13 @@ for row in results:
   </nav></div>
 
   <div class="sidebar-secondary-item">
-  <div class="tocsection sourcelink">
-    <a href="../_sources/examples/example_person_jsonld.ipynb.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/examples/example_person_jsonld.ipynb.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -870,8 +866,8 @@ for row in results:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -879,6 +875,7 @@ for row in results:
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2021-2024.
@@ -888,8 +885,9 @@ for row in results:
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
     <br/>
   </p>
 </div>
@@ -897,10 +895,13 @@ for row in results:
     </div>
   
   
+  
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

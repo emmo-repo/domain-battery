@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,46 +14,48 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=357b5d8a" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/example_linked_data_custom_battery_cell_metadata';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class Index" href="../battery.html" />
+    <link rel="next" title="Domain Battery Terms" href="../battery.html" />
     <link rel="prev" title="Simple Battery Cell Metadata" href="example_linked_data_battery_cell_metadata.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -62,23 +63,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -86,7 +80,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -94,21 +87,31 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -120,54 +123,48 @@
     
   </div>
   
-  
   <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+        <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/getstarted.html">
-                        Get Started
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/getstarted.html">
+    Get Started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../pages/examples.html">
-                        Examples
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../battery.html">
-                        Class Index
-                      </a>
-                    </li>
-                
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../pages/examples.html">
+    Examples
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/about.html">
-                        About
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/faq.html">
-                        FAQ
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../battery.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -178,26 +175,22 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script></div>
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
     </div>
     
@@ -205,29 +198,32 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -236,51 +232,49 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+          
+          
+            <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/getstarted.html">
-                        Get Started
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/getstarted.html">
+    Get Started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../pages/examples.html">
-                        Examples
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../battery.html">
-                        Class Index
-                      </a>
-                    </li>
-                
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../pages/examples.html">
+    Examples
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/about.html">
-                        About
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../pages/faq.html">
-                        FAQ
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../battery.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -289,22 +283,20 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script></div>
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
       </div>
     
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
@@ -319,30 +311,33 @@ document.write(`
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
         <div class="header-article-item">
 
-
-
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -352,7 +347,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../pages/examples.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Custom Battery Cell Metadata</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Custom Battery Cell Metadata</span></li>
   </ul>
 </nav>
 </div>
@@ -367,10 +362,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="Custom-Battery-Cell-Metadata">
-<h1>Custom Battery Cell Metadata<a class="headerlink" href="#Custom-Battery-Cell-Metadata" title="Permalink to this heading">#</a></h1>
+<h1>Custom Battery Cell Metadata<a class="headerlink" href="#Custom-Battery-Cell-Metadata" title="Link to this heading">#</a></h1>
 <p>In this notebook, we define two custom battery cells (R2032 coin cells) using JSON-LD, enriched with semantic information from ontologies. We then parse this data into an RDF graph and query it using SPARQL.</p>
 <p>This example illustrates:</p>
 <ul class="simple">
@@ -380,7 +375,7 @@ document.write(`
 <li><p>How to extend this structure for data integration or digital twins</p></li>
 </ul>
 <section id="Describe-Battery-Cells-Using-JSON-LD">
-<h2>Describe Battery Cells Using JSON-LD<a class="headerlink" href="#Describe-Battery-Cells-Using-JSON-LD" title="Permalink to this heading">#</a></h2>
+<h2>Describe Battery Cells Using JSON-LD<a class="headerlink" href="#Describe-Battery-Cells-Using-JSON-LD" title="Link to this heading">#</a></h2>
 <p>Below are two JSON-LD descriptions of battery cells:</p>
 <ul class="simple">
 <li><p>An LFP/Graphite R2032 coin cell</p></li>
@@ -397,88 +392,88 @@ document.write(`
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>jsonld_LFPGr = {
-            &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
-            &quot;@type&quot;: &quot;BatteryCell&quot;,
-            &quot;schema:name&quot;: &quot;My LFP-Graphite R2032 Coin Cell&quot;,
-            &quot;schema:manufacturer&quot;: {
-               &quot;@id&quot;: &quot;https://www.wikidata.org/wiki/Q3041255&quot;,
-               &quot;schema:name&quot;: &quot;SINTEF&quot;
-            },
-            &quot;hasPositiveElectrode&quot;: {
-                &quot;@type&quot;: &quot;Electrode&quot;,
-                &quot;hasActiveMaterial&quot;: {
-                    &quot;@type&quot;: &quot;LithiumIronPhosphate&quot;
-                }
-            },
-            &quot;hasNegativeElectrode&quot;: {
-                &quot;@type&quot;: &quot;Electrode&quot;,
-                &quot;hasActiveMaterial&quot;: {
-                    &quot;@type&quot;: &quot;Graphite&quot;
-                }
-            },
-            &quot;hasCase&quot;: {
-                &quot;@type&quot;: &quot;R2032&quot;
-            },
-            &quot;hasProperty&quot;: {
-               &quot;@type&quot;: [&quot;NominalVoltage&quot;, &quot;ConventionalProperty&quot;],
-               &quot;hasNumericalPart&quot;: {
-                     &quot;@type&quot;: &quot;RealData&quot;,
-                     &quot;hasNumberValue&quot;: 3.2
-               },
-               &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
-            }
-         }
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsonld_LFPGr</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/emmo/domain/battery/context&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;My LFP-Graphite R2032 Coin Cell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;schema:manufacturer&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q3041255&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasPositiveElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;LithiumIronPhosphate&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasNegativeElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Graphite&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasCase&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;R2032&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasProperty&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NominalVoltage&quot;</span><span class="p">,</span> <span class="s2">&quot;ConventionalProperty&quot;</span><span class="p">],</span>
+               <span class="s2">&quot;hasNumericalPart&quot;</span><span class="p">:</span> <span class="p">{</span>
+                     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;RealData&quot;</span><span class="p">,</span>
+                     <span class="s2">&quot;hasNumberValue&quot;</span><span class="p">:</span> <span class="mf">3.2</span>
+               <span class="p">},</span>
+               <span class="s2">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;emmo:Volt&quot;</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
 
-jsonld_LNOGr = {
-            &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
-            &quot;@type&quot;: &quot;BatteryCell&quot;,
-            &quot;schema:name&quot;: &quot;My LNO-Graphite R2032 Coin Cell&quot;,
-            &quot;schema:manufacturer&quot;: {
-               &quot;@id&quot;: &quot;https://www.wikidata.org/wiki/Q3041255&quot;,
-               &quot;schema:name&quot;: &quot;SINTEF&quot;
-            },
-            &quot;hasPositiveElectrode&quot;: {
-                &quot;@type&quot;: &quot;Electrode&quot;,
-                &quot;hasActiveMaterial&quot;: {
-                    &quot;@type&quot;: &quot;LithiumNickelOxide&quot;
-                }
-            },
-            &quot;hasNegativeElectrode&quot;: {
-                &quot;@type&quot;: &quot;Electrode&quot;,
-                &quot;hasActiveMaterial&quot;: {
-                    &quot;@type&quot;: &quot;Graphite&quot;
-                }
-            },
-            &quot;hasCase&quot;: {
-                &quot;@type&quot;: &quot;R2032&quot;
-            },
-            &quot;hasProperty&quot;: {
-               &quot;@type&quot;: [&quot;NominalVoltage&quot;, &quot;ConventionalProperty&quot;],
-               &quot;hasNumericalPart&quot;: {
-                     &quot;@type&quot;: &quot;RealData&quot;,
-                     &quot;hasNumberValue&quot;: 3.6
-               },
-               &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
-            }
-         }
+<span class="n">jsonld_LNOGr</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/emmo/domain/battery/context&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;My LNO-Graphite R2032 Coin Cell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;schema:manufacturer&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q3041255&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;SINTEF&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasPositiveElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;LithiumNickelOxide&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasNegativeElectrode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Electrode&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hasActiveMaterial&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Graphite&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasCase&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;R2032&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;hasProperty&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;NominalVoltage&quot;</span><span class="p">,</span> <span class="s2">&quot;ConventionalProperty&quot;</span><span class="p">],</span>
+               <span class="s2">&quot;hasNumericalPart&quot;</span><span class="p">:</span> <span class="p">{</span>
+                     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;RealData&quot;</span><span class="p">,</span>
+                     <span class="s2">&quot;hasNumberValue&quot;</span><span class="p">:</span> <span class="mf">3.6</span>
+               <span class="p">},</span>
+               <span class="s2">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;emmo:Volt&quot;</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </section>
 <section id="Parse-JSON-LD-into-an-RDF-Graph">
-<h2>Parse JSON-LD into an RDF Graph<a class="headerlink" href="#Parse-JSON-LD-into-an-RDF-Graph" title="Permalink to this heading">#</a></h2>
+<h2>Parse JSON-LD into an RDF Graph<a class="headerlink" href="#Parse-JSON-LD-into-an-RDF-Graph" title="Link to this heading">#</a></h2>
 <p>We now create a new RDFLib graph and load the JSON-LD descriptions into it. This converts each JSON-LD block into RDF triples — the building blocks of the Semantic Web. You can then query this graph using SPARQL to retrieve specific metadata or relationships.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import json
-import rdflib
-import requests
-import sys
-from IPython.display import Image, display
-import matplotlib.pyplot as plt
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">rdflib</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
@@ -487,12 +482,12 @@ import matplotlib.pyplot as plt
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a new graph
-g = rdflib.Graph()
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new graph</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
 
-# Parse our json-ld data into the graph
-g.parse(data=json.dumps(jsonld_LFPGr), format=&quot;json-ld&quot;)
-g.parse(data=json.dumps(jsonld_LNOGr), format=&quot;json-ld&quot;)
+<span class="c1"># Parse our json-ld data into the graph</span>
+<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">jsonld_LFPGr</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">jsonld_LNOGr</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;json-ld&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -507,26 +502,26 @@ g.parse(data=json.dumps(jsonld_LNOGr), format=&quot;json-ld&quot;)
 </div>
 </section>
 <section id="Query-All-Triples-in-the-Graph">
-<h2>Query All Triples in the Graph<a class="headerlink" href="#Query-All-Triples-in-the-Graph" title="Permalink to this heading">#</a></h2>
+<h2>Query All Triples in the Graph<a class="headerlink" href="#Query-All-Triples-in-the-Graph" title="Link to this heading">#</a></h2>
 <p>We begin by running a simple SPARQL query that returns all triples (<code class="docutils literal notranslate"><span class="pre">subject</span> <span class="pre">→</span> <span class="pre">predicate</span> <span class="pre">→</span> <span class="pre">object</span></code>) in the graph. This is useful for inspecting what data was parsed and verifying that your JSON-LD was interpreted correctly.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Create a SPARQL query to return all the triples in the graph
-query_all = &quot;&quot;&quot;
-SELECT ?subject ?predicate ?object
-WHERE {
-  ?subject ?predicate ?object
-}
-&quot;&quot;&quot;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a SPARQL query to return all the triples in the graph</span>
+<span class="n">query_all</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT ?subject ?predicate ?object</span>
+<span class="s2">WHERE {</span>
+<span class="s2">  ?subject ?predicate ?object</span>
+<span class="s2">}</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Execute the SPARQL query
-all_the_things = g.query(query_all)
+<span class="c1"># Execute the SPARQL query</span>
+<span class="n">all_the_things</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query_all</span><span class="p">)</span>
 
-# Print the results
-for row in all_the_things:
-    print(row)
+<span class="c1"># Print the results</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">all_the_things</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 <br/></pre></div>
 </div>
 </div>
@@ -581,41 +576,41 @@ for row in all_the_things:
 <p>You can see that our human-readable JSON-LD file has been transformed into some nasty looking (but machine-readable!) triples.</p>
 </section>
 <section id="Filtering-Battery-Cells-by-Voltage">
-<h2>Filtering Battery Cells by Voltage<a class="headerlink" href="#Filtering-Battery-Cells-by-Voltage" title="Permalink to this heading">#</a></h2>
+<h2>Filtering Battery Cells by Voltage<a class="headerlink" href="#Filtering-Battery-Cells-by-Voltage" title="Link to this heading">#</a></h2>
 <p>You can define a SPARQL query to return only cells with a <code class="docutils literal notranslate"><span class="pre">NominalVoltage</span></code> greater than 3.5 V. This demonstrates how JSON-LD + RDF can support rich filtering and data analytics with minimal effort.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from ontopy import get_ontology
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ontopy</span> <span class="kn">import</span> <span class="n">get_ontology</span>
 
-# Loading from web
-battinfo = get_ontology(&#39;https://w3id.org/emmo/domain/battery/inferred&#39;).load()
+<span class="c1"># Loading from web</span>
+<span class="n">battinfo</span> <span class="o">=</span> <span class="n">get_ontology</span><span class="p">(</span><span class="s1">&#39;https://w3id.org/emmo/domain/battery/inferred&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 
-query = f&quot;&quot;&quot;
-PREFIX schema: &lt;https://schema.org/&gt;
-PREFIX emmo: &lt;http://emmo.info/emmo#&gt;
+<span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">PREFIX schema: &lt;https://schema.org/&gt;</span>
+<span class="s2">PREFIX emmo: &lt;http://emmo.info/emmo#&gt;</span>
 
-SELECT ?cellName WHERE {{
-    ?cell a &lt;{battinfo.BatteryCell.iri}&gt;;
-          schema:name ?cellName;
-          &lt;{battinfo.hasProperty.iri}&gt; ?property.
+<span class="s2">SELECT ?cellName WHERE </span><span class="se">{{</span>
+<span class="s2">    ?cell a &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">BatteryCell</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt;;</span>
+<span class="s2">          schema:name ?cellName;</span>
+<span class="s2">          &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">hasProperty</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt; ?property.</span>
 
-    ?property a &lt;{battinfo.NominalVoltage.iri}&gt;;
-              &lt;{battinfo.hasNumericalPart.iri}&gt; ?numericalPart.
+<span class="s2">    ?property a &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">NominalVoltage</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt;;</span>
+<span class="s2">              &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">hasNumericalPart</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt; ?numericalPart.</span>
 
-    ?numericalPart &lt;{battinfo.hasNumberValue.iri}&gt; ?voltage.
+<span class="s2">    ?numericalPart &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">hasNumberValue</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt; ?voltage.</span>
 
-    FILTER (?voltage &gt; 3.5)
-}}
-&quot;&quot;&quot;
+<span class="s2">    FILTER (?voltage &gt; 3.5)</span>
+<span class="se">}}</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Execute the SPARQL query
-results = g.query(query)
+<span class="c1"># Execute the SPARQL query</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-# Print the results
-for row in results:
-    print(row)
+<span class="c1"># Print the results</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 <br/></pre></div>
 </div>
 </div>
@@ -629,25 +624,25 @@ for row in results:
 </div>
 </section>
 <section id="Fetch-additional-information-from-other-sources-[Advanced]">
-<h2>Fetch additional information from other sources [Advanced]<a class="headerlink" href="#Fetch-additional-information-from-other-sources-[Advanced]" title="Permalink to this heading">#</a></h2>
+<h2>Fetch additional information from other sources [Advanced]<a class="headerlink" href="#Fetch-additional-information-from-other-sources-[Advanced]" title="Link to this heading">#</a></h2>
 <p>Ontologies contain a lot of information about the meaning of things, but they don’t always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let’s see how you can use the ontology to fetch additional information from other sources.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the ontology to find the wikidata id for LithiumNickelOxide
-query = f&quot;&quot;&quot;
-SELECT ?wikidataId
-WHERE {{
-    &lt;{battinfo.LithiumNickelOxide.iri}&gt; &lt;{battinfo.wikidataReference.iri}&gt; ?wikidataId .
-}}
-&quot;&quot;&quot;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query the ontology to find the wikidata id for LithiumNickelOxide</span>
+<span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT ?wikidataId</span>
+<span class="s2">WHERE </span><span class="se">{{</span>
+<span class="s2">    &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">LithiumNickelOxide</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt; &lt;</span><span class="si">{</span><span class="n">battinfo</span><span class="o">.</span><span class="n">wikidataReference</span><span class="o">.</span><span class="n">iri</span><span class="si">}</span><span class="s2">&gt; ?wikidataId .</span>
+<span class="se">}}</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-qres = g.query(query)
-for row in qres:
-    wikidata_id = row.wikidataId.split(&#39;/&#39;)[-1]
+<span class="n">qres</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">qres</span><span class="p">:</span>
+    <span class="n">wikidata_id</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">wikidataId</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-print(f&quot;The PubChem ID of Lithiun Nickel Oxide is: {wikidata_id}&quot;)
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The PubChem ID of Lithiun Nickel Oxide is: </span><span class="si">{</span><span class="n">wikidata_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -664,27 +659,27 @@ The PubChem ID of Lithiun Nickel Oxide is: Q81988484
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Query the Wikidata knowledge graph for more information
-wikidata_endpoint = &quot;https://query.wikidata.org/sparql&quot;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query the Wikidata knowledge graph for more information</span>
+<span class="n">wikidata_endpoint</span> <span class="o">=</span> <span class="s2">&quot;https://query.wikidata.org/sparql&quot;</span>
 
-# SPARQL query to get the PubChem ID
-query = &quot;&quot;&quot;
-SELECT ?id WHERE {
-  wd:%s wdt:P662 ?id .
-}
-&quot;&quot;&quot; % wikidata_id
+<span class="c1"># SPARQL query to get the PubChem ID</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT ?id WHERE {</span>
+<span class="s2">  wd:</span><span class="si">%s</span><span class="s2"> wdt:P662 ?id .</span>
+<span class="s2">}</span>
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">wikidata_id</span>
 
-# Execute the request
-response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
-data = response.json()
+<span class="c1"># Execute the request</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wikidata_endpoint</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">})</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-# Extract and display the PubChem ID
-if data[&#39;results&#39;][&#39;bindings&#39;]:
-    PubChemId = data[&#39;results&#39;][&#39;bindings&#39;][0][&#39;id&#39;][&#39;value&#39;]
-    print(f&quot;The PubChem ID for a LithiumNickelOxide cell: {PubChemId}&quot;)
+<span class="c1"># Extract and display the PubChem ID</span>
+<span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">]:</span>
+    <span class="n">PubChemId</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="s1">&#39;bindings&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The PubChem ID for a LithiumNickelOxide cell: </span><span class="si">{</span><span class="n">PubChemId</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-else:
-    print(&quot;None found.&quot;)
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;None found.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -700,22 +695,22 @@ The PubChem ID for a LithiumNickelOxide cell: 138395181
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_pubchem_compound_data(cid):
-    base_url = &quot;https://pubchem.ncbi.nlm.nih.gov/rest/pug&quot;
-    compound_url = f&quot;{base_url}/compound/cid/{cid}/JSON&quot;
-    response = requests.get(compound_url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return None
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_pubchem_compound_data</span><span class="p">(</span><span class="n">cid</span><span class="p">):</span>
+    <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://pubchem.ncbi.nlm.nih.gov/rest/pug&quot;</span>
+    <span class="n">compound_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s2">/compound/cid/</span><span class="si">{</span><span class="n">cid</span><span class="si">}</span><span class="s2">/JSON&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">compound_url</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
 
-# Fetch data for the compound with CID 138395181
-compound_data = get_pubchem_compound_data(PubChemId)
-if compound_data:
-    pretty_json = json.dumps(compound_data, indent=4)  # Pretty-print the JSON data
-    print(pretty_json)
-else:
-    print(&quot;Data not found or error in API request.&quot;)
+<span class="c1"># Fetch data for the compound with CID 138395181</span>
+<span class="n">compound_data</span> <span class="o">=</span> <span class="n">get_pubchem_compound_data</span><span class="p">(</span><span class="n">PubChemId</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">compound_data</span><span class="p">:</span>
+    <span class="n">pretty_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">compound_data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># Pretty-print the JSON data</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pretty_json</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data not found or error in API request.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1126,7 +1121,7 @@ else:
 </div>
 </section>
 <section id="Summary-and-Next-Steps">
-<h2>Summary and Next Steps<a class="headerlink" href="#Summary-and-Next-Steps" title="Permalink to this heading">#</a></h2>
+<h2>Summary and Next Steps<a class="headerlink" href="#Summary-and-Next-Steps" title="Link to this heading">#</a></h2>
 <p>In this notebook, we demonstrated how to:</p>
 <ul class="simple">
 <li><p>Create semantically rich battery cell descriptions using JSON-LD</p></li>
@@ -1141,7 +1136,7 @@ else:
 <li><p>Building searchable knowledge graphs for research</p></li>
 </ul>
 <section id="Next-Steps:">
-<h3>Next Steps:<a class="headerlink" href="#Next-Steps:" title="Permalink to this heading">#</a></h3>
+<h3>Next Steps:<a class="headerlink" href="#Next-Steps:" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Add more properties like capacity, electrolyte, or separator</p></li>
 <li><p>Validate JSON-LD structure with JSON Schema or SHACL</p></li>
@@ -1156,11 +1151,10 @@ else:
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="example_linked_data_battery_cell_metadata.html"
@@ -1176,27 +1170,28 @@ else:
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class Index</p>
+        <p class="prev-next-title">Domain Battery Terms</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Describe-Battery-Cells-Using-JSON-LD">Describe Battery Cells Using JSON-LD</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Parse-JSON-LD-into-an-RDF-Graph">Parse JSON-LD into an RDF Graph</a></li>
@@ -1211,12 +1206,13 @@ else:
   </nav></div>
 
   <div class="sidebar-secondary-item">
-  <div class="tocsection sourcelink">
-    <a href="../_sources/examples/example_linked_data_custom_battery_cell_metadata.ipynb.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/examples/example_linked_data_custom_battery_cell_metadata.ipynb.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -1231,8 +1227,8 @@ else:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1240,6 +1236,7 @@ else:
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2021-2024.
@@ -1249,8 +1246,9 @@ else:
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
     <br/>
   </p>
 </div>
@@ -1258,10 +1256,13 @@ else:
     </div>
   
   
+  
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

@@ -1,0 +1,128 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@graph": [
+        {
+            "@type": "BatteryCell",
+            "hasProperty": [
+                {
+                    "@type": "RatedCapacity",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 5000
+                    },
+                    "hasMeasurementUnit": "emmo:MilliAmpereHour"
+                },
+                {
+                    "@type": "NominalVoltage",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.90
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                }
+            ],
+            "hasPositiveElectrode": {
+                "@type": "DoubleCoatedElectrode",
+                "hasActiveMaterial": {
+                    "@type": "LithiumCobaltOxide"
+                },
+                "hasCurrentCollector": {
+                    "@type": ["Aluminium", "Foil"],
+                    "hasConstituent": {
+                        "@type": "CurrentCollectorTab",
+                        "hasProperty": [
+                            {
+                                "@type": "Width",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 10
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            },
+                            {
+                                "@type": "Height",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 5
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            },
+                            {
+                                "@type": "TabOffset",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 20
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            }
+                        ]
+                    }
+                },
+                "hasCoating": {
+                    "@type": "Coating",
+                    "hasProperty": [
+                        {
+                            "@type": "Thickness",
+                            "hasNumericalPart": {
+                                "@type": "RealData",
+                                "hasNumberValue": 100
+                            },
+                            "hasMeasurementUnit": "emmo:MicroMetre"
+                        }
+                    ]
+                }
+            },
+            "hasNegativeElectrode": {
+                "@type": "DoubleCoatedElectrode",
+                "hasActiveMaterial": {
+                    "@type": "Graphite"
+                },
+                "hasCurrentCollector": {
+                    "@type": ["Copper", "Foil"],
+                    "hasConstituent": {
+                        "@type": "CurrentCollectorTab",
+                        "hasProperty": [
+                            {
+                                "@type": "Width",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 10
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            },
+                            {
+                                "@type": "Height",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 5
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            },
+                            {
+                                "@type": "TabOffset",
+                                "hasNumericalPart": {
+                                    "@type": "RealData",
+                                    "hasNumberValue": 20
+                                },
+                                "hasMeasurementUnit": "emmo:MilliMetre"
+                            }
+                        ]
+                    }
+                },
+                "hasCoating": {
+                    "@type": "Coating",
+                    "hasProperty": [
+                        {
+                            "@type": "Thickness",
+                            "hasNumericalPart": {
+                                "@type": "RealData",
+                                "hasNumberValue": 100
+                            },
+                            "hasMeasurementUnit": "emmo:MicroMetre"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
