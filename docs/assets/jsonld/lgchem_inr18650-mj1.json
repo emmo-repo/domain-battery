@@ -1,0 +1,55 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@graph": [
+        {
+            "@type": "INR18650",
+            "schema:model": {
+                "@type": "schema:ProductModel",
+                "schema:name": "INR18650-MJ1"
+            },
+            "schema:manufacturer": {
+                "@id": "https://www.wikidata.org/wiki/Q486976",
+                "@type": "schema:Corporation",
+                "schema:name": "LG Chem"
+            },
+            "hasProperty": [
+                {
+                    "@type": "NominalVoltage",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.635,
+                        "dc:source": "https://www.batterydesign.net/lg-18650/"
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                },
+                {
+                    "@type": ["Mass", "ConventionalProperty"],
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 49.0,
+                        "dc:source": "https://www.batterydesign.net/lg-18650/"
+                    },
+                    "hasMeasurementUnit": "emmo:Gram"
+                },
+                {
+                    "@type": "NominalCapacity",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.5,
+                        "dc:source": "https://www.batterydesign.net/lg-18650/"
+                    },
+                    "hasMeasurementUnit": "emmo:AmpereHour"
+                },
+                {
+                    "@type": "NominalEnergy",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 12.72,
+                        "dc:source": "https://www.batterydesign.net/lg-18650/"
+                    },
+                    "hasMeasurementUnit": "emmo:WattHour"
+                }
+            ]
+        }
+    ]
+}

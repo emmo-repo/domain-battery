@@ -1,0 +1,40 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@graph": [
+        {
+            "@type": "CR2032",
+            "schema:manufacturer": {
+                "@id": "https://www.wikidata.org/wiki/Q695251",
+                "@type": "schema:Corporation",
+                "schema:name": "VARTA AG"
+            },
+            "hasProperty": [
+                {
+                    "@type": "NominalVoltage",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.0
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                },
+                {
+                    "@type": "Mass",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.0
+                    },
+                    "hasMeasurementUnit": "emmo:Gram"
+                },
+                {
+                    "@type": "RatedCapacity",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 230,
+                        "dc:source": "https://www.nkon.nl/novat/varta-cr2032.html"
+                    },
+                    "hasMeasurementUnit": "emmo:MilliAmpereHour"
+                }
+            ]
+        }
+    ]
+}

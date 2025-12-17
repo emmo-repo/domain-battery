@@ -17,7 +17,7 @@
         <uri name="https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-quantities"    	uri="../reference/battery-quantities.ttl"/>
         <uri name="https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-reference"    	uri="../reference/battery-reference.ttl"/>
 
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/subdomains/battery-products"    	uri="battery-products.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-products"    	        uri="./subdomains/battery-products.ttl"/>
         <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-cell-geometry"    	uri="../modules/battery-cell-geometry.ttl"/>
         <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-manufacturing"    	uri="../modules/battery-manufacturing.ttl"/>
         <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-testing"    	uri="../modules/battery-testing.ttl"/>
