@@ -286,10 +286,25 @@ def render_rst_top() -> str:
 """
 
 def render_rst_abstract(onto) -> str:
+    abstract_text = ""
+    abstract = getattr(onto.metadata, "abstract", None)
+    if abstract is not None:
+        try:
+            if hasattr(abstract, "en") and abstract.en:
+                abstract_text = abstract.en[0]
+            elif isinstance(abstract, (list, tuple)) and abstract:
+                abstract_text = abstract[0]
+            elif isinstance(abstract, str):
+                abstract_text = abstract
+        except Exception:
+            abstract_text = ""
+
+    if not abstract_text:
+        return "\n\n"
 
     return f"""
 
-{onto.metadata.abstract.en[0]}
+{abstract_text}
 
 """
 
