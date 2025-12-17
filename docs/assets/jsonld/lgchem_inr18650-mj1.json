@@ -2,7 +2,7 @@
     "@context": "https://w3id.org/emmo/domain/battery/context",
     "@graph": [
         {
-            "@type": "INR18650",
+            "@type": "INR18650MJ1",
             "schema:model": {
                 "@type": "schema:ProductModel",
                 "schema:name": "INR18650-MJ1"

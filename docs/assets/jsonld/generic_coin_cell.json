@@ -1,0 +1,72 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@graph": [
+        {
+            "@type": "CoinCell",
+            "schema:manufacturer": {
+                "@id": "https://www.wikidata.org/wiki/Q3041255",
+                "@type": "schema:ResearchOrganization",
+                "schema:name": "SINTEF AS"
+            },
+            "hasNegativeElectrode": {
+                "@type": "LithiumElectrode"
+            },
+            "hasPositiveElectrode": {
+                "@type": "CoatedElectrode",
+                "hasCurrentCollector": {
+                    "@type": ["Aluminium", "Foil"]
+                },
+                "hasCoating": {
+                    "@type": "ElectrodeCoating",
+                    "hasProperty": [
+                        {
+                            "@type": "Thickness",
+                            "hasNumericalPart": {
+                                "@type": "RealData",
+                                "hasNumberValue": 150
+                            },
+                            "hasMeasurementUnit": "emmo:MicroMetre"
+                        },
+                        {
+                            "@type": "Porosity",
+                            "hasNumericalPart": {
+                                "@type": "RealData",
+                                "hasNumberValue": 0.2
+                            },
+                            "hasMeasurementUnit": "emmo:UnitOne"
+                        }
+                    ]
+                }
+                "hasActiveMaterial": {
+                    "@type": "LithiumNickelManganeseOxide"
+                }
+            },
+            "hasProperty": [
+                {
+                    "@type": "NominalVoltage",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.0
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                },
+                {
+                    "@type": "Mass",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 3.0
+                    },
+                    "hasMeasurementUnit": "emmo:Gram"
+                },
+                {
+                    "@type": "RatedCapacity",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 230
+                    },
+                    "hasMeasurementUnit": "emmo:MilliAmpereHour"
+                }
+            ]
+        }
+    ]
+}
