@@ -140,7 +140,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_50b911f7_c903_4700_9764_c308d8
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_46b8433d_fd57_4819_b34f_1636b72ad12e' onclick="if(!document.getElementById('battery_46b8433d_fd57_4819_b34f_1636b72ad12e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e'; return false;}">NickelZincBattery</a>, <a href='#battery_b572826a_b4e4_4986_b57d_f7b945061f8b' onclick="if(!document.getElementById('battery_b572826a_b4e4_4986_b57d_f7b945061f8b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945061f8b'; return false;}">AlkalineZincManganeseDioxideBattery</a>, <a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a>, <a href='#battery_b5910d2f_3114_4663_8d46_e418ff859251' onclick="if(!document.getElementById('battery_b5910d2f_3114_4663_8d46_e418ff859251')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b5910d2f_3114_4663_8d46_e418ff859251'; return false;}">AlkalineZincAirBattery</a></td>
+    <td class="element-table-value"><a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a>, <a href='#battery_46b8433d_fd57_4819_b34f_1636b72ad12e' onclick="if(!document.getElementById('battery_46b8433d_fd57_4819_b34f_1636b72ad12e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e'; return false;}">NickelZincBattery</a>, <a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a>, <a href='#battery_b572826a_b4e4_4986_b57d_f7b945061f8b' onclick="if(!document.getElementById('battery_b572826a_b4e4_4986_b57d_f7b945061f8b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945061f8b'; return false;}">AlkalineZincManganeseDioxideBattery</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_b5910d2f_3114_4663_8d46_e418ff859251' onclick="if(!document.getElementById('battery_b5910d2f_3114_4663_8d46_e418ff859251')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b5910d2f_3114_4663_8d46_e418ff859251'; return false;}">AlkalineZincAirBattery</a></td>
   </tr>
   </table>
 
@@ -255,12 +255,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945
     <td class="element-table-value">primary battery with an alkaline electrolyte, a positive electrode containing manganese dioxide and a negative electrode of zinc</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q861345' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q861345')){window.location.href='https://www.wikidata.org/wiki/Q861345'; return false;}">https://www.wikidata.org/wiki/Q861345</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Alkaline_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Alkaline_battery')){window.location.href='https://en.wikipedia.org/wiki/Alkaline_battery'; return false;}">https://en.wikipedia.org/wiki/Alkaline_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q861345' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q861345')){window.location.href='https://www.wikidata.org/wiki/Q861345'; return false;}">https://www.wikidata.org/wiki/Q861345</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -272,7 +272,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059' onclick="if(!document.getElementById('battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059'; return false;}">LR12</a>, <a href='#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f' onclick="if(!document.getElementById('battery_21634c62_62eb_4a4f_9210_fb056c0bf98f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f'; return false;}">LR23</a>, <a href='#battery_cbc032aa_657f_4dca_87f8_edaccc70348d' onclick="if(!document.getElementById('battery_cbc032aa_657f_4dca_87f8_edaccc70348d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cbc032aa_657f_4dca_87f8_edaccc70348d'; return false;}">AlkalineLanternBattery</a>, <a href='#battery_2e47736e_285a_4215_9c7c_296ae6a45f20' onclick="if(!document.getElementById('battery_2e47736e_285a_4215_9c7c_296ae6a45f20')){window.location.href='https://w3id.org/emmo/domain/battery#battery_2e47736e_285a_4215_9c7c_296ae6a45f20'; return false;}">Alkaline4SR44</a>, <a href='#battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359' onclick="if(!document.getElementById('battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359'; return false;}">battery.LR44</a>, <a href='#battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d' onclick="if(!document.getElementById('battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d'; return false;}">AlkalinePP3</a>, <a href='#battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91' onclick="if(!document.getElementById('battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91'; return false;}">LR1</a>, <a href='#battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b' onclick="if(!document.getElementById('battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b'; return false;}">AlkalineA23</a>, <a href='#battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58' onclick="if(!document.getElementById('battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58'; return false;}">LR20</a>, <a href='#battery_d00e842e_ee0b_4e25_bd17_d64d76d69730' onclick="if(!document.getElementById('battery_d00e842e_ee0b_4e25_bd17_d64d76d69730')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d00e842e_ee0b_4e25_bd17_d64d76d69730'; return false;}">LR14</a>, <a href='#battery_6b2540b9_5af6_478a_81ae_583db9636db8' onclick="if(!document.getElementById('battery_6b2540b9_5af6_478a_81ae_583db9636db8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6b2540b9_5af6_478a_81ae_583db9636db8'; return false;}">LR6</a>, <a href='#battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd' onclick="if(!document.getElementById('battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd'; return false;}">AlkalineA27</a>, <a href='#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702' onclick="if(!document.getElementById('battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702'; return false;}">LR03</a>, <a href='#battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f' onclick="if(!document.getElementById('battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f'; return false;}">LR25</a></td>
+    <td class="element-table-value"><a href='#battery_2e47736e_285a_4215_9c7c_296ae6a45f20' onclick="if(!document.getElementById('battery_2e47736e_285a_4215_9c7c_296ae6a45f20')){window.location.href='https://w3id.org/emmo/domain/battery#battery_2e47736e_285a_4215_9c7c_296ae6a45f20'; return false;}">Alkaline4SR44</a>, <a href='#battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58' onclick="if(!document.getElementById('battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0c9979c2_c981_48ea_a8e1_72bdcb58fd58'; return false;}">LR20</a>, <a href='#battery_d00e842e_ee0b_4e25_bd17_d64d76d69730' onclick="if(!document.getElementById('battery_d00e842e_ee0b_4e25_bd17_d64d76d69730')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d00e842e_ee0b_4e25_bd17_d64d76d69730'; return false;}">LR14</a>, <a href='#battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd' onclick="if(!document.getElementById('battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5ea1c25b_3b25_401c_b6be_76e9f7a4c4bd'; return false;}">AlkalineA27</a>, <a href='#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f' onclick="if(!document.getElementById('battery_21634c62_62eb_4a4f_9210_fb056c0bf98f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_21634c62_62eb_4a4f_9210_fb056c0bf98f'; return false;}">LR23</a>, <a href='#battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359' onclick="if(!document.getElementById('battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d10ff656_f9fd_4b0e_9de9_4812a44ea359'; return false;}">battery.LR44</a>, <a href='#battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b' onclick="if(!document.getElementById('battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3ec55c79_6421_4ca3_88c8_a6c98ec6fd0b'; return false;}">AlkalineA23</a>, <a href='#battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91' onclick="if(!document.getElementById('battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1c0306f5_5698_4874_b6ce_e5cc45a46b91'; return false;}">LR1</a>, <a href='#battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f' onclick="if(!document.getElementById('battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a03942fb_dfa3_408a_806d_6cf05f8cb08f'; return false;}">LR25</a>, <a href='#battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059' onclick="if(!document.getElementById('battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dc2325e3_5a8b_4230_8ad7_fa528fff3059'; return false;}">LR12</a>, <a href='#battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d' onclick="if(!document.getElementById('battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6e8efa8d_ec92_40e7_8013_e5efb4bc654d'; return false;}">AlkalinePP3</a>, <a href='#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702' onclick="if(!document.getElementById('battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702'; return false;}">LR03</a>, <a href='#battery_6b2540b9_5af6_478a_81ae_583db9636db8' onclick="if(!document.getElementById('battery_6b2540b9_5af6_478a_81ae_583db9636db8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6b2540b9_5af6_478a_81ae_583db9636db8'; return false;}">LR6</a>, <a href='#battery_cbc032aa_657f_4dca_87f8_edaccc70348d' onclick="if(!document.getElementById('battery_cbc032aa_657f_4dca_87f8_edaccc70348d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cbc032aa_657f_4dca_87f8_edaccc70348d'; return false;}">AlkalineLanternBattery</a></td>
   </tr>
   </table>
 
@@ -325,12 +325,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_3f08a520_6e46_47f3_a6c6_2ec54e
     <td class="element-table-value">cell containing a negative electrode with an active material of aluminium or containing aluminium</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q85741073' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q85741073')){window.location.href='https://www.wikidata.org/wiki/Q85741073'; return false;}">https://www.wikidata.org/wiki/Q85741073</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Aluminium_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Aluminium_battery')){window.location.href='https://en.wikipedia.org/wiki/Aluminium_battery'; return false;}">https://en.wikipedia.org/wiki/Aluminium_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q85741073' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q85741073')){window.location.href='https://www.wikidata.org/wiki/Q85741073'; return false;}">https://www.wikidata.org/wiki/Q85741073</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -366,12 +366,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_7db1c7e9_5039_41f2_a5ef_b9e27d
     <td class="element-table-value">a secondary battery that combines an aluminium negative electrode with an aluminium insertion positive electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q15732670' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q15732670')){window.location.href='https://www.wikidata.org/wiki/Q15732670'; return false;}">https://www.wikidata.org/wiki/Q15732670</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Aluminium-ion_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Aluminium-ion_battery')){window.location.href='https://en.wikipedia.org/wiki/Aluminium-ion_battery'; return false;}">https://en.wikipedia.org/wiki/Aluminium-ion_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q15732670' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q15732670')){window.location.href='https://www.wikidata.org/wiki/Q15732670'; return false;}">https://www.wikidata.org/wiki/Q15732670</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -408,7 +408,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_edc98332_248a_436a_a352_5a7897
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_e2aac68e_f880_4be5_87e6_73eba9f75955' onclick="if(!document.getElementById('battery_e2aac68e_f880_4be5_87e6_73eba9f75955')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e2aac68e_f880_4be5_87e6_73eba9f75955'; return false;}">VanadiumRedoxFlowBattery</a>, <a href='#battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86' onclick="if(!document.getElementById('battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86')){window.location.href='https://w3id.org/emmo/domain/battery#battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86'; return false;}">IronRedoxFlowBattery</a>, <a href='#battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d' onclick="if(!document.getElementById('battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d'; return false;}">HydrogenBromineBattery</a>, <a href='#battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59' onclick="if(!document.getElementById('battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59'; return false;}">PolysulfideBromideFlowBattery</a></td>
+    <td class="element-table-value"><a href='#battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d' onclick="if(!document.getElementById('battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_81ed185e_a45a_4e4b_9be7_f8c93e63c81d'; return false;}">HydrogenBromineBattery</a>, <a href='#battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86' onclick="if(!document.getElementById('battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86')){window.location.href='https://w3id.org/emmo/domain/battery#battery_31a80cd5_d4eb_4f7d_a990_f32a5a75ea86'; return false;}">IronRedoxFlowBattery</a>, <a href='#battery_e2aac68e_f880_4be5_87e6_73eba9f75955' onclick="if(!document.getElementById('battery_e2aac68e_f880_4be5_87e6_73eba9f75955')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e2aac68e_f880_4be5_87e6_73eba9f75955'; return false;}">VanadiumRedoxFlowBattery</a>, <a href='#battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59' onclick="if(!document.getElementById('battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a7034a6b_8d1c_4a28_9b8a_5bee39eedf59'; return false;}">PolysulfideBromideFlowBattery</a></td>
   </tr>
   </table>
 
@@ -486,20 +486,20 @@ IRI: https://w3id.org/emmo/domain/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc
     <td class="element-table-value">one or more cells fitted with devices necessary for use, for example case, terminals, marking and protective devices</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q267298' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q267298')){window.location.href='https://www.wikidata.org/wiki/Q267298'; return false;}">https://www.wikidata.org/wiki/Q267298</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Electric_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Electric_battery')){window.location.href='https://en.wikipedia.org/wiki/Electric_battery'; return false;}">https://en.wikipedia.org/wiki/Electric_battery</a></td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
-    <td class="element-table-value"><a href='#https://www.electropedia.org/iev/iev.n' onclick="if(!document.getElementById('https://www.electropedia.org/iev/iev.n')){window.location.href='https://www.electropedia.org/iev/iev.n'; return false;}">https://www.electropedia.org/iev/iev.n</a></td>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q267298' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q267298')){window.location.href='https://www.wikidata.org/wiki/Q267298'; return false;}">https://www.wikidata.org/wiki/Q267298</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">dbpediaReference</span></td>
     <td class="element-table-value"><a href='#https://dbpedia.org/page/Electric_battery' onclick="if(!document.getElementById('https://dbpedia.org/page/Electric_battery')){window.location.href='https://dbpedia.org/page/Electric_battery'; return false;}">https://dbpedia.org/page/Electric_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
+    <td class="element-table-value"><a href='#https://www.electropedia.org/iev/iev.n' onclick="if(!document.getElementById('https://www.electropedia.org/iev/iev.n')){window.location.href='https://www.electropedia.org/iev/iev.n'; return false;}">https://www.electropedia.org/iev/iev.n</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -507,7 +507,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_1c8e08a6_8542_432a_9bd3_9474df55d497' onclick="if(!document.getElementById('battery_1c8e08a6_8542_432a_9bd3_9474df55d497')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1c8e08a6_8542_432a_9bd3_9474df55d497'; return false;}">OEMBattery</a>, <a href='#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00' onclick="if(!document.getElementById('battery_be3b35a7_75a3_4be0_9265_beb178ea7b00')){window.location.href='https://w3id.org/emmo/domain/battery#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00'; return false;}">BatteryPack</a>, <a href='#battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883' onclick="if(!document.getElementById('battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883'; return false;}">BufferBattery</a>, <a href='#battery_84b41796_e958_4740_925c_94c180b91e0f' onclick="if(!document.getElementById('battery_84b41796_e958_4740_925c_94c180b91e0f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_84b41796_e958_4740_925c_94c180b91e0f'; return false;}">MonoblocBattery</a>, <a href='#battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec' onclick="if(!document.getElementById('battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec'; return false;}">BatteryModule</a>, <a href='#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce' onclick="if(!document.getElementById('battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce')){window.location.href='https://w3id.org/emmo/domain/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce'; return false;}">EmergencyBattery</a>, <a href='#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f' onclick="if(!document.getElementById('battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f'; return false;}">ReplacementBattery</a>, <a href='#battery_68ed592a_7924_45d0_a108_94d6275d57f0' onclick="if(!document.getElementById('battery_68ed592a_7924_45d0_a108_94d6275d57f0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'; return false;}">BatteryCell</a></td>
+    <td class="element-table-value"><a href='#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00' onclick="if(!document.getElementById('battery_be3b35a7_75a3_4be0_9265_beb178ea7b00')){window.location.href='https://w3id.org/emmo/domain/battery#battery_be3b35a7_75a3_4be0_9265_beb178ea7b00'; return false;}">BatteryPack</a>, <a href='#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f' onclick="if(!document.getElementById('battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_33d5e843_dcef_4b7b_97ec_bd902c9d950f'; return false;}">ReplacementBattery</a>, <a href='#battery_68ed592a_7924_45d0_a108_94d6275d57f0' onclick="if(!document.getElementById('battery_68ed592a_7924_45d0_a108_94d6275d57f0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d6275d57f0'; return false;}">BatteryCell</a>, <a href='#battery_84b41796_e958_4740_925c_94c180b91e0f' onclick="if(!document.getElementById('battery_84b41796_e958_4740_925c_94c180b91e0f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_84b41796_e958_4740_925c_94c180b91e0f'; return false;}">MonoblocBattery</a>, <a href='#battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883' onclick="if(!document.getElementById('battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dbc86554_1a2a_4f2b_b8c2_e793fa219883'; return false;}">BufferBattery</a>, <a href='#battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec' onclick="if(!document.getElementById('battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec'; return false;}">BatteryModule</a>, <a href='#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce' onclick="if(!document.getElementById('battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce')){window.location.href='https://w3id.org/emmo/domain/battery#battery_27e2df40_b85d_4cdb_8469_b3b61b18e4ce'; return false;}">EmergencyBattery</a>, <a href='#battery_1c8e08a6_8542_432a_9bd3_9474df55d497' onclick="if(!document.getElementById('battery_1c8e08a6_8542_432a_9bd3_9474df55d497')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1c8e08a6_8542_432a_9bd3_9474df55d497'; return false;}">OEMBattery</a></td>
   </tr>
   </table>
 
@@ -573,7 +573,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_68ed592a_7924_45d0_a108_94d627
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_a779f0df_51d3_44cd_97f2_863c28843af8' onclick="if(!document.getElementById('battery_a779f0df_51d3_44cd_97f2_863c28843af8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a779f0df_51d3_44cd_97f2_863c28843af8'; return false;}">UnformedDryCell</a>, <a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a>, <a href='#battery_b7fdab58_6e91_4c84_b097_b06eff86a124' onclick="if(!document.getElementById('battery_b7fdab58_6e91_4c84_b097_b06eff86a124')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124'; return false;}">CoinCell</a>, <a href='#battery_d63c6483_4b0c_4966_b152_976ab02a45ef' onclick="if(!document.getElementById('battery_d63c6483_4b0c_4966_b152_976ab02a45ef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d63c6483_4b0c_4966_b152_976ab02a45ef'; return false;}">LithiumBattery</a>, <a href='#battery_f93bd38a_c44a_4a79_95fb_9937504b9448' onclick="if(!document.getElementById('battery_f93bd38a_c44a_4a79_95fb_9937504b9448')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f93bd38a_c44a_4a79_95fb_9937504b9448'; return false;}">IronBattery</a>, <a href='#battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf' onclick="if(!document.getElementById('battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf'; return false;}">SolidStateBattery</a>, <a href='#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0' onclick="if(!document.getElementById('battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0'; return false;}">MetalAirBattery</a>, <a href='#battery_0493552f_6463_4f57_bdbf_31b5b15ea72f' onclick="if(!document.getElementById('battery_0493552f_6463_4f57_bdbf_31b5b15ea72f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0493552f_6463_4f57_bdbf_31b5b15ea72f'; return false;}">DischargedEmptyBattery</a>, <a href='#battery_efc38420_ecbb_42e4_bb3f_208e7c417098' onclick="if(!document.getElementById('battery_efc38420_ecbb_42e4_bb3f_208e7c417098')){window.location.href='https://w3id.org/emmo/domain/battery#battery_efc38420_ecbb_42e4_bb3f_208e7c417098'; return false;}">SecondaryBattery</a>, <a href='#battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1' onclick="if(!document.getElementById('battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1'; return false;}">AluminiumBattery</a>, <a href='#battery_6256b4c7_243f_4067_a081_dd1eb2160036' onclick="if(!document.getElementById('battery_6256b4c7_243f_4067_a081_dd1eb2160036')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6256b4c7_243f_4067_a081_dd1eb2160036'; return false;}">PilotBatteryCell</a>, <a href='#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9' onclick="if(!document.getElementById('battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9'; return false;}">BatteryHalfCell</a>, <a href='#battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d' onclick="if(!document.getElementById('battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d'; return false;}">SiliconBattery</a>, <a href='#battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69' onclick="if(!document.getElementById('battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69'; return false;}">PrimaryBattery</a>, <a href='#battery_8f363e2e_8258_415d_8784_9a60fce9aeef' onclick="if(!document.getElementById('battery_8f363e2e_8258_415d_8784_9a60fce9aeef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fce9aeef'; return false;}">RedoxFlowBattery</a>, <a href='#battery_b8a811a8_733e_45e9_ac8a_8a6e93781265' onclick="if(!document.getElementById('battery_b8a811a8_733e_45e9_ac8a_8a6e93781265')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b8a811a8_733e_45e9_ac8a_8a6e93781265'; return false;}">FilledDischargedBattery</a>, <a href='#battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2' onclick="if(!document.getElementById('battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2'; return false;}">NickelOxideBattery</a>, <a href='#battery_a306c4d2_9f74_4910_8b42_52e33552cd90' onclick="if(!document.getElementById('battery_a306c4d2_9f74_4910_8b42_52e33552cd90')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a306c4d2_9f74_4910_8b42_52e33552cd90'; return false;}">PotassiumBattery</a>, <a href='#battery_a1924455_6f7e_4a2d_afd3_95527523183a' onclick="if(!document.getElementById('battery_a1924455_6f7e_4a2d_afd3_95527523183a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a1924455_6f7e_4a2d_afd3_95527523183a'; return false;}">DryChargedBattery</a>, <a href='#battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737' onclick="if(!document.getElementById('battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737'; return false;}">DrainedChargedBattery</a>, <a href='#battery_21943399_9d3f_46cf_83a9_3913cddfdee1' onclick="if(!document.getElementById('battery_21943399_9d3f_46cf_83a9_3913cddfdee1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_21943399_9d3f_46cf_83a9_3913cddfdee1'; return false;}">CalciumBattery</a>, <a href='#battery_d27fd24f_a96c_4db3_a579_777bb423043d' onclick="if(!document.getElementById('battery_d27fd24f_a96c_4db3_a579_777bb423043d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d27fd24f_a96c_4db3_a579_777bb423043d'; return false;}">CadmiumBattery</a>, <a href='#battery_eb962056_c48c_439a_a1a7_a2868e2e312f' onclick="if(!document.getElementById('battery_eb962056_c48c_439a_a1a7_a2868e2e312f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eb962056_c48c_439a_a1a7_a2868e2e312f'; return false;}">FilledChargedBattery</a>, <a href='#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11' onclick="if(!document.getElementById('battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11'; return false;}">ZincBattery</a>, <a href='#battery_392b3f47_d62a_4bd4_a819_b58b09b8843a' onclick="if(!document.getElementById('battery_392b3f47_d62a_4bd4_a819_b58b09b8843a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_392b3f47_d62a_4bd4_a819_b58b09b8843a'; return false;}">PouchCell</a>, <a href='#battery_dae4c0f0_c3eb_4662_a0df_767e02014053' onclick="if(!document.getElementById('battery_dae4c0f0_c3eb_4662_a0df_767e02014053')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dae4c0f0_c3eb_4662_a0df_767e02014053'; return false;}">MoltenSaltCell</a>, <a href='#battery_50b911f7_c903_4700_9764_c308d8a95470' onclick="if(!document.getElementById('battery_50b911f7_c903_4700_9764_c308d8a95470')){window.location.href='https://w3id.org/emmo/domain/battery#battery_50b911f7_c903_4700_9764_c308d8a95470'; return false;}">AlkalineCell</a>, <a href='#battery_53dec2af_0a2a_4205_a9b2_ae96ed717027' onclick="if(!document.getElementById('battery_53dec2af_0a2a_4205_a9b2_ae96ed717027')){window.location.href='https://w3id.org/emmo/domain/battery#battery_53dec2af_0a2a_4205_a9b2_ae96ed717027'; return false;}">MagnesiumBattery</a>, <a href='#battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04' onclick="if(!document.getElementById('battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04')){window.location.href='https://w3id.org/emmo/domain/battery#battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04'; return false;}">SilverBattery</a>, <a href='#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d' onclick="if(!document.getElementById('battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d'; return false;}">PrismaticBattery</a>, <a href='#battery_76288c39_86d7_45cf_85f8_a498ccf6f531' onclick="if(!document.getElementById('battery_76288c39_86d7_45cf_85f8_a498ccf6f531')){window.location.href='https://w3id.org/emmo/domain/battery#battery_76288c39_86d7_45cf_85f8_a498ccf6f531'; return false;}">LeadBattery</a>, <a href='#battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d' onclick="if(!document.getElementById('battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d'; return false;}">SodiumBattery</a>, <a href='#battery_d95593e8_03cd_404b_8b2b_beb97417a16a' onclick="if(!document.getElementById('battery_d95593e8_03cd_404b_8b2b_beb97417a16a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d95593e8_03cd_404b_8b2b_beb97417a16a'; return false;}">SilverOxideBattery</a>, <a href='#battery_3fcdc2ab_f458_4940_b218_6a10d1764567' onclick="if(!document.getElementById('battery_3fcdc2ab_f458_4940_b218_6a10d1764567')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3fcdc2ab_f458_4940_b218_6a10d1764567'; return false;}">StandardVoltageCell</a>, <a href='#battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae' onclick="if(!document.getElementById('battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae'; return false;}">SwagelokCell</a>, <a href='#battery_8229b502_2e65_4652_b51d_173c697cf24a' onclick="if(!document.getElementById('battery_8229b502_2e65_4652_b51d_173c697cf24a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8229b502_2e65_4652_b51d_173c697cf24a'; return false;}">NonAqueousCell</a>, <a href='#battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8' onclick="if(!document.getElementById('battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8'; return false;}">EarthBattery</a></td>
+    <td class="element-table-value"><a href='#battery_dae4c0f0_c3eb_4662_a0df_767e02014053' onclick="if(!document.getElementById('battery_dae4c0f0_c3eb_4662_a0df_767e02014053')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dae4c0f0_c3eb_4662_a0df_767e02014053'; return false;}">MoltenSaltCell</a>, <a href='#battery_0493552f_6463_4f57_bdbf_31b5b15ea72f' onclick="if(!document.getElementById('battery_0493552f_6463_4f57_bdbf_31b5b15ea72f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0493552f_6463_4f57_bdbf_31b5b15ea72f'; return false;}">DischargedEmptyBattery</a>, <a href='#battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69' onclick="if(!document.getElementById('battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69'; return false;}">PrimaryBattery</a>, <a href='#battery_392b3f47_d62a_4bd4_a819_b58b09b8843a' onclick="if(!document.getElementById('battery_392b3f47_d62a_4bd4_a819_b58b09b8843a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_392b3f47_d62a_4bd4_a819_b58b09b8843a'; return false;}">PouchCell</a>, <a href='#battery_8229b502_2e65_4652_b51d_173c697cf24a' onclick="if(!document.getElementById('battery_8229b502_2e65_4652_b51d_173c697cf24a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8229b502_2e65_4652_b51d_173c697cf24a'; return false;}">NonAqueousCell</a>, <a href='#battery_8f363e2e_8258_415d_8784_9a60fce9aeef' onclick="if(!document.getElementById('battery_8f363e2e_8258_415d_8784_9a60fce9aeef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fce9aeef'; return false;}">RedoxFlowBattery</a>, <a href='#battery_a306c4d2_9f74_4910_8b42_52e33552cd90' onclick="if(!document.getElementById('battery_a306c4d2_9f74_4910_8b42_52e33552cd90')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a306c4d2_9f74_4910_8b42_52e33552cd90'; return false;}">PotassiumBattery</a>, <a href='#battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737' onclick="if(!document.getElementById('battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4688d93e_1c2b_4ff0_8a12_b2e540d8a737'; return false;}">DrainedChargedBattery</a>, <a href='#battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2' onclick="if(!document.getElementById('battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cf74f431_cdd3_4f0a_a3e7_f1554d6204b2'; return false;}">NickelOxideBattery</a>, <a href='#battery_b7fdab58_6e91_4c84_b097_b06eff86a124' onclick="if(!document.getElementById('battery_b7fdab58_6e91_4c84_b097_b06eff86a124')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b7fdab58_6e91_4c84_b097_b06eff86a124'; return false;}">CoinCell</a>, <a href='#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d' onclick="if(!document.getElementById('battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d'; return false;}">PrismaticBattery</a>, <a href='#battery_d63c6483_4b0c_4966_b152_976ab02a45ef' onclick="if(!document.getElementById('battery_d63c6483_4b0c_4966_b152_976ab02a45ef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d63c6483_4b0c_4966_b152_976ab02a45ef'; return false;}">LithiumBattery</a>, <a href='#battery_d95593e8_03cd_404b_8b2b_beb97417a16a' onclick="if(!document.getElementById('battery_d95593e8_03cd_404b_8b2b_beb97417a16a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d95593e8_03cd_404b_8b2b_beb97417a16a'; return false;}">SilverOxideBattery</a>, <a href='#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11' onclick="if(!document.getElementById('battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e1d7fb00_03b9_46ea_90c9_501f538dfc11'; return false;}">ZincBattery</a>, <a href='#battery_eb962056_c48c_439a_a1a7_a2868e2e312f' onclick="if(!document.getElementById('battery_eb962056_c48c_439a_a1a7_a2868e2e312f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eb962056_c48c_439a_a1a7_a2868e2e312f'; return false;}">FilledChargedBattery</a>, <a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a>, <a href='#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0' onclick="if(!document.getElementById('battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0'; return false;}">MetalAirBattery</a>, <a href='#battery_efc38420_ecbb_42e4_bb3f_208e7c417098' onclick="if(!document.getElementById('battery_efc38420_ecbb_42e4_bb3f_208e7c417098')){window.location.href='https://w3id.org/emmo/domain/battery#battery_efc38420_ecbb_42e4_bb3f_208e7c417098'; return false;}">SecondaryBattery</a>, <a href='#battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf' onclick="if(!document.getElementById('battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ef6a6244_fe3d_406e_8456_f72b45bb1fdf'; return false;}">SolidStateBattery</a>, <a href='#battery_21943399_9d3f_46cf_83a9_3913cddfdee1' onclick="if(!document.getElementById('battery_21943399_9d3f_46cf_83a9_3913cddfdee1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_21943399_9d3f_46cf_83a9_3913cddfdee1'; return false;}">CalciumBattery</a>, <a href='#battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1' onclick="if(!document.getElementById('battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3f08a520_6e46_47f3_a6c6_2ec54ed0a7c1'; return false;}">AluminiumBattery</a>, <a href='#battery_76288c39_86d7_45cf_85f8_a498ccf6f531' onclick="if(!document.getElementById('battery_76288c39_86d7_45cf_85f8_a498ccf6f531')){window.location.href='https://w3id.org/emmo/domain/battery#battery_76288c39_86d7_45cf_85f8_a498ccf6f531'; return false;}">LeadBattery</a>, <a href='#battery_d27fd24f_a96c_4db3_a579_777bb423043d' onclick="if(!document.getElementById('battery_d27fd24f_a96c_4db3_a579_777bb423043d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d27fd24f_a96c_4db3_a579_777bb423043d'; return false;}">CadmiumBattery</a>, <a href='#battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d' onclick="if(!document.getElementById('battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9d1bf61e_7f64_43fd_af38_c16fb04ee72d'; return false;}">SiliconBattery</a>, <a href='#battery_6256b4c7_243f_4067_a081_dd1eb2160036' onclick="if(!document.getElementById('battery_6256b4c7_243f_4067_a081_dd1eb2160036')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6256b4c7_243f_4067_a081_dd1eb2160036'; return false;}">PilotBatteryCell</a>, <a href='#battery_50b911f7_c903_4700_9764_c308d8a95470' onclick="if(!document.getElementById('battery_50b911f7_c903_4700_9764_c308d8a95470')){window.location.href='https://w3id.org/emmo/domain/battery#battery_50b911f7_c903_4700_9764_c308d8a95470'; return false;}">AlkalineCell</a>, <a href='#battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8' onclick="if(!document.getElementById('battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1d8112fa_7561_41b0_ba6e_876f3dbde4a8'; return false;}">EarthBattery</a>, <a href='#battery_a1924455_6f7e_4a2d_afd3_95527523183a' onclick="if(!document.getElementById('battery_a1924455_6f7e_4a2d_afd3_95527523183a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a1924455_6f7e_4a2d_afd3_95527523183a'; return false;}">DryChargedBattery</a>, <a href='#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9' onclick="if(!document.getElementById('battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f0ae0b6_ee4b_47a0_b90b_1b072a62a7d9'; return false;}">BatteryHalfCell</a>, <a href='#battery_53dec2af_0a2a_4205_a9b2_ae96ed717027' onclick="if(!document.getElementById('battery_53dec2af_0a2a_4205_a9b2_ae96ed717027')){window.location.href='https://w3id.org/emmo/domain/battery#battery_53dec2af_0a2a_4205_a9b2_ae96ed717027'; return false;}">MagnesiumBattery</a>, <a href='#battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d' onclick="if(!document.getElementById('battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a02f11a5_3b1a_4ffe_93d8_e082687fe39d'; return false;}">SodiumBattery</a>, <a href='#battery_3fcdc2ab_f458_4940_b218_6a10d1764567' onclick="if(!document.getElementById('battery_3fcdc2ab_f458_4940_b218_6a10d1764567')){window.location.href='https://w3id.org/emmo/domain/battery#battery_3fcdc2ab_f458_4940_b218_6a10d1764567'; return false;}">StandardVoltageCell</a>, <a href='#battery_f93bd38a_c44a_4a79_95fb_9937504b9448' onclick="if(!document.getElementById('battery_f93bd38a_c44a_4a79_95fb_9937504b9448')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f93bd38a_c44a_4a79_95fb_9937504b9448'; return false;}">IronBattery</a>, <a href='#battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04' onclick="if(!document.getElementById('battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04')){window.location.href='https://w3id.org/emmo/domain/battery#battery_664c8bf0_c6b9_4d57_96da_83f36b31ec04'; return false;}">SilverBattery</a>, <a href='#battery_a779f0df_51d3_44cd_97f2_863c28843af8' onclick="if(!document.getElementById('battery_a779f0df_51d3_44cd_97f2_863c28843af8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a779f0df_51d3_44cd_97f2_863c28843af8'; return false;}">UnformedDryCell</a>, <a href='#battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae' onclick="if(!document.getElementById('battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74d6a5a9_efd6_43de_ad4b_e7b5f6b64aae'; return false;}">SwagelokCell</a>, <a href='#battery_b8a811a8_733e_45e9_ac8a_8a6e93781265' onclick="if(!document.getElementById('battery_b8a811a8_733e_45e9_ac8a_8a6e93781265')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b8a811a8_733e_45e9_ac8a_8a6e93781265'; return false;}">FilledDischargedBattery</a></td>
   </tr>
   </table>
 
@@ -731,7 +731,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_1d33b96d_f362_41e5_b670_d33cd6
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasParticipant some Battery</li><li>hasParticipant some BatteryCyclerSystem</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasParticipant some BatteryCyclerSystem</li><li>hasParticipant some Battery</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -922,7 +922,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_9acfeea6_ca7f_4b97_9844_c38edf
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasConstituent some BatteryCell</li><li>Inverse(hasConstituent) some BatteryPack</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>Inverse(hasConstituent) some BatteryPack</li><li>hasConstituent some BatteryCell</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -979,12 +979,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_be3b35a7_75a3_4be0_9265_beb178
     <td class="element-table-value">a battery containing multiple cells and a casing</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q420116' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q420116')){window.location.href='https://www.wikidata.org/wiki/Q420116'; return false;}">https://www.wikidata.org/wiki/Q420116</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Battery_pack' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Battery_pack')){window.location.href='https://en.wikipedia.org/wiki/Battery_pack'; return false;}">https://en.wikipedia.org/wiki/Battery_pack</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q420116' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q420116')){window.location.href='https://www.wikidata.org/wiki/Q420116'; return false;}">https://www.wikidata.org/wiki/Q420116</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -1046,7 +1046,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_230809da_bc18_42ec_ac94_4ca6a8
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a' onclick="if(!document.getElementById('battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a'; return false;}">StateOfCharge</a>, <a href='#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc' onclick="if(!document.getElementById('battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc')){window.location.href='https://w3id.org/emmo/domain/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc'; return false;}">ServiceLife</a>, <a href='#battery_22353114_9b0a_42d1_b96c_3a702c273e2d' onclick="if(!document.getElementById('battery_22353114_9b0a_42d1_b96c_3a702c273e2d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d'; return false;}">DepthOfDischarge</a>, <a href='#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2' onclick="if(!document.getElementById('battery_a882d3a6_e055_4743_8fc6_5510485dcfe2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2'; return false;}">StartingCapability</a>, <a href='#battery_87bb15ff_4fc2_4929_9938_0b31d9166001' onclick="if(!document.getElementById('battery_87bb15ff_4fc2_4929_9938_0b31d9166001')){window.location.href='https://w3id.org/emmo/domain/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001'; return false;}">BatteryEnergy</a>, <a href='#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f' onclick="if(!document.getElementById('battery_b10c88d8_43d9_42dd_9f65_49ce2314513f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f'; return false;}">ServiceMass</a></td>
+    <td class="element-table-value"><a href='#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f' onclick="if(!document.getElementById('battery_b10c88d8_43d9_42dd_9f65_49ce2314513f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b10c88d8_43d9_42dd_9f65_49ce2314513f'; return false;}">ServiceMass</a>, <a href='#battery_22353114_9b0a_42d1_b96c_3a702c273e2d' onclick="if(!document.getElementById('battery_22353114_9b0a_42d1_b96c_3a702c273e2d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_22353114_9b0a_42d1_b96c_3a702c273e2d'; return false;}">DepthOfDischarge</a>, <a href='#battery_87bb15ff_4fc2_4929_9938_0b31d9166001' onclick="if(!document.getElementById('battery_87bb15ff_4fc2_4929_9938_0b31d9166001')){window.location.href='https://w3id.org/emmo/domain/battery#battery_87bb15ff_4fc2_4929_9938_0b31d9166001'; return false;}">BatteryEnergy</a>, <a href='#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2' onclick="if(!document.getElementById('battery_a882d3a6_e055_4743_8fc6_5510485dcfe2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a882d3a6_e055_4743_8fc6_5510485dcfe2'; return false;}">StartingCapability</a>, <a href='#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc' onclick="if(!document.getElementById('battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc')){window.location.href='https://w3id.org/emmo/domain/battery#battery_be5d1b4f_5579_4702_9dbb_6c15e577e8dc'; return false;}">ServiceLife</a>, <a href='#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a' onclick="if(!document.getElementById('battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_17591da0_34ec_41b9_b3c1_3a4446dc6f0a'; return false;}">StateOfCharge</a></td>
   </tr>
   </table>
 
@@ -1244,12 +1244,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_70dad2a6_5316_4211_99a6_203111
     <td class="element-table-value">a primary zinc carbon battery with a zinc anode and carbon cathode and a dual electrolyte system of aqueous sulfuric acid and nitric or chromic acid</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q901286' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q901286')){window.location.href='https://www.wikidata.org/wiki/Q901286'; return false;}">https://www.wikidata.org/wiki/Q901286</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Bun' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Bun')){window.location.href='https://en.wikipedia.org/wiki/Bun'; return false;}">https://en.wikipedia.org/wiki/Bun</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q901286' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q901286')){window.location.href='https://www.wikidata.org/wiki/Q901286'; return false;}">https://www.wikidata.org/wiki/Q901286</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -1381,7 +1381,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_d27fd24f_a96c_4db3_a579_777bb4
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a></td>
+    <td class="element-table-value"><a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a>, <a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a></td>
   </tr>
   </table>
 
@@ -1430,12 +1430,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_21943399_9d3f_46cf_83a9_3913cd
     <td class="element-table-value">cell containing a negative electrode with an active material of calcium or containing calcium</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q106611348' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q106611348')){window.location.href='https://www.wikidata.org/wiki/Q106611348'; return false;}">https://www.wikidata.org/wiki/Q106611348</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Calcium_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Calcium_battery')){window.location.href='https://en.wikipedia.org/wiki/Calcium_battery'; return false;}">https://en.wikipedia.org/wiki/Calcium_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q106611348' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q106611348')){window.location.href='https://www.wikidata.org/wiki/Q106611348'; return false;}">https://www.wikidata.org/wiki/Q106611348</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -1521,12 +1521,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba
     <td class="element-table-value">a wet cell with zinc and mercury electrodes in a zinc sulfate solution, invented by English engineer Josiah Latimer Clark</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q898656' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q898656')){window.location.href='https://www.wikidata.org/wiki/Q898656'; return false;}">https://www.wikidata.org/wiki/Q898656</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Clark_cell' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Clark_cell')){window.location.href='https://en.wikipedia.org/wiki/Clark_cell'; return false;}">https://en.wikipedia.org/wiki/Clark_cell</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q898656' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q898656')){window.location.href='https://www.wikidata.org/wiki/Q898656'; return false;}">https://www.wikidata.org/wiki/Q898656</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -1616,7 +1616,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702' onclick="if(!document.getElementById('battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702'; return false;}">LR03</a></td>
+    <td class="element-table-value"><a href='#battery_078d6aca_33a8_412e_ba4f_63ccfa632efd' onclick="if(!document.getElementById('battery_078d6aca_33a8_412e_ba4f_63ccfa632efd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_078d6aca_33a8_412e_ba4f_63ccfa632efd'; return false;}">IFp21700</a>, <a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a>, <a href='#battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1' onclick="if(!document.getElementById('battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1'; return false;}">INR21700</a>, <a href='#battery_e769f629_438a_4637_8483_205c866487b3' onclick="if(!document.getElementById('battery_e769f629_438a_4637_8483_205c866487b3')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e769f629_438a_4637_8483_205c866487b3'; return false;}">NaCR32140MP10</a>, <a href='#battery_09a02072_a72c_4230_bad8_d426426336d1' onclick="if(!document.getElementById('battery_09a02072_a72c_4230_bad8_d426426336d1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_09a02072_a72c_4230_bad8_d426426336d1'; return false;}">IFp46800</a>, <a href='#battery_a98746d8_479a_4b49_82c0_c4f46bc32c78' onclick="if(!document.getElementById('battery_a98746d8_479a_4b49_82c0_c4f46bc32c78')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a98746d8_479a_4b49_82c0_c4f46bc32c78'; return false;}">INR46800</a>, <a href='#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702' onclick="if(!document.getElementById('battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702'; return false;}">LR03</a>, <a href='#battery_94eaf2e3_712d_4678_a431_00ed15ff68d3' onclick="if(!document.getElementById('battery_94eaf2e3_712d_4678_a431_00ed15ff68d3')){window.location.href='https://w3id.org/emmo/domain/battery#battery_94eaf2e3_712d_4678_a431_00ed15ff68d3'; return false;}">IFp18650</a></td>
   </tr>
   </table>
 
@@ -1640,12 +1640,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_d94a5498_321a_43d3_af62_80f825
     <td class="element-table-value">a primary battery cell with zinc and copper electrodes and a mixed electrolyte system of copper (II) sulfate and sulfuric acid</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q749635' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q749635')){window.location.href='https://www.wikidata.org/wiki/Q749635'; return false;}">https://www.wikidata.org/wiki/Q749635</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Daniell_cell' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Daniell_cell')){window.location.href='https://en.wikipedia.org/wiki/Daniell_cell'; return false;}">https://en.wikipedia.org/wiki/Daniell_cell</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q749635' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q749635')){window.location.href='https://www.wikidata.org/wiki/Q749635'; return false;}">https://www.wikidata.org/wiki/Q749635</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -1951,7 +1951,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_00e62db9_b73a_4c75_b915_f59f1e
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_5b871e13_89ab_4dde_8ea0_062067a6708a' onclick="if(!document.getElementById('battery_5b871e13_89ab_4dde_8ea0_062067a6708a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a'; return false;}">TwoSidedHeating</a>, <a href='#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d' onclick="if(!document.getElementById('battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d'; return false;}">OneSidedHeating</a></td>
+    <td class="element-table-value"><a href='#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d' onclick="if(!document.getElementById('battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aa8de4fd_8368_4ff3_a079_d91d445f3f0d'; return false;}">OneSidedHeating</a>, <a href='#battery_5b871e13_89ab_4dde_8ea0_062067a6708a' onclick="if(!document.getElementById('battery_5b871e13_89ab_4dde_8ea0_062067a6708a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5b871e13_89ab_4dde_8ea0_062067a6708a'; return false;}">TwoSidedHeating</a></td>
   </tr>
   </table>
 
@@ -2095,12 +2095,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_a48145f2_ba93_40c1_a4f7_0017cc
     <td class="element-table-value">a battery comprising two electrodes of dissimilar metals with frog legs acting as the electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q5505233' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q5505233')){window.location.href='https://www.wikidata.org/wiki/Q5505233'; return false;}">https://www.wikidata.org/wiki/Q5505233</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Frog_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Frog_battery')){window.location.href='https://en.wikipedia.org/wiki/Frog_battery'; return false;}">https://en.wikipedia.org/wiki/Frog_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q5505233' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q5505233')){window.location.href='https://www.wikidata.org/wiki/Q5505233'; return false;}">https://www.wikidata.org/wiki/Q5505233</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -2166,9 +2166,42 @@ IRI: https://w3id.org/emmo/domain/battery#battery_8c808507_976a_4225_8099_604dc7
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_5555b4bc_216e_4772_a914_b66b6e783079' onclick="if(!document.getElementById('battery_5555b4bc_216e_4772_a914_b66b6e783079')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5555b4bc_216e_4772_a914_b66b6e783079'; return false;}">NonAqueousOrganicFlowBattery</a>, <a href='#battery_edc98332_248a_436a_a352_5a7897150c4f' onclick="if(!document.getElementById('battery_edc98332_248a_436a_a352_5a7897150c4f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_edc98332_248a_436a_a352_5a7897150c4f'; return false;}">AqueousMetallicFlowBattery</a>, <a href='#battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca' onclick="if(!document.getElementById('battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca'; return false;}">AqueousOrganicFlowBattery</a>, <a href='#battery_1191d114_5aec_4167_97b1_c0bca9414c49' onclick="if(!document.getElementById('battery_1191d114_5aec_4167_97b1_c0bca9414c49')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1191d114_5aec_4167_97b1_c0bca9414c49'; return false;}">NonAqueousMetallicFlowBattery</a></td>
+    <td class="element-table-value"><a href='#battery_1191d114_5aec_4167_97b1_c0bca9414c49' onclick="if(!document.getElementById('battery_1191d114_5aec_4167_97b1_c0bca9414c49')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1191d114_5aec_4167_97b1_c0bca9414c49'; return false;}">NonAqueousMetallicFlowBattery</a>, <a href='#battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca' onclick="if(!document.getElementById('battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4a620a13_ef9f_40c7_8833_c6e0720ce3ca'; return false;}">AqueousOrganicFlowBattery</a>, <a href='#battery_5555b4bc_216e_4772_a914_b66b6e783079' onclick="if(!document.getElementById('battery_5555b4bc_216e_4772_a914_b66b6e783079')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5555b4bc_216e_4772_a914_b66b6e783079'; return false;}">NonAqueousOrganicFlowBattery</a>, <a href='#battery_edc98332_248a_436a_a352_5a7897150c4f' onclick="if(!document.getElementById('battery_edc98332_248a_436a_a352_5a7897150c4f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_edc98332_248a_436a_a352_5a7897150c4f'; return false;}">AqueousMetallicFlowBattery</a></td>
   </tr>
   </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_e855801e_bdda_461b_913b_1c680027409e"></div>
+
+G20M7
+-----
+
+IRI: https://w3id.org/emmo/domain/battery#battery_e855801e_bdda_461b_913b_1c680027409e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">A lithium-ion battery cell (1ICP6/65/75) manufactured by Google</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">model</span></td>
+    <td class="element-table-value">G20M7</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#https://schema.org/Product' onclick="if(!document.getElementById('https://schema.org/Product')){window.location.href='https://schema.org/Product'; return false;}">schema.org.Product</a>, <a href='#battery_17c24e48_4a8f_43c9_b126_92c639780452' onclick="if(!document.getElementById('battery_17c24e48_4a8f_43c9_b126_92c639780452')){window.location.href='https://w3id.org/emmo/domain/battery#battery_17c24e48_4a8f_43c9_b126_92c639780452'; return false;}">ICP66575</a></td>
+  </tr>
+  </table>
+
+.. note::
+
+   used in the Google Pixel 10 mobile phone
 
 
 ----
@@ -2240,12 +2273,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_bd44dba6_459e_4b66_8342_804b09
     <td class="element-table-value">a primary battery cell with a zinc anode and platinum cathode in a sulfuric acid electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2004643' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2004643')){window.location.href='https://www.wikidata.org/wiki/Q2004643'; return false;}">https://www.wikidata.org/wiki/Q2004643</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Grove_cell' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Grove_cell')){window.location.href='https://en.wikipedia.org/wiki/Grove_cell'; return false;}">https://en.wikipedia.org/wiki/Grove_cell</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2004643' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2004643')){window.location.href='https://www.wikidata.org/wiki/Q2004643'; return false;}">https://www.wikidata.org/wiki/Q2004643</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -2307,7 +2340,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_aaac65cb_050c_407a_953a_f3ad3b
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_5afce525_90b7_4807_87f0_ab23a52a0320' onclick="if(!document.getElementById('battery_5afce525_90b7_4807_87f0_ab23a52a0320')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5afce525_90b7_4807_87f0_ab23a52a0320'; return false;}">ZincFlowBattery</a>, <a href='#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0' onclick="if(!document.getElementById('battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0'; return false;}">MetalAirBattery</a>, <a href='#battery_cf82b3bd_25cc_4930_bf49_c57711da1847' onclick="if(!document.getElementById('battery_cf82b3bd_25cc_4930_bf49_c57711da1847')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cf82b3bd_25cc_4930_bf49_c57711da1847'; return false;}">MetalCarbonDioxideBattery</a>, <a href='#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad' onclick="if(!document.getElementById('battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad'; return false;}">LithiumFlowBattery</a></td>
+    <td class="element-table-value"><a href='#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad' onclick="if(!document.getElementById('battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad'; return false;}">LithiumFlowBattery</a>, <a href='#battery_cf82b3bd_25cc_4930_bf49_c57711da1847' onclick="if(!document.getElementById('battery_cf82b3bd_25cc_4930_bf49_c57711da1847')){window.location.href='https://w3id.org/emmo/domain/battery#battery_cf82b3bd_25cc_4930_bf49_c57711da1847'; return false;}">MetalCarbonDioxideBattery</a>, <a href='#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0' onclick="if(!document.getElementById('battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6de6cf0'; return false;}">MetalAirBattery</a>, <a href='#battery_5afce525_90b7_4807_87f0_ab23a52a0320' onclick="if(!document.getElementById('battery_5afce525_90b7_4807_87f0_ab23a52a0320')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5afce525_90b7_4807_87f0_ab23a52a0320'; return false;}">ZincFlowBattery</a></td>
   </tr>
   </table>
 
@@ -2331,16 +2364,368 @@ IRI: https://w3id.org/emmo/domain/battery#battery_81ed185e_a45a_4e4b_9be7_f8c93e
     <td class="element-table-value">a flow battery in which hydrogen bromide (HBr) serves as the electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q17045938' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q17045938')){window.location.href='https://www.wikidata.org/wiki/Q17045938'; return false;}">https://www.wikidata.org/wiki/Q17045938</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery')){window.location.href='https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery'; return false;}">https://en.wikipedia.org/wiki/Hydrogen%E2%80%93bromine_battery</a></td>
   </tr>
   <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q17045938' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q17045938')){window.location.href='https://www.wikidata.org/wiki/Q17045938'; return false;}">https://www.wikidata.org/wiki/Q17045938</a></td>
+  </tr>
+  <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
     <td class="element-table-value"><a href='#battery_edc98332_248a_436a_a352_5a7897150c4f' onclick="if(!document.getElementById('battery_edc98332_248a_436a_a352_5a7897150c4f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_edc98332_248a_436a_a352_5a7897150c4f'; return false;}">AqueousMetallicFlowBattery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_17c24e48_4a8f_43c9_b126_92c639780452"></div>
+
+ICP66575
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_17c24e48_4a8f_43c9_b126_92c639780452
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">ICP6/65/75</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">A battery cell with a carbon-based negative electrode, cobalt-based positive electrode in a prismatic or pouch cell with nominal dimensions of 6 mm x 65 mm x 75 mm</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
+    <td class="element-table-value"><a href='#battery_e855801e_bdda_461b_913b_1c680027409e' onclick="if(!document.getElementById('battery_e855801e_bdda_461b_913b_1c680027409e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e855801e_bdda_461b_913b_1c680027409e'; return false;}">G20M7</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_94eaf2e3_712d_4678_a431_00ed15ff68d3"></div>
+
+IFp18650
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_94eaf2e3_712d_4678_a431_00ed15ff68d3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 18650 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_078d6aca_33a8_412e_ba4f_63ccfa632efd"></div>
+
+IFp21700
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_078d6aca_33a8_412e_ba4f_63ccfa632efd
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 21700 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_09a02072_a72c_4230_bad8_d426426336d1"></div>
+
+IFp46800
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_09a02072_a72c_4230_bad8_d426426336d1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 46800 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_afe31527_b498_4770_b905_78d03442d41b"></div>
+
+INR18650
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 18650 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a>, <a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
+    <td class="element-table-value"><a href='#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f' onclick="if(!document.getElementById('battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f'; return false;}">INR18650P28B</a>, <a href='#battery_50de8c6a_294c_4576_8592_cf05c9d32000' onclick="if(!document.getElementById('battery_50de8c6a_294c_4576_8592_cf05c9d32000')){window.location.href='https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000'; return false;}">INR1865025R</a>, <a href='#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b' onclick="if(!document.getElementById('battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b'; return false;}">INR18650MJ1</a>, <a href='#battery_f1489778_c355_4cd5_b5ca_35d082ac896a' onclick="if(!document.getElementById('battery_f1489778_c355_4cd5_b5ca_35d082ac896a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a'; return false;}">INR18650P28A</a>, <a href='#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4' onclick="if(!document.getElementById('battery_09cdc3de_2aea_4925_9a65_2f078e72eec4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4'; return false;}">INR1865035E</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_50de8c6a_294c_4576_8592_cf05c9d32000"></div>
+
+INR1865025R
+-----------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">25R</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q120785885' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q120785885')){window.location.href='https://www.wikidata.org/wiki/Q120785885'; return false;}">https://www.wikidata.org/wiki/Q120785885</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_09cdc3de_2aea_4925_9a65_2f078e72eec4"></div>
+
+INR1865035E
+-----------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">35E</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q120799558' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q120799558')){window.location.href='https://www.wikidata.org/wiki/Q120799558'; return false;}">https://www.wikidata.org/wiki/Q120799558</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b"></div>
+
+INR18650MJ1
+-----------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">MJ1</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q120766894' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q120766894')){window.location.href='https://www.wikidata.org/wiki/Q120766894'; return false;}">https://www.wikidata.org/wiki/Q120766894</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_f1489778_c355_4cd5_b5ca_35d082ac896a"></div>
+
+INR18650P28A
+------------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">P28A</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q120799517' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q120799517')){window.location.href='https://www.wikidata.org/wiki/Q120799517'; return false;}">https://www.wikidata.org/wiki/Q120799517</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f"></div>
+
+INR18650P28B
+------------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">P28B</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical 18650 lithium-ion battery cell manufactured by Molicel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q120767033' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q120767033')){window.location.href='https://www.wikidata.org/wiki/Q120767033'; return false;}">https://www.wikidata.org/wiki/Q120767033</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1"></div>
+
+INR21700
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 21700 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_a98746d8_479a_4b49_82c0_c4f46bc32c78"></div>
+
+INR46800
+--------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_a98746d8_479a_4b49_82c0_c4f46bc32c78
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 46800 case</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
   </tr>
   </table>
 
@@ -2427,7 +2812,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_f93bd38a_c44a_4a79_95fb_993750
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79' onclick="if(!document.getElementById('battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79')){window.location.href='https://w3id.org/emmo/domain/battery#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79'; return false;}">IronAirBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a></td>
+    <td class="element-table-value"><a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a>, <a href='#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79' onclick="if(!document.getElementById('battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79')){window.location.href='https://w3id.org/emmo/domain/battery#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79'; return false;}">IronAirBattery</a></td>
   </tr>
   </table>
 
@@ -2455,12 +2840,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_31a80cd5_d4eb_4f7d_a990_f32a5a
     <td class="element-table-value">a type of redox flow battery that uses aqueous solutions of iron salt</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q112649313' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q112649313')){window.location.href='https://www.wikidata.org/wiki/Q112649313'; return false;}">https://www.wikidata.org/wiki/Q112649313</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Iron_redox_flow_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Iron_redox_flow_battery')){window.location.href='https://en.wikipedia.org/wiki/Iron_redox_flow_battery'; return false;}">https://en.wikipedia.org/wiki/Iron_redox_flow_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q112649313' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q112649313')){window.location.href='https://www.wikidata.org/wiki/Q112649313'; return false;}">https://www.wikidata.org/wiki/Q112649313</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -2790,12 +3175,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_7eb62323_1001_4320_8fb5_c590ce
     <td class="element-table-value">secondary battery with an aqueous electrolyte based on dilute sulphuric acid, a positive electrode of lead dioxide and a negative electrode of lead</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q337724' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q337724')){window.location.href='https://www.wikidata.org/wiki/Q337724'; return false;}">https://www.wikidata.org/wiki/Q337724</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery')){window.location.href='https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery'; return false;}">https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q337724' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q337724')){window.location.href='https://www.wikidata.org/wiki/Q337724'; return false;}">https://www.wikidata.org/wiki/Q337724</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -2934,12 +3319,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_899c3993_9a45_498f_9489_ee40ed
     <td class="element-table-value">a battery with electrodes of zinc and copper inserted into a lemon as the electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q3621156' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q3621156')){window.location.href='https://www.wikidata.org/wiki/Q3621156'; return false;}">https://www.wikidata.org/wiki/Q3621156</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lemon_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lemon_battery')){window.location.href='https://en.wikipedia.org/wiki/Lemon_battery'; return false;}">https://en.wikipedia.org/wiki/Lemon_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q3621156' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q3621156')){window.location.href='https://www.wikidata.org/wiki/Q3621156'; return false;}">https://www.wikidata.org/wiki/Q3621156</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -2967,12 +3352,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde
     <td class="element-table-value">a metal-air battery with a lithium negative electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q6126452' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q6126452')){window.location.href='https://www.wikidata.org/wiki/Q6126452'; return false;}">https://www.wikidata.org/wiki/Q6126452</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery')){window.location.href='https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery'; return false;}">https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q6126452' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q6126452')){window.location.href='https://www.wikidata.org/wiki/Q6126452'; return false;}">https://www.wikidata.org/wiki/Q6126452</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -3017,7 +3402,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_d63c6483_4b0c_4966_b152_976ab0
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_72542944_ee85_4335_9f6d_621840e38686' onclick="if(!document.getElementById('battery_72542944_ee85_4335_9f6d_621840e38686')){window.location.href='https://w3id.org/emmo/domain/battery#battery_72542944_ee85_4335_9f6d_621840e38686'; return false;}">LithiumIonPolymerBattery</a>, <a href='#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad' onclick="if(!document.getElementById('battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad'; return false;}">LithiumFlowBattery</a>, <a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a>, <a href='#battery_ada13509_4eed_4e40_a7b1_4cc488144154' onclick="if(!document.getElementById('battery_ada13509_4eed_4e40_a7b1_4cc488144154')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ada13509_4eed_4e40_a7b1_4cc488144154'; return false;}">LithiumMetalBattery</a></td>
+    <td class="element-table-value"><a href='#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad' onclick="if(!document.getElementById('battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74f06cdd_1f07_4e4f_9aac_21ffc4eba5ad'; return false;}">LithiumFlowBattery</a>, <a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a>, <a href='#battery_72542944_ee85_4335_9f6d_621840e38686' onclick="if(!document.getElementById('battery_72542944_ee85_4335_9f6d_621840e38686')){window.location.href='https://w3id.org/emmo/domain/battery#battery_72542944_ee85_4335_9f6d_621840e38686'; return false;}">LithiumIonPolymerBattery</a>, <a href='#battery_ada13509_4eed_4e40_a7b1_4cc488144154' onclick="if(!document.getElementById('battery_ada13509_4eed_4e40_a7b1_4cc488144154')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ada13509_4eed_4e40_a7b1_4cc488144154'; return false;}">LithiumMetalBattery</a></td>
   </tr>
   </table>
 
@@ -3107,12 +3492,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_74f06cdd_1f07_4e4f_9aac_21ffc4
     <td class="element-table-value">a flow battery with a lithium metal negative electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q17142201' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q17142201')){window.location.href='https://www.wikidata.org/wiki/Q17142201'; return false;}">https://www.wikidata.org/wiki/Q17142201</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium-ion_flow_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium-ion_flow_battery')){window.location.href='https://en.wikipedia.org/wiki/Lithium-ion_flow_battery'; return false;}">https://en.wikipedia.org/wiki/Lithium-ion_flow_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q17142201' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q17142201')){window.location.href='https://www.wikidata.org/wiki/Q17142201'; return false;}">https://www.wikidata.org/wiki/Q17142201</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -3140,24 +3525,24 @@ IRI: https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541
     <td class="element-table-value">secondary battery with an organic solvent electrolyte and positive and negative electrodes which utilize an intercalation compound in which lithium is stored</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2822895' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2822895')){window.location.href='https://www.wikidata.org/wiki/Q2822895'; return false;}">https://www.wikidata.org/wiki/Q2822895</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium-ion_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium-ion_battery')){window.location.href='https://en.wikipedia.org/wiki/Lithium-ion_battery'; return false;}">https://en.wikipedia.org/wiki/Lithium-ion_battery</a></td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
-    <td class="element-table-value"><a href='#https://www.electropedia.org/iev/iev.n' onclick="if(!document.getElementById('https://www.electropedia.org/iev/iev.n')){window.location.href='https://www.electropedia.org/iev/iev.n'; return false;}">https://www.electropedia.org/iev/iev.n</a></td>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2822895' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2822895')){window.location.href='https://www.wikidata.org/wiki/Q2822895'; return false;}">https://www.wikidata.org/wiki/Q2822895</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">dbpediaReference</span></td>
     <td class="element-table-value"><a href='#https://dbpedia.org/page/Lithium-ion_battery' onclick="if(!document.getElementById('https://dbpedia.org/page/Lithium-ion_battery')){window.location.href='https://dbpedia.org/page/Lithium-ion_battery'; return false;}">https://dbpedia.org/page/Lithium-ion_battery</a></td>
   </tr>
   <tr>
+    <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
+    <td class="element-table-value"><a href='#https://www.electropedia.org/iev/iev.n' onclick="if(!document.getElementById('https://www.electropedia.org/iev/iev.n')){window.location.href='https://www.electropedia.org/iev/iev.n'; return false;}">https://www.electropedia.org/iev/iev.n</a></td>
+  </tr>
+  <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasElectrolyte some NonAqueousElectrolyte</li><li>hasNegativeElectrode some LithiumInsertionElectrode</li><li>hasPositiveElectrode some LithiumInsertionElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasNegativeElectrode some LithiumInsertionElectrode</li><li>hasElectrolyte some NonAqueousElectrolyte</li><li>hasPositiveElectrode some LithiumInsertionElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -3165,7 +3550,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09' onclick="if(!document.getElementById('battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09')){window.location.href='https://w3id.org/emmo/domain/battery#battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09'; return false;}">LithiumIonManganeseOxideBattery</a>, <a href='#battery_fd811dc3_8c37_4741_a099_78e26e4110ef' onclick="if(!document.getElementById('battery_fd811dc3_8c37_4741_a099_78e26e4110ef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_fd811dc3_8c37_4741_a099_78e26e4110ef'; return false;}">LithiumIonTitanateBattery</a>, <a href='#battery_834095fa_f684_4368_a7ce_853579a1362a' onclick="if(!document.getElementById('battery_834095fa_f684_4368_a7ce_853579a1362a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_834095fa_f684_4368_a7ce_853579a1362a'; return false;}">LithiumIonNickelManganeseCobaltOxideBattery</a>, <a href='#battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd' onclick="if(!document.getElementById('battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd'; return false;}">LithiumIonManganeseIronPhosphateBattery</a>, <a href='#battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c' onclick="if(!document.getElementById('battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c')){window.location.href='https://w3id.org/emmo/domain/battery#battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c'; return false;}">LithiumIonIronPhosphateBattery</a>, <a href='#battery_b3405eb1_801e_416b_8cd2_1473f1868e27' onclick="if(!document.getElementById('battery_b3405eb1_801e_416b_8cd2_1473f1868e27')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b3405eb1_801e_416b_8cd2_1473f1868e27'; return false;}">LithiumIonSiliconOxideGraphiteBattery</a>, <a href='#battery_d51a2b95_a327_4ef5_8692_ab6c412f4945' onclick="if(!document.getElementById('battery_d51a2b95_a327_4ef5_8692_ab6c412f4945')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d51a2b95_a327_4ef5_8692_ab6c412f4945'; return false;}">LithiumIonSiliconOxideBattery</a>, <a href='#battery_4f0b1312_da2f_4039_a06d_d571ce51f835' onclick="if(!document.getElementById('battery_4f0b1312_da2f_4039_a06d_d571ce51f835')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4f0b1312_da2f_4039_a06d_d571ce51f835'; return false;}">LithiumIonCobaltOxideBattery</a>, <a href='#battery_2018e0da_4c25_46e9_83db_38431fc81ce0' onclick="if(!document.getElementById('battery_2018e0da_4c25_46e9_83db_38431fc81ce0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_2018e0da_4c25_46e9_83db_38431fc81ce0'; return false;}">LithiumIonGraphiteBattery</a>, <a href='#battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2' onclick="if(!document.getElementById('battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2'; return false;}">LithiumIonNickelCobaltAluminiumOxideBattery</a>, <a href='#battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4' onclick="if(!document.getElementById('battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4'; return false;}">LithiumIonSiliconBattery</a>, <a href='#battery_4d308636_8dac_4cc9_a0a1_197eefeb203f' onclick="if(!document.getElementById('battery_4d308636_8dac_4cc9_a0a1_197eefeb203f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4d308636_8dac_4cc9_a0a1_197eefeb203f'; return false;}">LithiumIonSiliconGraphiteBattery</a></td>
+    <td class="element-table-value"><a href='#battery_4f0b1312_da2f_4039_a06d_d571ce51f835' onclick="if(!document.getElementById('battery_4f0b1312_da2f_4039_a06d_d571ce51f835')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4f0b1312_da2f_4039_a06d_d571ce51f835'; return false;}">LithiumIonCobaltOxideBattery</a>, <a href='#battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09' onclick="if(!document.getElementById('battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09')){window.location.href='https://w3id.org/emmo/domain/battery#battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09'; return false;}">LithiumIonManganeseOxideBattery</a>, <a href='#battery_17c24e48_4a8f_43c9_b126_92c639780452' onclick="if(!document.getElementById('battery_17c24e48_4a8f_43c9_b126_92c639780452')){window.location.href='https://w3id.org/emmo/domain/battery#battery_17c24e48_4a8f_43c9_b126_92c639780452'; return false;}">ICP66575</a>, <a href='#battery_2018e0da_4c25_46e9_83db_38431fc81ce0' onclick="if(!document.getElementById('battery_2018e0da_4c25_46e9_83db_38431fc81ce0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_2018e0da_4c25_46e9_83db_38431fc81ce0'; return false;}">LithiumIonGraphiteBattery</a>, <a href='#battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c' onclick="if(!document.getElementById('battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c')){window.location.href='https://w3id.org/emmo/domain/battery#battery_04a4e5a4_e6fd_43af_b1ca_4a16d5f8886c'; return false;}">LithiumIonIronPhosphateBattery</a>, <a href='#battery_afe31527_b498_4770_b905_78d03442d41b' onclick="if(!document.getElementById('battery_afe31527_b498_4770_b905_78d03442d41b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b'; return false;}">INR18650</a>, <a href='#battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2' onclick="if(!document.getElementById('battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2')){window.location.href='https://w3id.org/emmo/domain/battery#battery_217e44ed_efd9_4b9e_9cb4_1f7488d996b2'; return false;}">LithiumIonNickelCobaltAluminiumOxideBattery</a>, <a href='#battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4' onclick="if(!document.getElementById('battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_c4fe9409_3cd3_4af0_aa96_5681ef0261b4'; return false;}">LithiumIonSiliconBattery</a>, <a href='#battery_fd811dc3_8c37_4741_a099_78e26e4110ef' onclick="if(!document.getElementById('battery_fd811dc3_8c37_4741_a099_78e26e4110ef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_fd811dc3_8c37_4741_a099_78e26e4110ef'; return false;}">LithiumIonTitanateBattery</a>, <a href='#battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd' onclick="if(!document.getElementById('battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd'; return false;}">LithiumIonManganeseIronPhosphateBattery</a>, <a href='#battery_d51a2b95_a327_4ef5_8692_ab6c412f4945' onclick="if(!document.getElementById('battery_d51a2b95_a327_4ef5_8692_ab6c412f4945')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d51a2b95_a327_4ef5_8692_ab6c412f4945'; return false;}">LithiumIonSiliconOxideBattery</a>, <a href='#battery_4d308636_8dac_4cc9_a0a1_197eefeb203f' onclick="if(!document.getElementById('battery_4d308636_8dac_4cc9_a0a1_197eefeb203f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_4d308636_8dac_4cc9_a0a1_197eefeb203f'; return false;}">LithiumIonSiliconGraphiteBattery</a>, <a href='#battery_b3405eb1_801e_416b_8cd2_1473f1868e27' onclick="if(!document.getElementById('battery_b3405eb1_801e_416b_8cd2_1473f1868e27')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b3405eb1_801e_416b_8cd2_1473f1868e27'; return false;}">LithiumIonSiliconOxideGraphiteBattery</a>, <a href='#battery_834095fa_f684_4368_a7ce_853579a1362a' onclick="if(!document.getElementById('battery_834095fa_f684_4368_a7ce_853579a1362a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_834095fa_f684_4368_a7ce_853579a1362a'; return false;}">LithiumIonNickelManganeseCobaltOxideBattery</a></td>
   </tr>
   </table>
 
@@ -3263,12 +3648,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_04a4e5a4_e6fd_43af_b1ca_4a16d5
     <td class="element-table-value">a lithium ion battery with a lithium iron phosphate positive electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q901551' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q901551')){window.location.href='https://www.wikidata.org/wiki/Q901551'; return false;}">https://www.wikidata.org/wiki/Q901551</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium_iron_pho' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium_iron_pho')){window.location.href='https://en.wikipedia.org/wiki/Lithium_iron_pho'; return false;}">https://en.wikipedia.org/wiki/Lithium_iron_pho</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q901551' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q901551')){window.location.href='https://www.wikidata.org/wiki/Q901551'; return false;}">https://www.wikidata.org/wiki/Q901551</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -3341,12 +3726,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_45804eeb_fba3_49dd_ae79_6b4e95
     <td class="element-table-value">a lithium ion battery with a lithium manganese oxide positive electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q16911101' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q16911101')){window.location.href='https://www.wikidata.org/wiki/Q16911101'; return false;}">https://www.wikidata.org/wiki/Q16911101</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium_ion_mangane' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium_ion_mangane')){window.location.href='https://en.wikipedia.org/wiki/Lithium_ion_mangane'; return false;}">https://en.wikipedia.org/wiki/Lithium_ion_mangane</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q16911101' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q16911101')){window.location.href='https://www.wikidata.org/wiki/Q16911101'; return false;}">https://www.wikidata.org/wiki/Q16911101</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -3593,12 +3978,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_fd811dc3_8c37_4741_a099_78e26e
     <td class="element-table-value">a lithium ion battery with a lithium titanate (LTO) negative electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2564903' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2564903')){window.location.href='https://www.wikidata.org/wiki/Q2564903'; return false;}">https://www.wikidata.org/wiki/Q2564903</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium-titanate_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium-titanate_battery')){window.location.href='https://en.wikipedia.org/wiki/Lithium-titanate_battery'; return false;}">https://en.wikipedia.org/wiki/Lithium-titanate_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2564903' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2564903')){window.location.href='https://www.wikidata.org/wiki/Q2564903'; return false;}">https://www.wikidata.org/wiki/Q2564903</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -3676,7 +4061,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_05adf5d2_0fbd_4c58_906e_4b875a
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_980da224_75c0_4c47_af95_b51ca1443213' onclick="if(!document.getElementById('battery_980da224_75c0_4c47_af95_b51ca1443213')){window.location.href='https://w3id.org/emmo/domain/battery#battery_980da224_75c0_4c47_af95_b51ca1443213'; return false;}">CR2016</a>, <a href='#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b' onclick="if(!document.getElementById('battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b'; return false;}">CR2032</a>, <a href='#battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014' onclick="if(!document.getElementById('battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014'; return false;}">CR2025</a></td>
+    <td class="element-table-value"><a href='#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b' onclick="if(!document.getElementById('battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b61b96ac_f2f4_4b74_82d5_565fe3a2d88b'; return false;}">CR2032</a>, <a href='#battery_980da224_75c0_4c47_af95_b51ca1443213' onclick="if(!document.getElementById('battery_980da224_75c0_4c47_af95_b51ca1443213')){window.location.href='https://w3id.org/emmo/domain/battery#battery_980da224_75c0_4c47_af95_b51ca1443213'; return false;}">CR2016</a>, <a href='#battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014' onclick="if(!document.getElementById('battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9984642f_c9dc_4b98_94f6_6ffe20cfc014'; return false;}">CR2025</a></td>
   </tr>
   </table>
 
@@ -3713,7 +4098,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_ada13509_4eed_4e40_a7b1_4cc488
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_126e9af4_41b4_45b8_81ca_b36af2841d5b' onclick="if(!document.getElementById('battery_126e9af4_41b4_45b8_81ca_b36af2841d5b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_126e9af4_41b4_45b8_81ca_b36af2841d5b'; return false;}">LithiumCarbonMonofluorideBattery</a>, <a href='#battery_eb37da80_4500_49c6_ac9b_da2b3d810efc' onclick="if(!document.getElementById('battery_eb37da80_4500_49c6_ac9b_da2b3d810efc')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eb37da80_4500_49c6_ac9b_da2b3d810efc'; return false;}">LithiumCopperOxideBattery</a>, <a href='#battery_f5fea163_410c_4e35_9408_15d5732c9f32' onclick="if(!document.getElementById('battery_f5fea163_410c_4e35_9408_15d5732c9f32')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f5fea163_410c_4e35_9408_15d5732c9f32'; return false;}">LithiumThionylChlorideBattery</a>, <a href='#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419' onclick="if(!document.getElementById('battery_a5c1aa29_5404_4746_a9d0_0262c44ca419')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419'; return false;}">LithiumSulfurBattery</a>, <a href='#battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363' onclick="if(!document.getElementById('battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363')){window.location.href='https://w3id.org/emmo/domain/battery#battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363'; return false;}">LithiumManganeseDioxideBattery</a>, <a href='#battery_fcbbda5e_7ba3_4355_8817_b90159e59847' onclick="if(!document.getElementById('battery_fcbbda5e_7ba3_4355_8817_b90159e59847')){window.location.href='https://w3id.org/emmo/domain/battery#battery_fcbbda5e_7ba3_4355_8817_b90159e59847'; return false;}">LithiumIronDisulphideBattery</a>, <a href='#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22' onclick="if(!document.getElementById('battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22'; return false;}">LithiumAirBattery</a></td>
+    <td class="element-table-value"><a href='#battery_fcbbda5e_7ba3_4355_8817_b90159e59847' onclick="if(!document.getElementById('battery_fcbbda5e_7ba3_4355_8817_b90159e59847')){window.location.href='https://w3id.org/emmo/domain/battery#battery_fcbbda5e_7ba3_4355_8817_b90159e59847'; return false;}">LithiumIronDisulphideBattery</a>, <a href='#battery_eb37da80_4500_49c6_ac9b_da2b3d810efc' onclick="if(!document.getElementById('battery_eb37da80_4500_49c6_ac9b_da2b3d810efc')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eb37da80_4500_49c6_ac9b_da2b3d810efc'; return false;}">LithiumCopperOxideBattery</a>, <a href='#battery_f5fea163_410c_4e35_9408_15d5732c9f32' onclick="if(!document.getElementById('battery_f5fea163_410c_4e35_9408_15d5732c9f32')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f5fea163_410c_4e35_9408_15d5732c9f32'; return false;}">LithiumThionylChlorideBattery</a>, <a href='#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419' onclick="if(!document.getElementById('battery_a5c1aa29_5404_4746_a9d0_0262c44ca419')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419'; return false;}">LithiumSulfurBattery</a>, <a href='#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22' onclick="if(!document.getElementById('battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22'; return false;}">LithiumAirBattery</a>, <a href='#battery_126e9af4_41b4_45b8_81ca_b36af2841d5b' onclick="if(!document.getElementById('battery_126e9af4_41b4_45b8_81ca_b36af2841d5b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_126e9af4_41b4_45b8_81ca_b36af2841d5b'; return false;}">LithiumCarbonMonofluorideBattery</a>, <a href='#battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363' onclick="if(!document.getElementById('battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363')){window.location.href='https://w3id.org/emmo/domain/battery#battery_05adf5d2_0fbd_4c58_906e_4b875a7f2363'; return false;}">LithiumManganeseDioxideBattery</a></td>
   </tr>
   </table>
 
@@ -3737,12 +4122,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_a5c1aa29_5404_4746_a9d0_0262c4
     <td class="element-table-value">a type of rechargeable battery notable for its high specific energy</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q899170' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q899170')){window.location.href='https://www.wikidata.org/wiki/Q899170'; return false;}">https://www.wikidata.org/wiki/Q899170</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Lithium-' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Lithium-')){window.location.href='https://en.wikipedia.org/wiki/Lithium-'; return false;}">https://en.wikipedia.org/wiki/Lithium-</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q899170' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q899170')){window.location.href='https://www.wikidata.org/wiki/Q899170'; return false;}">https://www.wikidata.org/wiki/Q899170</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -3845,7 +4230,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_53dec2af_0a2a_4205_a9b2_ae96ed
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_80c5a33a_db50_4560_8c04_ba1ce014177e' onclick="if(!document.getElementById('battery_80c5a33a_db50_4560_8c04_ba1ce014177e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_80c5a33a_db50_4560_8c04_ba1ce014177e'; return false;}">MagnesiumAirBattery</a>, <a href='#battery_f13ac384_e21a_40b3_9ee8_023c2586049a' onclick="if(!document.getElementById('battery_f13ac384_e21a_40b3_9ee8_023c2586049a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f13ac384_e21a_40b3_9ee8_023c2586049a'; return false;}">MagnesiumMetalBattery</a>, <a href='#battery_910434d7_36fa_4279_b071_9bac5a9daf92' onclick="if(!document.getElementById('battery_910434d7_36fa_4279_b071_9bac5a9daf92')){window.location.href='https://w3id.org/emmo/domain/battery#battery_910434d7_36fa_4279_b071_9bac5a9daf92'; return false;}">MagnesiumShuttleBattery</a>, <a href='#battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e' onclick="if(!document.getElementById('battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e'; return false;}">MagnesiumIonBattery</a></td>
+    <td class="element-table-value"><a href='#battery_910434d7_36fa_4279_b071_9bac5a9daf92' onclick="if(!document.getElementById('battery_910434d7_36fa_4279_b071_9bac5a9daf92')){window.location.href='https://w3id.org/emmo/domain/battery#battery_910434d7_36fa_4279_b071_9bac5a9daf92'; return false;}">MagnesiumShuttleBattery</a>, <a href='#battery_f13ac384_e21a_40b3_9ee8_023c2586049a' onclick="if(!document.getElementById('battery_f13ac384_e21a_40b3_9ee8_023c2586049a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f13ac384_e21a_40b3_9ee8_023c2586049a'; return false;}">MagnesiumMetalBattery</a>, <a href='#battery_80c5a33a_db50_4560_8c04_ba1ce014177e' onclick="if(!document.getElementById('battery_80c5a33a_db50_4560_8c04_ba1ce014177e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_80c5a33a_db50_4560_8c04_ba1ce014177e'; return false;}">MagnesiumAirBattery</a>, <a href='#battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e' onclick="if(!document.getElementById('battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_9c262b93_0a38_4f0e_9e29_ca958ebfa24e'; return false;}">MagnesiumIonBattery</a></td>
   </tr>
   </table>
 
@@ -3870,7 +4255,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_9c262b93_0a38_4f0e_9e29_ca958e
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasNegativeElectrode some MagnesiumInsertionElectrode</li><li>hasPositiveElectrode some MagnesiumInsertionElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasPositiveElectrode some MagnesiumInsertionElectrode</li><li>hasNegativeElectrode some MagnesiumInsertionElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -4014,12 +4399,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_04d0ea52_8528_4e09_8751_2f5589
     <td class="element-table-value">a primary battery cell with a zinc anode and a mercuric oxide cathode in an alkaline electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q899725' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q899725')){window.location.href='https://www.wikidata.org/wiki/Q899725'; return false;}">https://www.wikidata.org/wiki/Q899725</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Mercury_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Mercury_battery')){window.location.href='https://en.wikipedia.org/wiki/Mercury_battery'; return false;}">https://en.wikipedia.org/wiki/Mercury_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q899725' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q899725')){window.location.href='https://www.wikidata.org/wiki/Q899725'; return false;}">https://www.wikidata.org/wiki/Q899725</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -4051,12 +4436,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6
     <td class="element-table-value">battery in which atmospheric oxygen serves as the active material at the positive electrode and a metal as the active material of the negative electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2891821' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2891821')){window.location.href='https://www.wikidata.org/wiki/Q2891821'; return false;}">https://www.wikidata.org/wiki/Q2891821</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell')){window.location.href='https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell'; return false;}">https://en.wikipedia.org/wiki/Metal-air_electrochemical_cell</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2891821' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2891821')){window.location.href='https://www.wikidata.org/wiki/Q2891821'; return false;}">https://www.wikidata.org/wiki/Q2891821</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -4064,7 +4449,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasNegativeElectrode some MetalElectrode</li><li>hasPositiveElectrode some AirElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasPositiveElectrode some AirElectrode</li><li>hasNegativeElectrode some MetalElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -4072,7 +4457,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_9cfcb1d3_ed39_476a_9300_47ffb6
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8' onclick="if(!document.getElementById('battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8'; return false;}">SodiumAirBattery</a>, <a href='#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79' onclick="if(!document.getElementById('battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79')){window.location.href='https://w3id.org/emmo/domain/battery#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79'; return false;}">IronAirBattery</a>, <a href='#battery_80c5a33a_db50_4560_8c04_ba1ce014177e' onclick="if(!document.getElementById('battery_80c5a33a_db50_4560_8c04_ba1ce014177e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_80c5a33a_db50_4560_8c04_ba1ce014177e'; return false;}">MagnesiumAirBattery</a>, <a href='#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f' onclick="if(!document.getElementById('battery_e8eada73_3811_4bbe_8f65_f6ee089d439f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f'; return false;}">ZincAirBattery</a>, <a href='#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22' onclick="if(!document.getElementById('battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22'; return false;}">LithiumAirBattery</a>, <a href='#battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f' onclick="if(!document.getElementById('battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f'; return false;}">CalciumAirBattery</a>, <a href='#battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92' onclick="if(!document.getElementById('battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92')){window.location.href='https://w3id.org/emmo/domain/battery#battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92'; return false;}">SiliconAirBattery</a>, <a href='#battery_44cb1e3b_480c_4594_a79a_4e4f001050ea' onclick="if(!document.getElementById('battery_44cb1e3b_480c_4594_a79a_4e4f001050ea')){window.location.href='https://w3id.org/emmo/domain/battery#battery_44cb1e3b_480c_4594_a79a_4e4f001050ea'; return false;}">AluminiumAirBattery</a></td>
+    <td class="element-table-value"><a href='#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f' onclick="if(!document.getElementById('battery_e8eada73_3811_4bbe_8f65_f6ee089d439f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f'; return false;}">ZincAirBattery</a>, <a href='#battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8' onclick="if(!document.getElementById('battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7b8c74b3_0fa5_41d5_bb43_6230f5e293c8'; return false;}">SodiumAirBattery</a>, <a href='#battery_80c5a33a_db50_4560_8c04_ba1ce014177e' onclick="if(!document.getElementById('battery_80c5a33a_db50_4560_8c04_ba1ce014177e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_80c5a33a_db50_4560_8c04_ba1ce014177e'; return false;}">MagnesiumAirBattery</a>, <a href='#battery_44cb1e3b_480c_4594_a79a_4e4f001050ea' onclick="if(!document.getElementById('battery_44cb1e3b_480c_4594_a79a_4e4f001050ea')){window.location.href='https://w3id.org/emmo/domain/battery#battery_44cb1e3b_480c_4594_a79a_4e4f001050ea'; return false;}">AluminiumAirBattery</a>, <a href='#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22' onclick="if(!document.getElementById('battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aea9d6ae_7ac4_4dcd_b6ef_5afcde1ccd22'; return false;}">LithiumAirBattery</a>, <a href='#battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92' onclick="if(!document.getElementById('battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92')){window.location.href='https://w3id.org/emmo/domain/battery#battery_67c336e7_4d06_44b0_8f4d_5ab0c4d12a92'; return false;}">SiliconAirBattery</a>, <a href='#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79' onclick="if(!document.getElementById('battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79')){window.location.href='https://w3id.org/emmo/domain/battery#battery_361a67aa_a7d5_4c2b_98e5_7c8e9a919d79'; return false;}">IronAirBattery</a>, <a href='#battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f' onclick="if(!document.getElementById('battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_eeab063b_9dbf_4879_8008_44e5c4a34f1f'; return false;}">CalciumAirBattery</a></td>
   </tr>
   </table>
 
@@ -4125,12 +4510,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_dae4c0f0_c3eb_4662_a0df_767e02
     <td class="element-table-value">cell with an electrolyte consisting of one or more anhydrous molten salts.</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q949927' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q949927')){window.location.href='https://www.wikidata.org/wiki/Q949927'; return false;}">https://www.wikidata.org/wiki/Q949927</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Molten-' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Molten-')){window.location.href='https://en.wikipedia.org/wiki/Molten-'; return false;}">https://en.wikipedia.org/wiki/Molten-</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q949927' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q949927')){window.location.href='https://www.wikidata.org/wiki/Q949927'; return false;}">https://www.wikidata.org/wiki/Q949927</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -4172,6 +4557,31 @@ IRI: https://w3id.org/emmo/domain/battery#battery_84b41796_e958_4740_925c_94c180
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
     <td class="element-table-value"><a href='#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17' onclick="if(!document.getElementById('battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17')){window.location.href='https://w3id.org/emmo/domain/battery#battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17'; return false;}">Battery</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="battery_e769f629_438a_4637_8483_205c866487b3"></div>
+
+NaCR32140MP10
+-------------
+
+IRI: https://w3id.org/emmo/domain/battery#battery_e769f629_438a_4637_8483_205c866487b3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">A cylindrical sodium-ion battery cell manufactured by HiNa Battery Technology Co., Ltd.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
+    <td class="element-table-value"><a href='#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a' onclick="if(!document.getElementById('battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a'; return false;}">SodiumIonBattery</a>, <a href='#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40' onclick="if(!document.getElementById('battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40'; return false;}">CylindricalBattery</a></td>
   </tr>
   </table>
 
@@ -4261,12 +4671,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0c
     <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of cadmium</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q898377' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q898377')){window.location.href='https://www.wikidata.org/wiki/Q898377'; return false;}">https://www.wikidata.org/wiki/Q898377</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery')){window.location.href='https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery'; return false;}">https://en.wikipedia.org/wiki/Nickel%E2%80%93cadmium_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q898377' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q898377')){window.location.href='https://www.wikidata.org/wiki/Q898377'; return false;}">https://www.wikidata.org/wiki/Q898377</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -4306,12 +4716,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f3
     <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing nickel oxide and a negative electrode of iron</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q80722' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q80722')){window.location.href='https://www.wikidata.org/wiki/Q80722'; return false;}">https://www.wikidata.org/wiki/Q80722</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery')){window.location.href='https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery'; return false;}">https://en.wikipedia.org/wiki/Nickel%E2%80%93iron_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q80722' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q80722')){window.location.href='https://www.wikidata.org/wiki/Q80722'; return false;}">https://www.wikidata.org/wiki/Q80722</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -4343,12 +4753,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_75cab90d_4bff_472a_be0f_48e61a
     <td class="element-table-value">secondary battery with an electrolyte of aqueous potassium hydroxide, a positive electrode containing nickel as nickel hydroxide and a negative electrode of hydrogen in the form of a metal hydride</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q308567' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q308567')){window.location.href='https://www.wikidata.org/wiki/Q308567'; return false;}">https://www.wikidata.org/wiki/Q308567</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery')){window.location.href='https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery'; return false;}">https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q308567' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q308567')){window.location.href='https://www.wikidata.org/wiki/Q308567'; return false;}">https://www.wikidata.org/wiki/Q308567</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -4393,7 +4803,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_cf74f431_cdd3_4f0a_a3e7_f1554d
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_75cab90d_4bff_472a_be0f_48e61a272d01' onclick="if(!document.getElementById('battery_75cab90d_4bff_472a_be0f_48e61a272d01')){window.location.href='https://w3id.org/emmo/domain/battery#battery_75cab90d_4bff_472a_be0f_48e61a272d01'; return false;}">NickelMetalHydrideBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a></td>
+    <td class="element-table-value"><a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a>, <a href='#battery_75cab90d_4bff_472a_be0f_48e61a272d01' onclick="if(!document.getElementById('battery_75cab90d_4bff_472a_be0f_48e61a272d01')){window.location.href='https://w3id.org/emmo/domain/battery#battery_75cab90d_4bff_472a_be0f_48e61a272d01'; return false;}">NickelMetalHydrideBattery</a></td>
   </tr>
   </table>
 
@@ -4421,12 +4831,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b7
     <td class="element-table-value">a battery cell with a zinc anode and NiOOH cathode in an alkaline electolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q127108' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q127108')){window.location.href='https://www.wikidata.org/wiki/Q127108'; return false;}">https://www.wikidata.org/wiki/Q127108</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery')){window.location.href='https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery'; return false;}">https://en.wikipedia.org/wiki/Nickel_oxyhydroxide_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q127108' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q127108')){window.location.href='https://www.wikidata.org/wiki/Q127108'; return false;}">https://www.wikidata.org/wiki/Q127108</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -4943,16 +5353,16 @@ IRI: https://w3id.org/emmo/domain/battery#battery_22cd1325_5cbb_4fb3_b6a6_ae7aab
     <td class="element-table-value">a potassium ion shuttle battery with two potassium insertion electrodes</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7234684' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7234684')){window.location.href='https://www.wikidata.org/wiki/Q7234684'; return false;}">https://www.wikidata.org/wiki/Q7234684</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Pota' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Pota')){window.location.href='https://en.wikipedia.org/wiki/Pota'; return false;}">https://en.wikipedia.org/wiki/Pota</a></td>
   </tr>
   <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7234684' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7234684')){window.location.href='https://www.wikidata.org/wiki/Q7234684'; return false;}">https://www.wikidata.org/wiki/Q7234684</a></td>
+  </tr>
+  <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasPositiveElectrode some PotassiumInsertionElectrode</li><li>hasNegativeElectrode some PotassiumInsertionElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasNegativeElectrode some PotassiumInsertionElectrode</li><li>hasPositiveElectrode some PotassiumInsertionElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -5042,12 +5452,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_3b0b0d6e_8b0e_4491_885e_8421d3
     <td class="element-table-value">cell which is not designed to be electrically recharged</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q1378887' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q1378887')){window.location.href='https://www.wikidata.org/wiki/Q1378887'; return false;}">https://www.wikidata.org/wiki/Q1378887</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Primary_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Primary_battery')){window.location.href='https://en.wikipedia.org/wiki/Primary_battery'; return false;}">https://en.wikipedia.org/wiki/Primary_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q1378887' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q1378887')){window.location.href='https://www.wikidata.org/wiki/Q1378887'; return false;}">https://www.wikidata.org/wiki/Q1378887</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -5059,7 +5469,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_3b0b0d6e_8b0e_4491_885e_8421d3
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_69173be9_7105_43da_8635_033364616783' onclick="if(!document.getElementById('battery_69173be9_7105_43da_8635_033364616783')){window.location.href='https://w3id.org/emmo/domain/battery#battery_69173be9_7105_43da_8635_033364616783'; return false;}">PasteLinedCell</a>, <a href='#battery_0f891406_1397_4571_bbc6_d804a32744af' onclick="if(!document.getElementById('battery_0f891406_1397_4571_bbc6_d804a32744af')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0f891406_1397_4571_bbc6_d804a32744af'; return false;}">WetCell</a>, <a href='#battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4' onclick="if(!document.getElementById('battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4'; return false;}">FrogBattery</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0' onclick="if(!document.getElementById('battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0'; return false;}">DryCell</a>, <a href='#battery_27e95677_3fff_476e_aac9_fe6df5d1535d' onclick="if(!document.getElementById('battery_27e95677_3fff_476e_aac9_fe6df5d1535d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_27e95677_3fff_476e_aac9_fe6df5d1535d'; return false;}">VoltaicPile</a>, <a href='#battery_899c3993_9a45_498f_9489_ee40ed3098c9' onclick="if(!document.getElementById('battery_899c3993_9a45_498f_9489_ee40ed3098c9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_899c3993_9a45_498f_9489_ee40ed3098c9'; return false;}">LemonBattery</a>, <a href='#battery_798806c2_9423_486a_b414_d1e49603c8cd' onclick="if(!document.getElementById('battery_798806c2_9423_486a_b414_d1e49603c8cd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_798806c2_9423_486a_b414_d1e49603c8cd'; return false;}">ReserveBatteryCell</a>, <a href='#battery_b079217c_572e_4cc4_be38_a8388977085b' onclick="if(!document.getElementById('battery_b079217c_572e_4cc4_be38_a8388977085b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b079217c_572e_4cc4_be38_a8388977085b'; return false;}">PotatoBattery</a>, <a href='#battery_78826076_05d5_4cc8_b46b_93418a67c91b' onclick="if(!document.getElementById('battery_78826076_05d5_4cc8_b46b_93418a67c91b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_78826076_05d5_4cc8_b46b_93418a67c91b'; return false;}">PaperLinedCell</a></td>
+    <td class="element-table-value"><a href='#battery_0f891406_1397_4571_bbc6_d804a32744af' onclick="if(!document.getElementById('battery_0f891406_1397_4571_bbc6_d804a32744af')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0f891406_1397_4571_bbc6_d804a32744af'; return false;}">WetCell</a>, <a href='#battery_899c3993_9a45_498f_9489_ee40ed3098c9' onclick="if(!document.getElementById('battery_899c3993_9a45_498f_9489_ee40ed3098c9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_899c3993_9a45_498f_9489_ee40ed3098c9'; return false;}">LemonBattery</a>, <a href='#battery_78826076_05d5_4cc8_b46b_93418a67c91b' onclick="if(!document.getElementById('battery_78826076_05d5_4cc8_b46b_93418a67c91b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_78826076_05d5_4cc8_b46b_93418a67c91b'; return false;}">PaperLinedCell</a>, <a href='#battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4' onclick="if(!document.getElementById('battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a48145f2_ba93_40c1_a4f7_0017ccff02b4'; return false;}">FrogBattery</a>, <a href='#battery_27e95677_3fff_476e_aac9_fe6df5d1535d' onclick="if(!document.getElementById('battery_27e95677_3fff_476e_aac9_fe6df5d1535d')){window.location.href='https://w3id.org/emmo/domain/battery#battery_27e95677_3fff_476e_aac9_fe6df5d1535d'; return false;}">VoltaicPile</a>, <a href='#battery_798806c2_9423_486a_b414_d1e49603c8cd' onclick="if(!document.getElementById('battery_798806c2_9423_486a_b414_d1e49603c8cd')){window.location.href='https://w3id.org/emmo/domain/battery#battery_798806c2_9423_486a_b414_d1e49603c8cd'; return false;}">ReserveBatteryCell</a>, <a href='#battery_69173be9_7105_43da_8635_033364616783' onclick="if(!document.getElementById('battery_69173be9_7105_43da_8635_033364616783')){window.location.href='https://w3id.org/emmo/domain/battery#battery_69173be9_7105_43da_8635_033364616783'; return false;}">PasteLinedCell</a>, <a href='#battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0' onclick="if(!document.getElementById('battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_92bc9b20_5de1_40f8_9b55_aff6c3f5e7b0'; return false;}">DryCell</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_b079217c_572e_4cc4_be38_a8388977085b' onclick="if(!document.getElementById('battery_b079217c_572e_4cc4_be38_a8388977085b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b079217c_572e_4cc4_be38_a8388977085b'; return false;}">PotatoBattery</a></td>
   </tr>
   </table>
 
@@ -5145,12 +5555,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fc
     <td class="element-table-value">a flow battery is a rechargeable battery in which electrolyte flows through one or more electrochemical cells from one or more tanks</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q907511' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q907511')){window.location.href='https://www.wikidata.org/wiki/Q907511'; return false;}">https://www.wikidata.org/wiki/Q907511</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Flow_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Flow_battery')){window.location.href='https://en.wikipedia.org/wiki/Flow_battery'; return false;}">https://en.wikipedia.org/wiki/Flow_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q907511' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q907511')){window.location.href='https://www.wikidata.org/wiki/Q907511'; return false;}">https://www.wikidata.org/wiki/Q907511</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">dbpediaReference</span></td>
@@ -5215,12 +5625,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_798806c2_9423_486a_b414_d1e496
     <td class="element-table-value">cell stored in a dry state in which the necessary electrolyte is held separately and which may be transferred for activation to the cell, immediately prior to use, by priming or other means.</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7315268' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7315268')){window.location.href='https://www.wikidata.org/wiki/Q7315268'; return false;}">https://www.wikidata.org/wiki/Q7315268</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Re' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Re')){window.location.href='https://en.wikipedia.org/wiki/Re'; return false;}">https://en.wikipedia.org/wiki/Re</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7315268' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7315268')){window.location.href='https://www.wikidata.org/wiki/Q7315268'; return false;}">https://www.wikidata.org/wiki/Q7315268</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -5257,7 +5667,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_ffe472c5_8e0d_49d6_b2be_945314
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasNegativeElectrode some InsertionElectrode</li><li>hasPositiveElectrode some InsertionElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasPositiveElectrode some InsertionElectrode</li><li>hasNegativeElectrode some InsertionElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -5265,7 +5675,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_ffe472c5_8e0d_49d6_b2be_945314
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a' onclick="if(!document.getElementById('battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a'; return false;}">SodiumIonBattery</a>, <a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a></td>
+    <td class="element-table-value"><a href='#battery_96addc62_ea04_449a_8237_4cd541dd8e5f' onclick="if(!document.getElementById('battery_96addc62_ea04_449a_8237_4cd541dd8e5f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_96addc62_ea04_449a_8237_4cd541dd8e5f'; return false;}">LithiumIonBattery</a>, <a href='#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a' onclick="if(!document.getElementById('battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_42329a95_03fe_4ec1_83cb_b7e8ed52f68a'; return false;}">SodiumIonBattery</a></td>
   </tr>
   </table>
 
@@ -5293,12 +5703,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_efc38420_ecbb_42e4_bb3f_208e7c
     <td class="element-table-value">cell which is designed to be electrically recharged</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q187510' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q187510')){window.location.href='https://www.wikidata.org/wiki/Q187510'; return false;}">https://www.wikidata.org/wiki/Q187510</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Rechargeable_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Rechargeable_battery')){window.location.href='https://en.wikipedia.org/wiki/Rechargeable_battery'; return false;}">https://en.wikipedia.org/wiki/Rechargeable_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q187510' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q187510')){window.location.href='https://www.wikidata.org/wiki/Q187510'; return false;}">https://www.wikidata.org/wiki/Q187510</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -5310,7 +5720,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_efc38420_ecbb_42e4_bb3f_208e7c
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b' onclick="if(!document.getElementById('battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b'; return false;}">BatteryOnFloat</a>, <a href='#battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434' onclick="if(!document.getElementById('battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434'; return false;}">MaintanenceFreeBattery</a>, <a href='#battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050' onclick="if(!document.getElementById('battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050'; return false;}">AluminiumShuttleBattery</a>, <a href='#battery_8f363e2e_8258_415d_8784_9a60fce9aeef' onclick="if(!document.getElementById('battery_8f363e2e_8258_415d_8784_9a60fce9aeef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fce9aeef'; return false;}">RedoxFlowBattery</a>, <a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a>, <a href='#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419' onclick="if(!document.getElementById('battery_a5c1aa29_5404_4746_a9d0_0262c44ca419')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419'; return false;}">LithiumSulfurBattery</a>, <a href='#battery_ffe472c5_8e0d_49d6_b2be_9453145b4507' onclick="if(!document.getElementById('battery_ffe472c5_8e0d_49d6_b2be_9453145b4507')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ffe472c5_8e0d_49d6_b2be_9453145b4507'; return false;}">RockingChairBattery</a>, <a href='#battery_75cab90d_4bff_472a_be0f_48e61a272d01' onclick="if(!document.getElementById('battery_75cab90d_4bff_472a_be0f_48e61a272d01')){window.location.href='https://w3id.org/emmo/domain/battery#battery_75cab90d_4bff_472a_be0f_48e61a272d01'; return false;}">NickelMetalHydrideBattery</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a></td>
+    <td class="element-table-value"><a href='#battery_f8720768_b348_4547_929b_2ffbb3fec199' onclick="if(!document.getElementById('battery_f8720768_b348_4547_929b_2ffbb3fec199')){window.location.href='https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3fec199'; return false;}">SilverOxideCadmiumBattery</a>, <a href='#battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050' onclick="if(!document.getElementById('battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7db1c7e9_5039_41f2_a5ef_b9e27d080050'; return false;}">AluminiumShuttleBattery</a>, <a href='#battery_8f363e2e_8258_415d_8784_9a60fce9aeef' onclick="if(!document.getElementById('battery_8f363e2e_8258_415d_8784_9a60fce9aeef')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8f363e2e_8258_415d_8784_9a60fce9aeef'; return false;}">RedoxFlowBattery</a>, <a href='#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419' onclick="if(!document.getElementById('battery_a5c1aa29_5404_4746_a9d0_0262c44ca419')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a5c1aa29_5404_4746_a9d0_0262c44ca419'; return false;}">LithiumSulfurBattery</a>, <a href='#battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434' onclick="if(!document.getElementById('battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d8b9f2b9_5eb8_4be8_bafa_87789de73434'; return false;}">MaintanenceFreeBattery</a>, <a href='#battery_14ffa830_2789_429d_8c05_d2ae0ca51732' onclick="if(!document.getElementById('battery_14ffa830_2789_429d_8c05_d2ae0ca51732')){window.location.href='https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732'; return false;}">NickelCadmiumBattery</a>, <a href='#battery_a316de25_e469_4a60_81fa_fcb0f372502f' onclick="if(!document.getElementById('battery_a316de25_e469_4a60_81fa_fcb0f372502f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_a316de25_e469_4a60_81fa_fcb0f372502f'; return false;}">NickelIronBattery</a>, <a href='#battery_ffe472c5_8e0d_49d6_b2be_9453145b4507' onclick="if(!document.getElementById('battery_ffe472c5_8e0d_49d6_b2be_9453145b4507')){window.location.href='https://w3id.org/emmo/domain/battery#battery_ffe472c5_8e0d_49d6_b2be_9453145b4507'; return false;}">RockingChairBattery</a>, <a href='#battery_75cab90d_4bff_472a_be0f_48e61a272d01' onclick="if(!document.getElementById('battery_75cab90d_4bff_472a_be0f_48e61a272d01')){window.location.href='https://w3id.org/emmo/domain/battery#battery_75cab90d_4bff_472a_be0f_48e61a272d01'; return false;}">NickelMetalHydrideBattery</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b' onclick="if(!document.getElementById('battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_22a6f05f_fdc7_4670_830d_c23062c9ba6b'; return false;}">BatteryOnFloat</a></td>
   </tr>
   </table>
 
@@ -5520,12 +5930,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_f8720768_b348_4547_929b_2ffbb3
     <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing silver oxide and a negative electrode of cadmium</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q48798855' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q48798855')){window.location.href='https://www.wikidata.org/wiki/Q48798855'; return false;}">https://www.wikidata.org/wiki/Q48798855</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery')){window.location.href='https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery'; return false;}">https://en.wikipedia.org/wiki/Silver%E2%80%93cadmium_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q48798855' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q48798855')){window.location.href='https://www.wikidata.org/wiki/Q48798855'; return false;}">https://www.wikidata.org/wiki/Q48798855</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -5557,12 +5967,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fd
     <td class="element-table-value">secondary battery with an alkaline electrolyte, a positive electrode containing silver and a negative electrode of zinc</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2285713' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2285713')){window.location.href='https://www.wikidata.org/wiki/Q2285713'; return false;}">https://www.wikidata.org/wiki/Q2285713</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Silver_zinc_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Silver_zinc_battery')){window.location.href='https://en.wikipedia.org/wiki/Silver_zinc_battery'; return false;}">https://en.wikipedia.org/wiki/Silver_zinc_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q2285713' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q2285713')){window.location.href='https://www.wikidata.org/wiki/Q2285713'; return false;}">https://www.wikidata.org/wiki/Q2285713</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -5677,16 +6087,16 @@ IRI: https://w3id.org/emmo/domain/battery#battery_42329a95_03fe_4ec1_83cb_b7e8ed
     <td class="element-table-value">secondary battery with a non-aqueous electrolyte and positive and negative electrodes which utilize an intercalation compound in which sodium is stored</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q391088' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q391088')){window.location.href='https://www.wikidata.org/wiki/Q391088'; return false;}">https://www.wikidata.org/wiki/Q391088</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Sodium-ion_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Sodium-ion_battery')){window.location.href='https://en.wikipedia.org/wiki/Sodium-ion_battery'; return false;}">https://en.wikipedia.org/wiki/Sodium-ion_battery</a></td>
   </tr>
   <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q391088' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q391088')){window.location.href='https://www.wikidata.org/wiki/Q391088'; return false;}">https://www.wikidata.org/wiki/Q391088</a></td>
+  </tr>
+  <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
-    <td class="element-table-value"><div class="restriction-list"><ul><li>hasElectrolyte some NonAqueousElectrolyte</li><li>hasNegativeElectrode some SodiumInsertionElectrode</li><li>hasPositiveElectrode some SodiumInsertionElectrode</li></ul></div></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li>hasElectrolyte some NonAqueousElectrolyte</li><li>hasPositiveElectrode some SodiumInsertionElectrode</li><li>hasNegativeElectrode some SodiumInsertionElectrode</li></ul></div></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -5694,7 +6104,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_42329a95_03fe_4ec1_83cb_b7e8ed
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_d3855d31_6aad_4b6d_ab35_c61669df583e' onclick="if(!document.getElementById('battery_d3855d31_6aad_4b6d_ab35_c61669df583e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d3855d31_6aad_4b6d_ab35_c61669df583e'; return false;}">SodiumIonHardCarbonBattery</a></td>
+    <td class="element-table-value"><a href='#battery_e769f629_438a_4637_8483_205c866487b3' onclick="if(!document.getElementById('battery_e769f629_438a_4637_8483_205c866487b3')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e769f629_438a_4637_8483_205c866487b3'; return false;}">NaCR32140MP10</a>, <a href='#battery_d3855d31_6aad_4b6d_ab35_c61669df583e' onclick="if(!document.getElementById('battery_d3855d31_6aad_4b6d_ab35_c61669df583e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d3855d31_6aad_4b6d_ab35_c61669df583e'; return false;}">SodiumIonHardCarbonBattery</a></td>
   </tr>
   </table>
 
@@ -5776,12 +6186,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_ef6a6244_fe3d_406e_8456_f72b45
     <td class="element-table-value">cell with an ionically conducting solid as electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7557794' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7557794')){window.location.href='https://www.wikidata.org/wiki/Q7557794'; return false;}">https://www.wikidata.org/wiki/Q7557794</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Solid-' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Solid-')){window.location.href='https://en.wikipedia.org/wiki/Solid-'; return false;}">https://en.wikipedia.org/wiki/Solid-</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q7557794' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q7557794')){window.location.href='https://www.wikidata.org/wiki/Q7557794'; return false;}">https://www.wikidata.org/wiki/Q7557794</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -6103,12 +6513,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_0c7bde43_72dd_486c_a4a0_296bae
     <td class="element-table-value">secondary battery in which cells are closed but have a valve which allows the escape of gas if the internal pressure exceeds a predetermined value</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q780582' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q780582')){window.location.href='https://www.wikidata.org/wiki/Q780582'; return false;}">https://www.wikidata.org/wiki/Q780582</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/VRLA_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/VRLA_battery')){window.location.href='https://en.wikipedia.org/wiki/VRLA_battery'; return false;}">https://en.wikipedia.org/wiki/VRLA_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q780582' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q780582')){window.location.href='https://www.wikidata.org/wiki/Q780582'; return false;}">https://www.wikidata.org/wiki/Q780582</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
@@ -6148,12 +6558,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_e2aac68e_f880_4be5_87e6_73eba9
     <td class="element-table-value">a type of flow battery that employs vanadium ions as charge carriers</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q905330' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q905330')){window.location.href='https://www.wikidata.org/wiki/Q905330'; return false;}">https://www.wikidata.org/wiki/Q905330</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Vanadium_redox_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Vanadium_redox_battery')){window.location.href='https://en.wikipedia.org/wiki/Vanadium_redox_battery'; return false;}">https://en.wikipedia.org/wiki/Vanadium_redox_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q905330' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q905330')){window.location.href='https://www.wikidata.org/wiki/Q905330'; return false;}">https://www.wikidata.org/wiki/Q905330</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -6239,12 +6649,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_0f891406_1397_4571_bbc6_d804a3
     <td class="element-table-value">a primary battery cell with an excess liquid electrolyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q11563836' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q11563836')){window.location.href='https://www.wikidata.org/wiki/Q11563836'; return false;}">https://www.wikidata.org/wiki/Q11563836</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#Wet_cell' onclick="if(!document.getElementById('Wet_cell')){window.location.href='https://en.wikipedia.org/wiki/Electric_battery#Wet_cell'; return false;}">https://en.wikipedia.org/wiki/Electric_battery#Wet_cell</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q11563836' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q11563836')){window.location.href='https://www.wikidata.org/wiki/Q11563836'; return false;}">https://www.wikidata.org/wiki/Q11563836</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -6252,7 +6662,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_0f891406_1397_4571_bbc6_d804a3
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_d94a5498_321a_43d3_af62_80f8253068a9' onclick="if(!document.getElementById('battery_d94a5498_321a_43d3_af62_80f8253068a9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d94a5498_321a_43d3_af62_80f8253068a9'; return false;}">DaniellCell</a>, <a href='#battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4' onclick="if(!document.getElementById('battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4'; return false;}">LeclancheWetCell</a>, <a href='#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0' onclick="if(!document.getElementById('battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0'; return false;}">ClarkCell</a>, <a href='#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5' onclick="if(!document.getElementById('battery_bd44dba6_459e_4b66_8342_804b09a3a6b5')){window.location.href='https://w3id.org/emmo/domain/battery#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5'; return false;}">GroveCell</a>, <a href='#battery_70dad2a6_5316_4211_99a6_2031119515c1' onclick="if(!document.getElementById('battery_70dad2a6_5316_4211_99a6_2031119515c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_70dad2a6_5316_4211_99a6_2031119515c1'; return false;}">BunsenCell</a></td>
+    <td class="element-table-value"><a href='#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0' onclick="if(!document.getElementById('battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0'; return false;}">ClarkCell</a>, <a href='#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5' onclick="if(!document.getElementById('battery_bd44dba6_459e_4b66_8342_804b09a3a6b5')){window.location.href='https://w3id.org/emmo/domain/battery#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5'; return false;}">GroveCell</a>, <a href='#battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4' onclick="if(!document.getElementById('battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4')){window.location.href='https://w3id.org/emmo/domain/battery#battery_8c391d2a_7d44_49a2_affd_176afd3d4ba4'; return false;}">LeclancheWetCell</a>, <a href='#battery_d94a5498_321a_43d3_af62_80f8253068a9' onclick="if(!document.getElementById('battery_d94a5498_321a_43d3_af62_80f8253068a9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d94a5498_321a_43d3_af62_80f8253068a9'; return false;}">DaniellCell</a>, <a href='#battery_70dad2a6_5316_4211_99a6_2031119515c1' onclick="if(!document.getElementById('battery_70dad2a6_5316_4211_99a6_2031119515c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_70dad2a6_5316_4211_99a6_2031119515c1'; return false;}">BunsenCell</a></td>
   </tr>
   </table>
 
@@ -6280,12 +6690,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_e8eada73_3811_4bbe_8f65_f6ee08
     <td class="element-table-value">a type of metal-air battery with a zinc negative electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q204582' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q204582')){window.location.href='https://www.wikidata.org/wiki/Q204582'; return false;}">https://www.wikidata.org/wiki/Q204582</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery')){window.location.href='https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery'; return false;}">https://en.wikipedia.org/wiki/Zinc%E2%80%93air_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q204582' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q204582')){window.location.href='https://www.wikidata.org/wiki/Q204582'; return false;}">https://www.wikidata.org/wiki/Q204582</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -6330,7 +6740,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_e1d7fb00_03b9_46ea_90c9_501f53
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_5afce525_90b7_4807_87f0_ab23a52a0320' onclick="if(!document.getElementById('battery_5afce525_90b7_4807_87f0_ab23a52a0320')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5afce525_90b7_4807_87f0_ab23a52a0320'; return false;}">ZincFlowBattery</a>, <a href='#battery_d94a5498_321a_43d3_af62_80f8253068a9' onclick="if(!document.getElementById('battery_d94a5498_321a_43d3_af62_80f8253068a9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d94a5498_321a_43d3_af62_80f8253068a9'; return false;}">DaniellCell</a>, <a href='#battery_04d0ea52_8528_4e09_8751_2f55897a8f6e' onclick="if(!document.getElementById('battery_04d0ea52_8528_4e09_8751_2f55897a8f6e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_04d0ea52_8528_4e09_8751_2f55897a8f6e'; return false;}">MercuryBattery</a>, <a href='#battery_46b8433d_fd57_4819_b34f_1636b72ad12e' onclick="if(!document.getElementById('battery_46b8433d_fd57_4819_b34f_1636b72ad12e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e'; return false;}">NickelZincBattery</a>, <a href='#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0' onclick="if(!document.getElementById('battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0'; return false;}">ClarkCell</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e' onclick="if(!document.getElementById('battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e'; return false;}">NickelZincBattery</a>, <a href='#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f' onclick="if(!document.getElementById('battery_e8eada73_3811_4bbe_8f65_f6ee089d439f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f'; return false;}">ZincAirBattery</a>, <a href='#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5' onclick="if(!document.getElementById('battery_bd44dba6_459e_4b66_8342_804b09a3a6b5')){window.location.href='https://w3id.org/emmo/domain/battery#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5'; return false;}">GroveCell</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a' onclick="if(!document.getElementById('battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a'; return false;}">ZincCarbonBattery</a>, <a href='#battery_b023508b_62eb_4b7d_9b4d_0715be990dd8' onclick="if(!document.getElementById('battery_b023508b_62eb_4b7d_9b4d_0715be990dd8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b023508b_62eb_4b7d_9b4d_0715be990dd8'; return false;}">ZincShuttleBattery</a></td>
+    <td class="element-table-value"><a href='#battery_b023508b_62eb_4b7d_9b4d_0715be990dd8' onclick="if(!document.getElementById('battery_b023508b_62eb_4b7d_9b4d_0715be990dd8')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b023508b_62eb_4b7d_9b4d_0715be990dd8'; return false;}">ZincShuttleBattery</a>, <a href='#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f' onclick="if(!document.getElementById('battery_e8eada73_3811_4bbe_8f65_f6ee089d439f')){window.location.href='https://w3id.org/emmo/domain/battery#battery_e8eada73_3811_4bbe_8f65_f6ee089d439f'; return false;}">ZincAirBattery</a>, <a href='#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a' onclick="if(!document.getElementById('battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a')){window.location.href='https://w3id.org/emmo/domain/battery#battery_aaaa6f4b_435b_425b_acb1_e8a427c3489a'; return false;}">ZincCarbonBattery</a>, <a href='#battery_46b8433d_fd57_4819_b34f_1636b72ad12e' onclick="if(!document.getElementById('battery_46b8433d_fd57_4819_b34f_1636b72ad12e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e'; return false;}">NickelZincBattery</a>, <a href='#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0' onclick="if(!document.getElementById('battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d6d75b55_6f9b_42f5_a31e_b0e5ba3536a0'; return false;}">ClarkCell</a>, <a href='#battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e' onclick="if(!document.getElementById('battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_0c3674b5_3f7b_4308_9bed_0ade6eb69a4e'; return false;}">NickelZincBattery</a>, <a href='#battery_04d0ea52_8528_4e09_8751_2f55897a8f6e' onclick="if(!document.getElementById('battery_04d0ea52_8528_4e09_8751_2f55897a8f6e')){window.location.href='https://w3id.org/emmo/domain/battery#battery_04d0ea52_8528_4e09_8751_2f55897a8f6e'; return false;}">MercuryBattery</a>, <a href='#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5' onclick="if(!document.getElementById('battery_bd44dba6_459e_4b66_8342_804b09a3a6b5')){window.location.href='https://w3id.org/emmo/domain/battery#battery_bd44dba6_459e_4b66_8342_804b09a3a6b5'; return false;}">GroveCell</a>, <a href='#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413' onclick="if(!document.getElementById('battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413')){window.location.href='https://w3id.org/emmo/domain/battery#battery_49f68ecb_c8d1_4cfc_93ec_88c9fdbc7413'; return false;}">SilverZincBattery</a>, <a href='#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab' onclick="if(!document.getElementById('battery_b81610fd_0bce_411b_986e_f3b4f3f562ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3f562ab'; return false;}">ZincSilverOxideBattery</a>, <a href='#battery_d94a5498_321a_43d3_af62_80f8253068a9' onclick="if(!document.getElementById('battery_d94a5498_321a_43d3_af62_80f8253068a9')){window.location.href='https://w3id.org/emmo/domain/battery#battery_d94a5498_321a_43d3_af62_80f8253068a9'; return false;}">DaniellCell</a>, <a href='#battery_5afce525_90b7_4807_87f0_ab23a52a0320' onclick="if(!document.getElementById('battery_5afce525_90b7_4807_87f0_ab23a52a0320')){window.location.href='https://w3id.org/emmo/domain/battery#battery_5afce525_90b7_4807_87f0_ab23a52a0320'; return false;}">ZincFlowBattery</a></td>
   </tr>
   </table>
 
@@ -6358,12 +6768,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_7b28d3a1_24d5_477b_afd8_af2bac
     <td class="element-table-value">a flow battery with an aqueous zinc bromide electrolyte and zinc metal electrode</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q204563' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q204563')){window.location.href='https://www.wikidata.org/wiki/Q204563'; return false;}">https://www.wikidata.org/wiki/Q204563</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Zinc-bromine_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Zinc-bromine_battery')){window.location.href='https://en.wikipedia.org/wiki/Zinc-bromine_battery'; return false;}">https://en.wikipedia.org/wiki/Zinc-bromine_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q204563' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q204563')){window.location.href='https://www.wikidata.org/wiki/Q204563'; return false;}">https://www.wikidata.org/wiki/Q204563</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -6408,7 +6818,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_aaaa6f4b_435b_425b_acb1_e8a427
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab' onclick="if(!document.getElementById('battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab'; return false;}">LeclancheBattery</a>, <a href='#battery_b572826a_b4e4_4986_b57d_f7b945061f8b' onclick="if(!document.getElementById('battery_b572826a_b4e4_4986_b57d_f7b945061f8b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945061f8b'; return false;}">AlkalineZincManganeseDioxideBattery</a>, <a href='#battery_55a8a42d_0f83_473d_82b0_32640114b7db' onclick="if(!document.getElementById('battery_55a8a42d_0f83_473d_82b0_32640114b7db')){window.location.href='https://w3id.org/emmo/domain/battery#battery_55a8a42d_0f83_473d_82b0_32640114b7db'; return false;}">ZincChlorideBattery</a>, <a href='#battery_70dad2a6_5316_4211_99a6_2031119515c1' onclick="if(!document.getElementById('battery_70dad2a6_5316_4211_99a6_2031119515c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_70dad2a6_5316_4211_99a6_2031119515c1'; return false;}">BunsenCell</a></td>
+    <td class="element-table-value"><a href='#battery_55a8a42d_0f83_473d_82b0_32640114b7db' onclick="if(!document.getElementById('battery_55a8a42d_0f83_473d_82b0_32640114b7db')){window.location.href='https://w3id.org/emmo/domain/battery#battery_55a8a42d_0f83_473d_82b0_32640114b7db'; return false;}">ZincChlorideBattery</a>, <a href='#battery_b572826a_b4e4_4986_b57d_f7b945061f8b' onclick="if(!document.getElementById('battery_b572826a_b4e4_4986_b57d_f7b945061f8b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_b572826a_b4e4_4986_b57d_f7b945061f8b'; return false;}">AlkalineZincManganeseDioxideBattery</a>, <a href='#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab' onclick="if(!document.getElementById('battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab')){window.location.href='https://w3id.org/emmo/domain/battery#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab'; return false;}">LeclancheBattery</a>, <a href='#battery_70dad2a6_5316_4211_99a6_2031119515c1' onclick="if(!document.getElementById('battery_70dad2a6_5316_4211_99a6_2031119515c1')){window.location.href='https://w3id.org/emmo/domain/battery#battery_70dad2a6_5316_4211_99a6_2031119515c1'; return false;}">BunsenCell</a></td>
   </tr>
   </table>
 
@@ -6432,12 +6842,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_dfbafabe_e807_4343_9493_abef18
     <td class="element-table-value">a flow battery that uses solutions of zinc as anolyte and cerium as catholyte</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q8072320' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q8072320')){window.location.href='https://www.wikidata.org/wiki/Q8072320'; return false;}">https://www.wikidata.org/wiki/Q8072320</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery')){window.location.href='https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery'; return false;}">https://en.wikipedia.org/wiki/Zinc%E2%80%93cerium_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q8072320' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q8072320')){window.location.href='https://www.wikidata.org/wiki/Q8072320'; return false;}">https://www.wikidata.org/wiki/Q8072320</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclassOf</span></td>
@@ -6532,7 +6942,7 @@ IRI: https://w3id.org/emmo/domain/battery#battery_5afce525_90b7_4807_87f0_ab23a5
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">subclasses</span></td>
-    <td class="element-table-value"><a href='#battery_7b28d3a1_24d5_477b_afd8_af2bac480724' onclick="if(!document.getElementById('battery_7b28d3a1_24d5_477b_afd8_af2bac480724')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7b28d3a1_24d5_477b_afd8_af2bac480724'; return false;}">ZincBromineFlowBattery</a>, <a href='#battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b' onclick="if(!document.getElementById('battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b'; return false;}">ZincChlorineFlowBattery</a>, <a href='#battery_dfbafabe_e807_4343_9493_abef18b2232b' onclick="if(!document.getElementById('battery_dfbafabe_e807_4343_9493_abef18b2232b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dfbafabe_e807_4343_9493_abef18b2232b'; return false;}">ZincCeriumFlowBattery</a></td>
+    <td class="element-table-value"><a href='#battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b' onclick="if(!document.getElementById('battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_820f837e_ec1c_40d7_a63a_cac3f9d91e6b'; return false;}">ZincChlorineFlowBattery</a>, <a href='#battery_dfbafabe_e807_4343_9493_abef18b2232b' onclick="if(!document.getElementById('battery_dfbafabe_e807_4343_9493_abef18b2232b')){window.location.href='https://w3id.org/emmo/domain/battery#battery_dfbafabe_e807_4343_9493_abef18b2232b'; return false;}">ZincCeriumFlowBattery</a>, <a href='#battery_7b28d3a1_24d5_477b_afd8_af2bac480724' onclick="if(!document.getElementById('battery_7b28d3a1_24d5_477b_afd8_af2bac480724')){window.location.href='https://w3id.org/emmo/domain/battery#battery_7b28d3a1_24d5_477b_afd8_af2bac480724'; return false;}">ZincBromineFlowBattery</a></td>
   </tr>
   </table>
 
@@ -6556,12 +6966,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_b023508b_62eb_4b7d_9b4d_0715be
     <td class="element-table-value">a battery that shuttles zinc ions as charge carriers</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q30590622' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q30590622')){window.location.href='https://www.wikidata.org/wiki/Q30590622'; return false;}">https://www.wikidata.org/wiki/Q30590622</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Zinc-ion_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Zinc-ion_battery')){window.location.href='https://en.wikipedia.org/wiki/Zinc-ion_battery'; return false;}">https://en.wikipedia.org/wiki/Zinc-ion_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q30590622' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q30590622')){window.location.href='https://www.wikidata.org/wiki/Q30590622'; return false;}">https://www.wikidata.org/wiki/Q30590622</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">restrictions</span></td>
@@ -6597,12 +7007,12 @@ IRI: https://w3id.org/emmo/domain/battery#battery_b81610fd_0bce_411b_986e_f3b4f3
     <td class="element-table-value">primary battery with an alkaline electrolyte, a positive electrode containing silver oxide and a negative electrode of zinc</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
-    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q900791' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q900791')){window.location.href='https://www.wikidata.org/wiki/Q900791'; return false;}">https://www.wikidata.org/wiki/Q900791</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">wikipediaReference</span></td>
     <td class="element-table-value"><a href='#https://en.wikipedia.org/wiki/Silver_oxide_battery' onclick="if(!document.getElementById('https://en.wikipedia.org/wiki/Silver_oxide_battery')){window.location.href='https://en.wikipedia.org/wiki/Silver_oxide_battery'; return false;}">https://en.wikipedia.org/wiki/Silver_oxide_battery</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">wikidataReference</span></td>
+    <td class="element-table-value"><a href='#https://www.wikidata.org/wiki/Q900791' onclick="if(!document.getElementById('https://www.wikidata.org/wiki/Q900791')){window.location.href='https://www.wikidata.org/wiki/Q900791'; return false;}">https://www.wikidata.org/wiki/Q900791</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEVReference</span></td>
