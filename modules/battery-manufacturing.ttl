@@ -17,7 +17,7 @@
 @base <https://w3id.org/emmo/domain/battery/modules/battery-manufacturing> .
 
 <https://w3id.org/emmo/domain/battery/modules/battery-manufacturing> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-manufacturing> ;
-                                                        owl:imports <https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-reference> ,
-                                                                    <https://w3id.org/emmo/domain/electrochemistry/0.31.2/modules/electrochemistry-manufacturing> ;
+                                                        owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-manufacturing> ;
+                                                        owl:imports <https://w3id.org/emmo/domain/battery/0.18.7/reference/battery-reference> ,
+                                                                    <https://w3id.org/emmo/domain/electrochemistry/0.33.0/modules/electrochemistry-manufacturing> ;
                                                         dcterms:abstract "The battery-manufacturing module contains the terms and relations for the general process of manufacturing batteries. Battery specific extensions are available." .

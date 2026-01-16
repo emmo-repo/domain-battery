@@ -36,10 +36,13 @@
                             "hasMeasurementUnit": "emmo:UnitOne"
                         }
                     ]
-                }
+                },
                 "hasActiveMaterial": {
                     "@type": "LithiumNickelManganeseOxide"
                 }
+            },
+            "hasElectrolyte": {
+                "@type": "LP56"
             },
             "hasProperty": [
                 {

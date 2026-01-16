@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/electrochemistry" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/electrochemistry.ttl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/dependencies" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/electrochemistry-dependencies.ttl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-reference" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/reference/electrochemistry-reference.ttl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-quantities" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/reference/electrochemistry-quantities.ttl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/modules/electrochemistry-testing" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/modules/electrochemistry-testing.ttl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/modules/electrochemistry-manufacturing" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/modules/electrochemistry-manufacturing.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/electrochemistry" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/electrochemistry.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/dependencies" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/electrochemistry-dependencies.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-reference" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/reference/electrochemistry-reference.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-quantities" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/reference/electrochemistry-quantities.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/modules/electrochemistry-testing" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/modules/electrochemistry-testing.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/domain/electrochemistry/0.33.0/modules/electrochemistry-manufacturing" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/modules/electrochemistry-manufacturing.ttl"/>
     
-    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/modules/manufacturing-equipment.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.31.2/modules/manufacturing-processes.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/modules/manufacturing-equipment.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/0.33.0/modules/manufacturing-processes.ttl"/>
 
     <uri id="Imports Wizard Entry" name="https://w3id.org/emmo/1.0.2" uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/emmo.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/battery"    			uri="../battery.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/dependencies"    			uri="../battery-dependencies.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-quantities"    	uri="../reference/battery-quantities.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-reference"    	uri="../reference/battery-reference.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/battery"    			uri="../battery.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/dependencies"    			uri="../battery-dependencies.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/reference/battery-quantities"    	uri="../reference/battery-quantities.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/reference/battery-reference"    	uri="../reference/battery-reference.ttl"/>
 
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-products"    	        uri="./subdomains/battery-products.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-cell-geometry"    	uri="battery-cell-geometry.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-manufacturing"    	uri="battery-manufacturing.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-testing"    	uri="battery-testing.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-products"    	        uri="./subdomains/battery-products.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-cell-geometry"    	uri="battery-cell-geometry.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-manufacturing"    	uri="battery-manufacturing.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-testing"    	uri="battery-testing.ttl"/>
 
 
-        <uri name="https://w3id.org/emmo/domain/chemical-substance/0.12.4/chemical-substance" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemical-substance/0.12.4/chemical-substance.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/chemical-substance/0.12.4/dependencies" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemical-substance/0.12.4/chemical-substance-dependencies.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/chemical-substance/0.13.2/chemical-substance" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemical-substance/0.13.2/chemical-substance.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/chemical-substance/0.13.2/dependencies" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemical-substance/0.13.2/chemical-substance-dependencies.ttl"/>
 
         <uri name="https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo" uri="https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/refs/heads/main/chameo.ttl"/>
 

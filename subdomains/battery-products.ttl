@@ -17,13 +17,41 @@
 @base <https://w3id.org/emmo/domain/battery/modules/battery-products> .
 
 <https://w3id.org/emmo/domain/battery/modules/battery-products> rdf:type owl:Ontology ;
-                                                                 owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-products> ;
-                                                                 owl:imports <https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-reference> ;
+                                                                 owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-products> ;
+                                                                 owl:imports <https://w3id.org/emmo/domain/battery/0.18.7/reference/battery-reference> ;
                                                                  dcterms:abstract "The battery-products module contains the terms and relations for describing products related to batteries." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://schema.org/model
+schema:model rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0
+emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569
+emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204
+emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4
+emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Classes
 #################################################################
+
+###  https://schema.org/Product
+schema:Product rdf:type owl:Class .
+
 
 ###  https://w3id.org/emmo/domain/battery#battery_078d6aca_33a8_412e_ba4f_63ccfa632efd
 :battery_078d6aca_33a8_412e_ba4f_63ccfa632efd rdf:type owl:Class ;
@@ -46,6 +74,14 @@
                                               skos:prefLabel "INR1865035E"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799558"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_17c24e48_4a8f_43c9_b126_92c639780452
+:battery_17c24e48_4a8f_43c9_b126_92c639780452 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ;
+                                              skos:altLabel "ICP6/65/75"@en ;
+                                              skos:prefLabel "ICP66575"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A battery cell with a carbon-based negative electrode, cobalt-based positive electrode in a prismatic or pouch cell with nominal dimensions of 6 mm x 65 mm x 75 mm"@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
@@ -116,6 +152,20 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A cylindrical sodium-ion battery cell manufactured by HiNa Battery Technology Co., Ltd."@en .
 
 
+###  https://w3id.org/emmo/domain/battery#battery_e855801e_bdda_461b_913b_1c680027409e
+:battery_e855801e_bdda_461b_913b_1c680027409e rdf:type owl:Class ;
+                                              rdfs:subClassOf schema:Product ,
+                                                              :battery_17c24e48_4a8f_43c9_b126_92c639780452 ;
+                                              skos:note "used in the Google Pixel 10 mobile phone"@en ;
+                                              skos:prefLabel "G20M7"@en ;
+                                              schema:model "G20M7" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A lithium-ion battery cell (1ICP6/65/75) manufactured by Google"@en ;
+                                              emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :battery_2d27a9ea_2f3e_4170_817a_1680ada346dd ,
+                                                                                             :battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225 ,
+                                                                                             :battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7 ,
+                                                                                             :battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
 :battery_f1489778_c355_4cd5_b5ca_35d082ac896a rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
@@ -123,6 +173,47 @@
                                               skos:prefLabel "INR18650P28A"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799517"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/emmo/domain/battery#battery_2d27a9ea_2f3e_4170_817a_1680ada346dd
+:battery_2d27a9ea_2f3e_4170_817a_1680ada346dd rdf:type owl:NamedIndividual ,
+                                                       echem:electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4385 ;
+                                              skos:prefLabel "RatedCapacity_4835_mAh"@en ;
+                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:MilliAmpereHour .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225
+:battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225 rdf:type owl:NamedIndividual ,
+                                                       echem:electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982 ;
+                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 18.86 ;
+                                              skos:prefLabel "RatedEnergy_18.86_Wh"@en ;
+                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:WattHour .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7
+:battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7 rdf:type owl:NamedIndividual ,
+                                                       echem:electrochemistry_639b844a_e801_436b_985d_28926129ead6 ;
+                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 3.90 ;
+                                              skos:prefLabel "NominalVoltage_3.90_V"@en ;
+                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:Volt .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef
+:battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef rdf:type owl:NamedIndividual ,
+                                                       emmo:EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405 ;
+                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 63 ;
+                                              skos:prefLabel "Mass_63_g"@en ;
+                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:Gram .
+
+
+###  https://www.wikidata.org/wiki/Q95
+<https://www.wikidata.org/wiki/Q95> rdf:type owl:NamedIndividual ;
+                                    skos:prefLabel "Google"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
