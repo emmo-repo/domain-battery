@@ -17,28 +17,76 @@
 @base <https://w3id.org/emmo/domain/battery/modules/battery-products> .
 
 <https://w3id.org/emmo/domain/battery/modules/battery-products> rdf:type owl:Ontology ;
-                                                                 owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.6/modules/battery-products> ;
-                                                                 owl:imports <https://w3id.org/emmo/domain/battery/0.18.6/reference/battery-reference> ;
+                                                                 owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.7/modules/battery-products> ;
+                                                                 owl:imports <https://w3id.org/emmo/domain/battery/0.18.7/reference/battery-reference> ;
                                                                  dcterms:abstract "The battery-products module contains the terms and relations for describing products related to batteries." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://schema.org/model
+schema:model rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0
+emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569
+emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204
+emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4
+emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Classes
 #################################################################
 
+###  https://schema.org/Product
+schema:Product rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_078d6aca_33a8_412e_ba4f_63ccfa632efd
+:battery_078d6aca_33a8_412e_ba4f_63ccfa632efd rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "IFp21700"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 21700 case"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_09a02072_a72c_4230_bad8_d426426336d1
+:battery_09a02072_a72c_4230_bad8_d426426336d1 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "IFp46800"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 46800 case"@en .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_09cdc3de_2aea_4925_9a65_2f078e72eec4
 :battery_09cdc3de_2aea_4925_9a65_2f078e72eec4 rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
-                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
                                               skos:altLabel "35E"@en ;
                                               skos:prefLabel "INR1865035E"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799558"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Samsung"@en .
 
 
+###  https://w3id.org/emmo/domain/battery#battery_17c24e48_4a8f_43c9_b126_92c639780452
+:battery_17c24e48_4a8f_43c9_b126_92c639780452 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ;
+                                              skos:altLabel "ICP6/65/75"@en ;
+                                              skos:prefLabel "ICP66575"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A battery cell with a carbon-based negative electrode, cobalt-based positive electrode in a prismatic or pouch cell with nominal dimensions of 6 mm x 65 mm x 75 mm"@en .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_50de8c6a_294c_4576_8592_cf05c9d32000
 :battery_50de8c6a_294c_4576_8592_cf05c9d32000 rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
-                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
                                               skos:altLabel "25R"@en ;
                                               skos:prefLabel "INR1865025R"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120785885" ;
@@ -47,8 +95,7 @@
 
 ###  https://w3id.org/emmo/domain/battery#battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f
 :battery_58cc84db_b997_4f2c_81cc_cf11bfc6ac2f rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
-                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
                                               skos:altLabel "P28B"@en ;
                                               skos:prefLabel "INR18650P28B"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120767033" ;
@@ -57,12 +104,41 @@
 
 ###  https://w3id.org/emmo/domain/battery#battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b
 :battery_6d935cbd_5354_4ff5_9ae2_5b90d035ad7b rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
-                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
+                                              rdfs:seeAlso "https://www.batterydesign.net/lg-18650/" ;
                                               skos:altLabel "MJ1"@en ;
                                               skos:prefLabel "INR18650MJ1"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120766894" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell manufactured by LG Chem"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_94eaf2e3_712d_4678_a431_00ed15ff68d3
+:battery_94eaf2e3_712d_4678_a431_00ed15ff68d3 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "IFp18650"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, iron-phosphate-based positive electrode, in a round 18650 case"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a98746d8_479a_4b49_82c0_c4f46bc32c78
+:battery_a98746d8_479a_4b49_82c0_c4f46bc32c78 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "INR46800"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 46800 case"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_afe31527_b498_4770_b905_78d03442d41b
+:battery_afe31527_b498_4770_b905_78d03442d41b rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
+                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "INR18650"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 18650 case"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1
+:battery_cac312ae_abc9_4a7b_860c_fb0c68cc90e1 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              skos:prefLabel "INR21700"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical lithium-ion battery cell with a carbon-based negative electode, nickel-based positive electrode, in a round 21700 case"@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_e769f629_438a_4637_8483_205c866487b3
@@ -72,18 +148,32 @@
                                               rdfs:seeAlso "https://www.batterydesign.net/hina-nacr32140-mp10/"@en ,
                                                            "https://www.master-instruments.com.au/file/67581/1/Enepower-NACR32140-MP10.pdf"@en ,
                                                            "https://www.perma-batteries.com/wp-content/uploads/2023/12/Hina-NaCR32140-MP10-Test-Data-202310.pdf"@en ;
-                                              skos:prefLabel "NaCR32140-MP10"@en ;
+                                              skos:prefLabel "NaCR32140MP10"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A cylindrical sodium-ion battery cell manufactured by HiNa Battery Technology Co., Ltd."@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_e855801e_bdda_461b_913b_1c680027409e
+:battery_e855801e_bdda_461b_913b_1c680027409e rdf:type owl:Class ;
+                                              rdfs:subClassOf schema:Product ,
+                                                              :battery_17c24e48_4a8f_43c9_b126_92c639780452 ;
+                                              skos:note "used in the Google Pixel 10 mobile phone"@en ;
+                                              skos:prefLabel "G20M7"@en ;
+                                              schema:model "G20M7" ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A lithium-ion battery cell (1ICP6/65/75) manufactured by Google"@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
 :battery_f1489778_c355_4cd5_b5ca_35d082ac896a rdf:type owl:Class ;
-                                              rdfs:subClassOf :battery_96addc62_ea04_449a_8237_4cd541dd8e5f ,
-                                                              :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
+                                              rdfs:subClassOf :battery_afe31527_b498_4770_b905_78d03442d41b ;
                                               skos:altLabel "P28A"@en ;
                                               skos:prefLabel "INR18650P28A"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799517"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel"@en .
+
+
+###  https://www.wikidata.org/wiki/Q95
+<https://www.wikidata.org/wiki/Q95> rdf:type owl:NamedIndividual ;
+                                    skos:prefLabel "Google"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
