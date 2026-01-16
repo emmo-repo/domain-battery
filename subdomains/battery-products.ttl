@@ -159,11 +159,7 @@ schema:Product rdf:type owl:Class .
                                               skos:note "used in the Google Pixel 10 mobile phone"@en ;
                                               skos:prefLabel "G20M7"@en ;
                                               schema:model "G20M7" ;
-                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A lithium-ion battery cell (1ICP6/65/75) manufactured by Google"@en ;
-                                              emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :battery_2d27a9ea_2f3e_4170_817a_1680ada346dd ,
-                                                                                             :battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225 ,
-                                                                                             :battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7 ,
-                                                                                             :battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef .
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A lithium-ion battery cell (1ICP6/65/75) manufactured by Google"@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_f1489778_c355_4cd5_b5ca_35d082ac896a
@@ -173,42 +169,6 @@ schema:Product rdf:type owl:Class .
                                               skos:prefLabel "INR18650P28A"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120799517"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical 18650 lithium-ion battery cell, with NMC positive electrode basis, manufactured by Molicel"@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://w3id.org/emmo/domain/battery#battery_2d27a9ea_2f3e_4170_817a_1680ada346dd
-:battery_2d27a9ea_2f3e_4170_817a_1680ada346dd rdf:type owl:NamedIndividual ,
-                                                       echem:electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
-                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4385 ;
-                                              skos:prefLabel "RatedCapacity_4835_mAh"@en ;
-                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:MilliAmpereHour .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225
-:battery_7d3317c0_dc32_4f6d_9ec6_64bd488ab225 rdf:type owl:NamedIndividual ,
-                                                       echem:electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982 ;
-                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 18.86 ;
-                                              skos:prefLabel "RatedEnergy_18.86_Wh"@en ;
-                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:WattHour .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7
-:battery_85c1058d_a64d_46a7_8f6f_1ca55ecd2ce7 rdf:type owl:NamedIndividual ,
-                                                       echem:electrochemistry_639b844a_e801_436b_985d_28926129ead6 ;
-                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 3.90 ;
-                                              skos:prefLabel "NominalVoltage_3.90_V"@en ;
-                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:Volt .
-
-
-###  https://w3id.org/emmo/domain/battery#battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef
-:battery_b625a75d_d7e2_468e_bb22_05c7c21e66ef rdf:type owl:NamedIndividual ,
-                                                       emmo:EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405 ;
-                                              emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 63 ;
-                                              skos:prefLabel "Mass_63_g"@en ;
-                                              emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 emmo:Gram .
 
 
 ###  https://www.wikidata.org/wiki/Q95
