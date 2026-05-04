@@ -14,14 +14,14 @@
 @prefix chemsub: <https://w3id.org/emmo/domain/chemicalsubstance#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/battery/reference/battery-reference> .
+@base <https://w3id.org/emmo/domain/battery#> .
 
 <https://w3id.org/emmo/domain/battery/reference/battery-reference> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.18.8/reference/battery-reference> ;
-                                                owl:imports <https://w3id.org/emmo/domain/battery/0.18.8/reference/battery-quantities> ,
-                                                            <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
-                                                dcterms:abstract "Reference terms for the battery ontology" ;
-                                                owl:versionInfo "0.18.8" .
+                                                                    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.19.0/reference/battery-reference> ;
+                                                                    owl:imports <https://w3id.org/emmo/domain/battery/0.19.0/reference/battery-quantities> ,
+                                                                                <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
+                                                                    dcterms:abstract "Reference terms for the battery ontology" ;
+                                                                    owl:versionInfo "0.19.0" .
 
 #################################################################
 #    Classes
@@ -160,6 +160,19 @@
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electric_battery#Wet_cell"@en .
 
 
+###  https://w3id.org/emmo/domain/battery#battery_10702b58_1640_439a_8db6_ffda82beda70
+:battery_10702b58_1640_439a_8db6_ffda82beda70 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_f702bad4_fc77_41f0_a26d_79f6444fd4f3 ;
+                                                                owl:someValuesFrom :battery_88b7849f_4c33_4206_a674_2489bf08d8b8
+                                                              ] ;
+                                              skos:prefLabel "BatterySystemSpecification"@en ;
+                                              skos:scopeNote "Used for systems where the specification boundary extends beyond the battery pack to include inverters, thermal management infrastructure, battery management systems, energy management systems, or grid-interface equipment. Properties include system-level power, energy, round-trip efficiency, and integration requirements."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specification describing a complete energy storage system comprising one or more battery packs with integrated power electronics, control systems, and auxiliary components."@en ;
+                                              emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "The boundary between BatteryPackSpecification and BatterySystemSpecification is application-dependent. In IEC 62619 the system includes the pack and BMS; in grid storage applications it extends to power conversion and site infrastructure. The system boundary must be stated explicitly in the specification record."@en .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_1191d114_5aec_4167_97b1_c0bca9414c49
 :battery_1191d114_5aec_4167_97b1_c0bca9414c49 rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_8c808507_976a_4225_8099_604dc7abc5ea ;
@@ -226,6 +239,19 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "primary battery with a non-aqueous electrolyte, a positive electrode containing carbon monofluoride and a negative electrode of lithium"@en .
 
 
+###  https://w3id.org/emmo/domain/battery#battery_142a444e_2575_41dd_8d69_52e438fc66d3
+:battery_142a444e_2575_41dd_8d69_52e438fc66d3 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_f702bad4_fc77_41f0_a26d_79f6444fd4f3 ;
+                                                                owl:someValuesFrom :battery_9acfeea6_ca7f_4b97_9844_c38edf6387ec
+                                                              ] ;
+                                              skos:prefLabel "BatteryModuleSpecification"@en ;
+                                              skos:scopeNote "Used when the module is a distinct functional or commercial unit with its own certification, testing identity, or mechanical enclosure, separate from both individual cells and the complete pack. Properties typically include cell count, series-parallel configuration, module voltage and capacity, and module-level thermal management."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specification describing the design and electrical configuration of a battery module comprising multiple cells arranged in a defined series-parallel topology."@en ;
+                                              emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Module boundaries vary significantly across manufacturers and standards. Clarify whether the specification refers to a cell group (electrically connected cells without enclosure), a mechanically integrated module, or a sub-pack before applying this class. In cell-to-pack and cell-to-body architectures, the module level may be absent entirely."@en .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_14ffa830_2789_429d_8c05_d2ae0ca51732
 :battery_14ffa830_2789_429d_8c05_d2ae0ca51732 rdf:type owl:Class ;
                                               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -270,6 +296,20 @@
                                               skos:prefLabel "OEMBattery"@en ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-01-12" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "battery supplied to an original equipment manufacturer (OEM) for use only with or in new equipment."@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_1cfbba6c_8824_4932_a23e_2141483acef7
+:battery_1cfbba6c_8824_4932_a23e_2141483acef7 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_f702bad4_fc77_41f0_a26d_79f6444fd4f3 ;
+                                                                owl:someValuesFrom :battery_68ed592a_7924_45d0_a108_94d6275d57f0
+                                                              ] ;
+                                              skos:note "Describes a class of cells, not a specific physical cell. Individual cells with serial numbers are instances of BatteryCell linked to this specification via emmo:hasDescription. Does not include module- or pack-level integration properties."@en ;
+                                              skos:prefLabel "BatteryCellSpecifiation"@en ;
+                                              skos:scopeNote "Covers both commercial cells described by manufacturer datasheets and research cells described by laboratory synthesis or characterisation records. Properties typically include electrode chemistry, active material composition, physical format, nominal capacity, nominal voltage, energy density, and operating temperature limits."@en ;
+                                              emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a "A single BatteryCellSpecification may be referenced by many physical cell instances. The IRI of the specification is therefore stable and citable independently of any specific cell or test record."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specification describing the electrochemical design, material composition, and performance characteristics of a battery cell as a single electrochemical unit."@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_1d3a2bb3_1d39_4cdb_9a28_c73d663388ab
@@ -1267,6 +1307,16 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell in a rigid container with rectangular faces"@en .
 
 
+###  https://w3id.org/emmo/domain/battery#battery_88b7849f_4c33_4206_a674_2489bf08d8b8
+:battery_88b7849f_4c33_4206_a674_2489bf08d8b8 rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
+                                              skos:note "A battery system may contain one or more battery packs. It is distinguished from a battery pack by the inclusion of power electronics and active control systems that condition and regulate energy flow between the battery and the application. In small or simple systems these components may be integrated into the pack enclosure; in large systems they are physically separate."@en ;
+                                              skos:prefLabel "BatterySystem"@en ;
+                                              skos:scopeNote "Used for systems where the functional boundary extends beyond the battery pack to include power conversion (inverters, DC-DC converters), active thermal management infrastructure, and application-level energy management. Characterised by system-level performance including rated power, rated energy, round-trip efficiency, and grid or vehicle interface specifications."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A complete energy storage assembly comprising one or more battery packs together with integrated power electronics, thermal management, and control systems, functioning as a single deployable unit."@en ;
+                                              emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "The boundary between BatteryPack and BatterySystem is defined differently across standards. The system boundary must be stated explicitly when reporting system-level properties."@en .
+
+
 ###  https://w3id.org/emmo/domain/battery#battery_899c3993_9a45_498f_9489_ee40ed3098c9
 :battery_899c3993_9a45_498f_9489_ee40ed3098c9 rdf:type owl:Class ;
                                               rdfs:subClassOf :battery_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 ;
@@ -1599,6 +1649,19 @@
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q5505233" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery comprising two electrodes of dissimilar metals with frog legs acting as the electrolyte"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Frog_battery"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c
+:battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c rdf:type owl:Class ;
+                                              rdfs:subClassOf emmo:EMMO_35d4c439_fcb6_4399_a855_a89a207b41e9 ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_f702bad4_fc77_41f0_a26d_79f6444fd4f3 ;
+                                                                owl:someValuesFrom :battery_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17
+                                                              ] ;
+                                              skos:note "Linked to physical battery objects via emmo:isDescriptionFor (from this class) and emmo:hasDescription (from the physical object)."@en ;
+                                              skos:prefLabel "BatterySpecification"@en ;
+                                              skos:scopeNote "Abstract class covering all levels of the battery hierarchy: cell, module, pack, and system. Instantiate a subclass appropriate to the level of assembly being described rather than this class directly."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An information entity that specifies the intended design, composition, and performance characteristics of a class of batteries."@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_a5299801_2a8d_4d03_a476_ca2c5e9ca702
@@ -1992,6 +2055,19 @@
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q420116" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery containing multiple cells and a casing"@en ;
                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Battery_pack"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_c25c3fb4_14ce_4640_abcc_d4a6e641fee4
+:battery_c25c3fb4_14ce_4640_abcc_d4a6e641fee4 rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_a4ba7f50_5fe0_43f4_9862_4dd57e87a44c ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty emmo:EMMO_f702bad4_fc77_41f0_a26d_79f6444fd4f3 ;
+                                                                owl:someValuesFrom :battery_be3b35a7_75a3_4be0_9265_beb178ea7b00
+                                                              ] ;
+                                              skos:prefLabel "BatteryPackSpecification"@en ;
+                                              skos:scopeNote "The battery pack is the primary commercially traded unit in most applications and carries regulatory compliance, warranty, and end-of-life obligations. Properties typically include pack voltage and energy, cell or module configuration, battery management system type, thermal management design, housing class, and application-specific performance parameters."@en ;
+                                              emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "Pack specifications aggregate and extend cell or module specifications. Where cell-level data is available, link the pack specification to its constituent BatteryCellSpecification instances to enable traceability from pack performance to cell-level material data."@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specification describing the design, configuration, and performance characteristics of a complete battery pack intended for delivery as a traded unit to an application system."@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_c429bb30_50d6_4cec_ae7e_279f59c36ccd
@@ -2577,6 +2653,10 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "secondary battery containing two insertion electrodes in which the guest ion is transferred between the cathode and anode host compounds"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f
+echem:electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f rdf:type owl:Class .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -2587,4 +2667,4 @@ echem:EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69 emmo:EMMO_967080e5_2f42_4eb2_a3a
 echem:EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098 emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrochemical cell which is designed to be electrically recharged."@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
