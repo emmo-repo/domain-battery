@@ -7,7 +7,7 @@
 
 <!-- markdownlint-disable MD033 -->
 
-# Battery Domain Ontology
+# Battery Domain Ontology  
 
 <img src="docs/assets/img/fig/svg/domain-battery-logo.svg" alt="domain-battery-logo" width="100%">
 
