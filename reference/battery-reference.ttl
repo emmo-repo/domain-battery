@@ -306,7 +306,7 @@
                                                                 owl:someValuesFrom :battery_68ed592a_7924_45d0_a108_94d6275d57f0
                                                               ] ;
                                               skos:note "Describes a class of cells, not a specific physical cell. Individual cells with serial numbers are instances of BatteryCell linked to this specification via emmo:hasDescription. Does not include module- or pack-level integration properties."@en ;
-                                              skos:prefLabel "BatteryCellSpecifiation"@en ;
+                                              skos:prefLabel "BatteryCellSpecification"@en ;
                                               skos:scopeNote "Covers both commercial cells described by manufacturer datasheets and research cells described by laboratory synthesis or characterisation records. Properties typically include electrode chemistry, active material composition, physical format, nominal capacity, nominal voltage, energy density, and operating temperature limits."@en ;
                                               emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a "A single BatteryCellSpecification may be referenced by many physical cell instances. The IRI of the specification is therefore stable and citable independently of any specific cell or test record."@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specification describing the electrochemical design, material composition, and performance characteristics of a battery cell as a single electrochemical unit."@en .
