@@ -92,6 +92,24 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
 }
 ```
 
+## Development
+
+Python dependencies are declared in [`pyproject.toml`](pyproject.toml) and pinned in [`uv.lock`](uv.lock). The recommended setup uses [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync --extra docs   # creates .venv with the exact locked versions
+```
+
+Plain pip also works if you prefer:
+
+```bash
+pip install -e ".[docs]"
+```
+
+Optional extras: `docs` (Sphinx documentation build) and `dev` (Jupyter for working with the example notebooks). After changing dependencies in `pyproject.toml`, refresh the lockfile with `uv lock` and commit it.
+
+The `bump-version` command (installed with the package) updates all version IRIs for a release; run `bump-version --help` for usage.
+
 ### Acknowledgements
 
 <img src="docs/assets/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
