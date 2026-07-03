@@ -2653,9 +2653,6 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "secondary battery containing two insertion electrodes in which the guest ion is transferred between the cathode and anode host compounds"@en .
 
 
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f
-echem:electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f rdf:type owl:Class .
-
 
 #################################################################
 #    Annotations
