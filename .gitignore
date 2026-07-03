@@ -36,3 +36,4 @@ wheels/
 *.log
 *.sqlite3
 /.project
+/.claude

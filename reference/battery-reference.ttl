@@ -17,11 +17,11 @@
 @base <https://w3id.org/emmo/domain/battery#> .
 
 <https://w3id.org/emmo/domain/battery/reference/battery-reference> rdf:type owl:Ontology ;
-                                                                    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.19.0/reference/battery-reference> ;
-                                                                    owl:imports <https://w3id.org/emmo/domain/battery/0.19.0/reference/battery-quantities> ,
-                                                                                <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
+                                                                    owl:versionIRI <https://w3id.org/emmo/domain/battery/0.20.0/reference/battery-reference> ;
+                                                                    owl:imports <https://w3id.org/emmo/domain/battery/0.20.0/reference/battery-quantities> ,
+                                                                                <https://w3id.org/emmo/domain/electrochemistry/0.35.0/reference/electrochemistry-reference> ;
                                                                     dcterms:abstract "Reference terms for the battery ontology" ;
-                                                                    owl:versionInfo "0.19.0" .
+                                                                    owl:versionInfo "0.20.0" .
 
 #################################################################
 #    Classes
@@ -2652,9 +2652,6 @@
                                               skos:prefLabel "RockingChairBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "secondary battery containing two insertion electrodes in which the guest ion is transferred between the cathode and anode host compounds"@en .
 
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f
-echem:electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f rdf:type owl:Class .
 
 
 #################################################################

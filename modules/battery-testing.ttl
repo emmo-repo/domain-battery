@@ -17,9 +17,9 @@
 @base <https://w3id.org/emmo/domain/battery/modules/battery-testing> .
 
 <https://w3id.org/emmo/domain/battery/modules/battery-testing> rdf:type owl:Ontology ;
-                                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.19.0/modules/battery-testing> ;
-                                                                owl:imports <https://w3id.org/emmo/domain/battery/0.19.0/reference/battery-reference> ,
-                                                                            <https://w3id.org/emmo/domain/electrochemistry/0.34.0/modules/electrochemistry-testing> ;
+                                                                owl:versionIRI <https://w3id.org/emmo/domain/battery/0.20.0/modules/battery-testing> ;
+                                                                owl:imports <https://w3id.org/emmo/domain/battery/0.20.0/reference/battery-reference> ,
+                                                                            <https://w3id.org/emmo/domain/electrochemistry/0.35.0/modules/electrochemistry-testing> ;
                                                                 dcterms:abstract "The battery-testing module contains the terms and relations specific to the testing of batteries" .
 
 #################################################################
