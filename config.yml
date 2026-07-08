@@ -31,3 +31,25 @@ output:
   rst_file: "docs/battery.rst"
 
 emmocheck_classes: []
+
+version_tooling:
+  main_ttl: "battery.ttl"
+  ttl_files:
+    - "battery.ttl"
+    - "battery-dependencies.ttl"
+    - "reference/battery-reference.ttl"
+    - "reference/battery-quantities.ttl"
+    - "modules/battery-cell-geometry.ttl"
+    - "modules/battery-manufacturing.ttl"
+    - "modules/battery-testing.ttl"
+    - "subdomains/battery-products.ttl"
+    - "subdomains/battery-manufacturing-lithium-ion.ttl"
+    - "subdomains/battery-model-lithium-ion.ttl"
+  catalog_files:
+    - "catalog-v001.xml"
+    - "modules/catalog-v001.xml"
+    - "reference/catalog-v001.xml"
+    - "subdomains/catalog-v001.xml"
+  uri_segments:
+    - "emmo/domain/battery/"
+    - "emmo/domain/battery-model-lithium-ion/"
