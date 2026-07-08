@@ -19,6 +19,12 @@ ttl_files:
     path: "modules/battery-testing.ttl"
   - section_title: "Battery Cell Geometry"
     path: "modules/battery-cell-geometry.ttl"
+  - section_title: "Battery Products"
+    path: "subdomains/battery-products.ttl"
+  - section_title: "Battery Model Lithium-Ion (extension)"
+    path: "subdomains/battery-model-lithium-ion.ttl"
+  - section_title: "Battery Manufacturing Lithium-Ion (extension)"
+    path: "subdomains/battery-manufacturing-lithium-ion.ttl"
 
 output:
   inferred_ttl: "battery-inferred.ttl"
