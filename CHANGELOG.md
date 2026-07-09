@@ -18,5 +18,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - Subdomains (products, lithium-ion extensions) added to documentation coverage.
 - CONTRIBUTING guide; `bump-version` replaced by the shared config-driven tool (adds `--check` and date handling) with tests.
 
+### Changed
+- The inferred ontology (`battery-inferred.ttl`) is no longer tracked in git — it is a generated build artifact. CI regenerates it and publishes it to gh-pages (`/inferred`, latest) and attaches a freshly reasoned copy to each GitHub Release (per version); the docs workflow backfills the per-version `versions/` archive from Release assets. You no longer generate or commit it by hand.
+
 [Unreleased]: https://github.com/emmo-repo/domain-battery/compare/v0.20.1...HEAD
 [0.20.1]: https://github.com/emmo-repo/domain-battery/releases/tag/v0.20.1

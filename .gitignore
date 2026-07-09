@@ -37,3 +37,7 @@ wheels/
 *.sqlite3
 /.project
 /.claude
+
+# Generated ontology artifacts (built by CI: docs -> gh-pages, release -> GitHub Release assets)
+*-inferred.ttl
+build/
