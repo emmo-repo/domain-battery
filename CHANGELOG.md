@@ -5,6 +5,10 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+### Fixed
+- emmocheck: exempted the external `schema:Product` interoperability stub from the description check (EMMOntoPy's built-in schema.org skip is broken by a typo upstream). This was the first CI run over the full file set; the failure predated the dependency updates.
+- subdomains catalog: the `battery-products` entry resolved to a doubled path (`subdomains/subdomains/...`), which broke ontology loading for every file in that directory.
+
 ### Changed
 - Updated the electrochemistry import to 0.36.0 and, matching its closure, the chemical-substance import to 0.15.0 and the CHAMEO import to 1.0.2 (imports + all catalogs). The full dependency stack now imports EMMO 1.0.2 consistently.
 
