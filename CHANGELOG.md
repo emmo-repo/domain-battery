@@ -5,6 +5,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+### Changed
+- Updated the electrochemistry import to 0.36.0 and, matching its closure, the chemical-substance import to 0.15.0 and the CHAMEO import to 1.0.2 (imports + all catalogs). The full dependency stack now imports EMMO 1.0.2 consistently.
+
 ## [0.20.1] - 2026-07-08
 
 ### Fixed
