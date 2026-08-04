@@ -2,6 +2,13 @@
 skip:
   - test_namespace
 
+test_description:
+  exceptions:
+    # External schema.org stub, declared for interoperability only.
+    # EMMOntoPy's built-in w3c-vocabulary skip list misses it due to a
+    # typo ("shchema.org") in emmocheck.py.
+    - schema.org.Product
+
 test_quantity_dimension:
   exceptions:
     - electrochemistry.ElectrochemicalQuantity
