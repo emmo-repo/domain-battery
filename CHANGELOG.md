@@ -5,6 +5,10 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+### Added
+- Scheduled (weekly + post-release) CI check that the public w3id.org IRIs resolve, shared with domain-electrochemistry and domain-chemical-substance.
+- The docs workflow now also redeploys automatically after each successful release (`workflow_run`), so the `versions/` archive picks up the new inferred release asset without a manual dispatch.
+
 ### Deprecated
 - The specific commercial product classes in battery-products: `INR18650MJ1` (LG), `INR1865025R` and `INR1865035E` (Samsung), `INR18650P28A` and `INR18650P28B` (Molicel), `NaCR32140MP10` (HiNa), `G20M7` (Google). Manufacturer-specific products are out of scope for the reference ontology and will be removed in a future release; product-level terms belong in application resources or a dedicated registry. The IEC-designation classes (`INR18650`, `INR21700`, `INR46800`, `IFp18650`, `IFp21700`, `IFp46800`, `ICP66575`) are unaffected.
 
