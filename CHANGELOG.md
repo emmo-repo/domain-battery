@@ -5,6 +5,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+### Deprecated
+- The specific commercial product classes in battery-products: `INR18650MJ1` (LG), `INR1865025R` and `INR1865035E` (Samsung), `INR18650P28A` and `INR18650P28B` (Molicel), `NaCR32140MP10` (HiNa), `G20M7` (Google). Manufacturer-specific products are out of scope for the reference ontology and will be removed in a future release; product-level terms belong in application resources or a dedicated registry. The IEC-designation classes (`INR18650`, `INR21700`, `INR46800`, `IFp18650`, `IFp21700`, `IFp46800`, `ICP66575`) are unaffected.
+
 ### Fixed
 - emmocheck: exempted the external `schema:Product` interoperability stub from the description check (EMMOntoPy's built-in schema.org skip is broken by a typo upstream). This was the first CI run over the full file set; the failure predated the dependency updates.
 - subdomains catalog: the `battery-products` entry resolved to a doubled path (`subdomains/subdomains/...`), which broke ontology loading for every file in that directory.
