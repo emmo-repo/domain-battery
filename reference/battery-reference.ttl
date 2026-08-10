@@ -19,7 +19,7 @@
 <https://w3id.org/emmo/domain/battery/reference/battery-reference> rdf:type owl:Ontology ;
                                                                     owl:versionIRI <https://w3id.org/emmo/domain/battery/0.20.1/reference/battery-reference> ;
                                                                     owl:imports <https://w3id.org/emmo/domain/battery/0.20.1/reference/battery-quantities> ,
-                                                                                <https://w3id.org/emmo/domain/electrochemistry/0.37.0/reference/electrochemistry-reference> ;
+                                                                                <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
                                                                     dcterms:abstract "Reference terms for the battery ontology" ;
                                                                     owl:versionInfo "0.20.1" .
 
@@ -51,7 +51,6 @@
                                                                 owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom echem:electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LFPBattery"@en ;
                                               skos:prefLabel "LithiumIonIronPhosphateBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q901551" ;
@@ -372,7 +371,6 @@
                                                                 owl:onProperty echem:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom echem:electrochemistry_c831d963_629a_41ab_850f_97fb6841b739
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "GrBattery"@en ;
                                               skos:prefLabel "LithiumIonGraphiteBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium ion battery with a graphite negative electrode"@en .
@@ -409,7 +407,6 @@
                                                                 owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom echem:electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonNickelCobaltAluminiumOxideBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a lithium nickel cobalt aluminium oxide positive electrode"@en .
 
@@ -680,7 +677,6 @@
                                                                 owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom echem:electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LMOBattery"@en ;
                                               skos:prefLabel "LithiumIonManganeseOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q16911101" ;
@@ -797,7 +793,6 @@
                                                                 owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom echem:electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LCOBattery"@en ;
                                               skos:prefLabel "LithiumIonCobaltOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q1865299" ;
@@ -1276,7 +1271,6 @@
                                                                 owl:someValuesFrom echem:electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962
                                                               ] ;
                                               rdfs:comment "there are many stoichiometry variations for lithium nickel manganese cobalt oxides, typically expressed as LiNi_xMn_yCo_zO2 where x+y+z = 1"@en ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:prefLabel "LithiumIonNickelManganeseCobaltOxideBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q93837163" ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium-ion battery with a lithium nickel manganese cobalt oxide positive electrode"@en .
@@ -1441,6 +1435,8 @@
                                                                 owl:someValuesFrom echem:electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a
                                                               ] ;
                                               rdfs:comment "a lithium ion battery does not contain lithium metal"@en ;
+                                              skos:note "the chemistry-specific subclasses (LithiumIonIronPhosphateBattery and siblings) form a closed, curated set of industry-standard chemistries; additions are deliberate policy decisions, and stoichiometry variants (e.g. NMC811) are expressed at the material level rather than as new battery classes"@en ,
+                                                        "the chemistry-specific subclasses are defined classes: assert the cell's electrode composition and a reasoner infers the chemistry classification; they should not be asserted directly"@en ;
                                               skos:prefLabel "LithiumIonBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q2822895" ;
                                               emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-07" ;
@@ -2095,7 +2091,6 @@
                                                                 owl:onProperty echem:electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
                                                                 owl:someValuesFrom echem:electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LMFPBattery"@en ;
                                               skos:prefLabel "LithiumIonManganeseIronPhosphateBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a lithium ion battery with a manganese iron phosphate positive electrode"@en ;
@@ -2637,7 +2632,6 @@
                                                                 owl:onProperty echem:electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
                                                                 owl:someValuesFrom echem:electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b
                                                               ] ;
-                                              owl:deprecated "true"^^xsd:boolean ;
                                               skos:altLabel "LTOBattery"@en ;
                                               skos:prefLabel "LithiumIonTitanateBattery"@en ;
                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q2564903" ;
