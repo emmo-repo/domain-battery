@@ -106,13 +106,93 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
     predicate = rdflib.URIRef(predicate_uri)
 
+    # Properties whose values should resolve against the context's own term
+    # definitions (issue #75): a bare "Volt" then expands to the unit term
+    # instead of being read as a plain string. Unknown values expand under
+    # @vocab instead of failing loudly, so validators must catch typos.
+    vocab_valued_properties = {"hasMeasurementUnit"}
+
+    # Canonical IRIs for labels held by more than one entity in the import
+    # closure (issue #76). Cross-domain duplicates resolve to the more
+    # foundational domain; same-domain duplicates to the better-documented
+    # class. "C" is a deliberate exception: the only other holder is the
+    # Latin letter C in EMMO core, so the label maps to the C-rate unit.
+    # Entries become no-ops as upstream deprecations/renames land.
+    canonical_labels = {
+        "StateOfCharge": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2",
+        "PotentiometricStrippingAnalysis": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#PotentiometricStrippingAnalysis",
+        "Grinding": "https://w3id.org/emmo#EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d",
+        "Welding": "https://w3id.org/emmo#EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f",
+        "hasTestObject": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5998f7c1_d8e3_4c55_8170_c358e1b0c93c",
+        "NickelZincBattery": "https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e",
+        "IronBasedElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1",
+        "Prismatic": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535",
+        "Record": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd",
+        "ElectrodeCoating": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56",
+        "C": "https://w3id.org/emmo/domain/electrochemistry#AmperePerAmpereHour",
+        "DirectCurrent": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7",
+        "Electroplating": "https://w3id.org/emmo#EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c",
+        "Milling": "https://w3id.org/emmo#EMMO_44f91d47_3faf_48e2_844c_d44bbe3e22f6",
+        "Person": "https://schema.org/Person",
+        "Powder": "https://w3id.org/emmo#EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd",
+        "R626": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc",
+    }
+
+    def _is_deprecated(subject):
+        return g.value(subject, OWL.deprecated) is not None
+
+    # label -> (iri, deprecated). On a label collision a non-deprecated entity
+    # replaces a deprecated incumbent (e.g. a deprecated class and its
+    # replacement twin share a prefLabel); otherwise the incumbent is kept,
+    # preserving the generator's previous behaviour for the pre-existing
+    # ambiguous labels in the import closure.
+    class_candidates = {}
+
+    unresolved_collisions = {}
+
     for s, p, o in g:
         if (s, RDF.type, OWL.ObjectProperty) in g:
             label_value = g.value(s, SKOS.prefLabel)
             if label_value:
-                object_properties[str(label_value)] = {"@id": str(s), "@type": "@id"}
+                label = str(label_value)
+                if label in canonical_labels and str(s) != canonical_labels[label]:
+                    continue
+                value_type = "@vocab" if label in vocab_valued_properties else "@id"
+                object_properties[label] = {"@id": str(s), "@type": value_type}
         elif p == predicate:
-            other_entries[str(o)] = str(s)
+            label, iri, dep = str(o), str(s), _is_deprecated(s)
+            if label in canonical_labels:
+                if iri != canonical_labels[label]:
+                    continue
+                class_candidates[label] = (iri, dep)
+                continue
+            if label in class_candidates:
+                held_iri, held_dep = class_candidates[label]
+                if held_iri != iri and held_dep == dep:
+                    unresolved_collisions.setdefault(label, {held_iri}).add(iri)
+                if not (held_dep and not dep):
+                    continue
+            class_candidates[label] = (iri, dep)
+
+    if unresolved_collisions:
+        details = "; ".join(
+            f"{label}: {', '.join(sorted(iris))}"
+            for label, iris in sorted(unresolved_collisions.items())
+        )
+        raise RuntimeError(
+            "Label collisions with no canonical resolution (add the intended "
+            f"IRI to canonical_labels or fix upstream): {details}"
+        )
+
+    # A canonical target may carry the label only as an altLabel (e.g. "C"
+    # on AmperePerAmpereHour after the dedicated C class was deprecated);
+    # the table is authoritative, so inject any entry the label scan did
+    # not materialise.
+    for label, iri in canonical_labels.items():
+        if label not in class_candidates and label not in object_properties:
+            class_candidates[label] = (iri, False)
+
+    other_entries = {label: iri for label, (iri, dep) in class_candidates.items()}
 
     for prefix, uri in g.namespace_manager.namespaces():
         if len(prefix) >= 2:
