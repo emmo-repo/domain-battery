@@ -1291,8 +1291,8 @@
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "battery with multiple separate but electrically connected cell compartments each of which is designed to house an assembly of electrodes, electrolyte, terminals or interconnections and possible separators"@en .
 
 
-###  https://w3id.org/emmo/domain/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d
-:battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d rdf:type owl:Class ;
+###  https://w3id.org/emmo/domain/battery#battery_86c9ca80_de6f_417f_afdc_a7e52fa6322d
+:battery_86c9ca80_de6f_417f_afdc_a7e52fa6322d rdf:type owl:Class ;
                                               owl:equivalentClass [ rdf:type owl:Restriction ;
                                                                     owl:onProperty echem:electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39 ;
                                                                     owl:someValuesFrom echem:electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603
@@ -1305,6 +1305,16 @@
                                               owl:disjointWith :battery_ac604ecd_cc60_4b98_b57c_74cd5d3ccd40 ;
                                               skos:prefLabel "PrismaticBattery"@en ;
                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell in a rigid container with rectangular faces"@en .
+
+
+###  https://w3id.org/emmo/domain/battery#battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d
+:battery_86c9ca80-de6f-417f-afdc-a7e52fa6322d rdf:type owl:Class ;
+                                              rdfs:subClassOf :battery_86c9ca80_de6f_417f_afdc_a7e52fa6322d ;
+                                              dcterms:isReplacedBy :battery_86c9ca80_de6f_417f_afdc_a7e52fa6322d ;
+                                              owl:deprecated "true"^^xsd:boolean ;
+                                              skos:prefLabel "PrismaticBattery"@en ;
+                                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a battery cell in a rigid container with rectangular faces"@en ;
+                                              skos:note "deprecated because the local name of this IRI joins the UUID segments with hyphens instead of underscores, breaking the naming convention used by every other class in the ontology; replaced by the underscore-named twin (issue #73)"@en .
 
 
 ###  https://w3id.org/emmo/domain/battery#battery_88b7849f_4c33_4206_a674_2489bf08d8b8

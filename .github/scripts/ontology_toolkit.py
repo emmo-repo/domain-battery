@@ -106,13 +106,37 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
     predicate = rdflib.URIRef(predicate_uri)
 
+    # Properties whose values should resolve against the context's own term
+    # definitions (issue #75): a bare "Volt" then expands to the unit term
+    # instead of being read as a plain string. Unknown values expand under
+    # @vocab instead of failing loudly, so validators must catch typos.
+    vocab_valued_properties = {"hasMeasurementUnit"}
+
+    def _is_deprecated(subject):
+        return g.value(subject, OWL.deprecated) is not None
+
+    # label -> (iri, deprecated). On a label collision a non-deprecated entity
+    # replaces a deprecated incumbent (e.g. a deprecated class and its
+    # replacement twin share a prefLabel); otherwise the incumbent is kept,
+    # preserving the generator's previous behaviour for the pre-existing
+    # ambiguous labels in the import closure.
+    class_candidates = {}
+
     for s, p, o in g:
         if (s, RDF.type, OWL.ObjectProperty) in g:
             label_value = g.value(s, SKOS.prefLabel)
             if label_value:
-                object_properties[str(label_value)] = {"@id": str(s), "@type": "@id"}
+                value_type = "@vocab" if str(label_value) in vocab_valued_properties else "@id"
+                object_properties[str(label_value)] = {"@id": str(s), "@type": value_type}
         elif p == predicate:
-            other_entries[str(o)] = str(s)
+            label, iri, dep = str(o), str(s), _is_deprecated(s)
+            if label in class_candidates:
+                held_iri, held_dep = class_candidates[label]
+                if not (held_dep and not dep):
+                    continue
+            class_candidates[label] = (iri, dep)
+
+    other_entries = {label: iri for label, (iri, dep) in class_candidates.items()}
 
     for prefix, uri in g.namespace_manager.namespaces():
         if len(prefix) >= 2:
