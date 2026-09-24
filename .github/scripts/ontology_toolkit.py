@@ -194,8 +194,21 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
     other_entries = {label: iri for label, (iri, dep) in class_candidates.items()}
 
+    # The inferred Turtle declares no prefixes for the EMMO namespaces, so rdflib
+    # invents ns1, ns2, ns3 for them and those names used to leak into the
+    # published context (and from there into every consumer's output). Bind the
+    # canonical names first, and never publish an auto-generated nsN prefix.
+    canonical_prefixes = {
+        "emmo": "https://w3id.org/emmo#",
+        "battery": "https://w3id.org/emmo/domain/battery#",
+        "electrochemistry": "https://w3id.org/emmo/domain/electrochemistry#",
+        "chemsub": "https://w3id.org/emmo/domain/chemical-substance#",
+        "chameo": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#",
+    }
+    for prefix, uri in canonical_prefixes.items():
+        g.bind(prefix, uri, override=True, replace=True)
     for prefix, uri in g.namespace_manager.namespaces():
-        if len(prefix) >= 2:
+        if len(prefix) >= 2 and not re.fullmatch(r"ns\d+", prefix):
             namespace_prefixes[prefix] = str(uri)
 
     context = {
