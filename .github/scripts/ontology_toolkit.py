@@ -205,10 +205,23 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     # BattMo writes InititalThermodynamicTemperature, for example. Only that
     # property is read: plain skos:hiddenLabel and the vendor label properties
     # carry raw cycler column names. A current prefLabel or canonical entry wins.
+    former = {}
     for s, o in g.subject_objects(FORMER_LABEL):
-        label = str(o)
-        if label not in class_candidates and label not in object_properties and label not in canonical_labels:
-            class_candidates[label] = (str(s), False)
+        label, iri = str(o), str(s)
+        if label in former and former[label] != iri:
+            raise RuntimeError(f"formerLabel {label!r} is carried by two classes: {former[label]}, {iri}")
+        former[label] = iri
+    for label, iri in sorted(former.items()):
+        if label in canonical_labels or label in object_properties:
+            continue
+        if label in class_candidates:
+            held_iri, _ = class_candidates[label]
+            if held_iri != iri:
+                raise RuntimeError(
+                    f"formerLabel {label!r} on {iri} collides with the prefLabel of {held_iri}; "
+                    "a retired spelling must not shadow a current term")
+            continue
+        class_candidates[label] = (iri, False)
 
     other_entries = {label: iri for label, (iri, dep) in class_candidates.items()}
 
