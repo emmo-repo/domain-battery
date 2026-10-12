@@ -12,13 +12,14 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 ### Changed
 - Electrochemistry import updated from 0.37.2 to 0.39.0 in the four importing modules and all four catalogs (#81). From 0.38.0 the closure gains the 198 SI-accepted unit terms (`AmpereHour`, `MilliAmpereHour`, `WattHour`, `MolePerLitre`, `MilliAmpereHourPerGram`, ...), the six corrected spellings, `ElectrodeToSeparatorGapWidth` and `formerLabel`; from 0.39.0 the open-circuit potential split (`OpenCircuitPotential`, `EquilibriumCellVoltage`, the hysteresis branch classes and hysteresis quantities, `TemperatureCoefficientOfTheOpenCircuitPotential`), `GuestDiffusivity`, `GuestChemicalPotential`, and the BPX quantities `TransportEfficiency`, `NumberOfElectrodePairs`, `ChargeCarrierInventoryLossFraction` and `ActiveMaterialCapacityLossFraction`. `context/context.json` grows by 219 terms with nothing removed or changed. None of the 28 electrochemistry anchor quantities deprecated in 0.38.0, and none of the classes 0.39.0 changed, is referenced by this domain's own modules.
 - **Migration note from electrochemistry 0.39.0:** `OpenCircuitVoltage` is now strictly the cell-level quantity (voltage between the terminals at zero current). Battery data that typed electrode open-circuit potential curves with it should use `OpenCircuitPotential`; the IRI keeps resolving, the typing is imprecise until migrated.
+- `hasTestEquipment` in the context now maps to the domain-electrochemistry property (elucidated) rather than the undocumented battery twin, following the #76 rule for cross-domain duplicate labels and the `hasTestObject` precedent; the generator's canonical-label table pins it so regeneration cannot flip it (#81). The battery twin is to be deprecated with `isReplacedBy`.
 - The JSON-LD context publishes the canonical prefixes `emmo`, `battery`, `electrochemistry`, `chemsub` and `chameo`, never an auto-generated `nsN` prefix (#78).
+
+### Removed
+- `subdomains/battery-model-lithium-ion.ttl` and its `config.yml` entries. It declared 23 terms in a namespace that returns 404, each reusing the UUID of a domain-electrochemistry term, was imported by nothing and listed in no catalog, and appeared in neither the inferred ontology nor the docs. The concepts live in domain-electrochemistry, where the polarity-qualified ones are deprecated with defining axioms as of 0.38.0 (#80, #83). Hard removal without deprecation stubs: the IRIs never resolved and nothing in the published closure depended on them; consumers such as the HYDRA linked data should use the same-UUID domain-electrochemistry terms. The file stays available under `versions/0.20.2/` on the docs site.
 
 ### Fixed
 - `battery-products` moved from `subdomains/` to `modules/`, where its ontology IRI and the import in `battery-dependencies.ttl` say it is, so online resolution of `.../modules/battery-products` no longer returns 404; the `modules/` and `reference/` catalogs had also mapped it to a `./subdomains/` path that did not exist relative to them (#79, #82).
-
-### Removed
-- `subdomains/battery-model-lithium-ion.ttl` and its `config.yml` entries. It declared 23 terms in a namespace that returns 404, each reusing the UUID of a domain-electrochemistry term, was imported by nothing and listed in no catalog, and appeared in neither the inferred ontology nor the docs. The concepts live in domain-electrochemistry, where the polarity-qualified ones are deprecated with defining axioms as of 0.38.0 (#80, #83).
 
 ## [0.20.2] - 2026-08-10
 
@@ -26,7 +27,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - The eight chemistry battery classes (`LithiumIonIronPhosphateBattery` and siblings) are un-deprecated and kept as defined classes: a reasoner infers the chemistry from the asserted electrode composition, so they are query vocabulary, not denormalised data. `LithiumIonBattery` documents the policy: the set is closed and curated, stoichiometry variants live at the material level, and the subclasses are inferred rather than asserted (#74, #77).
 - `hasMeasurementUnit` is vocab-valued in the generated context, so a bare `Volt` expands to the unit term (#75, #77).
 - The context generator carries a canonical-label table resolving the 17 duplicate prefLabels in the import closure and fails loudly on new ones (#76, #77).
-- Electrochemistry import updated to 0.37.1 and then 0.37.2 (imports + all catalogs), bringing in the electrode-side half of #74 (#77).
+- Electrochemistry import updated to 0.37.0, 0.37.1 and then 0.37.2 (imports + all catalogs), bringing in the electrode-side half of #74 (#77).
 
 ### Deprecated
 - The hyphen-named `PrismaticBattery` original, replaced by an underscore-named class with `isReplacedBy` (#73, #77).
