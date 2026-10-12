@@ -58,6 +58,14 @@ def test_no_generated_ns_prefix():
     assert not bad, f"auto-generated prefixes published: {bad}"
 
 
+def test_electrochemistry_0_39_0_terms_present():
+    """The OCV/OCP split and the BPX quantities arrived with electrochemistry 0.39.0."""
+    for term in ("OpenCircuitPotential", "EquilibriumCellVoltage", "GuestDiffusivity",
+                 "TransportEfficiency", "ChargeCarrierInventoryLossFraction"):
+        assert term in CTX, f"{term} missing: the electrochemistry 0.39.0 import is not in the closure"
+    assert _iri(CTX["OpenCircuitPotential"]) != _iri(CTX["OpenCircuitVoltage"])
+
+
 def test_units_from_siacceptedunits_present():
     for unit in ("AmpereHour", "MilliAmpereHour", "WattHour", "MolePerLitre", "MilliAmpereHourPerGram"):
         assert unit in CTX, f"{unit} missing: the electrochemistry 0.38.0 siacceptedunits import is not in the closure"
