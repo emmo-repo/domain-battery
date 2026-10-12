@@ -5,6 +5,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+## [0.21.0] - 2026-10-12
+
 ### Added
 - The context generator emits domain-electrochemistry's `formerLabel` values (retired prefLabel spellings, introduced there in 0.38.0) as extra JSON-LD terms for the same IRI, so data written against `InititalThermodynamicTemperature` and the five other corrected spellings keeps expanding (#81).
 - `tests/test_context_terms.py`: the six retired electrochemistry spellings and their corrected forms resolve, the SI-accepted unit terms are present, and no `nsN` prefix is published (#81).
@@ -19,6 +21,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - `subdomains/battery-model-lithium-ion.ttl` and its `config.yml` entries. It declared 23 terms in a namespace that returns 404, each reusing the UUID of a domain-electrochemistry term, was imported by nothing and listed in no catalog, and appeared in neither the inferred ontology nor the docs. The concepts live in domain-electrochemistry, where the polarity-qualified ones are deprecated with defining axioms as of 0.38.0 (#80, #83). Hard removal without deprecation stubs: the IRIs never resolved and nothing in the published closure depended on them; consumers such as the HYDRA linked data should use the same-UUID domain-electrochemistry terms. The file stays available under `versions/0.20.2/` on the docs site.
 
 ### Fixed
+- Two elucidations asserted on non-existent electrochemistry IRIs (mis-prefixed copies of the `PrimaryBattery` and `SecondaryBattery` UUIDs) removed from battery-reference (#85).
 - `battery-products` moved from `subdomains/` to `modules/`, where its ontology IRI and the import in `battery-dependencies.ttl` say it is, so online resolution of `.../modules/battery-products` no longer returns 404; the `modules/` and `reference/` catalogs had also mapped it to a `./subdomains/` path that did not exist relative to them (#79, #82).
 
 ## [0.20.2] - 2026-08-10
@@ -56,6 +59,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - emmocheck: exempted the external `schema:Product` interoperability stub from the description check (EMMOntoPy's built-in schema.org skip is broken by a typo upstream). This was the first CI run over the full file set; the failure predated the dependency updates.
 - subdomains catalog: the `battery-products` entry resolved to a doubled path (`subdomains/subdomains/...`), which broke ontology loading for every file in that directory.
 
-[Unreleased]: https://github.com/emmo-repo/domain-battery/compare/0.20.2...HEAD
+[Unreleased]: https://github.com/emmo-repo/domain-battery/compare/0.21.0...HEAD
+[0.21.0]: https://github.com/emmo-repo/domain-battery/compare/0.20.2...0.21.0
 [0.20.2]: https://github.com/emmo-repo/domain-battery/compare/0.20.1...0.20.2
 [0.20.1]: https://github.com/emmo-repo/domain-battery/compare/0.20.0...0.20.1

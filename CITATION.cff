@@ -16,8 +16,8 @@ identifiers:
 repository-code: "https://github.com/emmo-repo/domain-battery"
 url: "https://w3id.org/emmo/domain/battery"
 license: CC-BY-4.0
-version: "0.20.1"
-date-released: "2026-07-08"
+version: "0.21.0"
+date-released: "2026-10-12"
 keywords:
   - ontology
   - EMMO
