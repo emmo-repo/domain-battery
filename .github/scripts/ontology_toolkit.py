@@ -95,6 +95,13 @@ def load_ontology_config():
 
 ########## JSON-LD Context Generation (ttl_to_context logic) ##########
 
+# domain-electrochemistry's formerLabel annotation property (0.38.0): a retired
+# prefLabel spelling, kept resolvable. Matched by IRI, the stable contract.
+FORMER_LABEL = rdflib.URIRef(
+    "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c"
+)
+
+
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):
     g = rdflib.Graph()
     g.parse(ttl_file, format='ttl')
@@ -191,6 +198,17 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     for label, iri in canonical_labels.items():
         if label not in class_candidates and label not in object_properties:
             class_candidates[label] = (iri, False)
+
+    # Retired prefLabel spellings from domain-electrochemistry (its formerLabel
+    # annotation property, a sub-property of skos:hiddenLabel, introduced in
+    # 0.38.0) stay in the context so data written against them keeps expanding;
+    # BattMo writes InititalThermodynamicTemperature, for example. Only that
+    # property is read: plain skos:hiddenLabel and the vendor label properties
+    # carry raw cycler column names. A current prefLabel or canonical entry wins.
+    for s, o in g.subject_objects(FORMER_LABEL):
+        label = str(o)
+        if label not in class_candidates and label not in object_properties and label not in canonical_labels:
+            class_candidates[label] = (str(s), False)
 
     other_entries = {label: iri for label, (iri, dep) in class_candidates.items()}
 
