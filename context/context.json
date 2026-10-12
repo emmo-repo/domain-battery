@@ -719,7 +719,7 @@
             "@type": "@id"
         },
         "hasTestEquipment": {
-            "@id": "https://w3id.org/emmo/domain/battery#battery_df4ff8f1_2cf2_444a_9498_23f533bd295c",
+            "@id": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52702560_2034_4369_ab7f_28e8bb32680c",
             "@type": "@id"
         },
         "hasTestObject": {

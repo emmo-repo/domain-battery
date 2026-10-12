@@ -131,6 +131,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         "Grinding": "https://w3id.org/emmo#EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d",
         "Welding": "https://w3id.org/emmo#EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f",
         "hasTestObject": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5998f7c1_d8e3_4c55_8170_c358e1b0c93c",
+        "hasTestEquipment": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52702560_2034_4369_ab7f_28e8bb32680c",
         "NickelZincBattery": "https://w3id.org/emmo/domain/battery#battery_46b8433d_fd57_4819_b34f_1636b72ad12e",
         "IronBasedElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1",
         "Prismatic": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535",
