@@ -5,20 +5,24 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+## [0.21.0] - 2026-10-12
+
 ### Added
 - The context generator emits domain-electrochemistry's `formerLabel` values (retired prefLabel spellings, introduced there in 0.38.0) as extra JSON-LD terms for the same IRI, so data written against `InititalThermodynamicTemperature` and the five other corrected spellings keeps expanding (#81).
-- `tests/test_context_terms.py`: the six retired electrochemistry spellings and their corrected forms resolve, the SI-accepted unit terms are present, and no `nsN` prefix is published (#81).
+- `tests/test_context_terms.py`: the six retired electrochemistry spellings and their corrected forms resolve, the SI-accepted unit terms and the 0.39.0 terms (`OpenCircuitPotential` and others) are present, and no `nsN` prefix is published (#81).
+- `CITATION.cff` says 0.21.0 with the release date; it still said 0.20.1, so 0.20.2 shipped citing 0.20.1. The bump tool does not manage this file.
 
 ### Changed
 - Electrochemistry import updated from 0.37.2 to 0.39.0 in the four importing modules and all four catalogs (#81). From 0.38.0 the closure gains the 198 SI-accepted unit terms (`AmpereHour`, `MilliAmpereHour`, `WattHour`, `MolePerLitre`, `MilliAmpereHourPerGram`, ...), the six corrected spellings, `ElectrodeToSeparatorGapWidth` and `formerLabel`; from 0.39.0 the open-circuit potential split (`OpenCircuitPotential`, `EquilibriumCellVoltage`, the hysteresis branch classes and hysteresis quantities, `TemperatureCoefficientOfTheOpenCircuitPotential`), `GuestDiffusivity`, `GuestChemicalPotential`, and the BPX quantities `TransportEfficiency`, `NumberOfElectrodePairs`, `ChargeCarrierInventoryLossFraction` and `ActiveMaterialCapacityLossFraction`. `context/context.json` grows by 219 terms with nothing removed or changed. None of the 28 electrochemistry anchor quantities deprecated in 0.38.0, and none of the classes 0.39.0 changed, is referenced by this domain's own modules.
 - **Migration note from electrochemistry 0.39.0:** `OpenCircuitVoltage` is now strictly the cell-level quantity (voltage between the terminals at zero current). Battery data that typed electrode open-circuit potential curves with it should use `OpenCircuitPotential`; the IRI keeps resolving, the typing is imprecise until migrated.
-- `hasTestEquipment` in the context now maps to the domain-electrochemistry property (elucidated) rather than the undocumented battery twin, following the #76 rule for cross-domain duplicate labels and the `hasTestObject` precedent; the generator's canonical-label table pins it so regeneration cannot flip it (#81). The battery twin is to be deprecated with `isReplacedBy`.
+- `hasTestEquipment` is pinned in the generator's canonical-label table to the domain-electrochemistry property, following the #76 rule for cross-domain duplicate labels and the `hasTestObject` precedent (#81). The published context already mapped it there, so the output is unchanged; the pin stops regeneration from flipping it to the undocumented battery twin, which a regeneration during review did.
 - The JSON-LD context publishes the canonical prefixes `emmo`, `battery`, `electrochemistry`, `chemsub` and `chameo`, never an auto-generated `nsN` prefix (#78).
 
 ### Removed
 - `subdomains/battery-model-lithium-ion.ttl` and its `config.yml` entries. It declared 23 terms in a namespace that returns 404, each reusing the UUID of a domain-electrochemistry term, was imported by nothing and listed in no catalog, and appeared in neither the inferred ontology nor the docs. The concepts live in domain-electrochemistry, where the polarity-qualified ones are deprecated with defining axioms as of 0.38.0 (#80, #83). Hard removal without deprecation stubs: the IRIs never resolved and nothing in the published closure depended on them; consumers such as the HYDRA linked data should use the same-UUID domain-electrochemistry terms. The file stays available under `versions/0.20.2/` on the docs site.
 
 ### Fixed
+- Two elucidations asserted on non-existent electrochemistry IRIs (mis-prefixed copies of the `PrimaryBattery` and `SecondaryBattery` UUIDs) removed from battery-reference (#85).
 - `battery-products` moved from `subdomains/` to `modules/`, where its ontology IRI and the import in `battery-dependencies.ttl` say it is, so online resolution of `.../modules/battery-products` no longer returns 404; the `modules/` and `reference/` catalogs had also mapped it to a `./subdomains/` path that did not exist relative to them (#79, #82).
 
 ## [0.20.2] - 2026-08-10
@@ -56,6 +60,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - emmocheck: exempted the external `schema:Product` interoperability stub from the description check (EMMOntoPy's built-in schema.org skip is broken by a typo upstream). This was the first CI run over the full file set; the failure predated the dependency updates.
 - subdomains catalog: the `battery-products` entry resolved to a doubled path (`subdomains/subdomains/...`), which broke ontology loading for every file in that directory.
 
-[Unreleased]: https://github.com/emmo-repo/domain-battery/compare/0.20.2...HEAD
+[Unreleased]: https://github.com/emmo-repo/domain-battery/compare/0.21.0...HEAD
+[0.21.0]: https://github.com/emmo-repo/domain-battery/compare/0.20.2...0.21.0
 [0.20.2]: https://github.com/emmo-repo/domain-battery/compare/0.20.1...0.20.2
 [0.20.1]: https://github.com/emmo-repo/domain-battery/compare/0.20.0...0.20.1
